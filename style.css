@@ -7151,4 +7151,7 @@ footer .info-contacto > div > p {
     width: 150px;
   }
 }
+footer .info-contacto p {
+  margin-bottom: 0px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
