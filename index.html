@@ -50,6 +50,73 @@
 		<!-- <script>try{Typekit.load();}catch(e){}</script> -->
 	</head>
 	<body>
-		<header></header>
+		<header>
+			<!-- mobile menu -->
+			<div type="button" class="[ img-logo ]" data-toggle="modal" data-target="#myModal">
+				<img src="" alt="logo">
+			</div>
+			<!-- modal mobile menu -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="icons/close.svg" alt="close"></button>
+							<h4 class="modal-title" id="myModalLabel">Super SIP</h4>
+						</div>
+						<div class="modal-body">
+							<ol>
+								<li><img src="" alt="perfil">Mi perfil</li>
+								<li><img src="" alt="bandeja">Mi Bandeja</li>
+								<li><img src="" alt="tramites">Búsqueda Trámite</li>
+								<li><img src="" alt="profesionales">Búsqueda Profesionales Autorizados</li>
+								<li><img src="" alt="multas">Pagar Multas</li>
+								<li><img src="" alt="logout">Logout</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div><!-- /mobile menu -->
+			<!-- desktop menu -->
+			<div>
+				<img src="" alt="logo">
+				<ol>
+					<li><img src="" alt="perfil">Mi perfil</li>
+					<li><img src="" alt="bandeja">Mi Bandeja</li>
+					<li><img src="" alt="tramites">Búsqueda Trámite</li>
+					<li><img src="" alt="profesionales">Búsqueda Profesionales Autorizados</li>
+					<li><img src="" alt="multas">Pagar Multas</li>
+					<li><img src="" alt="logout">Logout</li>
+				</ol>
+			</div><!-- /desktop menu -->
+		</header>
+
+		<!-- barra avisos -->
+		<div></div>
+
+		<div class="[ container ]">
+			<div class="[ row ]">
+				<div class="[ col-xs-12 ]">
+					<h2> Buscar Trámites </h2>
+					<div class="[ input-group ]">
+						<input type="text" class="[ form-control ][ input-search ]">
+						<span class="[ input-group-btn ][  ]">
+							<button type="submit">
+								<img src="icons/search.svg">
+							</button>
+						</span>
+					</div>
+				</div>
+				<div class="[ col-xs-12 ]">
+					<h2> Trámites Frecuentes </h2>
+				</div>
+				
+			</div>
+			
+		</div>
+
+
+
+
+
 		<footer></footer>
 	</body>
