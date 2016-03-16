@@ -5837,11 +5837,23 @@ button.close {
   -webkit-appearance: none;
 }
 header {
+  height: 52px;
+  padding: 16px;
   background-color: #9d207c;
   color: #fff;
 }
-header ol > li {
-  display: inline-block;
+@media (min-width: 480px) {
+  header {
+    height: 72px;
+  }
+}
+header > ol > a {
+  color: #fff;
+}
+div.menu-desktop > a {
+  margin-right: 40px;
+  margin-left: 40px;
+  color: #fff;
 }
 .modal-open {
   overflow: hidden;

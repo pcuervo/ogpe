@@ -2,9 +2,19 @@
 // Header
 // --------------------------------------------------
 
-header{ 
-	background-color: @primary; 
-	color: @light;
+header {
+	height: 52px;
+	padding: @padding-large-horizontal;
+	background-color: @primary;
+	color: @light; 
+	@media (min-width: 480px){
+		height: 72px;		
+	}
 }
 
-header ol > li { display: inline-block;}
+header > ol > a { color: @light; }
+
+div.menu-desktop > a { 
+	margin-right: (@margin-base*2); margin-left: (@margin-base*2);;
+	color: @light; 
+}
