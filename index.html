@@ -52,72 +52,160 @@
 	<body>
 		<header>
 			<!-- mobile menu -->
-			<div type="button" class="[ img-logo ]" data-toggle="modal" data-target="#myModal">
-				<img src="" alt="logo">
-			</div>
-			<!-- modal mobile menu -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="icons/close.svg" alt="close"></button>
-							<h4 class="modal-title" id="myModalLabel">Super SIP</h4>
-						</div>
-						<div class="modal-body">
-							<ol>
-								<li><img src="" alt="perfil">Mi perfil</li>
-								<li><img src="" alt="bandeja">Mi Bandeja</li>
-								<li><img src="" alt="tramites">Búsqueda Trámite</li>
-								<li><img src="" alt="profesionales">Búsqueda Profesionales Autorizados</li>
-								<li><img src="" alt="multas">Pagar Multas</li>
-								<li><img src="" alt="logout">Logout</li>
-							</ol>
+			<div class="[ visible-xs ]">
+				<span type="button" class="[ img-logo ]" data-toggle="modal" data-target="#menu-mobile">logo</span>Super SIP
+				<div class="modal fade" id="menu-mobile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="[ modal-content ][ bg-primary ]">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+								<h4 class="modal-title" id="myModalLabel">Super SIP</h4>
+							</div>
+							<div class="modal-body">
+								<ol>
+									<a href=""><li><span class="icon-perfil"></span>Mi perfil</li></a>
+									<a href=""><li><span class="icon-bandeja"></span>Mi Bandeja</li></a>
+									<a href=""><li><span class="icon-tramites"></span>Búsqueda Trámite</li></a>
+									<a href=""><li><span class="icon-profesionales"></span>Búsqueda Profesionales Autorizados</li></a>
+									<a href=""><li><span class="icon-multas"></span>Pagar Multas</li></a>
+									<a href=""><li><span class="icon-logout"></span>Logout</li></a>
+								</ol>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div><!-- /mobile menu -->
+			</div>
+			
 			<!-- desktop menu -->
-			<div>
-				<img src="" alt="logo">
-				<ol>
-					<li><img src="" alt="perfil">Mi perfil</li>
-					<li><img src="" alt="bandeja">Mi Bandeja</li>
-					<li><img src="" alt="tramites">Búsqueda Trámite</li>
-					<li><img src="" alt="profesionales">Búsqueda Profesionales Autorizados</li>
-					<li><img src="" alt="multas">Pagar Multas</li>
-					<li><img src="" alt="logout">Logout</li>
-				</ol>
-			</div><!-- /desktop menu -->
+			<div class="[ hidden-xs ]">
+				<span type="button" class="[ img-logo ]">Super SIP</span>
+				<div class="[ menu-desktop ][ pull-right ][ margin-top ]">
+					<a href=""><span class="icon-perfil"></span>Búsquedas</a>
+					<a href=""><span class="icon-bandeja"></span>Mi Bandeja</a>
+					<a href=""><span class="icon-tramites"></span>Perfil</a>
+				</div>
+			</div>
+
 		</header>
 
 		<!-- barra avisos -->
 		<div></div>
 
 		<div class="[ container ]">
+			
 			<div class="[ row ]">
-				<div class="[ col-xs-12 ]">
-					<h2> Buscar Trámites </h2>
+				<div class="[ col-xs-12 col-sm-6 ]">
+					<h2 class="[ text-center ]"> Buscar Trámites </h2>
 					<div class="[ input-group ]">
 						<input type="text" class="[ form-control ][ input-search ]">
 						<span class="[ input-group-btn ][  ]">
-							<button type="submit">
-								<img src="icons/search.svg">
+							<button type="submit" class="[ btn btn-primary ]">
+								<span class="[ icon-search ]">Buscar</span>
 							</button>
 						</span>
 					</div>
 				</div>
-				<div class="[ col-xs-12 ]">
-					<h2> Trámites Frecuentes </h2>
+				<div class="[ col-xs-12 col-sm-6 ]">
+					<h2 class="[ text-center ]"> Trámites Frecuentes </h2>
+					<a href=""><p>PMO - Permiso de mantenimiento de obras de infraestructura pública</p></a>
+					<a href=""><p>PCT - Permiso de corteza terrestre</p></a>
+					<a href=""><p>PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</p></a>
+					<a href=""><p>PEX - Permiso de exportación de materiales de la corteza terrestre</p></a>
 				</div>
-
+			</div>
+			<div class="[ row ]">
+				<h2 class="[ text-center ]">¿Como realizar su Trámite en línea con Super SIP ?</h2>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p><span>1</span>Encuentre el trámite que desea realizar en la lista.</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p><span>2</span>Revise la ficha del trámite y los requerimientos.</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p><span>3</span>Cree una cuenta, complete su perfil e inicie su trámite</p>
+				</div>
+			</div>
+			<div class="[ row ]">
+				<h2 class="[ text-center ]">Lista de Categorías Trámites super SIP</h2>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<button class="[ btn btn-primary ][ width-100 ][ text-justify ]" type="button" data-toggle="collapse" data-target="#consultas" aria-expanded="false" aria-controls="collapseExample">
+					Consultas +
+					</button>
+					<div>
+						Esta sección contiene las solicitudes de radicación para proyectos que requieran la presentación de una consulta de ubicación, construcción o consultas especiales.
+					</div>
+					<div class="collapse" id="consultas">
+						<div class="[ bg-gray ]">
+							<button class="[ btn btn-primary ][ width-100 ]" type="button" data-toggle="collapse" data-target="#pmo" aria-expanded="false" aria-controls="collapseExample"> PMO - Permiso de mantenimiento de obras de infraestructura pública  + </button>
+							<div class="collapse" id="pmo">
+								<a href=""><p>PMO - Permiso de mantenimiento de obras de infraestructura pública</p></a>
+								<a href=""><p>PCT - Permiso de corteza terrestre</p></a>
+								<a href=""><p>PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</p></a>
+								<a href=""><p>PEX - Permiso de exportación de materiales de la corteza terrestre</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<button class="[ btn btn-primary ][ width-100 ][ text-justify ]" type="button" data-toggle="collapse" data-target="#permisos" aria-expanded="false" aria-controls="collapseExample">
+					Permisos +
+					</button>
+					<div>
+						Esta sección contiene las solicitudes de radicación para proyectos que requieran la presentación de una consulta de ubicación, construcción o consultas especiales.
+					</div>
+					<div class="collapse" id="permisos">
+						<div class="[ bg-gray ]">
+							<button class="[ btn btn-primary ][ width-100 ]" type="button" data-toggle="collapse" data-target="#pex" aria-expanded="false" aria-controls="collapseExample"> PMO - Permiso de mantenimiento de obras de infraestructura pública  + </button>
+							<div class="collapse" id="pex">
+								<a href=""><p>PMO - Permiso de mantenimiento de obras de infraestructura pública</p></a>
+								<a href=""><p>PCT - Permiso de corteza terrestre</p></a>
+								<a href=""><p>PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</p></a>
+								<a href=""><p>PEX - Permiso de exportación de materiales de la corteza terrestre</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<button class="[ btn btn-primary ][ width-100 ][ text-justify ]" type="button" data-toggle="collapse" data-target="#querellas" aria-expanded="false" aria-controls="collapseExample">
+					Querellas +
+					</button>
+					<div>
+						Esta sección contiene las solicitudes de radicación para proyectos que requieran la presentación de una consulta de ubicación, construcción o consultas especiales.
+					</div>
+					<div class="collapse" id="querellas">
+						<div class="[ bg-gray ]">
+							<button class="[ btn btn-primary ][ width-100 ]" type="button" data-toggle="collapse" data-target="#pct" aria-expanded="false" aria-controls="collapseExample"> PMO - Permiso de mantenimiento de obras de infraestructura pública  + </button>
+							<div class="collapse" id="pct">
+								<a href=""><p>PMO - Permiso de mantenimiento de obras de infraestructura pública</p></a>
+								<a href=""><p>PCT - Permiso de corteza terrestre</p></a>
+								<a href=""><p>PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</p></a>
+								<a href=""><p>PEX - Permiso de exportación de materiales de la corteza terrestre</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+		
 			</div>
 
-		</div>
+			<div class="[ row ]">
+				<hr class="[ divider ]">
+				<div class="[ col-xs-12 col-sm-5 col-sm-offset-1 ]">
+					<p>Para Radicar Permiso de Uso bajo la Ley de Incentivos y Financiamiento para Jóvenes Empresarios (Ley 135):</p>
+					<p class="[ text-right ]"><a href="">Presione aquí</a></p>
+				</div>
+				<div class="[ col-xs-12 col-sm-5 col-sm-offset-1 ]">
+					<p>Para Radicar la Renovación de Permisos de Generadores Eléctricos (JCA):</p>
+					<p class="[ text-right ]"><a href="">Presione aquí</a></p>
+				</div>
+				<hr class="[ divider ]">
+			</div>
 
+		</div> <!--/container-->
 
-
-
-
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/plugins.js"></script>
 		<footer>
 			<section>
 				<div class="[ container ]">
