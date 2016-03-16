@@ -7127,7 +7127,8 @@ footer section:first-child {
 footer section:first-child h4 a {
   color: #000000;
 }
-footer section:first-child p a {
+footer section:first-child a p,
+footer section:first-child h4 + p > a {
   color: #9d207c;
 }
 footer section:last-child {
@@ -7142,12 +7143,12 @@ footer .info-contacto p {
   display: inline-block;
 }
 footer .info-contacto h4,
-footer .info-contacto > div > p {
+footer .info-contacto > div > a > p {
   width: 120px;
 }
 @media (min-width: 768px) {
   footer .info-contacto h4,
-  footer .info-contacto > div > p {
+  footer .info-contacto > div > a > p {
     width: 150px;
   }
 }

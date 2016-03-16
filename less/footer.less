@@ -9,7 +9,7 @@ footer{
 	& section:first-child{
 		background-color: @tertiary;
 		& h4 a{ color: @dark}
-		& p a{ color: @primary}
+		& a p, & h4 + p>a { color: @primary}
 	}
 	& section:last-child{
 		background-color: @dark;
@@ -17,7 +17,7 @@ footer{
 		& p a{ color: @secondary}
 	}
 	.info-contacto h4, .info-contacto p{ display: inline-block;}
-	.info-contacto h4, .info-contacto>div>p{
+	.info-contacto h4, .info-contacto>div>a>p{
 		width: 120px;
 		@media (min-width: @screen-sm){ width: 150px; }
 	}
