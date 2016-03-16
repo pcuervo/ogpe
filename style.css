@@ -5836,6 +5836,13 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+header {
+  background-color: #9d207c;
+  color: #fff;
+}
+header ol > li {
+  display: inline-block;
+}
 .modal-open {
   overflow: hidden;
 }
