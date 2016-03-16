@@ -1523,6 +1523,14 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
+.fz--small {
+  font-size: 10px;
+}
+@media (min-width: 768px) {
+  .fz--small {
+    font-size: 14px;
+  }
+}
 code,
 kbd,
 pre,
@@ -3004,12 +3012,13 @@ select[multiple].input-lg {
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  border: 1px solid transparent;
+  border: 0px;
   white-space: nowrap;
+  letter-spacing: 1px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  border-radius: 4px;
+  border-radius: 0px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3458,6 +3467,11 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
+}
+.btn-primary {
+  margin: auto;
+  background-color: #6843a0;
+  color: #fff;
 }
 .fade {
   opacity: 0;
@@ -6579,16 +6593,19 @@ button.close {
   text-decoration: none;
 }
 .color-primary {
-  color: #9d207c;
+  color: #6843a0;
 }
 .color-secondary {
-  color: #ffd300;
+  color: #ffa54d;
 }
 .color-dark {
-  color: #000000;
+  color: #2c2c2c;
 }
 .color-light {
   color: #fff;
+}
+.bg-tertiary {
+  background-color: #d6cfb3;
 }
 .width-auto {
   width: auto;
@@ -7125,18 +7142,18 @@ footer section:first-child {
   background-color: #d6cfb3;
 }
 footer section:first-child h4 a {
-  color: #000000;
+  color: #2c2c2c;
 }
 footer section:first-child a p,
 footer section:first-child h4 + p > a {
-  color: #9d207c;
+  color: #6843a0;
 }
 footer section:last-child {
-  background-color: #000000;
+  background-color: #2c2c2c;
   color: #fff;
 }
 footer section:last-child p a {
-  color: #ffd300;
+  color: #ffa54d;
 }
 footer .info-contacto h4,
 footer .info-contacto p {

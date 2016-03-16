@@ -15,9 +15,10 @@
   touch-action: manipulation;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: 0px;
   white-space: nowrap;
-  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
+  letter-spacing: 1px;
+  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-none);
   .user-select(none);
 
   &,
@@ -163,4 +164,9 @@ input[type="button"] {
   &.btn-block {
     width: 100%;
   }
+}
+.btn-primary{
+  margin: auto;
+  background-color: @primary;
+  color: @light;
 }
