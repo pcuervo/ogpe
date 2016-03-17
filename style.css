@@ -4722,6 +4722,11 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
+@media (min-width: 768px) {
+  .collapse-table {
+    display: block;
+  }
+}
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
@@ -6976,6 +6981,9 @@ div.menu-desktop > a {
 }
 .border-bottom--primary {
   border-bottom: 1px solid #6843a0;
+}
+.border-bottom--primary--large {
+  border-bottom: 3px solid #6843a0;
 }
 @-ms-viewport {
   width: device-width;

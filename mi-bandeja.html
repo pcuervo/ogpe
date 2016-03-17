@@ -50,65 +50,91 @@
 		<!-- <script>try{Typekit.load();}catch(e){}</script> -->
 	</head>
 	<body>
-		<section class="[ container ]">
+		<section class="[ container ][ margin-bottom ]">
 			<h2>Mi bandeja</h2>
-			<h3 class="[ text-center ]">Proyectos</h3>
-			<div class="[ row ]">
+			<div class="[ text-center ][ margin-bottom ]">
+				<h3 class="[ margin-bottom ]">Proyectos</h3>
+				<button type="button" class="[ btn btn-primary ]">+ crear proyecto nuevo</button>
+			</div>
+			<div class="[ row hidden-xs ][ border-bottom--primary--large ][ margin-bottom ]"><!-- títulos tabla proyectos para desktop -->
 				<strong>
-					<div class="[ hidden-xs col-sm-2 ]">
+					<div class="[ col-sm-2 ]">
 						<p>Nombre del proyecto</p>
 					</div>
-					<div class="[ hidden-xs col-sm-2 ]">
+					<div class="[ col-sm-2 ]">
 						<p>Número de proyecto</p>
 					</div>
-					<div class="[ hidden-xs col-sm-2 ]">
+					<div class="[ col-sm-2 ]">
 						<p>Fecha de creación</p>
 					</div>
-					<div class="[ hidden-xs col-sm-3 ]">
+					<div class="[ col-sm-3 ]">
 						<p>Dueño del proyecto</p>
 					</div>
-					<div class="[ hidden-xs col-sm-3 ]">
+					<div class="[ col-sm-3 ]">
 						<p>Dueño del solar</p>
 					</div>
 				</strong>
 			</div>
-			<div class="[ row ]">
-				<div class="[ hidden-xs col-sm-2 ]">
+			<div class="[ row ][ border-bottom--primary ][ margin-bottom ]">
+				<div class="[ col-xs-12 col-sm-2 ]">
+					<div class="[ text-right ][ pull-right ][ visible-xs ]">
+						<a data-toggle="collapse" data-target="#ver-mas1">ver más</a>
+					</div>
+					<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
 					<p>prev</p>
 				</div>
-				<div class="[ col-xs-12 col-sm-2 ]">
-					<p>2016-103031</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-2 ]">
-					<p>02/10/2016</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<p>Arisbeth hg</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<p>Carlos A. Ramos López</p>
+				<div id="ver-mas1" class="collapse [ collapse-table ]">
+					<div class="[ col-xs-12 col-sm-2 ]">
+						<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
+						<p>2016-103031</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-2 ]">
+						<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
+						<p>02/10/2016</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<p class="[ visible-xs ]"><strong>Dueño del proyecto</strong></p>
+						<p>Arisbeth hg</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<p class="[ visible-xs ]"><strong>Dueño del solar</strong></p>
+						<p>Carlos A. Ramos López</p>
+					</div>
 				</div>
 			</div>
-			<div class="[ row ]">
-				<div class="[ hidden-xs col-sm-2 ]">
+			<div class="[ row ][ border-bottom--primary ][ margin-bottom ]">
+				<div class="[ col-xs-12 col-sm-2 ]">
+					<div class="[ text-right ][ pull-right ][ visible-xs ]">
+						<a data-toggle="collapse" data-target="#ver-mas2">ver más</a>
+					</div>
+					<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
 					<p>pr</p>
 				</div>
-				<div class="[ col-xs-12 col-sm-2 ]">
-					<p>2016-187494</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-2 ]">
-					<p>08/10/2016</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<p>Arisbeth hg</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<p>Santiago Victor De Jesús</p>
+				<div id="ver-mas2" class="collapse [ collapse-table ]">
+					<div class="[ col-xs-12 col-sm-2 ]">
+						<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
+						<p>2016-187494</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-2 ]">
+						<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
+						<p>08/10/2016</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<p class="[ visible-xs ]"><strong>Dueño del proyecto</strong></p>
+						<p>Arisbeth hg</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<p class="[ visible-xs ]"><strong>Dueño del solar</strong></p>
+						<p>Santiago Victor De Jesús</p>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="[ container ][ margin-bottom ]">
-			<h3>Solicitud de trámites</h3>
+			<div class="[ text-center ][ margin-bottom ]">
+				<h3 class="[ margin-bottom ]">Solicitu de trámites</h3>
+				<button type="button" class="[ btn btn-primary ]">+ crear proyecto nuevo</button>
+			</div>
 			<ul class="nav nav-tabs [ margin-bottom--small ]">
 				<li class="active [ col-xs-3 no-padding ]"><a class="[ no-padding--left ]" data-toggle="tab" href="#pagados">Casos pagados</a></li>
 				<li class="[ col-xs-3 no-padding ]"><a class="[ no-padding--left ]" data-toggle="tab" href="#pendientes">Casos pendientes</a></li>
@@ -117,34 +143,35 @@
 			</ul>
 			<div class="tab-content">
 				<div id="pagados" class="tab-pane fade in active">
-					<article class="[ border-bottom--primary padding--bottom ]">
-						<div class="[ row hidden-xs ]">
-							<strong>
-								<div class="[ col-sm-3 ]">
-									<p>Número de trámite</p>
-								</div>
-								<div class="[ col-sm-2 ]">
-									<p>Ficha de pago</p>
-								</div>
-								<div class="[ col-sm-2 ]">
-									<p>Proyecto</p>
-								</div>
-								<div class="[ col-sm-2 ]">
-									<p>Asignado a...</p>
-								</div>
-								<div class="[ col-sm-3 ]">
-									<p>Estado actual</p>
-								</div>
-							</strong>
-						</div>
+					<article class="[ row hidden-xs ][ border-bottom--primary--large ][ margin-bottom ]"> <!-- títulos tabla desktop -->
+						<strong>
+							<div class="[ col-sm-3 ]">
+								<p>Número de trámite</p>
+							</div>
+							<div class="[ col-sm-2 ]">
+								<p>Ficha de pago</p>
+							</div>
+							<div class="[ col-sm-2 ]">
+								<p>Proyecto</p>
+							</div>
+							<div class="[ col-sm-2 ]">
+								<p>Asignado a...</p>
+							</div>
+							<div class="[ col-sm-3 ]">
+								<p>Estado actual</p>
+							</div>
+						</strong>
+					</article>
+
+					<article class="[ border-bottom--primary padding--bottom ]"><!-- contenido solicitud de trámite -->
 						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-3 ]">
 								<p class="[ visible-xs ]"><strong>Número de trámite</strong></p>
-								<p>2016-101605-AOV-157919</p>
+								<p>2016-544567-AOV-154646</p>
 							</div>
 							<div class="[ col-xs-12 col-sm-2 ]">
 								<p class="[ visible-xs ]"><strong>Ficha de pago</strong></p>
-								<p>02-Feb-2016</p>
+								<p>17-Feb-2016</p>
 							</div>
 							<div class="[ col-xs-12 col-sm-2 ]">
 								<p class="[ visible-xs ]"><strong>Proyecto</strong></p>
@@ -160,16 +187,16 @@
 							</div>
 						</div>
 						<div class="[ text-right ][ relative z-index--1 ]">
-							<button type="button" class="[ btn btn-primary ]" data-toggle="collapse" data-target="#accion1">acciones</button>
+							<button type="button" class="[ btn btn-primary ]" data-toggle="collapse" data-target="#pagado-accion1">acciones</button>
 						</div>
-						<div id="accion1" class="collapse [ bg-gray--xlighter relative top---15 ][ padding--top-bottom--large padding--sides ]">
+						<div id="pagado-accion1" class="collapse [ bg-gray--xlighter relative top---15 ][ padding--top-bottom--large padding--sides ]">
 							<p>Puede realizar las siguientes acciones con su trámite:</p>
 							<div class="[ link-primary ][ margin-bottom padding--bottom ][ border-bottom--primary ]">
 								<a>Añadir colindantes</a>
 								<a>Imprimir notificación de archivo</a>
-								<a data-toggle="collapse" data-target="#historial-pago">Historial de pago</a>
+								<a data-toggle="collapse" data-target="#pagado-historial1">Historial de pago</a>
 							</div>
-							<div id="historial-pago" class="collapse [ border-bottom--primary ]">
+							<div id="pagado-historial1" class="collapse [ border-bottom--primary ]">
 								<div class="[ row ]">
 									<strong>
 										<div class="[ hidden-xs col-sm-2 ]">
@@ -220,7 +247,94 @@
 								</div>
 							</div>
 						</div>
-					</article>
+					</article><!-- end contenido solicitud de trámite -->
+
+					<article class="[ border-bottom--primary padding--bottom ]"><!-- contenido solicitud de trámite -->
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<p class="[ visible-xs ]"><strong>Número de trámite</strong></p>
+								<p>2016-101605-AOV-157919</p>
+							</div>
+							<div class="[ col-xs-12 col-sm-2 ]">
+								<p class="[ visible-xs ]"><strong>Ficha de pago</strong></p>
+								<p>02-Feb-2016</p>
+							</div>
+							<div class="[ col-xs-12 col-sm-2 ]">
+								<p class="[ visible-xs ]"><strong>Proyecto</strong></p>
+								<p>Casa</p>
+							</div>
+							<div class="[ col-xs-12 col-sm-2 ]">
+								<p class="[ visible-xs ]"><strong>Asignado a...</strong></p>
+								<p>Lorem ipsum</p>
+							</div>
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<p class="[ visible-xs ]"><strong>Estado actual</strong></p>
+								<p></p>
+							</div>
+						</div>
+						<div class="[ text-right ][ relative z-index--1 ]">
+							<button type="button" class="[ btn btn-primary ]" data-toggle="collapse" data-target="#pagado-accion2">acciones</button>
+						</div>
+						<div id="pagado-accion2" class="collapse [ bg-gray--xlighter relative top---15 ][ padding--top-bottom--large padding--sides ]">
+							<p>Puede realizar las siguientes acciones con su trámite:</p>
+							<div class="[ link-primary ][ margin-bottom padding--bottom ][ border-bottom--primary ]">
+								<a>Añadir colindantes</a>
+								<a>Imprimir notificación de archivo</a>
+								<a data-toggle="collapse" data-target="#pagado-historial2">Historial de pago</a>
+							</div>
+							<div id="pagado-historial2" class="collapse [ border-bottom--primary ]">
+								<div class="[ row ]">
+									<strong>
+										<div class="[ hidden-xs col-sm-2 ]">
+											<p>Trámite</p>
+										</div>
+										<div class="[ hidden-xs col-sm-2 ]">
+											<p>Tipo de trámite</p>
+										</div>
+										<div class="[ hidden-xs col-sm-2 ]">
+											<p>Descripción</p>
+										</div>
+										<div class="[ hidden-xs col-sm-2 ]">
+											<p>Precio</p>
+										</div>
+										<div class="[ hidden-xs col-sm-2 ]">
+											<p>Pagados</p>
+										</div>
+										<div class="[ hidden-xs col-sm-2 ]">
+											<p># Recibo</p>
+										</div>
+									</strong>
+								</div>
+								<div class="[ row ]">
+									<div class="[ col-xs-12 col-sm-2 ]">
+										<p class="[ visible-xs ]"><strong>Trámite</strong></p>
+										<p>PEX</p>
+									</div>
+									<div class="[ col-xs-12 col-sm-2 ]">
+										<p class="[ visible-xs ]"><strong>Tipo de trámite</strong></p>
+										<p>Permiso</p>
+									</div>
+									<div class="[ col-xs-12 col-sm-2 ]">
+										<p class="[ visible-xs ]"><strong>Descripción</strong></p>
+										<p>2016-103409-PEX-168900</p>
+									</div>
+									<div class="[ col-xs-12 col-sm-2 ]">
+										<p class="[ visible-xs ]"><strong>Precio</strong></p>
+										<p>$250.00</p>
+									</div>
+									<div class="[ col-xs-12 col-sm-2 ]">
+										<p class="[ visible-xs ]"><strong>Pagados</strong></p>
+										<p>1</p>
+									</div>
+									<div class="[ col-xs-12 col-sm-2 ]">
+										<p class="[ visible-xs ]"><strong># Recibo</strong></p>
+										<p>546-5462M</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article><!-- end contenido solicitud de trámite -->
+
 				</div><!-- end PAGADOS -->
 				<div id="pendintes" class="tab-pane fade">
 
