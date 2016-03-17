@@ -57,7 +57,7 @@ h6, .h6 { font-size: @font-size-h6; }
 
 p {
   margin: 0 0 (@line-height-computed / 2);
-  font-size: 12px;
+  font-size: 14px;
   @media (min-width: @screen-sm){ font-size: 16px; }
 }
 
@@ -187,6 +187,9 @@ ol {
   }
 }
 
+li{
+  margin-bottom: (@margin-base/2);
+}
 // Description Lists
 dl {
   margin-top: 0; // Remove browser default
@@ -303,7 +306,18 @@ address {
   line-height: @line-height-base;
 }
 
-.fz--small{
-  font-size: 10px;
-  @media (min-width: @screen-sm){ font-size: 14px; }
+//font size
+.fz--small, .fz--small p{
+  font-size: 12px;
+  @media (min-width: @screen-sm){ font-size: 14px!important; }
+}
+
+//Links
+.link-primary a{
+  cursor: pointer;
+  color: @primary;
+  padding-right: 30px;
+  @media (max-width: @screen-sm){ display: block; }
+  &:hover{color: @primary--medium;}
+  &.active{ color: @primary--dark;}
 }

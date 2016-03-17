@@ -84,10 +84,17 @@
     > a {
       margin-right: 2px;
       line-height: @line-height-base;
-      border: 1px solid transparent;
       border-radius: @border-radius-base @border-radius-base 0 0;
+      background-color: @primary;
+      color: @light;
+      text-align: center;
+      @media (max-width: @screen-sm){
+        padding-left: 5px; padding-right: 5px;
+        font-size: 12px;
+         }
       &:hover {
-        border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
+        background: @primary--medium;
+        color: @light;
       }
     }
 
@@ -96,9 +103,8 @@
       &,
       &:hover,
       &:focus {
-        color: @nav-tabs-active-link-hover-color;
-        background-color: @nav-tabs-active-link-hover-bg;
-        border: 1px solid @nav-tabs-active-link-hover-border-color;
+        color: @light;
+        background-color: @primary--dark;
         border-bottom-color: transparent;
         cursor: default;
       }
