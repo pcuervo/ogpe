@@ -1536,20 +1536,30 @@ address {
     font-size: 14px!important;
   }
 }
-.link-primary a {
+.links--primary a {
   cursor: pointer;
   color: #9c217d;
   padding-right: 30px;
 }
 @media (max-width: 768px) {
-  .link-primary a {
+  .links--primary a {
     display: block;
   }
 }
-.link-primary a:hover {
+.links--primary a:hover {
   color: #851c62;
 }
-.link-primary a.active {
+.links--primary a.active {
+  color: #69164f;
+}
+.link--primary {
+  cursor: pointer;
+  color: #9c217d;
+}
+.link--primary:hover {
+  color: #851c62;
+}
+.link--primary.active {
   color: #69164f;
 }
 code,
@@ -6676,6 +6686,9 @@ div.menu-desktop > a {
 .bg-gray-lighter {
   background-color: #eeeeee;
 }
+.bg-gray--xlighter {
+  background-color: #f1f1f1;
+}
 .width-auto {
   width: auto;
 }
@@ -6802,6 +6815,16 @@ div.menu-desktop > a {
   .padding--sides--xsm--large {
     padding-left: 25%;
     padding-right: 25%;
+  }
+}
+.padding--sides--desktop {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+@media (min-width: 768px) {
+  .padding--sides--desktop {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 .no-padding--right {
