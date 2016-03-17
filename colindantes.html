@@ -51,12 +51,83 @@
 	</head>
 	<body>
 		<section class="[ container ]">
-			<div class="[ row ][ margin-bottom ]">
-				<div class="[ col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 ]">
-					<h2>Oficina de Gerencia de Permisos (OGPe)</h2>
-					<p>La Oficina de Gerencia de Permisos (OGPe) es creada al amparo de la ley 161 del 1 de diciembre de 2009 conocida como "Ley para la Reforma del Proceso de Permisos de Puerto Rico". Dicha ley establece que la OGPe será la oficina encargada de emitir determinaciones finales y permisos, licencias, inspecciones, certificaciones y cualquier otra autorización o trámite que sea necesario para atender las solicitudes de la ciudadanía. Facilitar y propiciar el desarrollo integral, económico, social y físico sostenible de Puerto Rico que resultará en el crecimiento de más, mejores y diversas industrias y en la creación de empleos en el sector privado.</p>
+			<h2>Añadir colindantes</h2>
+			<h3>Proyecto: casa</h3>
+			<p class="[ fz--small ][ color-primary ]">Los campos marcados con * son requeridos</p>
+			<form action="">
+				<p>1. Seleccione el tipo de catastro y el punto cardinal al que pertenece</p>
+				<label for="tipo_catastro">Tipo de catastro a agregar:*</label>
+				<input id="tipo_catastro" name="tipo_catastro" type="text">
+				<label for="punto_cardinal">Punto cardinal:*</label>
+				<input id="punto_cardinal" name="punto_cardinal" type="text">
+				<p>2. Seleccione la parcela en el mapa que corresponde al catastro que desea agregar o búsquelo utilizando el buscador</p>
+				<p>Catastro principal: 4535-5335-5355</p>
+				<label for="">Número de catastro a buscar</label>
+				<div class="[ input-group ]">
+					<input type="text" class="[ form-control ][ input-search ]">
+					<span class="[ input-group-btn ][  ]">
+						<button type="submit" class="[ btn btn-primary ]">
+							<span class="[ icon-search ]">Buscar</span>
+						</button>
+					</span>
 				</div>
-			</div>
+			<!-- mapa -->
+				<p>3. Verifique que la información provista es correcta, de no serlo, por favor corríjala</p>
+				<p>Información principal del catastro:</p>
+				<label for="numero_catastro">Número de catastro:*</label>
+				<input id="numero_catastro" name="numero_catastro" type="text">
+				<label for="area_catastro">Área aproximada (m2):*</label>
+				<input id="area_catastro" name="area_catastro" type="text">
+				<label for="municipio_catastro">Municipio</label>
+				<input id="municipio_catastro" name="municipio_catastro" type="text">
+				<label for="barrio_catastro">Barrio</label>
+				<input id="barrio_catastro" name="barrio_catastro" type="text">
+				<label for="sitio_historico">Zona o sitio histórico</label>
+				<input id="sitio_historico" name="sitio_historico" type="text">
+				<label for="suelo">Suelo geológico</label>
+				<input id="suelo" name="suelo" type="text">
+				<label for="zona_inundada">Zona inundada</label>
+				<input id="zona_inundada" name="zona_inundada" type="text">
+				<label for="calificacion">Calificación</label>
+				<input id="calificacion" name="calificacion" type="text">
+				<label for="clasificacion">Clasificación</label>
+				<input id="clasificacion" name="clasificacion" type="text">
+				<label for="coordenadas">Coodenadas</label>
+				<input id="coordenadas" name="coordenadas" type="text">
+				<p>4. Presione el botón de Agregar Catastro. Para algunos trámites se le requerirá que entre un(1) colindante por punto cardinal: Norte, Sur, Este y Oeste</p>
+				<label for="cabida">Cabída (área total) de la propiedad según la escritura:*</label>
+				<input id="cabida" name="cabida" type="text" placeholder="Cabida...">
+				<input id="cabida" name="cabida" type="text" placeholder="m2">
+				<label for="dirreccion">Dirección del catastro:*</label>
+				<input id="dirreccion" name="dirreccion" type="text" placeholder="Dirección">
+				<label for="estado">Estado:*</label>
+				<input id="estado" name="estado" type="text" placeholder="Puerto rico" disabled="">
+				<label for="zip-code">Código postal:*</label>
+				<input id="zip-code" name="zip-code" type="text">
+				<label for="nombre">Primer nombre:*</label>
+				<input id="nombre" name="nombre" type="text">
+				<label for="inicial">Inicial:*</label>
+				<input id="inicial" name="inicial" type="text">
+				<label for="apellido">Apellido paterno:*</label>
+				<input id="apellido" name="apellido" type="text">
+				<label for="direccion">Dirección:*</label>
+				<input id="direccion" name="direccion" type="text">
+				<label for="pais">País:*</label>
+				<input id="pais" name="pais" type="text">
+				<label for="municipio">Municipio:*</label>
+				<input id="municipio" name="municipio" type="text">
+				<label for="codigo_postal">Código postal:*</label>
+				<input id="codigo_postal" name="codigo_postal" type="number">
+				<label for="estado">Estado:*</label>
+				<input id="estado" name="estado" type="text">
+				<label for="telefono">Télefono primario:*</label>
+				<input id="telefono" name="telefono" type="number">
+				<label for="email">Correo eléctronico:*</label>
+				<input id="email" name="email" type="email">
+				<div class="[ text-right ]">
+					<button type="button" class="[ btn btn-primary ]">agregar catastro</button>
+				</div>
+			</form>
 		</section>
 		<footer>
 			<section>
