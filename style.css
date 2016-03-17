@@ -1538,7 +1538,7 @@ address {
 }
 .link-primary a {
   cursor: pointer;
-  color: #6843a0;
+  color: #9c217d;
   padding-right: 30px;
 }
 @media (max-width: 768px) {
@@ -1547,10 +1547,10 @@ address {
   }
 }
 .link-primary a:hover {
-  color: #53358d;
+  color: #851c62;
 }
 .link-primary a.active {
-  color: #382159;
+  color: #69164f;
 }
 code,
 kbd,
@@ -2570,6 +2570,15 @@ output {
   line-height: 1.42857143;
   color: #474747;
 }
+select.arrow {
+  background-image: url('icons/arrows/arrow-down.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
 .form-control {
   display: block;
   width: 100%;
@@ -2580,8 +2589,8 @@ output {
   color: #474747;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #5b616b;
+  border-radius: 0px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -3923,8 +3932,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #474747;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #5b616b;
+  border-radius: 0px;
 }
 .input-group-addon.input-sm {
   padding: 5px 10px;
@@ -4046,7 +4055,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: 2px;
   line-height: 1.42857143;
   border-radius: 4px 4px 0 0;
-  background-color: #6843a0;
+  background-color: #9c217d;
   color: #fff;
   text-align: center;
 }
@@ -4058,14 +4067,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .nav-tabs > li > a:hover {
-  background: #53358d;
+  background: #851c62;
   color: #fff;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #fff;
-  background-color: #382159;
+  background-color: #69164f;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -6657,10 +6666,7 @@ div.menu-desktop > a {
   color: #fadddf;
 }
 .bg-tertiary {
-  background-color: #eaeaea;
-}
-.bg-gray--xlighter {
-  background-color: #f1f1f1;
+  background-color: #d6cfb3;
 }
 .bg-gray-lighter {
   background-color: #eeeeee;
@@ -6975,7 +6981,7 @@ div.menu-desktop > a {
   border-radius: 0px;
 }
 .border-bottom--primary {
-  border-bottom: 1px solid #6843a0;
+  border-bottom: 1px solid #9c217d;
 }
 @-ms-viewport {
   width: device-width;
@@ -7200,7 +7206,7 @@ footer h4 {
   }
 }
 footer section:first-child {
-  background-color: #eaeaea;
+  background-color: #d6cfb3;
 }
 footer section:first-child h4 a {
   color: #2c2c2c;
