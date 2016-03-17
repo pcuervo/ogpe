@@ -104,23 +104,23 @@ fieldset[disabled] .btn-default.active {
   background-image: none;
 }
 .btn-primary {
-  background-image: -webkit-linear-gradient(top, #6843a0 0%, #4c3175 100%);
-  background-image: -o-linear-gradient(top, #6843a0 0%, #4c3175 100%);
-  background-image: linear-gradient(to bottom, #6843a0 0%, #4c3175 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6843a0', endColorstr='#ff4c3175', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #9c217d 0%, #691655 100%);
+  background-image: -o-linear-gradient(top, #9c217d 0%, #691655 100%);
+  background-image: linear-gradient(to bottom, #9c217d 0%, #691655 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9c217d', endColorstr='#ff691655', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #472e6e;
+  border-color: #61154e;
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #4c3175;
+  background-color: #691655;
   background-position: 0 -15px;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #4c3175;
-  border-color: #472e6e;
+  background-color: #691655;
+  border-color: #61154e;
 }
 .btn-primary.disabled,
 .btn-primary[disabled],
@@ -140,7 +140,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #4c3175;
+  background-color: #691655;
   background-image: none;
 }
 .btn-success {
