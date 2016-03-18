@@ -7373,6 +7373,10 @@ div.menu-desktop > div.dropdown {
   vertical-align: 10px;
   margin-left: 10px;
 }
+.aling-nav {
+  top: -30px;
+  right: 10px;
+}
 footer section {
   padding-top: 12px;
   padding-bottom: 12px;
