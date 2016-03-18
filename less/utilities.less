@@ -7,19 +7,19 @@
 // -------------------------
 
 .clearfix {
-  .clearfix();
+	.clearfix();
 }
 .center-block {
-  .center-block();
+	.center-block();
 }
 .center-full {
-  .center-full();
+	.center-full();
 }
 .pull-right {
-  float: right !important;
+	float: right !important;
 }
 .pull-left {
-  float: left !important;
+	float: left !important;
 }
 
 
@@ -28,16 +28,16 @@
 
 // Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
 .hide {
-  display: none !important;
+	display: none !important;
 }
 .show {
-  display: block !important;
+	display: block !important;
 }
 .invisible {
-  visibility: hidden;
+	visibility: hidden;
 }
 .text-hide {
-  .text-hide();
+	.text-hide();
 }
 
 
@@ -46,7 +46,7 @@
 // Credit: HTML5 Boilerplate
 
 .hidden {
-  display: none !important;
+	display: none !important;
 }
 
 
@@ -54,7 +54,7 @@
 // -------------------------
 
 .affix {
-  position: fixed;
+	position: fixed;
 }
 
 // Positions
@@ -90,6 +90,8 @@
 // Color
 // -------------------------
 .color-primary    { color: @primary;}
+.color-primary--medium    { color: @primary--medium;}
+.color-primary--dark    { color: @primary--dark;}
 .color-secondary  { color: @secondary;}
 .color-dark       { color: @dark;}
 .color-light      { color: @light;}
@@ -154,8 +156,8 @@
 .padding--sides--xsm--large{  @media (min-width: 480px) and (max-width: 767px) {  padding-left: 25%; padding-right: 25%; }}     //Padding xs (480px-768px)
 
 .padding--sides--desktop{
-  padding-left: (@padding-base-horizontal/2); padding-right: (@padding-base-horizontal/2);
-  @media (min-width: @screen-sm){padding-left: (@padding-base-horizontal*2); padding-right: (@padding-base-horizontal*2); }
+	padding-left: (@padding-base-horizontal/2); padding-right: (@padding-base-horizontal/2);
+	@media (min-width: @screen-sm){padding-left: (@padding-base-horizontal*2); padding-right: (@padding-base-horizontal*2); }
 }
 
 
@@ -238,3 +240,14 @@
 .border-top-bottom--gray{ border-top: 1px solid @gray; border-bottom: 1px solid @gray; }
 
 
+//Contenedores
+.content-resultados{
+	& a{
+		text-decoration: underline;
+		color: @primary;
+		& p{
+			margin-bottom: (@margin-base);
+			& span{ color: @secondary;}
+		}
+	}
+}
