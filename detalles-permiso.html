@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>OGPe</title>
+		<!-- Sets initial viewport load and disables zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- SEO -->
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<!-- Compatibility -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="cleartype" content="on">
+		<!-- Favicon - generated with http://www.favicomatic.com/ -->
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="Little Crow"/>
+		<meta name="msapplication-TileColor" content="#009C9F" />
+		<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Google font(s) -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+		<!-- Font awesome -->
+		<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Typekit -->
+		<script src="https://use.typekit.net/sam8xqs.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head>
+	<body>
+		<header>
+			<a href="index.html">
+				<div class="[ img-logo ][ inline-block ]"></div>
+				<span class="[ color-light ][ lead ][ aling-logo ]">Super Sip</span>
+			</a>
+			<!-- mobile menu -->
+			<div class="[ visible-xs visible-sm  ][ relative ]">
+				<span class="[  ][ absolute ][ aling-nav ]" type="button" data-toggle="modal" data-target="#menu-mobile"></span>
+				<div class="[ modal fade ]" id="menu-mobile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="[ modal-content ][ no-border-radius ][ bg-gray-lighter ]">
+						<div class="[ modal-header ][ bg-primary ]">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">Super SIP</h4>
+						</div>
+						<div class="[ modal-body ][ menu-mobile ][ no-padding ]">
+							<ul>
+								<a href="mi-perfil.html"><li><span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil</li></a>
+								<a href="mi-bandeja.html"><li><span class="[ icon-inbox-text ][ margin-right--small ]"></span>Mi Bandeja</li></a>
+								<a href="busqueda-tramite.html"><li><span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Trámite</li></a>
+								<a href="busqueda-pa.html"><li><span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Profesionales Autorizados</li></a>
+								<a href="pagar-multas.html"><li><span class="[ icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas</li></a>
+								<a href="salir"><li><span class="[  ]"></span>Logout</li></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- desktop menu -->
+			<div class="[ hidden-xs hidden-sm ][ inline-block ]">
+				<div class="[ menu-desktop ][ pull-right ][ margin-top ]">
+					<div class="[ dropdown ]">
+						<a id="busquedas" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="[ color-light ]">
+							<span class="[ icon-search ]"></span>
+							Busquedas
+						</a>
+						<ul class="[ dropdown-menu ][ padding ][ no-border-radius ][ color-primary ]" aria-labelledby="busquedas">
+							<a href="busqueda-tramites.html"><li class="[ icon-search ]"><span class="[ inline ]">Busqueda de Trámites</span></li></a>
+							<a href="busqueda-pa.html"><li class="[ icon-search ]">Busqueda de Profesional Autorizado</li></a>
+							<a href=""><li class="[ icon-search ]">Busqueda de Permisos</li></a>
+							<a href=""><li class="[ icon-circle-cash ]">Pagar Multas</li></a>
+						</ul>
+					</div>
+					<a href="mi-bandeja.html" class="[ color-light ]"><span class="[ icon-inbox-text ]"></span>Mi Bandeja</a>
+					<div class="[ dropdown ]">
+						<a id="perfil" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="[ color-light ]">
+							<span class="[ icon-account-circle-1 ]"></span>
+							Perfil
+						</a>
+						<ul class="[ dropdown-menu ][ padding ][ no-border-radius ][ color-primary ]" aria-labelledby="perfil">
+							<li><span class="[ icon-off ]"></span>Logout</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</header>
+
+		<section class="[ container ]">
+			<h2 class="[ text-center ][ margin-bottom--large ]">Detalles del permiso</h2>
+
+		</section>
+		<section class="[ container ][ margin-bottom--large ][ text-resume ]">
+			<h3>Proyecto</h3>
+			<div class="[ row ]">
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Nombre:</p>
+					<p>Lorem ipsim</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Tipo de proyecto:</p>
+					<p>Público</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Tipo de Zona:</p>
+					<p>Rural</p>
+				</div>
+			</div>
+			<h3>Localización</h3>
+			<div class="[ row ]">
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Número de catastro:</p>
+					<p>5464786-6478</p>
+					<p>Tipo de suelo:</p>
+					<p>LgF (34%), MaF2 (22.8%), LME (19.5%)</p>
+					<p>Área total (Mensura):</p>
+					<p>McF (18.0%), AoF2 (2.7%), MaF2 (1.6%)</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Área total (Escritura):</p>
+					<p>
+						<span>LgF (34%), MaF2 (22.8%), LME (19.5%)</span>
+						<span>1872349 m2</span>
+						<span>2453644 m2</span>
+					</p>
+					<p>Municipio:</p>
+					<p>Lorem ipsum</p>
+					<p>Zona o sitio historórico:</p>
+					<p>false</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Zona inundable:</p>
+					<p>x</p>
+					<p>Calificación:</p>
+					<p>NC</p>
+					<p>Clasificación:</p>
+					<p>NC</p>
+				</div>
+			</div>
+			<div class="[ row ]">
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<h3>Dueño del proyecto:</h3>
+					<p>Arisbeth HG</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<h3>Dueño del proyecto:</h3>
+					<p>Arisbeth HG</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<h3>Dueño del proyecto:</h3>
+					<p>Arisbeth HG</p>
+				</div>
+			</div>
+		</section>
+		<section class="[ container ][ text-center ][ margin-bottom--large ]">
+			<h3 class="[ margin-bottom ]">Documentos Públicos del permiso</h3>
+			<table class="[ table-head--top ][ margin-bottom--large ]">
+				<thead>
+					<tr>
+						<th class="[ col-sm-4 ]">Nombre del archivo</th>
+						<th class="[ col-sm-4 ]">Fecha anexo</th>
+						<th class="[ col-sm-4 ]">Tipo de anexo</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="[ col-sm-4 ]">Memorial explicativo</th>
+						<th class="[ col-sm-4 ]">2013-11-11 11:27:00</th>
+						<th class="[ col-sm-4 ]">Requerido</th>
+					</tr>
+					<tr>
+						<th class="[ col-sm-4 ]">Certificado de hábitat</th>
+						<th class="[ col-sm-4 ]">2013-11-11 11:27:50</th>
+						<th class="[ col-sm-4 ]">Requerido</th>
+					</tr>
+				</tbody>
+			</table>
+			<a href="busqueda-credenciales.html" class="[ btn btn-primary ]">volver</a>
+		</section>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/plugins.js"></script>
+		<footer>
+			<section>
+				<div class="[ container ]">
+					<p class="[ text-center ]">Tu nuevo sistema de radicación de permisos</p>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<h4><a href="acerca-ogpe.html">Acerca de OGPE</a></h4>
+							<h4><a href="contacto.html">Contáctanos</a></h4>
+							<h4><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></h4>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<h4><a class="[ underline ]" href="">Reglamentos vigentes</a></h4>
+							<!-- logo -->
+						</div>
+						<div class="[ col-xs-12 col-sm-6 ][ info-contacto ]">
+							<div>
+								<h4>Contacto</h4>
+								<p><a href="mailto:info@sip.pr.gov">info@sip.pr.gob</a></p>
+							</div>
+							<div>
+								<a href="tel:+525552555555">
+									<p>Oficina Central SJ</p>
+									<p>(787)721-8282</p>
+								</a>
+							</div>
+							<div>
+								<a href="tel:+525552555555">
+									<p>Oficina Aguadilla</p>
+									<p>(787)891-0466</p>
+								</a>
+							</div>
+							<div>
+								<a href="tel:+525552555555">
+									<p>Oficina Arecibo</p>
+									<p>(787)878-7979</p>
+								</a>
+							</div>
+							<div>
+								<a href="tel:+525552555555">
+									<p>Oficina Humacao</p>
+									<p>(787)852-2013</p>
+								</a>
+							</div>
+							<div>
+								<a href="tel:+525552555555">
+									<p>Oficina Ponce</p>
+									<p>(787)843-9097</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="[ container ]">
+					<p>Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p>
+					<p>Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new">aquí</a></p>
+				</div>
+			</section>
+		</footer>
+	</body>
