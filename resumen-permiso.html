@@ -57,7 +57,7 @@
 			</a>
 			<!-- mobile menu -->
 			<div class="[ visible-xs visible-sm  ][ relative ]">
-				<span class="[  ][ absolute ][ aling-nav ]" type="button" data-toggle="modal" data-target="#menu-mobile">menu</span>
+				<span class="[  ][ absolute ][ aling-nav ]" type="button" data-toggle="modal" data-target="#menu-mobile"></span>
 				<div class="[ modal fade ]" id="menu-mobile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 					<div class="[ modal-content ][ no-border-radius ][ bg-gray-lighter ]">
 						<div class="[ modal-header ][ bg-primary ]">
@@ -108,103 +108,118 @@
 
 		</header>
 
-		<!-- barra avisos -->
-		<div></div>
-
-		<form action="" class="[ container ]">
+		<section class="[ container ]">
+			<h2 class="[ text-center ][ margin-bottom--large ]">Detalles del permiso</h2>
+			<table class="[ table-head--top ]">
+				<thead>
+					<tr>
+						<th class="[ col-sm-2 ]">Cod. expediente</th>
+						<th class="[ col-sm-2 ]">Fecha radicación</th>
+						<th class="[ col-sm-2 ]">Municipio</th>
+						<th class="[ col-sm-2 ]">Tipo (CSA, CPI)</th>
+						<th class="[ col-sm-2 ]">Estado actual</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="[ col-sm-2 ]">PGE</th>
+						<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+						<th class="[ col-sm-2 ]">Gurabo</th>
+						<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+						<th class="[ col-sm-2 ]">Supervision por gerente</th>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="[ container ][ margin-bottom--large ][ text-resume ]">
+			<h3>Proyecto</h3>
 			<div class="[ row ]">
-				<div class="[ col-xs-12 col col-sm-offset-2 col-sm-8 ][ margin-bottom--large ]">
-					<h2 class="[ text-center ]">Busqueda de permisos</h2>
-					<div class="[ input-group ]">
-						<input type="text" class="[ form-control ][ input-search ]" placeholder="Número de Permiso">
-						<span class="[ input-group-btn ]">
-							<button type="submit" class="[ btn btn-primary ]">
-								<span class="[ icon-search ]"></span>
-							</button>
-						</span>
-					</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Nombre:</p>
+					<p>Lorem ipsim</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Tipo de proyecto:</p>
+					<p>Público</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Tipo de Zona:</p>
+					<p>Rural</p>
 				</div>
 			</div>
-			<div class="[ row ][ margin-bottom--large ]">
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Permiso</h3>
-					<label for="">Tipo de permiso:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>Escoja una opción</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-					<label for="">Estado del pérmiso:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>Escoja una opción</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
+			<h3>Localización</h3>
+			<div class="[ row ]">
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Número de catastro:</p>
+					<p>5464786-6478</p>
+					<p>Tipo de suelo:</p>
+					<p>LgF (34%), MaF2 (22.8%), LME (19.5%)</p>
+					<p>Área total (Mensura):</p>
+					<p>McF (18.0%), AoF2 (2.7%), MaF2 (1.6%)</p>
 				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Proyecto</h3>
-					<label for="">Código del tipo de proyecto 1:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-					<label for="">Código del tipo de proyecto 2:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-					<label for="">Nombre del proyecto:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Número de catastro:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Nombre dueño del proyecto:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Apellido del dueño del catastro:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Municipio:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Área total (Escritura):</p>
+					<p>
+						<span>LgF (34%), MaF2 (22.8%), LME (19.5%)</span>
+						<span>1872349 m2</span>
+						<span>2453644 m2</span>
+					</p>
+					<p>Municipio:</p>
+					<p>Lorem ipsum</p>
+					<p>Zona o sitio historórico:</p>
+					<p>false</p>
 				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Usuarios</h3>
-					<label for="">Código del tipo de proyecto 1:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Código del tipo de proyecto 2:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Fechas</h3>
-					<label for="">Creados desde:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Creados hasta:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Actualizados desde:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Actualizados hasta:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Cancelados desde:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Cancelados hasta:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p>Zona inundable:</p>
+					<p>x</p>
+					<p>Calificación:</p>
+					<p>NC</p>
+					<p>Clasificación:</p>
+					<p>NC</p>
 				</div>
 			</div>
-			<div class="[ text-center ][ margin-bottom--large ]">
-				<button type="button" class="[ btn btn-primary ]">buscar</button>
+			<div class="[ row ]">
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<h3>Dueño del proyecto:</h3>
+					<p>Arisbeth HG</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<h3>Dueño del proyecto:</h3>
+					<p>Arisbeth HG</p>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<h3>Dueño del proyecto:</h3>
+					<p>Arisbeth HG</p>
+				</div>
 			</div>
-		</form>
-
-	<!-- resultados -->
+		</section>
+		<section class="[ container ][ text-center ][ margin-bottom--large ]">
+			<h3 class="[ margin-bottom ]">Documentos Públicos del permiso</h3>
+			<table class="[ table-head--top ][ margin-bottom--large ]">
+				<thead>
+					<tr>
+						<th class="[ col-sm-4 ]">Nombre del archivo</th>
+						<th class="[ col-sm-4 ]">Fecha anexo</th>
+						<th class="[ col-sm-4 ]">Tipo de anexo</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="[ col-sm-4 ]">Memorial explicativo</th>
+						<th class="[ col-sm-4 ]">2013-11-11 11:27:00</th>
+						<th class="[ col-sm-4 ]">Requerido</th>
+					</tr>
+					<tr>
+						<th class="[ col-sm-4 ]">Certificado de hábitat</th>
+						<th class="[ col-sm-4 ]">2013-11-11 11:27:50</th>
+						<th class="[ col-sm-4 ]">Requerido</th>
+					</tr>
+				</tbody>
+			</table>
+			<a href="busqueda-permisos.html" class="[ btn btn-primary ]">volver a la busqueda</a>
+		</section>
 		<section class="[ container ][ margin-bottom--large ]">
-			<p>Se encontraros <span class="[ color-primary ]">34</span>resultados relacionados con</p>
+			<h3>Otros permisos asociados al proyecto</h3>
 			<table class="[ table-head--top ][ margin-bottom ]">
 					<thead>
 						<tr>
@@ -272,7 +287,6 @@
 		<section class="[ container ][ border-top--primary ][ margin-bottom--large ]">
 			<p>Estados:</p>
 		</section>
-
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>

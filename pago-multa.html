@@ -108,169 +108,32 @@
 
 		</header>
 
-		<!-- barra avisos -->
-		<div></div>
-
-		<form action="" class="[ container ]">
-			<div class="[ row ]">
-				<div class="[ col-xs-12 col col-sm-offset-2 col-sm-8 ][ margin-bottom--large ]">
-					<h2 class="[ text-center ]">Busqueda de permisos</h2>
-					<div class="[ input-group ]">
-						<input type="text" class="[ form-control ][ input-search ]" placeholder="Número de Permiso">
-						<span class="[ input-group-btn ]">
-							<button type="submit" class="[ btn btn-primary ]">
-								<span class="[ icon-search ]"></span>
-							</button>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="[ row ][ margin-bottom--large ]">
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Permiso</h3>
-					<label for="">Tipo de permiso:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>Escoja una opción</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-					<label for="">Estado del pérmiso:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>Escoja una opción</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Proyecto</h3>
-					<label for="">Código del tipo de proyecto 1:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-					<label for="">Código del tipo de proyecto 2:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-					<label for="">Nombre del proyecto:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Número de catastro:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Nombre dueño del proyecto:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Apellido del dueño del catastro:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Municipio:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Usuarios</h3>
-					<label for="">Código del tipo de proyecto 1:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Código del tipo de proyecto 2:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Fechas</h3>
-					<label for="">Creados desde:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Creados hasta:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Actualizados desde:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Actualizados hasta:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Cancelados desde:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Cancelados hasta:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-				</div>
-			</div>
-			<div class="[ text-center ][ margin-bottom--large ]">
-				<button type="button" class="[ btn btn-primary ]">buscar</button>
-			</div>
-		</form>
-
-	<!-- resultados -->
 		<section class="[ container ][ margin-bottom--large ]">
-			<p>Se encontraros <span class="[ color-primary ]">34</span>resultados relacionados con</p>
+			<h2 class="[ text-center ][ margin-bottom ]">Desglose de pago</h2>
 			<table class="[ table-head--top ][ margin-bottom ]">
 					<thead>
 						<tr>
-							<th class="[ col-sm-2 ]">Permiso</th>
-							<th class="[ col-sm-2 ]">Fecha radicación</th>
-							<th class="[ col-sm-2 ]">Municipio</th>
-							<th class="[ col-sm-2 ]">Tipo (CSA, CPI)</th>
-							<th class="[ col-sm-2 ]">Estado actual</th>
-							<th class="[ col-sm-2 ]">Ver resumen</th>
+							<th class="[ col-sm-4 ]">Número de multa</th>
+							<th class="[ col-sm-4 ]">Número de multa asociada</th>
+							<th class="[ col-sm-4 ]">Detalles</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]">Supervision por gerente</th>
-							<th class="[ col-sm-2 ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"></a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]">Supervision por gerente</th>
-							<th class="[ col-sm-2 ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"></a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]">Supervision por gerente</th>
-							<th class="[ col-sm-2 ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"></a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]">Supervision por gerente</th>
-							<th class="[ col-sm-2 ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"></a>
+							<th class="[ col-sm-4 ]">2015-MULQ-0934564</th>
+							<th class="[ col-sm-4 ]">2015-MULQ-0934564</th>
+							<th class="[ col-sm-4 ]">
+								Costo de Multa Original: <span class="[ color-primary ]">$864.00</span>
+								<br>
+								Se aplica penalidad de 10% debido a que la cantidad de días desde que se entregó; son <span class="[ color-primary ]">295</span> días y ha pasado del límite de 30 días.
 							</th>
 						</tr>
 					</tbody>
 				</table>
+				<p class="[ text-right ]">Total: <span class="[ color-primary ]">$12240.00</span></p>
 				<div class="[ text-center ]">
-					<ul class="[ pagination ]">
-						<li class="[ active ]"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-					</ul>
+					<a href="" class="[ btn btn-primary ][ text-center ]">pagar</a>
 				</div>
-		</section>
-		<section class="[ container ][ border-top--primary ][ margin-bottom--large ]">
-			<p>Estados:</p>
 		</section>
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
