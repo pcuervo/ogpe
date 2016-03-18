@@ -54,87 +54,46 @@
 			<h2>Nuevo proyecto</h2>
 			<p class="[ fz--small ][ color-primary ]"><strong>Los campos marcados con * son requeridos</strong></p>
 			<form action="">
+				<h3>Dueño del solar</h3>
 				<div class="[ row ][ margin-bottom ]">
 					<div class="[ col-xs-12 col-sm-4 ]">
-						<h3>Localización</h3>
-						<p>Seleccione su parcela o busque su catastro:*</p>
-						<p>Si conoce el número de catastro introduscalo en el siguiente espacio, espere un momento y el mapa conseguira la información. O busquelo manualmente.</p>
-						<label for="">Número de catastro</label>
-						<div class="[ input-group ]">
-							<input type="text" class="[ form-control ][ input-search ]">
-							<span class="[ input-group-btn ][  ]">
-								<button type="submit" class="[ btn btn-primary ]">
-									<span class="[ icon-search ]"></span>
-								</button>
-							</span>
+						<div class="[ row ]">
+							<div class="[ col-xs-8 ][ no-padding--right ]">
+								<label for="nombre">Primer nombre:*</label>
+								<input class="[ form-control ]" id="nombre" name="nombre" type="text">
+							</div>
+							<div class="[ col-xs-4 ]">
+								<label for="inicial">Inicial:*</label>
+								<input class="[ form-control ]" id="inicial" name="inicial" type="text">
+							</div>
 						</div>
+						<label for="apellido">Apellido paterno:*</label>
+						<input class="[ form-control ]" id="apellido" name="apellido" type="text">
 					</div>
 					<div class="[ col-xs-12 col-sm-4 ]">
-				<!-- mapa -->
-					</div>
-				</div>
-				<input id="certificacion" type="checkbox" name="certificacion" value="certificacion">
-				<label class="[ inline-block ][ margin-bottom ]" for="certificacion">Necesito seleccionar catastros adicionales</label>
-				<h3>Detalles de catastro</h3>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="numero_catastro">Número de catastro:*</label>
-						<input class="[ form-control ]" id="numero_catastro" name="numero_catastro" type="text">
-						<label for="numero_catastro_ext">Número de catastro exterior:*</label>
-						<input class="[ form-control ]" id="numero_catastro_ext" name="numero_catastro_ext" type="text">
-						<label for="area_catastro">Área aproximada (m2):*</label>
-						<input class="[ form-control ]" id="area_catastro" name="area_catastro" type="text">
-						<label for="municipio_catastro">Municipio</label>
-						<input class="[ form-control ]" id="municipio_catastro" name="municipio_catastro" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="barrio_catastro">Barrio</label>
-						<input class="[ form-control ]" id="barrio_catastro" name="barrio_catastro" type="text">
-						<label for="sitio_historico">Zona o sitio histórico</label>
-						<input class="[ form-control ]" id="sitio_historico" name="sitio_historico" type="text">
-						<label for="suelo">Suelo geológico</label>
-						<input class="[ form-control ]" id="suelo" name="suelo" type="text">
-						<label for="zona_inundada">Zona inundada</label>
-						<input class="[ form-control ]" id="zona_inundada" name="zona_inundada" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="floodway">Floodway</label>
-						<input class="[ form-control ]" id="floodway" name="floodway" type="text">
-						<label for="calificacion">Calificación</label>
-						<input class="[ form-control ]" id="calificacion" name="calificacion" type="text">
-						<label for="clasificacion">Clasificación</label>
-						<input class="[ form-control ]" id="clasificacion" name="clasificacion" type="text">
-						<label for="coordenadas">Coodenadas</label>
-						<input class="[ form-control ]" id="coordenadas" name="coordenadas" type="text">
-					</div>
-				</div>
-				<h3>Detalles adicionales del catastro</h3>
-				<div class="[ row ][ margin-bottom--large ] ">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="cabida">Cabída (área total) de la propiedad según la escritura:*</label>
-						<input class="[ form-control ]" id="cabida" name="cabida" type="text" placeholder="Cabida...">
-						<input class="[ form-control ]" id="cabida" name="cabida" type="text" placeholder="m2">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="dirreccion">Dirección del catastro:*</label>
-						<input class="[ form-control ]" id="dirreccion" name="dirreccion" type="text" placeholder="Dirección">
+						<label for="direccion">Dirección:*</label>
+						<input class="[ form-control ]" id="direccion" name="direccion" type="text">
+						<label for="pais">País:*</label>
+						<input class="[ form-control ]" id="pais" name="pais" type="text">
+						<label for="municipio">Municipio:*</label>
+						<input class="[ form-control ]" id="municipio" name="municipio" type="text">
+						<label for="codigo_postal">Código postal</label>
+						<input class="[ form-control ]" id="codigo_postal" name="codigo_postal" type="text">
 						<label for="estado">Estado:*</label>
-						<input class="[ form-control ]" id="estado" name="estado" type="text" placeholder="Puerto rico" disabled="">
+						<input class="[ form-control ]" id="estado" name="estado" type="text">
 					</div>
 					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="zip-code">Código postal:*</label>
-						<input class="[ form-control ]" id="zip-code" name="zip-code" type="text">
-						<label for="referencia">Punto de referencia de cómo llegar:</label>
-						<input class="[ form-control ]" id="referencia" name="referencia" type="text">
+						<label for="telefono">Teléfono primario:*</label>
+						<input class="[ form-control ]" id="telefono" name="telefono" type="text">
+						<label for="correo">Correo electrónico:*</label>
+						<input class="[ form-control ]" id="correo" name="correo" type="email">
 					</div>
 				</div>
 				<div class="[ text-center ][ margin-bottom--large ]">
-					<input id="certificacion" type="checkbox" name="certificacion" value="certificacion">
-					<label class="[ inline-block ][ margin-bottom ]" for="certificacion">Certifico que verifiqué la Dirección del catastro y confirmo que la misma es correcta</label>
-					<div class="[ clear ]"></div>
 					<a href="proyecto2-5.html" class="[ btn btn-primary ]">continuar</a>
 				</div>
 			</form>
+		</section>
 		<footer>
 			<section>
 				<div class="[ container ]">
