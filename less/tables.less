@@ -5,6 +5,7 @@
 
 table {
   background-color: @table-bg;
+  margin: auto;
 }
 caption {
   padding-top: @table-cell-padding;
@@ -12,13 +13,18 @@ caption {
   color: @text-muted;
   text-align: left;
 }
+thead{
+  background-color: @gray-xlighter;
+}
 th {
   text-align: center;
   border: 1px solid @gray;
   font-size: 14px;
   @media (min-width: @screen-sm){ font-size: 16px; }
 }
-
+tbody>tr>th{
+  padding-top: 10px; padding-bottom: 10px;
+}
 
 // Baseline styles
 
@@ -236,8 +242,16 @@ table {
   }
 }
 
+.table-credenciales{ //Listado credenciales en busqueda credenciales.html
+    &>thead>tr>th:nth-child(1),
+    &>tbody>tr>th:nth-child(1){
+      @media (max-width: 480px){ display: none; }
+    }
+}
 
-.table-credenciales>thead>tr>th:nth-child(1),
-.table-credenciales>tbody>tr>th:nth-child(1){
-    @media (max-width: 480px){ display: none; }
+.table-head--top>tbody>tr>th{
+  font-weight: normal;
+}
+.table-head--left>tbody>tr>th:nth-child(2){
+   font-weight: normal;
 }

@@ -110,7 +110,7 @@
 
 		<section class="[ container ]">
 			<h2 class="[ text-center ][ margin-bottom--large ]">Búsqueda de credenciales</h2>
-			<div class="[ row ]">
+			<form class="[ row ]">
 				<div class="[ col-xs-12 col-sm-4 ][ margin-bottom--large ]">
 					<label for="">Por número de credencial:</label>
 					<div class="[ input-group ]">
@@ -144,46 +144,217 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</form>
 		</section>
-		<section class="[ container ][ margin-bottom ]">
+		<section class="[ container ][ margin-bottom--large ][ text-center ]">
 			<h3>Listado de Credenciales</h3>
-			<table class="[ table-credenciales ]">
+			<table class="[ table-credenciales table-head--top ]">
 				<thead>
 					<tr>
-						<th class="col-sm-4">Nombre</th>
-						<th class="col-sm-4">Tipo de credencial</th>
-						<th class="col-sm-4">Estatus</th>
-						<th class="col-sm-4">ver detalle</th>
+						<th class="[ col-sm-4 ]">Nombre</th>
+						<th class="[ col-sm-4 ]">Tipo de credencial</th>
+						<th class="[ col-sm-4 ]">Estatus</th>
+						<th class="[ col-sm-4 ]">ver detalle</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<th class="col-sm-4">Roberto López</th>
-						<th class="col-sm-4">IA Salud Ambiental</th>
-						<th class="col-sm-4">Active</th>
-						<th class="col-sm-4"></th>
+						<th class="[ col-sm-4 ]">Roberto López</th>
+						<th class="[ col-sm-4 ]">IA Salud Ambiental</th>
+						<th class="[ col-sm-4 ]">Active</th>
+						<th class="[ col-sm-4 ]">
+							<a data-toggle="collapse" data-target="#detalle1" class="[ btn btn-primary ]"></a>
+						</th>
 					</tr>
 					<tr>
-						<th class="col-sm-4">Ana Léon</th>
-						<th class="col-sm-4">Profesional Autorizado</th>
-						<th class="col-sm-4">Active</th>
-						<th class="col-sm-4"></th>
+						<th class="[ col-sm-4 ]">Ana Léon</th>
+						<th class="[ col-sm-4 ]">Profesional Autorizado</th>
+						<th class="[ col-sm-4 ]">Active</th>
+						<th class="[ col-sm-4 ]">
+							<a data-toggle="collapse" data-target="#detalle1" class="[ btn btn-primary ]"></a>
+						</th>
 					</tr>
 					<tr>
-						<th class="col-sm-4">Monserrat Gonzalez</th>
-						<th class="col-sm-4">IA Prevención de Incendios</th>
-						<th class="col-sm-4">Disabled</th>
-						<th class="col-sm-4"></th>
+						<th class="[ col-sm-4 ]">Monserrat Gonzalez</th>
+						<th class="[ col-sm-4 ]">IA Prevención de Incendios</th>
+						<th class="[ col-sm-4 ]">Disabled</th>
+						<th class="[ col-sm-4 ]">
+							<a data-toggle="collapse" data-target="#detalle1" class="[ btn btn-primary ]"></a>
+						</th>
 					</tr>
 					<tr>
-						<th class="col-sm-4">Augusto Carvajal</th>
-						<th class="col-sm-4">Profesional Autorizado</th>
-						<th class="col-sm-4">Disabled</th>
-						<th class="col-sm-4"></th>
+						<th class="[ col-sm-4 ]">Augusto Carvajal</th>
+						<th class="[ col-sm-4 ]">Profesional Autorizado</th>
+						<th class="[ col-sm-4 ]">Disabled</th>
+						<th class="[ col-sm-4 ]">
+							<a data-toggle="collapse" data-target="#detalle1" class="[ btn btn-primary ]"></a>
+						</th>
+					</tr>
+					<tr>
+						<th class="[ col-sm-4 ]">Roberto López</th>
+						<th class="[ col-sm-4 ]">IA Salud Ambiental</th>
+						<th class="[ col-sm-4 ]">Active</th>
+						<th class="[ col-sm-4 ]">
+							<a data-toggle="collapse" data-target="#detalle1" class="[ btn btn-primary ]"></a>
+						</th>
+					</tr>
+					<tr>
+						<th class="[ col-sm-4 ]">Ana Léon</th>
+						<th class="[ col-sm-4 ]">Profesional Autorizado</th>
+						<th class="[ col-sm-4 ]">Active</th>
+						<th class="[ col-sm-4 ]">
+							<a data-toggle="collapse" data-target="#detalle1" class="[ btn btn-primary ]"></a>
+						</th>
+					</tr>
+					<tr>
+						<th class="[ col-sm-4 ]">Monserrat Gonzalez</th>
+						<th class="[ col-sm-4 ]">IA Prevención de Incendios</th>
+						<th class="[ col-sm-4 ]">Disabled</th>
+						<th class="[ col-sm-4 ]">
+							<a data-toggle="collapse" data-target="#detalle1" class="[ btn btn-primary ]"></a>
+						</th>
 					</tr>
 				</tbody>
-			  </table>
+			</table>
+			<ul class="[ pagination ]">
+				<li class="[ active ]"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+		</section>
+		<section id="detalle1" class="collapse [ container ][ margin-bottom--large ][ text-center ]">
+			<div class="[ row ]">
+				<div class="[ bg-gray--xlighter padding--top padding--bottom--xlarge padding--sides--large margin-bottom--large ][ no-padding--sides--xs ][ col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 ]">
+					<h3>Detalles de la credencial</h3>
+					<table class="[ table-head--left ][ margin-bottom--large ]">
+						<tbody>
+							<tr>
+								<th class="[ col-sm-4 ]">Nombre del PAIA:</th>
+								<th class="[ col-sm-4 ]">Ana Leon</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Dirección del PAIA:</th>
+								<th class="[ col-sm-4 ]">PO Box 8284 Ponce, Puerto Rico 00732</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Teléfonos del PAIA:</th>
+								<th class="[ col-sm-4 ]">7873153693 000-000-0000</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Username:</th>
+								<th class="[ col-sm-4 ]">profaleontorres@gmail.com</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Credencial:</th>
+								<th class="[ col-sm-4 ]">PRO</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Tipo de Credencial:</th>
+								<th class="[ col-sm-4 ]">02520-PRO-02040</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Status:</th>
+								<th class="[ col-sm-4 ]">Disabled</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Fecha de Expedición:</th>
+								<th class="[ col-sm-4 ]">2013-03-27 11:27:12.0</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Fecha de Expiración:</th>
+								<th class="[ col-sm-4 ]">2014-03-27 11:27:12.0</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Otros Credenciales:</th>
+								<th class="[ col-sm-4 ]"></th>
+							</tr>
+						</tbody>
+					</table>
+					<h4>Licencias</h4>
+					<table class="[ table-head--left ]">
+						<tbody>
+							<tr>
+								<th class="[ col-sm-4 ]">Ocupación:</th>
+								<th class="[ col-sm-4 ]">Internacional de Arb</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Número de licencia:</th>
+								<th class="[ col-sm-4 ]">78731536AM</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">Fecha de emisión:</th>
+								<th class="[ col-sm-4 ]">2013-03-27 11:27:00</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div>
+				<h3>Permisos generados con esta credencial</h3>
+				<table class="[ table-credenciales table-head--top ]">
+					<thead>
+						<tr>
+							<th class="[ col-sm-2 ]">Nombre del permiso</th>
+							<th class="[ col-sm-2 ]">Fecha radicación</th>
+							<th class="[ col-sm-2 ]">Municipio</th>
+							<th class="[ col-sm-2 ]">Tipo (CSA, CPI)</th>
+							<th class="[ col-sm-2 ]">Estado actual</th>
+							<th class="[ col-sm-2 ]">Ver resumen</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="[ col-sm-2 ]">PGE</th>
+							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+							<th class="[ col-sm-2 ]">Gurabo</th>
+							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+							<th class="[ col-sm-2 ]">Supervision por gerente</th>
+							<th class="[ col-sm-2 ]">
+								<a data-toggle="collapse" data-target="#credencial1" class="[ btn btn-primary ]"></a>
+							</th>
+						</tr>
+						<tr>
+							<th class="[ col-sm-2 ]">PGE</th>
+							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+							<th class="[ col-sm-2 ]">Gurabo</th>
+							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+							<th class="[ col-sm-2 ]">Supervision por gerente</th>
+							<th class="[ col-sm-2 ]">
+								<a data-toggle="collapse" data-target="#credencial1" class="[ btn btn-primary ]"></a>
+							</th>
+						</tr>
+						<tr>
+							<th class="[ col-sm-2 ]">PGE</th>
+							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+							<th class="[ col-sm-2 ]">Gurabo</th>
+							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+							<th class="[ col-sm-2 ]">Supervision por gerente</th>
+							<th class="[ col-sm-2 ]">
+								<a data-toggle="collapse" data-target="#credencial1" class="[ btn btn-primary ]"></a>
+							</th>
+						</tr>
+						<tr>
+							<th class="[ col-sm-2 ]">PGE</th>
+							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+							<th class="[ col-sm-2 ]">Gurabo</th>
+							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+							<th class="[ col-sm-2 ]">Supervision por gerente</th>
+							<th class="[ col-sm-2 ]">
+								<a data-toggle="collapse" data-target="#credencial1" class="[ btn btn-primary ]"></a>
+							</th>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="[ pagination ]">
+					<li class="[ active ]"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+				</ul>
+			</div>
 		</section>
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>

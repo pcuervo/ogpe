@@ -2283,12 +2283,16 @@ pre code {
 }
 table {
   background-color: transparent;
+  margin: auto;
 }
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
   color: #777777;
   text-align: left;
+}
+thead {
+  background-color: #dddddd;
 }
 th {
   text-align: center;
@@ -2299,6 +2303,10 @@ th {
   th {
     font-size: 16px;
   }
+}
+tbody > tr > th {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .table {
   width: 100%;
@@ -2533,6 +2541,12 @@ table th[class*="col-"] {
   .table-credenciales > tbody > tr > th:nth-child(1) {
     display: none;
   }
+}
+.table-head--top > tbody > tr > th {
+  font-weight: normal;
+}
+.table-head--left > tbody > tr > th:nth-child(2) {
+  font-weight: normal;
 }
 fieldset {
   padding: 0;
@@ -4811,14 +4825,19 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a,
 .pagination > li > span {
   position: relative;
-  float: left;
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
   color: #9c217d;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #9c217d;
   margin-left: -1px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .pagination > li > a,
+  .pagination > li > span {
+    font-size: 16px;
+  }
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
@@ -4837,8 +4856,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:focus {
   z-index: 2;
   color: #5d144a;
-  background-color: #eeeeee;
-  border-color: #ddd;
+  background-color: #dddddd;
+  border-color: transparent;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -4848,8 +4867,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:focus {
   z-index: 3;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #9c217d;
+  border-color: transparent;
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -6828,7 +6847,7 @@ button.close {
   background-color: #eeeeee;
 }
 .bg-gray--xlighter {
-  background-color: #f1f1f1;
+  background-color: #dddddd;
 }
 .width-auto {
   width: auto;
@@ -6945,6 +6964,12 @@ button.close {
 .padding--sides--large {
   padding-left: 48px;
   padding-right: 48px;
+}
+@media (max-width: 480px) {
+  .no-padding--sides--xs {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .padding--sides--xsm {
