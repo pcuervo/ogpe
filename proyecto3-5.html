@@ -54,42 +54,38 @@
 			<h2>Nuevo proyecto</h2>
 			<p class="[ fz--small ][ color-primary ]"><strong>Los campos marcados con * son requeridos</strong></p>
 			<form action="">
-				<h3>Dueño del solar</h3>
+				<h3>Proyecto o actividad</h3>
 				<div class="[ row ][ margin-bottom ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<div class="[ row ]">
-							<div class="[ col-xs-8 ][ no-padding--right ]">
-								<label for="nombre">Primer nombre:*</label>
-								<input class="[ form-control ]" id="nombre" name="nombre" type="text">
-							</div>
-							<div class="[ col-xs-4 ]">
-								<label for="inicial">Inicial:</label>
-								<input class="[ form-control ]" id="inicial" name="inicial" type="text">
-							</div>
-						</div>
-						<label for="apellido">Apellido paterno:*</label>
-						<input class="[ form-control ]" id="apellido" name="apellido" type="text">
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<label for="nombre_proyecto">Nombre del proyecto o actividad:*</label>
+						<input class="[ form-control ]" id="nombre_proyecto" name="nombre_proyecto" type="text">
 					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="direccion">Dirección:*</label>
-						<input class="[ form-control ]" id="direccion" name="direccion" type="text">
-						<label for="pais">País:*</label>
-						<input class="[ form-control ]" id="pais" name="pais" type="text">
-						<label for="municipio">Municipio:*</label>
-						<input class="[ form-control ]" id="municipio" name="municipio" type="text">
-						<label for="codigo_postal">Código postal</label>
-						<input class="[ form-control ]" id="codigo_postal" name="codigo_postal" type="text">
-						<label for="estado">Estado:*</label>
-						<input class="[ form-control ]" id="estado" name="estado" type="text">
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<label for="tipo_zona">Tipo de zona:*</label>
+						<select class="[ form-control ][ arrow ]">
+							<option>rural</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
 					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="telefono">Teléfono primario:*</label>
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<label for="telefono">Descripción del proyecto o actividad:*</label>
 						<input class="[ form-control ]" id="telefono" name="telefono" type="text">
-						<label for="correo">Correo electrónico:*</label>
-						<input class="[ form-control ]" id="correo" name="correo" type="email">
+					</div>
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<label for="telefono">Tipo de proyecto:*</label>
+						<select class="[ form-control ][ arrow ]">
+							<option>público</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
 					</div>
 				</div>
-				<div class="[ text-center ][ margin-bottom--large ]">
+				<div class="[ text-center ]">
 					<a href="proyecto3-5.html" class="[ btn btn-primary ]">continuar</a>
 				</div>
 			</form>
