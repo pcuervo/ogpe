@@ -1565,6 +1565,16 @@ address {
 .text-resume p:nth-child(2n+1) {
   font-weight: 700;
 }
+.content-resultados a {
+  text-decoration: underline;
+  color: #9c217d;
+}
+.content-resultados a p {
+  margin-bottom: 20px;
+}
+.content-resultados a p span {
+  color: #ffd300;
+}
 code,
 kbd,
 pre,
@@ -7181,22 +7191,15 @@ button.close {
 .border-bottom--primary {
   border-bottom: 1px solid #9c217d;
 }
+.border-top--primary {
+  border-top: 1px solid #9c217d;
+}
 .border-bottom--primary--large {
   border-bottom: 3px solid #9c217d;
 }
 .border-top-bottom--gray {
   border-top: 1px solid #5b616a;
   border-bottom: 1px solid #5b616a;
-}
-.content-resultados a {
-  text-decoration: underline;
-  color: #9c217d;
-}
-.content-resultados a p {
-  margin-bottom: 20px;
-}
-.content-resultados a p span {
-  color: #ffd300;
 }
 @-ms-viewport {
   width: device-width;

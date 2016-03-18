@@ -333,3 +333,15 @@ address {
     font-weight: 700;
   }
 }
+
+//Contenedores
+.content-resultados{
+  & a{
+    text-decoration: underline;
+    color: @primary;
+    & p{
+      margin-bottom: (@margin-base);
+      & span{ color: @secondary;}
+    }
+  }
+}
