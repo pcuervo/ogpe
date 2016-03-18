@@ -50,35 +50,102 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
+		<header>
+			<a href="index.html">
+				<div class="[ img-logo ][ inline-block ]"></div>
+				<span class="[ color-light ][ lead ][ aling-logo ]">Super Sip</span>
+			</a>
+			<!-- mobile menu -->
+			<div class="[ visible-xs visible-sm  ][ relative ]">
+				<span class="[  ][ absolute ][ aling-nav ]" type="button" data-toggle="modal" data-target="#menu-mobile"></span>
+				<div class="[ modal fade ]" id="menu-mobile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="[ modal-content ][ no-border-radius ][ bg-gray-lighter ]">
+						<div class="[ modal-header ][ bg-primary ]">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">Super SIP</h4>
+						</div>
+						<div class="[ modal-body ][ menu-mobile ][ no-padding ]">
+							<ul>
+								<a href="mi-perfil.html"><li><span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil</li></a>
+								<a href="mi-bandeja.html"><li><span class="[ icon-inbox-text ][ margin-right--small ]"></span>Mi Bandeja</li></a>
+								<a href="busqueda-tramite.html"><li><span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Trámite</li></a>
+								<a href="busqueda-pa.html"><li><span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Profesionales Autorizados</li></a>
+								<a href="pagar-multas.html"><li><span class="[ icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas</li></a>
+								<a href="salir"><li><span class="[  ]"></span>Logout</li></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- desktop menu -->
+			<div class="[ hidden-xs hidden-sm ][ inline-block ]">
+				<div class="[ menu-desktop ][ pull-right ][ margin-top ]">
+					<div class="[ dropdown ]">
+						<a id="busquedas" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="[ color-light ]">
+							<span class="[ icon-search ]"></span>
+							Busquedas
+						</a>
+						<ul class="[ dropdown-menu ][ padding ][ no-border-radius ][ color-primary ]" aria-labelledby="busquedas">
+							<a href="busqueda-tramites.html"><li class="[ icon-search ]"><span class="[ inline ]">Busqueda de Trámites</span></li></a>
+							<a href="busqueda-pa.html"><li class="[ icon-search ]">Busqueda de Profesional Autorizado</li></a>
+							<a href=""><li class="[ icon-search ]">Busqueda de Permisos</li></a>
+							<a href=""><li class="[ icon-circle-cash ]">Pagar Multas</li></a>
+						</ul>
+					</div>
+					<a href="mi-bandeja.html" class="[ color-light ]"><span class="[ icon-inbox-text ]"></span>Mi Bandeja</a>
+					<div class="[ dropdown ]">
+						<a id="perfil" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="[ color-light ]">
+							<span class="[ icon-account-circle-1 ]"></span>
+							Perfil
+						</a>
+						<ul class="[ dropdown-menu ][ padding ][ no-border-radius ][ color-primary ]" aria-labelledby="perfil">
+							<li><span class="[ icon-off ]"></span>Logout</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</header>
+
+		<!-- barra avisos -->
+		<div></div>
+
 		<div class="[ container ]">
+			
 			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-offset-4 col-sm-4 ][ margin-top--xlarge ]">
-					<h2 class="[ text-center ]">Login</h2>
-					<p class="[ color-primary ][ margin-top ]">Todos los campos son requeridos</p>
-					<form class="[ margin-top margin-bottom--xlarge ]">
-						<div class="form-group">
-							<label for="inputEmail">Correo</label>
-							<p>El correo electrónico con el que se registro es también su nombre de usuario</p>
-							<input type="email" class="form-control" id="inputEmail" >
-							<div class="[ text-right ]">
-								<a>¿Olvidó su nombre de usuario?</a>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="password">Contraseña</label>
-							<input type="password" class="form-control" id="password">
-							<div class="[ text-right ]">
-								<a>¿Olvidó su contraseña?</a>
-							</div>
-						</div>
-						<div class="[ text-center ][ margin-top-bottom ]">
-							<button type="submit" class="[ btn btn-primary ][ padding--sides margin-top ]">Entrar</button>
-							<a class="[ block ][ margin-top--large ]">¿No ha recibido su email de confirmación?</a>
-							<a class="[ block ][ margin-top--small ]">¿Nuevo en el superSip?  Registrate aquí</a>
-						</div>
-					</form>				
-				</div>		
-			</div>	
+				<div class="[ col-xs-12 col col-sm-offset-2 col-sm-8 ]">
+					<h2 class="[ text-center ]"> Buscar Trámites </h2>
+					<div class="[ input-group ]">
+						<input type="text" class="[ form-control ][ input-search ]">
+						<span class="[ input-group-btn ][  ]">
+							<button type="submit" class="[ btn btn-primary ]">
+								<span class="[ icon-search ]"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+				<div class="[ col-xs-12 col-sm-offset-2 col-sm-4 ]">
+					<p class="[ text-left ]">Categorias tramites</p>
+					<select class="[ form-control ][ margin-top-bottom--large ][ arrow ]">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p class="[ text-left ]">Tramites categoria seleccionada</p>
+					<select class="[ form-control ][ margin-top-bottom--large ][ arrow ]">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>					
+				</div>
+			</div>
 		</div>
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
