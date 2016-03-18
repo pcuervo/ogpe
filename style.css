@@ -7349,11 +7349,13 @@ header {
 header > ol > a {
   color: #fff;
 }
-div.menu-desktop > a,
+header div.hidden-xs {
+  margin-left: 45%;
+}
 div.menu-desktop > div.dropdown {
   display: inline;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 60px;
+  margin-left: 60px;
   color: #fff;
 }
 .menu-mobile ul {
