@@ -2291,7 +2291,14 @@ caption {
   text-align: left;
 }
 th {
-  text-align: left;
+  text-align: center;
+  border: 1px solid #5b616a;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  th {
+    font-size: 16px;
+  }
 }
 .table {
   width: 100%;
@@ -2521,6 +2528,12 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
+@media (max-width: 480px) {
+  .table-credenciales > thead > tr > th:nth-child(1),
+  .table-credenciales > tbody > tr > th:nth-child(1) {
+    display: none;
+  }
+}
 fieldset {
   padding: 0;
   margin: 0;
@@ -2616,6 +2629,11 @@ select.arrow {
 @media (min-width: 768px) {
   .form-control {
     height: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .form-control {
+    font-size: 16px;
   }
 }
 .form-control:focus {
@@ -6782,6 +6800,12 @@ button.close {
 .color-primary {
   color: #9c217d;
 }
+.color-primary--medium {
+  color: #851c62;
+}
+.color-primary--dark {
+  color: #69164f;
+}
 .color-secondary {
   color: #ffd300;
 }
@@ -7134,6 +7158,16 @@ button.close {
 .border-top-bottom--gray {
   border-top: 1px solid #5b616a;
   border-bottom: 1px solid #5b616a;
+}
+.content-resultados a {
+  text-decoration: underline;
+  color: #9c217d;
+}
+.content-resultados a p {
+  margin-bottom: 20px;
+}
+.content-resultados a p span {
+  color: #ffd300;
 }
 @-ms-viewport {
   width: device-width;
