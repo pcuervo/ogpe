@@ -50,68 +50,11 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header>
-			<a href="index.html">
-				<div class="[ img-logo ][ inline-block ]"></div>
-				<span class="[ color-light ][ lead ][ aling-logo ]">Super Sip</span>
-			</a>
-			<!-- mobile menu -->
-			<div class="[ visible-xs visible-sm  ][ relative ]">
-				<span class="[  ][ absolute ][ aling-nav ]" type="button" data-toggle="modal" data-target="#menu-mobile">menu</span>
-				<div class="[ modal fade ]" id="menu-mobile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					<div class="[ modal-content ][ no-border-radius ][ bg-gray-lighter ]">
-						<div class="[ modal-header ][ bg-primary ]">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-							<h4 class="modal-title" id="myModalLabel">Super SIP</h4>
-						</div>
-						<div class="[ modal-body ][ menu-mobile ][ no-padding ]">
-							<ul>
-								<a href="mi-perfil.html"><li><span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil</li></a>
-								<a href="mi-bandeja.html"><li><span class="[ icon-inbox-text ][ margin-right--small ]"></span>Mi Bandeja</li></a>
-								<a href="busqueda-tramite.html"><li><span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Trámite</li></a>
-								<a href="busqueda-pa.html"><li><span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Profesionales Autorizados</li></a>
-								<a href="pagar-multas.html"><li><span class="[ icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas</li></a>
-								<a href="salir"><li><span class="[  ]"></span>Logout</li></a>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- desktop menu -->
-			<div class="[ hidden-xs hidden-sm ][ inline-block ]">
-				<div class="[ menu-desktop ][ pull-right ][ margin-top ]">
-					<div class="[ dropdown ]">
-						<a id="busquedas" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="[ color-light ]">
-							<span class="[ icon-search ]"></span>
-							Busquedas
-						</a>
-						<ul class="[ dropdown-menu ][ padding ][ no-border-radius ][ color-primary ]" aria-labelledby="busquedas">
-							<a href="busqueda-tramites.html"><li class="[ icon-search ]"><span class="[ inline ]">Busqueda de Trámites</span></li></a>
-							<a href="busqueda-pa.html"><li class="[ icon-search ]">Busqueda de Profesional Autorizado</li></a>
-							<a href=""><li class="[ icon-search ]">Busqueda de Permisos</li></a>
-							<a href=""><li class="[ icon-circle-cash ]">Pagar Multas</li></a>
-						</ul>
-					</div>
-					<a href="mi-bandeja.html" class="[ color-light ]"><span class="[ icon-inbox-text ]"></span>Mi Bandeja</a>
-					<div class="[ dropdown ]">
-						<a id="perfil" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="[ color-light ]">
-							<span class="[ icon-account-circle-1 ]"></span>
-							Perfil
-						</a>
-						<ul class="[ dropdown-menu ][ padding ][ no-border-radius ][ color-primary ]" aria-labelledby="perfil">
-							<li><span class="[ icon-off ]"></span>Logout</li>
-						</ul>
-					</div>
-
-				</div>
-			</div>
-
-		</header>
 
 		<!-- barra avisos -->
 		<div></div>
 
-		<form action="" class="[ container ]">
+		<form class="[ container ]">
 			<div class="[ row ]">
 				<div class="[ col-xs-12 col col-sm-offset-2 col-sm-8 ][ margin-bottom--large ]">
 					<h2 class="[ text-center ]">Busqueda de permisos</h2>
@@ -128,7 +71,7 @@
 			<div class="[ row ][ margin-bottom--large ]">
 				<div class="[ col-xs-12 col-sm-3 ]">
 					<h3>Criterios de búsqueda por Permiso</h3>
-					<label for="">Tipo de permiso:</label>
+					<label>Tipo de permiso:</label>
 					<select class="[ form-control ][ arrow ]">
 						<option>Escoja una opción</option>
 						<option>2</option>
@@ -136,7 +79,7 @@
 						<option>4</option>
 						<option>5</option>
 					</select>
-					<label for="">Estado del pérmiso:</label>
+					<label>Estado del pérmiso:</label>
 					<select class="[ form-control ][ arrow ]">
 						<option>Escoja una opción</option>
 						<option>2</option>
@@ -147,7 +90,7 @@
 				</div>
 				<div class="[ col-xs-12 col-sm-3 ]">
 					<h3>Criterios de búsqueda por Proyecto</h3>
-					<label for="">Código del tipo de proyecto 1:</label>
+					<label>Código del tipo de proyecto 1:</label>
 					<select class="[ form-control ][ arrow ]">
 						<option>1</option>
 						<option>2</option>
@@ -155,7 +98,7 @@
 						<option>4</option>
 						<option>5</option>
 					</select>
-					<label for="">Código del tipo de proyecto 2:</label>
+					<label>Código del tipo de proyecto 2:</label>
 					<select class="[ form-control ][ arrow ]">
 						<option>1</option>
 						<option>2</option>
@@ -163,38 +106,38 @@
 						<option>4</option>
 						<option>5</option>
 					</select>
-					<label for="">Nombre del proyecto:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Número de catastro:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Nombre dueño del proyecto:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Apellido del dueño del catastro:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Municipio:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
+					<label for="nombre_proyecto">Nombre del proyecto:</label>
+					<input class="[ form-control ]" id="nombre_proyecto" name="nombre_proyecto" type="text">
+					<label for="num_catastro">Número de catastro:</label>
+					<input class="[ form-control ]" id="num_catastro" name="num_catastro" type="text">
+					<label for="dueño">Nombre dueño del proyecto:</label>
+					<input class="[ form-control ]" id="dueño" name="dueño" type="text">
+					<label for="apellido_dueño">Apellido del dueño del catastro:</label>
+					<input class="[ form-control ]" id="apellido_dueño" name="apellido_dueño" type="text">
+					<label for="municipio">Municipio:</label>
+					<input class="[ form-control ]" id="municipio" name="municipio" type="text">
 				</div>
 				<div class="[ col-xs-12 col-sm-3 ]">
 					<h3>Criterios de búsqueda por Usuarios</h3>
-					<label for="">Código del tipo de proyecto 1:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
-					<label for="">Código del tipo de proyecto 2:</label>
-					<input class="[ form-control ]" id="" name="" type="text">
+					<label for="cod_1">Código del tipo de proyecto 1:</label>
+					<input class="[ form-control ]" id="cod_1" name="cod_1" type="text">
+					<label for="cod_2">Código del tipo de proyecto 2:</label>
+					<input class="[ form-control ]" id="cod_2" name="cod_2" type="text">
 				</div>
 				<div class="[ col-xs-12 col-sm-3 ]">
 					<h3>Criterios de búsqueda por Fechas</h3>
-					<label for="">Creados desde:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Creados hasta:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Actualizados desde:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Actualizados hasta:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Cancelados desde:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
-					<label for="">Cancelados hasta:</label>
-					<input class="[ form-control ]" id="" name="" type="date">
+					<label for="creado_de">Creados desde:</label>
+					<input class="[ form-control ]" id="creado_de" name="creado_de" type="date">
+					<label for="creado_a">Creados hasta:</label>
+					<input class="[ form-control ]" id="creado_a" name="creado_a" type="date">
+					<label for="actualizado_de">Actualizados desde:</label>
+					<input class="[ form-control ]" id="actualizado_de" name="actualizado_de" type="date">
+					<label for="actualizado_a">Actualizados hasta:</label>
+					<input class="[ form-control ]" id="actualizado_a" name="actualizado_a" type="date">
+					<label for="cancelado_de">Cancelados desde:</label>
+					<input class="[ form-control ]" id="cancelado_de" name="cancelado_de" type="date">
+					<label for="cancelado_a">Cancelados hasta:</label>
+					<input class="[ form-control ]" id="cancelado_a" name="cancelado_a" type="date">
 				</div>
 			</div>
 			<div class="[ text-center ][ margin-bottom--large ]">
@@ -204,7 +147,7 @@
 
 	<!-- resultados -->
 		<section class="[ container ][ margin-bottom--large ]">
-			<p>Se encontraros <span class="[ color-primary ]">34</span>resultados relacionados con</p>
+			<h3 class="[ margin-bottom ]">Se encontraros <span class="[ color-primary ]">34</span>resultados relacionados con</h3>
 			<table class="[ table-head--top ][ margin-bottom ]">
 					<thead>
 						<tr>
@@ -270,71 +213,6 @@
 				</div>
 		</section>
 		<section class="[ container ][ border-top--primary ][ margin-bottom--large ]">
-			<p>Estados:</p>
+			<h4>Estados:</h4>
 		</section>
-
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
-		<script src="js/functions.js"></script>
-		<script src="js/plugins.js"></script>
-		<footer>
-			<section>
-				<div class="[ container ]">
-					<p class="[ text-center ]">Tu nuevo sistema de radicación de permisos</p>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<h4><a href="acerca-ogpe.html">Acerca de OGPE</a></h4>
-							<h4><a href="contacto.html">Contáctanos</a></h4>
-							<h4><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></h4>
-						</div>
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<h4><a class="[ underline ]" href="">Reglamentos vigentes</a></h4>
-							<!-- logo -->
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ info-contacto ]">
-							<div>
-								<h4>Contacto</h4>
-								<p><a href="mailto:info@sip.pr.gov">info@sip.pr.gob</a></p>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Central SJ</p>
-									<p>(787)721-8282</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Aguadilla</p>
-									<p>(787)891-0466</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Arecibo</p>
-									<p>(787)878-7979</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Humacao</p>
-									<p>(787)852-2013</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Ponce</p>
-									<p>(787)843-9097</p>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="[ container ]">
-					<p>Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p>
-					<p>Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new">aquí</a></p>
-				</div>
-			</section>
-		</footer>
 	</body>

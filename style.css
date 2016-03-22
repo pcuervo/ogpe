@@ -7596,7 +7596,8 @@ div.menu-desktop > div.dropdown {
   top: -30px;
   right: 10px;
 }
-footer section {
+footer .footer-top,
+footer .footer-bottom {
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -7608,21 +7609,21 @@ footer h4 {
     font-size: 16px;
   }
 }
-footer section:first-child {
+footer .footer-top {
   background-color: #d6cfb3;
 }
-footer section:first-child h4 a {
+footer .footer-top h4 a {
   color: #2c2c2c;
 }
-footer section:first-child a p,
-footer section:first-child h4 + p > a {
+footer .footer-top a p,
+footer .footer-top h4 + p > a {
   color: #9c217d;
 }
-footer section:last-child {
+footer .footer-bottom {
   background-color: #2c2c2c;
   color: #fff;
 }
-footer section:last-child p a {
+footer .footer-bottom p a {
   color: #ffd300;
 }
 footer .info-contacto h4,

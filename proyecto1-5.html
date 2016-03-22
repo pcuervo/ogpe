@@ -53,13 +53,13 @@
 		<section class="[ container ][ margin-bottom--large ]">
 			<h2>Nuevo proyecto</h2>
 			<p class="[ fz--small ][ color-primary ]"><strong>Los campos marcados con * son requeridos</strong></p>
-			<form action="">
+			<form>
 				<div class="[ row ][ margin-bottom ]">
 					<div class="[ col-xs-12 col-sm-4 ]">
 						<h3>Localización</h3>
 						<p>Seleccione su parcela o busque su catastro:*</p>
 						<p>Si conoce el número de catastro introduscalo en el siguiente espacio, espere un momento y el mapa conseguira la información. O busquelo manualmente.</p>
-						<label for="">Número de catastro</label>
+						<label>Número de catastro</label>
 						<div class="[ input-group ]">
 							<input type="text" class="[ form-control ][ input-search ]">
 							<span class="[ input-group-btn ][  ]">
@@ -113,7 +113,7 @@
 					<div class="[ col-xs-12 col-sm-4 ]">
 						<label for="cabida">Cabída (área total) de la propiedad según la escritura:*</label>
 						<input class="[ form-control ]" id="cabida" name="cabida" type="text" placeholder="Cabida...">
-						<input class="[ form-control ]" id="cabida" name="cabida" type="text" placeholder="m2">
+						<input class="[ form-control ]" id="cabida_m" name="cabida_m" type="text" placeholder="m2">
 					</div>
 					<div class="[ col-xs-12 col-sm-4 ]">
 						<label for="dirreccion">Dirección del catastro:*</label>
@@ -129,72 +129,13 @@
 					</div>
 				</div>
 				<div class="[ text-center ][ margin-bottom--large ]">
-					<input id="certificacion" type="checkbox" name="certificacion" value="certificacion">
-					<label class="[ inline-block ][ margin-bottom ]" for="certificacion">Certifico que verifiqué la Dirección del catastro y confirmo que la misma es correcta</label>
+					<input id="verificacion" type="checkbox" name="verificacion" value="verificacion">
+					<label class="[ inline-block ][ margin-bottom ]" for="verificacion">Certifico que verifiqué la Dirección del catastro y confirmo que la misma es correcta</label>
 					<div class="[ clear ]"></div>
 					<a href="proyecto2-5.html" class="[ btn btn-primary ]">continuar</a>
 				</div>
 			</form>
-		<footer>
-			<section>
-				<div class="[ container ]">
-					<p class="[ text-center ]">Tu nuevo sistema de radicación de permisos</p>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<h4><a href="acerca-ogpe.html">Acerca de OGPE</a></h4>
-							<h4><a href="contacto.html">Contáctanos</a></h4>
-							<h4><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></h4>
-						</div>
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<h4><a class="[ underline ]" href="">Reglamentos vigentes</a></h4>
-							<!-- logo -->
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ info-contacto ]">
-							<div>
-								<h4>Contacto</h4>
-								<p><a href="mailto:info@sip.pr.gov">info@sip.pr.gob</a></p>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Central SJ</p>
-									<p>(787)721-8282</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Aguadilla</p>
-									<p>(787)891-0466</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Arecibo</p>
-									<p>(787)878-7979</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Humacao</p>
-									<p>(787)852-2013</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Ponce</p>
-									<p>(787)843-9097</p>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="[ container ]">
-					<p>Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p>
-					<p>Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new">aquí</a></p>
-				</div>
-			</section>
-		</footer>
+		</section>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	</body>
