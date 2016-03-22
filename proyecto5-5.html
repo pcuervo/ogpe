@@ -54,60 +54,31 @@
 			<h2>Nuevo proyecto</h2>
 			<p class="[ fz--small ][ color-primary ]"><strong>Los campos marcados con * son requeridos</strong></p>
 			<form action="">
-				<h3>Dueño del proyecto</h3>
-				<div class="[ row ][ margin-bottom ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="nombre">A nombre de quién deben salir los trámites de este proyecto?</label>
-						<select class="[ form-control ][ arrow ]">
-							<option>usted</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
+				<div class="[ row ]">
+					<div class="[ col-sm-9 ]">
+						<h3>Arrendatario</h3>
+						<p>¿Su proyecto tiene arrendatario?</p>
+						<label for="">*Si usted está gestionando un trámite para otra persona presione SÍ</label>
+						<label for="">*Si usted está arrendando / alquilando un local o el solar conteste SÍ</label>
+						<label for="">*Sí el dueño del proyecto es el dueño del local marque NO</label>
 					</div>
-				</div>
-				<div class="[ row ][ margin-bottom ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<div class="[ row ]">
-							<div class="[ col-xs-8 ][ no-padding--right ]">
-								<label for="nombre">Primer nombre:*</label>
-								<input class="[ form-control ]" id="nombre" name="nombre" type="text">
-							</div>
-							<div class="[ col-xs-4 ]">
-								<label for="inicial">Inicial:</label>
-								<input class="[ form-control ]" id="inicial" name="inicial" type="text">
-							</div>
+					<div class="[ col-sm-3 ][ margin-top ]">
+						<div class="radio [ inline-block ][ margin-right--large ]">
+							<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Sí
+							</label>
 						</div>
-						<label for="apellido">Apellido paterno:*</label>
-						<input class="[ form-control ]" id="apellido" name="apellido" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="direccion">Dirección:*</label>
-						<input class="[ form-control ]" id="direccion" name="direccion" type="text">
-						<label for="pais">País:*</label>
-						<input class="[ form-control ]" id="pais" name="pais" type="text">
-						<label for="municipio">Municipio:*</label>
-						<input class="[ form-control ]" id="municipio" name="municipio" type="text">
-						<label for="codigo_postal">Código postal</label>
-						<input class="[ form-control ]" id="codigo_postal" name="codigo_postal" type="text">
-						<label for="estado">Estado:*</label>
-						<input class="[ form-control ]" id="estado" name="estado" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="telefono">Teléfono primario:*</label>
-						<input class="[ form-control ]" id="telefono" name="telefono" type="number">
-						<label for="telefono_secundario">Teléfono secundario:</label>
-						<input class="[ form-control ]" id="telefono_secundario" name="telefono_secundario" type="number">
-						<label for="telefono_otro">Otro:</label>
-						<input class="[ form-control ]" id="telefono_otro" name="telefono_otro" type="number">
-						<label for="fax">Fax:</label>
-						<input class="[ form-control ]" id="fax" name="fax" type="number">
-						<label for="correo">Correo electrónico:*</label>
-						<input class="[ form-control ]" id="correo" name="correo" type="email">
+						<div class="radio [ inline-block ]">
+							<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>No
+							</label>
+						</div>
 					</div>
 				</div>
-				<div class="[ text-center ][ margin-bottom--large ]">
+				<div class="[ text-center ][ margin-top-bottom--large ]">
+					<input id="certificacion" type="checkbox" name="certificacion" value="certificacion">
+					<label class="[ inline-block ][ margin-bottom ]" for="certificacion">Certifico que la información aquí entrada es veraz y correcta</label>
+					<div class="[ clear ]"></div>
 					<a href="proyecto3-5.html" class="[ btn btn-primary ]">continuar</a>
 				</div>
 			</form>
