@@ -7846,6 +7846,12 @@ div.menu-desktop > div.dropdown {
   list-style: none;
   font-size: 18.2px;
   font-weight: bold;
+  border-left: 10px solid transparent;
+}
+.menu-mobile li:hover,
+.menu-mobile li:visited,
+.menu-mobile li:focus {
+  border-left: 10px solid #6844a1;
 }
 .aling-logo {
   vertical-align: 10px;
