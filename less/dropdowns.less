@@ -219,8 +219,18 @@
   background-color: @gray--light;
   color: @gray;
   margin-bottom: (@margin-base/2)!important;
-  text-align: left!important;
+  text-align: left;
   width: 100%;
   font-size: 17px;
-  .btn;
+  border-radius: 3px;
+  font-family: @font-family-sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
+  &:hover{
+  text-decoration: none;
+  }
 }
