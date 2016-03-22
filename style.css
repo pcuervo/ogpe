@@ -1447,6 +1447,9 @@ dd {
 dt {
   font-weight: bold;
 }
+.fw-bold {
+  font-weight: 700;
+}
 dd {
   margin-left: 0;
 }
@@ -6965,7 +6968,7 @@ button.close {
   color: #fff;
 }
 .color-danger {
-  color: #fadddf;
+  color: #cc2027;
 }
 .bg-primary {
   background-color: #9c217d;
@@ -7309,6 +7312,11 @@ button.close {
 }
 .border-bottom--primary {
   border-bottom: 1px solid #9c217d;
+}
+@media (min-width: 768px) {
+  .border-bottom--primary--sm {
+    border-bottom: 1px solid #9c217d;
+  }
 }
 .border-top--primary {
   border-top: 1px solid #9c217d;

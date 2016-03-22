@@ -96,7 +96,7 @@
 .color-dark       { color: @dark;}
 .color-light      { color: @light;}
 
-.color-danger     { color: @brand-danger;}
+.color-danger     { color:@darger;}
 
 // Background
 // -------------------------
@@ -238,6 +238,7 @@
 .no-border-radius{ border-radius: 0px;}
 
 .border-bottom--primary{ border-bottom: 1px solid @primary; }
+.border-bottom--primary--sm{ @media (min-width: @screen-sm){border-bottom: 1px solid @primary; }}
 .border-top--primary{ border-top: 1px solid @primary; }
 .border-bottom--primary--large{ border-bottom: 3px solid @primary; }
 
