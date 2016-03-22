@@ -1566,7 +1566,8 @@ address {
 .links--primary a:hover {
   color: #54358e;
 }
-.links--primary a.active {
+.links--primary a.active .links--primary a:focus,
+.links--primary a:visited {
   color: #372159;
 }
 .link--primary {
@@ -1576,7 +1577,8 @@ address {
 .link--primary:hover {
   color: #54358e;
 }
-.link--primary.active {
+.link--primary.active .link--primary:focus,
+.link--primary:visited {
   color: #372159;
 }
 span.link--primary {
