@@ -2641,7 +2641,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + label::before,
 input[type="radio"]:checked + label::before {
   background-color: red;
-  box-shadow: 0 0 0 1px #0071bc;
+  box-shadow: 0 0 0 1px #6844a1;
 }
 input[type="file"] {
   display: block;
@@ -3189,14 +3189,14 @@ input[type="radio"] + label::before {
 }
 input[type="checkbox"]:checked + label::before,
 input[type="radio"]:checked + label::before {
-  background-color: #0071bc;
-  box-shadow: 0 0 0 1px #0071bc;
+  background-color: #6844a1;
+  box-shadow: 0 0 0 1px #6844a1;
 }
 input[type="radio"]:checked + label::before {
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0071bc;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #6844a1;
 }
 input[type="radio"]:focus + label::before {
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0071bc, 0 0 3px 4px #3e94cf, 0 0 7px 4px #3e94cf;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #6844a1, 0 0 3px 4px #3e94cf, 0 0 7px 4px #3e94cf;
 }
 input[type="checkbox"]:checked + label::before {
   background-image: url('icons/check-1.png');
@@ -3205,7 +3205,7 @@ input[type="checkbox"]:checked + label::before {
   background-repeat: no-repeat;
 }
 input[type="checkbox"]:focus + label::before {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #0071bc;
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #6844a1;
 }
 input[type="checkbox"]:disabled + label {
   color: #5b616b;
