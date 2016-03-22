@@ -3902,6 +3902,8 @@ tbody.collapse.in {
   color: #5b616a;
   margin-bottom: 10px !important;
   text-align: left!important;
+  width: 100%;
+  font-size: 17px;
   border-color: transparent;
   border-radius: 3px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
