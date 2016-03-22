@@ -57,6 +57,11 @@ input[type="checkbox"] {
   line-height: normal;
 }
 
+input[type="checkbox"]:checked + label::before, input[type="radio"]:checked + label::before{
+  background-color: red;
+  box-shadow: 0 0 0 1px #0071bc;
+}
+
 input[type="file"] {
   display: block;
 }
@@ -93,10 +98,11 @@ select.arrow {
   background-image: url('icons/arrows/arrow-down.png');
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 20px;
+  background-size: 17px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  background-position: right 1.3rem center;
 }
 
 // Common form controls
@@ -623,4 +629,84 @@ input[type="checkbox"] {
       }
     }
   }
+}
+
+
+
+/**
+ * Custom checkboxes
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  left: -999em; }
+  .lt-ie9 input[type="checkbox"], .lt-ie9
+  input[type="radio"] {
+    border: 0;
+    float: left;
+    margin: 0.4em 0.4em 0 0;
+    position: static;
+    width: auto; }
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 0.5em; }
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+  background: white;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0 1px #757575;
+  content: '\a0';
+  display: inline-block;
+  height: 1.8rem;
+  line-height: 0.8;
+  margin-right: 0.6em;
+  text-indent: 0.15em;
+  vertical-align: 0.2em;
+  width: 1.8rem; }
+
+input[type="radio"] + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #757575;
+  height: 1.6rem;
+  width: 1.6rem; }
+
+input[type="radio"] + label::before {
+  border-radius: 100%; }
+
+input[type="checkbox"]:checked + label::before,
+input[type="radio"]:checked + label::before {
+  background-color: #0071bc;
+  box-shadow: 0 0 0 1px #0071bc; }
+
+input[type="radio"]:checked + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0071bc; }
+
+input[type="radio"]:focus + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0071bc, 0 0 3px 4px #3e94cf, 0 0 7px 4px #3e94cf; }
+
+input[type="checkbox"]:checked + label::before {
+  background-image: url('icons/check-1.png');
+  background-size: 12px;
+  background-position: 50%;
+  background-repeat: no-repeat; }
+
+input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #0071bc; }
+
+input[type="checkbox"]:disabled + label {
+  color: #5b616b; }
+
+input[type="checkbox"]:disabled + label::before,
+input[type="radio"]:disabled + label::before {
+  background: #d6d7d9;
+  box-shadow: 0 0 0 1px #aeb0b5;
+  cursor: not-allowed; }
+
+.usa-unstyled-list {
+  padding-left: 0px;
+  & li{
+  list-style-type: none;}
 }

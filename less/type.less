@@ -49,7 +49,10 @@ h2, .h2 { font-size: @font-size-h2; }
 h3, .h3 { font-size: @font-size-h3; }
 h4, .h4 { font-size: @font-size-h4; }
 h5, .h5 { font-size: @font-size-h5; }
-h6, .h6 { font-size: @font-size-h6; }
+h6, .h6 {
+  font-size: @font-size-h6;
+  text-transform: uppercase;
+}
 
 
 // Body text
@@ -74,6 +77,9 @@ p {
   }
 }
 
+.text-italic{
+  font-style: italic;
+}
 
 // Emphasis & misc
 // -------------------------
@@ -313,8 +319,13 @@ address {
 
 //font size
 .fz--small, .fz--small p{
-  font-size: 12px;
-  @media (min-width: @screen-sm){ font-size: 14px!important; }
+  font-size: 13px;
+  @media (min-width: @screen-sm){ font-size: 15px!important; }
+}
+
+.fz-medium{
+  font-size: 15px;
+  @media (min-width: @screen-sm){ font-size: 17px!important; }
 }
 
 //Links
@@ -332,11 +343,30 @@ address {
   &:hover{color: @primary--medium;}
   &.active{ color: @primary--dark;}
 }
+span.link--primary{
+  text-decoration: underline;
+}
+
+.bg-dark {
+  & p{
+    color: @light;
+  }
+  & .link{
+   color: @secondary;
+   text-decoration: underline;
+  }
+}
 
 .text-resume{
   & p:nth-child(2n+1){
     font-weight: 700;
   }
+}
+
+.subtitle{
+  font-weight: 700;
+  font-size: 19px;
+  color: @gray;
 }
 
 //Contenedores
