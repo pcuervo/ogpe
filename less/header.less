@@ -6,26 +6,29 @@ header {
 	height: 60px;
 	padding: @padding-large-horizontal;
 	background-color: @primary;
-	color: @light; 
+	color: @light;
 	@media (min-width: 480px){
-		height: 72px;		
+		height: 72px;
+	}
+	& a{
+		font-size: 18px;
+	}
+	& .dropdown-menu>li>a{
+		color: @primary;
+		&:hover{color: @primary--dark;}
 	}
 }
 
-header > ol > a { color: @light; }
-
-header div.hidden-xs { margin-left: 45%}
-
 div.menu-desktop > div.dropdown {
-	.inline; 
+	.inline;
 	margin-right: (@margin-base*3); margin-left: (@margin-base*3);;
-	color: @light; 
+	color: @light;
 }
 
 .menu-mobile {
 	ul{ padding-left: 0 }
 	li{
-		.no-margin; 
+		.no-margin;
 		padding: (@padding-base-vertical*4) (@padding-base-horizontal*2);
 		border-bottom: 1px solid @gray;
 		list-style: none;

@@ -7565,11 +7565,14 @@ header {
     height: 72px;
   }
 }
-header > ol > a {
-  color: #fff;
+header a {
+  font-size: 18px;
 }
-header div.hidden-xs {
-  margin-left: 45%;
+header .dropdown-menu > li > a {
+  color: #9c217d;
+}
+header .dropdown-menu > li > a:hover {
+  color: #69164f;
 }
 div.menu-desktop > div.dropdown {
   display: inline;

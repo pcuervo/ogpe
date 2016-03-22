@@ -51,59 +51,110 @@
 	</head>
 	<body>
 		<header>
-			<a href="index.html">
-				<div class="[ img-logo ][ inline-block ]"></div>
-				<span class="[ color-light ][ lead ][ aling-logo ]">Super Sip</span>
-			</a>
-			<!-- mobile menu -->
-			<div class="[ visible-xs visible-sm  ][ relative ]">
-				<span class="[ icon-menu-1 ][ absolute ][ aling-nav ]" type="button" data-toggle="modal" data-target="#menu-mobile"></span>
-				<div class="[ modal fade ]" id="menu-mobile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					<div class="[ modal-content ][ no-border-radius ][ bg-gray-lighter ]">
-						<div class="[ modal-header ][ bg-primary ]">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-							<h4 class="modal-title" id="myModalLabel">Super SIP</h4>
-						</div>
-						<div class="[ modal-body ][ menu-mobile ][ no-padding ]">
-							<ul>
-								<a href="mi-perfil.html"><li><span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil</li></a>
-								<a href="mi-bandeja.html"><li><span class="[ icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja</li></a>
-								<a href="busqueda-tramite.html"><li><span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Trámite</li></a>
-								<a href="busqueda-pa.html"><li><span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Profesionales Autorizados</li></a>
-								<a href="pagar-multas.html"><li><span class="[ icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas</li></a>
-								<a href="salir"><li><span class="[ icon-off ][ margin-right--small ]"></span>Logout</li></a>
-							</ul>
+			<div class="[ container ]">
+				<a href="index.html">
+					<div class="[ img-logo ][ inline-block ]"></div>
+					<span class="[ color-light ][ lead ][ aling-logo ]">Super Sip</span>
+				</a>
+				<!-- mobile menu -->
+				<div class="[ visible-xs  ][ relative ]">
+					<span class="[ icon-menu-1 ][ absolute ][ aling-nav ]" data-toggle="modal" data-target="#menu-mobile"></span>
+					<div class="[ modal fade ]" id="menu-mobile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="[ modal-content ][ no-border-radius ][ bg-gray-lighter ]">
+							<div class="[ modal-header ][ bg-primary ]">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+								<h4 class="modal-title" id="myModalLabel">Super SIP</h4>
+							</div>
+							<div class="[ modal-body ][ menu-mobile ][ no-padding ]">
+								<ul>
+									<li>
+										<a href="mi-perfil.html">
+											<span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+										</a>
+									</li>
+									<li>
+										<a href="mi-bandeja.html">
+											<span class="[ icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+										</a>
+									</li>
+									<li>
+										<a href="busqueda-tramite.html">
+											<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Trámite
+										</a>
+									</li>
+									<li>
+										<a href="busqueda-pa.html">
+											<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Profesionales Autorizados
+										</a>
+									</li>
+									<li>
+										<a href="pagar-multas.html">
+											<span class="[ icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+										</a>
+									</li>
+									<li>
+										<a href="salir">
+											<span class="[ icon-off ][ margin-right--small ]"></span>Logout
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- desktop menu -->
-			<div class="[ hidden-xs hidden-sm ][ inline-block ]">
-				<div class="[ menu-desktop ][ pull-right ][ margin-top ]">
-					<div class="[ dropdown ]">
-						<a id="busquedas" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="[ color-light ]">
-							<span class="[ icon-search ]"></span>
-							Busquedas
+				<!-- desktop menu -->
+				<div class="[ hidden-xs ][ inline-block ][ pull-right ][ margin-top--small ]">
+					<div class="[ menu-desktop ][ pull-right ]">
+						<div class="[ dropdown ]">
+							<a id="busquedas" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="[ color-light ]">
+								<span class="[ icon-search ]"></span>
+								Busquedas
+							</a>
+							<ul class="[ dropdown-menu ][ padding ][ no-border-radius ][ color-primary ]" aria-labelledby="busquedas">
+								<li>
+									<a href="busqueda-tramites.html">
+										<span class="[ icon-search ]"></span>Busqueda de Trámites
+									</a>
+								</li>
+								<li>
+									<a href="busqueda-pa.html">
+										<span class="[ icon-search ]"></span>Busqueda de Profesional Autorizado
+									</a>
+								</li>
+								<li>
+									<a href="busqueda-permisos.html">
+										<span class="[ icon-search ]"></span>Busqueda de Permisos
+									</a>
+								</li>
+								<li>
+									<a href="pago-multa.html">
+										<span class="[ icon-circle-cash ]"></span>Pagar Multas
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="mi-bandeja.html" class="[ color-light ]">
+							<span class="[ icon-box-2 ]"></span>Mi Bandeja
 						</a>
-						<ul class="[ dropdown-menu ][ padding ][ no-border-radius ][ color-primary ]" aria-labelledby="busquedas">
-							<a href="busqueda-tramites.html"><li class="[ icon-search ]"><span class="[ inline ]">Busqueda de Trámites</span></li></a>
-							<a href="busqueda-pa.html"><li class="[ icon-search ]">Busqueda de Profesional Autorizado</li></a>
-							<a href=""><li class="[ icon-search ]">Busqueda de Permisos</li></a>
-							<a href=""><li class="[ icon-circle-cash ]">Pagar Multas</li></a>
-						</ul>
+						<div class="[ dropdown ]">
+							<a id="perfil" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="[ color-light ]">
+								<span class="[ icon-account-circle-1 ]"></span>
+								Perfil
+							</a>
+							<ul class="[ dropdown-menu ][ padding ][ no-border-radius ][ color-primary ]" aria-labelledby="perfil">
+								<li>
+									<a href="mi-perfil.html">
+										<span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span class="[ icon-off ][ margin-right--small ]"></span>Logout
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<a href="mi-bandeja.html" class="[ color-light ]"><span class="[ icon-box-2 ]"></span>Mi Bandeja</a>
-					<div class="[ dropdown ]">
-						<a id="perfil" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="[ color-light ]">
-							<span class="[ icon-account-circle-1 ]"></span>
-							Perfil
-						</a>
-						<ul class="[ dropdown-menu ][ padding ][ no-border-radius ][ color-primary ]" aria-labelledby="perfil">
-							<a href="mi-perfil.html"><li><span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil</li></a>
-							<li><span class="[ icon-off ][ margin-right--small ]"></span>Logout</li>
-						</ul>
-					</div>
-
 				</div>
 			</div>
 
@@ -113,7 +164,7 @@
 		<div></div>
 
 		<div class="[ container ]">
-			
+
 			<div class="[ row ]">
 				<div class="[ col-xs-12 col-sm-6 ]">
 					<h2 class="[ text-center ]"> Buscar Trámites </h2>
@@ -149,13 +200,13 @@
 			<div class="[ row ]">
 				<h2 class="[ text-center ][ margin-bottom--large ]">Lista de Categorías Trámites super SIP</h2>
 				<div class="[ col-xs-12 col-sm-4 ][ margin-bottom ]">
-					<button class="[ btn btn-primary ][ width-100 ][ lead ]" type="button" data-toggle="collapse" data-target="#consultas" aria-expanded="false" aria-controls="collapseExample">
-					Consultas <span class="[ icon-plus ][ pull-right ]"></span></button>
+					<a class="[ btn btn-primary ][ width-100 ][ lead ]" data-toggle="collapse" data-target="#consultas" aria-expanded="false">
+					Consultas <span class="[ icon-plus ][ pull-right ]"></span></a>
 					<div class="[ margin-top-bottom ]">
 						Esta sección contiene las solicitudes de radicación para proyectos que requieran la presentación de una consulta de ubicación, construcción o consultas especiales.
 					</div>
 					<div class="collapse" id="consultas">
-						<button class="[ btn btn-primary ][ width-100 ]" type="button" data-toggle="collapse" data-target="#pmo" aria-expanded="false" aria-controls="collapseExample"> PMO - Permiso de mantenimiento de obras de infraestructura pública  + </button>
+						<a class="[ btn btn-primary ][ width-100 ]" data-toggle="collapse" data-target="#pmo" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
 						<div class="[ collapse ][ bg-gray-lighter ][ padding margin-bottom ]" id="pmo">
 							<a href=""><p>PMO - Permiso de mantenimiento de obras de infraestructura pública</p></a>
 							<a href=""><p>PCT - Permiso de corteza terrestre</p></a>
@@ -165,13 +216,13 @@
 					</div>
 				</div>
 				<div class="[ col-xs-12 col-sm-4 ][ margin-bottom ]">
-					<button class="[ btn btn-primary ][ width-100 ][ lead ]" type="button" data-toggle="collapse" data-target="#permisos" aria-expanded="false" aria-controls="collapseExample">
-					Permisos <span class="[ icon-plus ][ pull-right ]"></span></button>
+					<a class="[ btn btn-primary ][ width-100 ][ lead ]" data-toggle="collapse" data-target="#permisos" aria-expanded="false">
+					Permisos <span class="[ icon-plus ][ pull-right ]"></span></a>
 					<div class="[ margin-top-bottom ]">
 						Esta sección contiene las solicitudes de radicación para proyectos que requieran la presentación de una consulta de ubicación, construcción o consultas especiales.
 					</div>
 					<div class="collapse" id="permisos">
-						<button class="[ btn btn-primary ][ width-100 ]" type="button" data-toggle="collapse" data-target="#pex" aria-expanded="false" aria-controls="collapseExample"> PMO - Permiso de mantenimiento de obras de infraestructura pública  + </button>
+						<a class="[ btn btn-primary ][ width-100 ]" data-toggle="collapse" data-target="#pex" aria-expanded="false"> PMO - Permiso de mantenimiento <br>de obras de infraestructura <br>pública  + </a>
 						<div class="[ collapse ][ bg-gray-lighter ][ padding margin-bottom ]" id="pex">
 							<a href=""><p>PMO - Permiso de mantenimiento de obras de infraestructura pública</p></a>
 							<a href=""><p>PCT - Permiso de corteza terrestre</p></a>
@@ -181,13 +232,13 @@
 					</div>
 				</div>
 				<div class="[ col-xs-12 col-sm-4 ][ margin-bottom ]">
-					<button class="[ btn btn-primary ][ width-100 ][ lead ]" type="button" data-toggle="collapse" data-target="#querellas" aria-expanded="false" aria-controls="collapseExample">
-					Querellas <span class="[ icon-plus ][ pull-right ]"></span></button>
+					<a class="[ btn btn-primary ][ width-100 ][ lead ]" data-toggle="collapse" data-target="#querellas" aria-expanded="false">
+					Querellas <span class="[ icon-plus ][ pull-right ]"></span></a>
 					<div class="[ margin-top-bottom ]">
 						Esta sección contiene las solicitudes de radicación para proyectos que requieran la presentación de una consulta de ubicación, construcción o consultas especiales.
 					</div>
 					<div class="collapse" id="querellas">
-						<button class="[ btn btn-primary ][ width-100 ]" type="button" data-toggle="collapse" data-target="#pct" aria-expanded="false" aria-controls="collapseExample"> PMO - Permiso de mantenimiento de obras de infraestructura pública  + </button>
+						<a class="[ btn btn-primary ][ width-100 ]" data-toggle="collapse" data-target="#pct" aria-expanded="false"> PMO - Permiso de mantenimiento <br>de obras de infraestructura <br>pública  + </a>
 						<div class="[ collapse ][ bg-gray-lighter ][ padding margin-bottom ]" id="pct">
 							<a href=""><p>PMO - Permiso de mantenimiento de obras de infraestructura pública</p></a>
 							<a href=""><p>PCT - Permiso de corteza terrestre</p></a>
@@ -196,7 +247,7 @@
 						</div>
 					</div>
 				</div>
-		
+
 			</div>
 
 			<div class="[ row ][ border-top-bottom--gray ][ padding--top-bottom--xlarge margin-top-bottom--large ]">
@@ -215,64 +266,4 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
-		<footer>
-			<section>
-				<div class="[ container ]">
-					<p class="[ text-center ]">Tu nuevo sistema de radicación de permisos</p>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<h4><a href="acerca-ogpe.html">Acerca de OGPE</a></h4>
-							<h4><a href="contacto.html">Contáctanos</a></h4>
-							<h4><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></h4>
-						</div>
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<h4><a class="[ underline ]" href="">Reglamentos vigentes</a></h4>
-							<!-- logo -->
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ info-contacto ]">
-							<div>
-								<h4>Contacto</h4>
-								<p><a href="mailto:info@sip.pr.gov">info@sip.pr.gob</a></p>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Central SJ</p>
-									<p>(787)721-8282</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Aguadilla</p>
-									<p>(787)891-0466</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Arecibo</p>
-									<p>(787)878-7979</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Humacao</p>
-									<p>(787)852-2013</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Ponce</p>
-									<p>(787)843-9097</p>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="[ container ]">
-					<p>Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p>
-					<p>Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new">aquí</a></p>
-				</div>
-			</section>
-		</footer>
 	</body>
