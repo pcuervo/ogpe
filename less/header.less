@@ -10,13 +10,7 @@ header {
 	@media (min-width: 480px){
 		height: 72px;
 	}
-	& a{
-		font-size: 18px;
-	}
-	& .dropdown-menu>li>a{
-		color: @primary;
-		&:hover{color: @primary--dark;}
-	}
+	& a, .dropdown--hover{ font-size: 18px;	}
 }
 
 div.menu-desktop > div.dropdown {
@@ -47,3 +41,39 @@ div.menu-desktop > div.dropdown {
 	right: 10px;
 }
 
+//dropdown
+
+.dropdown--hover {
+	position: relative;
+	display: inline-block;
+	margin-right: (@margin-base*3); margin-left: (@margin-base*3);;
+	&:hover{color: @primary--dark;}
+}
+
+.dropdown--content {
+	display: none;
+	position: absolute;
+	top: 46px;
+	background-color: @light;
+	min-width: 250px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	& ul{
+		padding: 10px 20px;
+		margin-bottom: 0px;
+		position: relative;
+		background: @light;
+		z-index: 1000;
+		& li{
+			list-style: none;
+			&>a{
+				color: @primary;
+				&:hover{color: @primary--dark;}
+			}
+		}
+
+	}
+}
+
+.dropdown--hover:hover .dropdown--content {
+	display: block;
+}
