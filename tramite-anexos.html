@@ -50,77 +50,76 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<section class="[ container ]">
-			<div class="[ row ][ margin-bottom--large ]">
-				<div class="[ col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 ]">
-					<h2>Oficina de Gerencia de Permisos (OGPe)</h2>
-					<p>La Oficina de Gerencia de Permisos (OGPe) es creada al amparo de la ley 161 del 1 de diciembre de 2009 conocida como "Ley para la Reforma del Proceso de Permisos de Puerto Rico". Dicha ley establece que la OGPe será la oficina encargada de emitir determinaciones finales y permisos, licencias, inspecciones, certificaciones y cualquier otra autorización o trámite que sea necesario para atender las solicitudes de la ciudadanía. Facilitar y propiciar el desarrollo integral, económico, social y físico sostenible de Puerto Rico que resultará en el crecimiento de más, mejores y diversas industrias y en la creación de empleos en el sector privado.</p>
-				</div>
-			</div>
-		</section>
 
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
-		<script src="js/functions.js"></script>
-		<script src="js/plugins.js"></script>
-		<footer>
-			<div class="[ footer-top">
-				<div class="[ container ]">
-					<p class="[ text-center ]">Tu nuevo sistema de radicación de permisos</p>
-					<div class="[ row]">
-						<div class="[ col-xs-12 col-sm-3 col-lg-4 ]">
-							<h4><a href="acerca-ogpe.html">Acerca de OGPE</a></h4>
-							<h4><a href="contacto.html">Contáctanos</a></h4>
-							<h4><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></h4>
+		<section>
+			<h2 class="[ text-center ][ margin-bottom ]">PEX - Permiso de exportación de materiales de la corteza terrestre</h2>
+		</section>
+		<section class="[ container ][ margin-bottom--large ]">
+			<ul class="nav nav-tabs [ margin-bottom--small ]">
+				<li class="active [ col-xs-3 no-padding ]"><a class="[ no-padding--left ]" data-toggle="tab" href="#requeridos">Anexos requeridos del trámite</a></li>
+				<li class="[ col-xs-3 no-padding ]"><a class="[ no-padding--left ]" data-toggle="tab" href="#otros">Otros anexos</a></li>
+			</ul>
+			<div class="tab-content [ tab-anexos ]">
+				<div id="requeridos" class="tab-pane fade in active">
+					<div class="[ row ][ border-bottom--primary ]">
+						<div class="[ col-xs-9 ]">
+							<h3>Memorial explicativo</h3>
 						</div>
-						<div class="[ col-xs-12 col-sm-3 col-lg-4 ]">
-							<h4><a class="[ underline ]" href="">Reglamentos vigentes</a></h4>
-							<!-- logo -->
-						</div>
-						<div class="[ col-xs-12 col-sm-6 col-lg-4 ][ info-contacto ]">
-							<div>
-								<h4>Contacto</h4>
-								<p><a href="mailto:info@sip.pr.gov">info@sip.pr.gob</a></p>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Central SJ</p>
-									<p>(787)721-8282</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Aguadilla</p>
-									<p>(787)891-0466</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Arecibo</p>
-									<p>(787)878-7979</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Humacao</p>
-									<p>(787)852-2013</p>
-								</a>
-							</div>
-							<div>
-								<a href="tel:+525552555555">
-									<p>Oficina Ponce</p>
-									<p>(787)843-9097</p>
-								</a>
-							</div>
+						<div class="[ col-xs-3 ]">
+							<p class="[ inline-block ]">0</p>
+							<a data-toggle="collapse" data-target="#memorial" class="[ link--primary underline ]">+</a>
 						</div>
 					</div>
-				</div>
+					<div id="memorial" class="collapse [ collapse-table ]">
+						<label for="mem_descripcion">Describa el contenido del documento</label>
+						<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
+						<p class="[ fw-bold ]">Cargue el anexo:*</p>
+						<label for="mem_anexo">Elija el archivo</label>
+						<input type="file" id="mem_anexo">
+						<p>O si lo prefiere redáctelo (opcional)</p>
+						<label for="mem_responsable">¿Quien es la persona mem_responsable?</label>
+						<input class="[ form-control ]" id="mem_responsable" name="mem_responsable" type="text">
+						<label>Redacte aquí el texto explicativo</label>
+						<textarea class="[ form-control ]" rows="3"></textarea>
+					</div>
+
+					<div class="[ row ][ border-bottom--primary ]">
+						<div class="[ col-xs-9 ]">
+							<h3>Certificado de hábitat</h3>
+						</div>
+						<div class="[ col-xs-3 ]">
+							<p>0</p>
+							<!-- icon -->
+						</div>
+					</div>
+					<div class="[ row ][ border-bottom--primary ]">
+						<div class="[ col-xs-9 ]">
+							<h3>Autorización del dueño del solar</h3>
+						</div>
+						<div class="[ col-xs-3 ]">
+							<p>0</p>
+							<!-- icon -->
+						</div>
+					</div>
+
+				</div><!-- end requeridos -->
+
+				<div id="otros" class="tab-pane fade">
+					<div class="[ border-bottom--primary ]">
+						<div class="[ col-xs-9 ]">
+							<h3>Otro</h3>
+						</div>
+						<div class="[ col-xs-3 ]">
+							<p>0</p>
+							<!-- icon -->
+						</div>
+					</div>
+				</div><!-- end otros -->
 			</div>
-			<div class="[ footer-bottom ]">
-				<div class="[ container ]">
-					<p>Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p>
-					<p>Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new">aquí</a></p>
-				</div>
-			</div>
-		</footer>
+		</section>
+		<section class="[ container ]">
+			<h3 class="[ color-primary ]">Lista de documentos subidos</h3>
+		</section>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	</body>
