@@ -52,13 +52,14 @@ h5, .h5 { font-size: @font-size-h5; }
 h6, .h6 {
   font-size: @font-size-h6;
   text-transform: uppercase;
+  font-family: @font-family-sans-serif;
 }
 
 
 // Body text
 // -------------------------
 
-p {
+a, p {
   font-family: @font-family-sans-serif;
   margin: 0 0 (@line-height-computed / 2);
   font-size: 15px;
@@ -329,25 +330,24 @@ address {
 }
 
 //Links
-.links--primary a{
+
+a {
   cursor: pointer;
   color: @primary;
-  padding-right: 30px;
-  @media (max-width: @screen-sm){ display: block; }
-  &:hover{color: @primary--medium;}
-  &.active &:focus, &:visited { color: @primary--dark;}
-}
-.link--primary{
-  cursor: pointer;
-  color: @primary;
-  &:hover{color: @primary--medium;}
-  &.active &:focus, &:visited { color: @primary--dark;}
-}
-span.link--primary{
-  text-decoration: underline;
 }
 
-.bg-dark {
+.link--primary{
+  &:hover{color: @primary--medium;}
+  &.active &:focus, &:visited { color: @primary--dark;}
+}
+// .links--primary a{
+//   padding-right: 30px;
+//   @media (max-width: @screen-sm){ display: block; }
+// }
+
+p a.link--primary{ text-decoration: underline; }
+
+.bg-gray-base {
   & p{
     color: @light;
   }
@@ -356,6 +356,8 @@ span.link--primary{
    text-decoration: underline;
   }
 }
+
+//Text bold
 
 .text-resume{
   & p:nth-child(2n+1){

@@ -52,7 +52,8 @@
   &[disabled],
   fieldset[disabled] & {
     cursor: @cursor-disabled;
-    .opacity(.65);
+    color: @gray;
+    background-color: @gray--light;
     .box-shadow(none);
   }
 
@@ -181,7 +182,7 @@ input[type="button"] {
   &:hover{
     background-color:  @secondary--medium;
   }
-  &:focus{
+  &:focus, &.active, &:active{
     background-color: @secondary--dark;
   }
 }
@@ -194,14 +195,9 @@ input[type="button"] {
     border: 2px solid  @secondary--medium;
     color: @secondary--medium;
   }
-  &:focus{
+  &:focus, &.active, &:active{
     border: 2px solid @secondary--dark;
     color:  @secondary--dark;
   }
-}
-
-.btn-disabled{
-  background-color: @gray--light;
-  color: @gray;
 }
 
