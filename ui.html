@@ -334,7 +334,7 @@
 							<p class="[ subtitle ]">Sing in form</p>
 							<p class="[ subtitle--large ]">Sing in</p>
 							<p class="[ inline-block ]">or </p><a href="" class="[ link--primary ]">create an account</a>
-							<form>
+							<form class="[ margin-bottom ]">
 								<div class="[ form-group ]">
 									<label for="user">Username or email addres</label>
 									<input class="[ form-control ]" id="user" name="user" type="text">
@@ -343,7 +343,8 @@
 									<label for="pasword">Password</label>
 									<input class="[ form-control ]" id="pasword" name="pasword" type="text">
 								</div>
-								<a class="[ pull-right ][ link--primary ]" href="">Show Password</a>
+								<a class="[ pull-right ][ link--primary ][ fz--small ]" href="">Show Password</a>
+								<div class="[ clearfix ]"></div>
 								<a href="" class="[ btn btn-primary ][ margin-bottom ]">Sing up</a>
 								<a href="" class="[ link--primary ][ block ]">Forgot username?</a>
 								<a href="" class="[ link--primary ][ block ]">Forgot password?</a>
@@ -351,8 +352,12 @@
 							<p class="[ subtitle ]">Password reset form</p>
 							<p class="[ subtitle--large ]">Reset password</p>
 							<p>Please enteryour new password</p>
-							<div class="[ alert ]">
-
+							<div class="[ bg-brand-info padding--small ]">
+								<p class="[ fz--large ]"><span class="[ icon-error ][ margin-right--small ]"></span>Reset password</p>
+								<p class="[ fz--large ]"><span class="[ icon-error ][ margin-right--small ]"></span>Be at least 8 characters</p>
+								<p class="[ fz--large ]"><span class="[ icon-error ][ margin-right--small ]"></span>Have at least 1 uppercase character</p>
+								<p class="[ fz--large ]"><span class="[ icon-error ][ margin-right--small ]"></span>have at least 1 numerical character</p>
+								<p>Have at least 1 simbol</p>
 							</div>
 							<form>
 								<div class="[ form-group ]">
@@ -363,11 +368,10 @@
 									<label for="password_confirm">Confirm password</label>
 									<input class="[ form-control ]" id="password_confirm" name="password_confirm" type="text">
 								</div>
-								<p class="[ pull-right ]"><a href="">show my typing</a></p>
+								<a class="[ pull-right ][ fz--small ]" href="">Show my typing</a>
 								<div class="[ clearfix ]"></div>
 								<a href="" class="[ btn btn-primary ][ margin-bottom ]">Reset password</a>
 							</form>
-
 						</div>
 					</div>
 					<div class="[ row ]">
