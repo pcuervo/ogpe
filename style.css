@@ -3233,6 +3233,22 @@ input[type="radio"]:disabled + label::before {
   float: left;
   margin-right: 5px;
 }
+.input-search .form-control,
+.input-search .btn-primary {
+  height: 43px;
+  font-size: 20px;
+}
+.input-search.input-search--medium .form-control,
+.input-search.input-search--medium .btn-primary {
+  height: 32px;
+  font-size: 17px;
+  padding: 3px 12px;
+}
+.input-search.input-search--small .form-control,
+.input-search.input-search--small .btn-primary {
+  height: 32px;
+  padding: 1px 12px;
+}
 .btn {
   border-color: transparent;
   border-radius: 3px;
@@ -7172,6 +7188,9 @@ button.close {
 }
 .bg-gray-base {
   background-color: #000;
+}
+.bg-brand-info {
+  background-color: #e1f2f9;
 }
 .width-auto {
   width: auto;
