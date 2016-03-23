@@ -25,3 +25,40 @@ footer{
 		margin-bottom: 0px;
 	}
 }
+
+.footer{
+	h3, h4{ margin-top: 0px;}
+	.footer--top, .footer--bottom{
+		padding: (@padding-base-vertical*2) (@padding-base-horizontal*2);
+	}
+	.footer--top{
+		background-color: @gray--light;
+		a{
+			color: @primary;
+			&:hover{color: @primary--medium;}
+			&.active, &:focus, &:visited { color: @primary--dark;}
+			&.tel-contacto{
+			&p{
+				display: inline-block;
+				vertical-align: middle;
+				}
+			}
+		}
+		h3, h4{ color: @dark;}
+	}
+	.footer--bottom{
+		background-color: @gray--dark;
+		a{
+			color: @light;
+			&:hover{ color: @secondary--medium;}
+			&.active, &:focus, &:visited { color: @secondary--dark;}
+			&.link-secondary{ color: @secondary!important;}
+		}
+		h3, h4{ color: @light;}
+		.logo{
+			margin-bottom: @margin-base;
+			h3{ margin-bottom: 0px;}
+			&:hover{ text-decoration: none;}
+		}
+	}
+}
