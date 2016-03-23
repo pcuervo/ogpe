@@ -52,7 +52,7 @@
 	<body>
 		<section class="[ container ][ padding--top-bottom--xlarge ]">
 			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-4 ]">
+				<div class="[ col-xs-12 col-sm-6 ]">
 					<h6 class="[ border-bottom--primary ]">Typography</h6>
 					<p class="[ subtitle ]">Typography</p>
 					<div class="[ margin-bottom--large ]">
@@ -87,7 +87,7 @@
 						<p><a href="" class="[ link--primary ]">This</a> is a text link on light background.</p>
 						<p><a href="" class="[ link--primary ]">This </a>is a visited link.</p>
 						<p>This is a link which opens in a <a href="" class="[ link--primary ]" target="_blank">new tab</a></p>
-						<div class="[ bg-gray-base ][ padding--xsmall ]">
+						<div class="[ bg-gray-base ][ padding--small ]">
 							<p><span class="[ link ]">This </span>is a text link on dark background.</p>
 						</div>
 					</div>
@@ -123,7 +123,7 @@
 								<a href="" class="[ btn btn-secondary active ]">Sing up</a>
 							</div>
 						</div>
-						<div class="[ row ][ bg-dark ][ padding--small ][ margin-bottom ]">
+						<div class="[ row ][ bg-dark ][ padding ][ margin-bottom ]">
 							<div class="[ col-xs-4 ]">
 								<a href="" class="[ btn btn-secondary ]">Sing up</a>
 							</div>
@@ -173,41 +173,106 @@
 					<div class="collapse [ padding--top-bottom ]" id="consultas4">
 						<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
 					</div>
-					<div class="[ margin-top ]">
+
+				</div>
+			</div>
+			<div class="[ row ][ margin-top--large ]">
+				<div class="[ col-xs-12 col-sm-6 ]">
 					<h6 class="[ border-bottom--primary ]">Forms controls</h6>
-						<p class="[ subtitle ]">Checkboxes</p>
-						<ul class="usa-unstyled-list">
-							<li>
-								<input id="apple-pie" type="checkbox" name="apple-pie" value="apple-pie" checked="">
-								<label for="apple-pie">Sojourner Truth</label>
-							</li>
-							<li>
-								<input id="key-lime-pie" type="checkbox" name="key-lime-pie" value="key-lime-pie">
-								<label for="key-lime-pie">Frederick Douglass</label>
-							</li>
-							<li>
-								<input id="disabled" type="checkbox" disabled="">
-								<label for="disabled">George Washington Carver</label>
-							</li>
-						</ul>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-6 ]">
+							<p class="[ subtitle ]">Dropdown</p>
+							<label for="">Dropdown label</label>
+							<select class="[ form-control ][ arrow ]">
+								<option>option A</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+							<p class="[ subtitle ]">Text Inputs</p>
+							<label for="input">Text input label</label>
+							<input class="[ form-control ]" id="input" name="input" type="text">
+							<label for="input">Text input focused</label>
+							<input class="[ form-control ]" id="input" name="input" type="text">
+							<div class="[ form-group ][ has-error ]">
+								<label for="">Text input error</label>
+								<label class="[ control-label ]" for="inputError1">Helpful error message</label>
+								<input type="text" class="[ form-control ]" id="inputError1">
+							</div>
+							<div class="[ form-group ][ has-success ]">
+								<label class="[ control-label ]" for="inputSuccess1">Text input succes</label>
+								<input type="text" class="[ form-control ]" id="inputSuccess1" aria-describedby="helpBlock2">
+							</div>
+							<div class="[ form-group ]">
+								<label>Textarea label</label>
+								<textarea class="[ form-control ]" rows="3"></textarea>
+							</div>
+						</div>
+						<div class="[ col-xs-12 col-sm-6 ]">
+							<p class="[ subtitle ]">Checkboxes</p>
+							<ul class="usa-unstyled-list">
+								<li>
+									<input id="apple-pie" type="checkbox" name="apple-pie" value="apple-pie" checked="">
+									<label for="apple-pie">Sojourner Truth</label>
+								</li>
+								<li>
+									<input id="key-lime-pie" type="checkbox" name="key-lime-pie" value="key-lime-pie">
+									<label for="key-lime-pie">Frederick Douglass</label>
+								</li>
+								<li>
+									<input id="disabled" type="checkbox" disabled="">
+									<label for="disabled">George Washington Carver</label>
+								</li>
+							</ul>
+							<div class="[ margin-bottom ]">
+								<p class="[ subtitle ]">Radio Buttons</p>
+								<ul class="usa-unstyled-list">
+									<li>
+										<input id="pea-soup" type="radio" checked="" name="soup" value="pea">
+										<label for="pea-soup">Elizabeth Cady Stanton</label>
+									</li>
+									<li>
+										<input id="chicken-noodle" type="radio" name="soup" value="chicken-noodle">
+										<label for="chicken-noodle">Susan B. Anthony</label>
+									</li>
+									<li>
+										<input id="tomato" type="radio" name="soup" value="tomato">
+										<label for="tomato">Harriet Tubman</label>
+									</li>
+								</ul>
+							</div>
+							<div class="[ margin-bottom ]">
+								<p class="[ subtitle ]">Date input</p>
+								<p class="[ subtitle--large ]">Date birth</p>
+								<p class="[ color-gray ]">For example: 07041176</p>
+								<div class="[ form-birth ]">
+									<div class="[ form-group-birth ]">
+										<label for="month">Month</label>
+										<input id="month" type="text" class="form-control">
+									</div>
+									<div class="[ form-group-birth ]">
+										<label for="day">Day</label>
+										<input id="day" type="text" class="form-control">
+									</div>
+									<div class="[ form-group-birth ]">
+										<label for="year">Year</label>
+										<input id="year" type="text" class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="[ margin-bottom ]">
+								<p class="[ subtitle ]">Range slider</p>
+								<form action="action_page.php" method="get">
+									<label for="points">Range slider label</label>
+									<input type="range" name="points" min="0" max="10">
+								</form>
+							</div>
+						</div>
 					</div>
-					<div class="[ margin-top ]">
-						<p class="[ subtitle ]">Radio Buttons</p>
-						<ul class="usa-unstyled-list">
-							<li>
-								<input id="pea-soup" type="radio" checked="" name="soup" value="pea">
-								<label for="pea-soup">Elizabeth Cady Stanton</label>
-							</li>
-							<li>
-								<input id="chicken-noodle" type="radio" name="soup" value="chicken-noodle">
-								<label for="chicken-noodle">Susan B. Anthony</label>
-							</li>
-							<li>
-								<input id="tomato" type="radio" name="soup" value="tomato">
-								<label for="tomato">Harriet Tubman</label>
-							</li>
-						</ul>
-					</div>
+				</div>
+				<div class="[ col-xs-12 col-sm-6 ]">
+					<h6 class="[ border-bottom--primary ]">Forms templates</h6>
 				</div>
 			</div>
 		</section>
