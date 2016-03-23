@@ -2837,6 +2837,9 @@ fieldset[disabled] .checkbox label {
   padding-left: 0;
   padding-right: 0;
 }
+.form-small {
+  width: 40%;
+}
 .input-sm {
   height: 30px;
   padding: 5px 10px;
@@ -7122,9 +7125,8 @@ button.close {
 .underline {
   text-decoration: underline;
 }
-.no-decoration,
-.no-decoration:hover {
-  text-decoration: none;
+.no-decoration {
+  text-decoration: none!important;
 }
 .color-primary {
   color: #6844a1;
@@ -7191,6 +7193,9 @@ button.close {
 }
 .width-50 {
   width: 50%;
+}
+.width-55 {
+  width: 55%;
 }
 .width-40 {
   width: 40%;
