@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<section class="[ container ][ margin-top-bottom--xxlarge ]">
+		<section class="[ container ][ margin-top-bottom--large ]">
 			<div class="[ row ]">
 				<div class="[ col-xs-12 col-sm-6 ]">
 					<h6 class="[ border-bottom--primary ]">Typography</h6>
@@ -149,6 +149,126 @@
 					</div>
 				</div>
 				<div class="[ col-xs-12 col-sm-6 ]">
+					<h6 class="[ border-bottom--primary ]">Tables</h6>
+				<!-- tabla con borde -->
+					<p class="[ subtitle ]">Bordered table</p>
+					<table class="[ table-head--top ][ margin-bottom--large ]">
+						<thead>
+							<tr>
+								<th class="[ col-sm-2 ]">Permiso</th>
+								<th class="[ col-sm-2 ]">Fecha radicación</th>
+								<th class="[ col-sm-2 ]">Municipio</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+							</tr>
+						</tbody>
+					</table>
+				<!-- tabla sin borde -->
+					<div class="[ margin-bottom--large ]">
+						<p class="[ subtitle ]">Borderless table</p>
+						<div class="[ row hidden-xs ][ border-bottom--gray ][ margin-bottom--small ][ fw-bold ]"><!-- títulos tabla proyectos para desktop -->
+							<div class="[ col-sm-3 ]">
+								<p>Nombre del proyecto</p>
+							</div>
+							<div class="[ col-sm-6 ]">
+								<p>Número de proyecto</p>
+							</div>
+							<div class="[ col-sm-3 ]">
+								<p>Fecha de creación</p>
+							</div>
+						</div>
+						<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<a data-toggle="collapse" data-target="#ver-mas1" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+								<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
+								<p>prev</p>
+							</div>
+							<div id="ver-mas1" class="collapse [ collapse-table ]">
+								<div class="[ col-xs-12 col-sm-6 ]">
+									<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
+									<p>2016-103031</p>
+								</div>
+								<div class="[ col-xs-12 col-sm-3 ]">
+									<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
+									<p>02/10/2016</p>
+								</div>
+							</div>
+						</div>
+						<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<a data-toggle="collapse" data-target="#ver-mas2" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+								<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
+								<p>pr</p>
+							</div>
+							<div id="ver-mas2" class="collapse [ collapse-table ]">
+								<div class="[ col-xs-12 col-sm-6 ]">
+									<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
+									<p>2016-187494</p>
+								</div>
+								<div class="[ col-xs-12 col-sm-3 ]">
+									<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
+									<p>08/10/2016</p>
+								</div>
+							</div>
+						</div>
+						<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<a data-toggle="collapse" data-target="#ver-mas1" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+								<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
+								<p>prev</p>
+							</div>
+							<div id="ver-mas1" class="collapse [ collapse-table ]">
+								<div class="[ col-xs-12 col-sm-6 ]">
+									<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
+									<p>2016-103031</p>
+								</div>
+								<div class="[ col-xs-12 col-sm-3 ]">
+									<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
+									<p>02/10/2016</p>
+								</div>
+							</div>
+						</div>
+						<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<a data-toggle="collapse" data-target="#ver-mas2" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+								<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
+								<p>pr</p>
+							</div>
+							<div id="ver-mas2" class="collapse [ collapse-table ]">
+								<div class="[ col-xs-12 col-sm-6 ]">
+									<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
+									<p>2016-187494</p>
+								</div>
+								<div class="[ col-xs-12 col-sm-3 ]">
+									<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
+									<p>08/10/2016</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- acordion -->
+					<h6 class="[ border-bottom--primary ]">Accordions</h6>
+					<p class="[ subtitle ]">Borderless accordion</p>
 					<a class="[ acordion ]" data-toggle="collapse" data-target="#consultas1" aria-expanded="false">
 						Consultas 1 <span class="[ icon-plus ][ pull-right ]"></span>
 					</a>
@@ -173,7 +293,6 @@
 					<div class="collapse [ padding--top-bottom ]" id="consultas4">
 						<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
 					</div>
-
 				</div>
 			</div>
 			<div class="[ row ][ margin-top--large ]">

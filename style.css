@@ -7645,6 +7645,9 @@ button.close {
   border-top: 1px solid #5b616a;
   border-bottom: 1px solid #5b616a;
 }
+.border-bottom--gray {
+  border-bottom: 1px solid #5b616a;
+}
 .divider {
   border-top: 1px solid #5b616a;
 }
