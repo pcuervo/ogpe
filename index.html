@@ -59,7 +59,7 @@
 					</a>
 				</h1>
 			<!-- desktop menu -->
-				<div class="[ hidden-xs col-sm-8 ][ margin-top--small ][ pull-right ]">
+				<nav class="[ hidden-xs col-sm-8 ][ margin-top--small ][ pull-right ]">
 					<div class="[ menu-desktop ][ pull-right ]">
 						<div class="[ dropdown--hover ]">
 							<p><span class="[ icon-search ]"></span>Busquedas</p>
@@ -85,35 +85,49 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</nav>
 
 				<!-- mobile menu -->
-				<div class="[ col-xs-4 visible-xs ][ margin-top--small ][ pull-right ]">
-					<div class="[ icon-menu-1 ]"></div>
+				<div id="js-btn-nav"  class="[ col-xs-4 visible-xs ]">
+					<a href="#nada">
+						<span class="[ icon-menu-1 ][ color-light ][ pull-right ]"></span>
+					</a>
+				</div>
+				<!-- mobile menu content -->
+				<div class="[ nav-mobile right-310 ][ js-hidden ]">
+					<a id="js-hide-twitter" href="#nada" class="[ block ][ pull-right ][ close-nav ]">
+						<span class="[ icon-close ]"></span>
+					</a>
+					<div class="[ clearfix ]"></div>
+					<div class="[ menu-mobile ]">
+						<a href="mi-perfil.html">
+							<span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+						</a>
+						<a href="mi-bandeja.html">
+							<span class="[ icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+						</a>
+						<a href="busqueda-tramite.html">
+							<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Trámite
+						</a>
+						<a href="busqueda-credenciales.html">
+							<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Profesionales Autorizados
+						</a>
+						<a href="pagar-multas.html">
+							<span class="[ icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+						</a>
+						<a href="salir">
+							<span class="[ icon-off ][ margin-right--small ]"></span>Logout
+						</a>
+					</div>
 				</div>
 			</div><!-- end container -->
 		</header>
 
-		<div class="[ menu-mobile ]">
-			<a href="mi-perfil.html">
-				<span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
-			</a>
-			<a href="mi-bandeja.html">
-				<span class="[ icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
-			</a>
-			<a href="busqueda-tramite.html">
-				<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Trámite
-			</a>
-			<a href="busqueda-credenciales.html">
-				<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Profesionales Autorizados
-			</a>
-			<a href="pagar-multas.html">
-				<span class="[ icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
-			</a>
-			<a href="salir">
-				<span class="[ icon-off ][ margin-right--small ]"></span>Logout
-			</a>
-		</div>
+
+
+
+
+
 
 		<!-- barra avisos -->
 		<div></div>

@@ -7236,6 +7236,12 @@ button.close {
 .top---15 {
   top: -15px;
 }
+.right-310 {
+  right: -310px;
+}
+.right-0 {
+  right: 0px;
+}
 .z-index---1 {
   z-index: -1;
 }
@@ -8006,14 +8012,15 @@ button.close {
 }
 header {
   height: 60px;
-  padding-top: 12px;
+  padding-top: 0px;
   padding-bottom: 12px;
   background-color: #6844a1;
   color: #fff;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   header {
     height: 72px;
+    padding-top: 12px;
   }
 }
 header a,
@@ -8028,6 +8035,9 @@ header .topic-menu {
 }
 header h1 {
   margin-top: 0px;
+}
+header .icon-menu-1 {
+  margin-top: 15px;
 }
 .dropdown--hover,
 .topic-menu {
@@ -8066,12 +8076,27 @@ header h1 {
 .dropdown--hover:hover .dropdown--content {
   display: block;
 }
-.menu-mobile a {
+.nav-mobile {
+  width: 280px;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 6px 0px 15px 1px #5b616a;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.nav-mobile .close-nav {
+  padding: 15px 30px 0px 0px;
+  font-weight: bold;
+}
+.nav-mobile .menu-mobile a {
   padding: 12px 24px;
   margin-bottom: 0px;
   display: block;
 }
-.menu-mobile a:hover {
+.nav-mobile .menu-mobile a:hover {
   color: #fff;
   background-color: #6844a1;
 }
