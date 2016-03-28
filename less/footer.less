@@ -37,14 +37,21 @@ footer{
 			color: @primary;
 			&:hover{color: @primary--medium;}
 			&.active, &:focus, &:visited { color: @primary--dark;}
-			&.tel-contacto{
-			&p{
+		}
+		& .text-contacto{
+			display: block;
+			margin-bottom: 0px;
+			& p:first-child{ width: 170px;}
+			& p{
 				display: inline-block;
 				vertical-align: middle;
-				}
+				margin-bottom: 0px;
 			}
 		}
 		h3, h4{ color: @dark;}
+		& .collapse{
+			@media (min-width: @screen-sm){ display: block;}
+		}
 	}
 	.footer--bottom{
 		background-color: @gray--dark;
@@ -55,10 +62,8 @@ footer{
 			&.link-secondary{ color: @secondary!important;}
 		}
 		h3, h4{ color: @light;}
-		.logo{
-			margin-bottom: @margin-base;
-			h3{ margin-bottom: 0px;}
-			&:hover{ text-decoration: none;}
-		}
+	}
+	& .text-alination{
+		@media (min-width: @screen-sm){ text-align: right;}
 	}
 }

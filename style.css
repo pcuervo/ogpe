@@ -7992,7 +7992,17 @@ button.close {
   background-position: center center;
   width: 35px;
   height: 35px;
+}
+.img-logo_light {
   background-image: url('images/logosip.png');
+}
+.img-logo_black {
+  background-image: url('images/logo_black.png');
+}
+.logo_ogpe {
+  background-image: url('images/logo_ogpe.png');
+  width: 129px;
+  height: 30px;
 }
 header {
   height: 60px;
@@ -8144,13 +8154,26 @@ footer .info-contacto p {
 .footer .footer--top a:visited {
   color: #372159;
 }
-.footer .footer--top a.tel-contactop {
+.footer .footer--top .text-contacto {
+  display: block;
+  margin-bottom: 0px;
+}
+.footer .footer--top .text-contacto p:first-child {
+  width: 170px;
+}
+.footer .footer--top .text-contacto p {
   display: inline-block;
   vertical-align: middle;
+  margin-bottom: 0px;
 }
 .footer .footer--top h3,
 .footer .footer--top h4 {
   color: #212121;
+}
+@media (min-width: 768px) {
+  .footer .footer--top .collapse {
+    display: block;
+  }
 }
 .footer .footer--bottom {
   background-color: #474747;
@@ -8173,13 +8196,9 @@ footer .info-contacto p {
 .footer .footer--bottom h4 {
   color: #fff;
 }
-.footer .footer--bottom .logo {
-  margin-bottom: 20px;
-}
-.footer .footer--bottom .logo h3 {
-  margin-bottom: 0px;
-}
-.footer .footer--bottom .logo:hover {
-  text-decoration: none;
+@media (min-width: 768px) {
+  .footer .text-alination {
+    text-align: right;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
