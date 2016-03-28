@@ -214,34 +214,3 @@
     }
   }
 }
-
-.acordion{
-  background-color: @gray--light;
-  color: @gray;
-  margin-bottom: (@margin-base/2)!important;
-  text-align: left;
-  width: 100%;
-  font-size: 17px;
-  border-radius: 3px;
-  font-family: @font-family-sans-serif;
-  display: inline-block;
-  font-weight: 700;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 17px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-position: right 1.3rem center;
-  background-image: url('icons/negative.png'); //icon collapsed
-  &.collapsed{
-  background-image: url('icons/positive.png');
-  }
-  &:hover{
-  text-decoration: none;
-  }
-}
