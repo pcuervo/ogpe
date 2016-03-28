@@ -52,111 +52,68 @@
 	<body>
 		<header>
 			<div class="[ container ]">
-				<a href="index.html">
-					<div class="[ img-logo img-logo_light ][ inline-block ]"></div>
-					<span class="[ color-light ][ lead ][ aling-logo ]">Super Sip</span>
-				</a>
-				<!-- mobile menu -->
-				<div class="[ visible-xs  ][ relative ]">
-					<span class="[ icon-menu-1 ][ absolute ][ aling-nav ]" data-toggle="modal" data-target="#menu-mobile"></span>
-					<div class="[ modal fade ]" id="menu-mobile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-						<div class="[ modal-content ][ no-border-radius ][ bg-gray-lighter ]">
-							<div class="[ modal-header ][ bg-primary ]">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-								<h4 class="modal-title" id="myModalLabel">Super SIP</h4>
-							</div>
-							<div class="[ modal-body ][ menu-mobile ][ no-padding ]">
-								<ul>
-									<li>
-										<a href="mi-perfil.html">
-											<span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
-										</a>
-									</li>
-									<li>
-										<a href="mi-bandeja.html">
-											<span class="[ icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
-										</a>
-									</li>
-									<li>
-										<a href="busqueda-tramite.html">
-											<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Trámite
-										</a>
-									</li>
-									<li>
-										<a href="busqueda-pa.html">
-											<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Profesionales Autorizados
-										</a>
-									</li>
-									<li>
-										<a href="pagar-multas.html">
-											<span class="[ icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
-										</a>
-									</li>
-									<li>
-										<a href="salir">
-											<span class="[ icon-off ][ margin-right--small ]"></span>Logout
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- desktop menu -->
-				<div class="[ hidden-xs ][ inline-block ][ pull-right ][ margin-top--small ]">
+				<h1 class="[ col-xs-8 col-sm-4 ]">
+					<a href="index.html" class="[ block ]">
+						<div class="[ img-logo img-logo_light ][ inline-block align-middle ]"></div>
+						<h3 class="[ inline-block align-middle ][ color-light ][ no-margin ]">Super Sip</h3>
+					</a>
+				</h1>
+			<!-- desktop menu -->
+				<div class="[ hidden-xs col-sm-8 ][ margin-top--small ][ pull-right ]">
 					<div class="[ menu-desktop ][ pull-right ]">
 						<div class="[ dropdown--hover ]">
-							<span><span class="[ icon-search ]"></span>Busquedas</span>
+							<p><span class="[ icon-search ]"></span>Busquedas</p>
 							<div class="[ dropdown--content ]">
-								<ul class="[ padding ][ no-border-radius ][ color-primary ]">
-									<li>
-										<a href="busqueda-tramites.html">
-											<span class="[ icon-search ]"></span>Busqueda de Trámites
-										</a>
-									</li>
-									<li>
-										<a href="busqueda-pa.html">
-											<span class="[ icon-search ]"></span>Busqueda de Profesional Autorizado
-										</a>
-									</li>
-									<li>
-										<a href="busqueda-permisos.html">
-											<span class="[ icon-search ]"></span>Busqueda de Permisos
-										</a>
-									</li>
-									<li>
-										<a href="pago-multa.html">
-											<span class="[ icon-circle-cash ]"></span>Pagar Multas
-										</a>
-									</li>
-								</ul>
+								<div>
+									<a href="busqueda-tramites.html"><span class="[ icon-search ]"></span>Busqueda de Trámites</a>
+									<a href="busqueda-credenciales.html"><span class="[ icon-search ]"></span>Busqueda de Profesional Autorizado</a>
+									<a href="busqueda-permisos.html"><span class="[ icon-search ]"></span>Busqueda de Permisos</a>
+									<a href="pago-multa.html"><span class="[ icon-circle-cash ]"></span>Pagar Multas</a>
+								</div>
 							</div>
 						</div>
-						<a href="mi-bandeja.html" class="[ color-light ]">
+						<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ]">
 							<span class="[ icon-box-2 ]"></span>Mi Bandeja
 						</a>
 						<div class="[ dropdown--hover ]">
-							<span><span class="[ icon-account-circle-1 ]"></span>Perfil</span>
+							<p><span class="[ icon-account-circle-1 ]"></span>Perfil</p>
 							<div class="[ dropdown--content ]">
-								<ul class="[ padding ][ no-border-radius ][ color-primary ]">
-									<li>
-										<a href="mi-perfil.html">
-											<span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil
-										</a>
-									</li>
-									<li>
-										<a href="">
-											<span class="[ icon-off ][ margin-right--small ]"></span>Logout
-										</a>
-									</li>
-								</ul>
+								<div>
+									<a href="mi-perfil.html"><span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil</a>
+									<a href=""><span class="[ icon-off ][ margin-right--small ]"></span>Logout</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
+				<!-- mobile menu -->
+				<div class="[ col-xs-4 visible-xs ][ margin-top--small ][ pull-right ]">
+					<div class="[ icon-menu-1 ]"></div>
+				</div>
+			</div><!-- end container -->
 		</header>
+
+		<div class="[ menu-mobile ]">
+			<a href="mi-perfil.html">
+				<span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+			</a>
+			<a href="mi-bandeja.html">
+				<span class="[ icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+			</a>
+			<a href="busqueda-tramite.html">
+				<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Trámite
+			</a>
+			<a href="busqueda-credenciales.html">
+				<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda Profesionales Autorizados
+			</a>
+			<a href="pagar-multas.html">
+				<span class="[ icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+			</a>
+			<a href="salir">
+				<span class="[ icon-off ][ margin-right--small ]"></span>Logout
+			</a>
+		</div>
 
 		<!-- barra avisos -->
 		<div></div>
