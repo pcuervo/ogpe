@@ -98,3 +98,16 @@
 .icon-ccw:before { content: '\e82b'; } /* '' */
 .icon-edit:before { content: '\e82c'; } /* '' */
 
+.leyendas{
+	text-align: center;
+	&>div{
+		display: inline-block;
+		width: 110px;
+		vertical-align: top;
+		padding: (@padding-base-vertical/2) (@padding-base-vertical*2);
+		& p{
+			font-size: 12px;
+			@media (min-width: @screen-sm){ font-size: 14px; }
+		 }
+	}
+}

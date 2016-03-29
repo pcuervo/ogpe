@@ -6544,6 +6544,23 @@ button.close {
   content: '\e82c';
 }
 /* '' */
+.leyendas {
+  text-align: center;
+}
+.leyendas > div {
+  display: inline-block;
+  width: 110px;
+  vertical-align: top;
+  padding: 3px 12px;
+}
+.leyendas > div p {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .leyendas > div p {
+    font-size: 14px;
+  }
+}
 .nav-mobile::-webkit-scrollbar {
   width: 10px;
   background: #fff;
