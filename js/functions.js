@@ -17,6 +17,7 @@ function toggleTwitter(){
             right: "0"
         }, 500, function() {
             $( ".nav-mobile" ).removeClass('js-hidden');
+            $( "body" ).addClass('overflow-hidden');
         });
 
         return;
@@ -26,5 +27,6 @@ function toggleTwitter(){
         right: "-310"
     }, 500, function() {
         $( ".nav-mobile" ).addClass('js-hidden');
+        $( "body" ).removeClass('overflow-hidden');
     });
 }

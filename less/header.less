@@ -63,16 +63,15 @@ header {
 	display: block;
 }
 
-
+//mobile menu
 
 .nav-mobile{
-  width: 280px; height: auto;
+  width: 280px; max-height: 100vh;
   position: fixed; top: 0px;
   background-color: @light;
   z-index: 100;
   box-shadow: 6px 0px 15px 1px @gray;
-  overflow-y: scroll;
-  overflow-x: scroll;
+  overflow: scroll;
   & .close-nav{
   	padding: (@padding-small-vertical*3) (@padding-small-vertical*6) 0px 0px;
   	font-weight: bold;
