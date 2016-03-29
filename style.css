@@ -3392,6 +3392,11 @@ input[type="radio"]:disabled + label::before {
     font-size: 18px;
   }
 }
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+  }
+}
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
