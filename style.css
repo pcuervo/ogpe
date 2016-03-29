@@ -1580,6 +1580,9 @@ a {
 .padding--link a {
   padding: 0px 12px;
 }
+.text-block a {
+  display: block;
+}
 @media (max-width: 768px) {
   .text-block--xs a {
     display: block;
@@ -1608,14 +1611,11 @@ p a.link--primary {
   font-size: 30px;
 }
 .content-resultados a {
-  text-decoration: underline;
   color: #6844a1;
+  display: block;
 }
-.content-resultados a p {
-  margin-bottom: 20px;
-}
-.content-resultados a p span {
-  color: #ffa64d;
+.content-resultados a span {
+  color: #ffa64d !important;
 }
 code,
 kbd,

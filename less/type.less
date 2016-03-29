@@ -349,6 +349,10 @@ a {
 .padding--link a{
     padding: 0px (@padding-base-vertical*2);
   }
+
+.text-block a{
+  display: block;
+}
 .text-block--xs a{
   @media (max-width: @screen-sm){ display: block; }
 }
@@ -387,11 +391,8 @@ p a.link--primary{ text-decoration: underline; }
 //Contenedores
 .content-resultados{
   & a{
-    text-decoration: underline;
     color: @primary;
-    & p{
-      margin-bottom: (@margin-base);
-      & span{ color: @secondary;}
-    }
+    display: block;
+    & span{ color: @secondary!important;}
   }
 }
