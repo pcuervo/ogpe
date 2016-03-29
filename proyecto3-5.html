@@ -55,13 +55,27 @@
 			<p class="[ fz--small ][ color-primary ]"><strong>Los campos marcados con * son requeridos</strong></p>
 			<form>
 				<h3>Proyecto o actividad</h3>
+				<div class="[ row ][ hidden-xs ]">
+					<div class="[ col-sm-3 ]">
+						<p>Nombre del proyecto o actividad:*</p>
+					</div>
+					<div class="[ col-sm-3 ]">
+						<p>Tipo de zona:*</p>
+					</div>
+					<div class="[ col-sm-3 ]">
+						<p>Descripción del proyecto o actividad:*</p>
+					</div>
+					<div class="[ col-sm-3 ]">
+						<p>Tipo de proyecto:*</p>
+					</div>
+				</div>
 				<div class="[ row ][ margin-bottom ]">
 					<div class="[ col-xs-12 col-sm-3 ]">
-						<label for="nombre_proyecto">Nombre del proyecto o actividad:*</label>
+						<label class="[ visible-xs ]" for="nombre_proyecto">Nombre del proyecto o actividad:*</label>
 						<input class="[ form-control ]" id="nombre_proyecto" name="nombre_proyecto" type="text">
 					</div>
 					<div class="[ col-xs-12 col-sm-3 ]">
-						<label>Tipo de zona:*</label>
+						<label class="[ visible-xs ]">Tipo de zona:*</label>
 						<select class="[ form-control ][ arrow ]">
 							<option>rural</option>
 							<option>2</option>
@@ -71,11 +85,11 @@
 						</select>
 					</div>
 					<div class="[ col-xs-12 col-sm-3 ]">
-						<label for="telefono">Descripción del proyecto o actividad:*</label>
+						<label class="[ visible-xs ]" for="telefono">Descripción del proyecto o actividad:*</label>
 						<input class="[ form-control ]" id="telefono" name="telefono" type="text">
 					</div>
 					<div class="[ col-xs-12 col-sm-3 ]">
-						<label for="telefono">Tipo de proyecto:*</label>
+						<label class="[ visible-xs ]" for="telefono">Tipo de proyecto:*</label>
 						<select class="[ form-control ][ arrow ]">
 							<option>público</option>
 							<option>2</option>
