@@ -345,10 +345,13 @@ a {
   &:hover{color: @primary--medium;}
   &.active &:focus, &:visited { color: @primary--dark;}
 }
-// .links--primary a{
-//   padding-right: 30px;
-//   @media (max-width: @screen-sm){ display: block; }
-// }
+
+.padding--link a{
+    padding: 0px (@padding-base-vertical*2);
+  }
+.text-block--xs a{
+  @media (max-width: @screen-sm){ display: block; }
+}
 
 p a.link--primary{ text-decoration: underline; }
 

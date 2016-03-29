@@ -1577,6 +1577,14 @@ a {
 .link--primary:visited {
   color: #372159;
 }
+.padding--link a {
+  padding: 0px 12px;
+}
+@media (max-width: 768px) {
+  .text-block--xs a {
+    display: block;
+  }
+}
 p a.link--primary {
   text-decoration: underline;
 }
