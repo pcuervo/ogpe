@@ -3361,6 +3361,7 @@ input[type="radio"]:disabled + label::before {
 }
 .btn {
   border-color: transparent;
+  text-transform: capitalize;
   border-radius: 3px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 10px 25px;

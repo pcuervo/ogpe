@@ -55,11 +55,11 @@
 		<div></div>
 
 		<form class="[ container ]">
+			<h2>Busqueda de permisos</h2>
 			<div class="[ row ]">
-				<div class="[ col-xs-12 col col-sm-offset-2 col-sm-8 ][ margin-bottom--large ]">
-					<h2 class="[ text-center ]">Busqueda de permisos</h2>
-					<div class="[ input-group ]">
-						<input type="text" class="[ form-control ][ input-search ]" placeholder="Número de Permiso">
+				<div class="[ col-xs-12 col-sm-6 ]">
+					<div class="[ input-group ][ input-search input-search--small ][ margin-bottom ]" placeholder="Número de Permiso">
+						<input type="text" class="[ form-control ]">
 						<span class="[ input-group-btn ]">
 							<button type="submit" class="[ btn btn-primary ]">
 								<span class="[ icon-search ]"></span>
@@ -82,10 +82,16 @@
 					<label>Estado del pérmiso:</label>
 					<select class="[ form-control ][ arrow ]">
 						<option>Escoja una opción</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
+						<option>Incompleto</option>
+						<option>Pagado</option>
+						<option>En inspección</option>
+						<option>Subsanación</option>
+						<option>En espera de requerimiento</option>
+						<option>Supervisión por gerente</option>
+						<option>Revisión legal</option>
+						<option>Archivo</option>
+						<option>Denegación / Cerrado</option>
+						<option>Aprobación</option>
 					</select>
 				</div>
 				<div class="[ col-xs-12 col-sm-3 ]">
@@ -147,7 +153,7 @@
 
 	<!-- resultados -->
 		<section class="[ container ][ margin-bottom--large ]">
-			<h3 class="[ margin-bottom ]">Se encontraros <span class="[ color-primary ]">34</span>resultados relacionados con</h3>
+			<h3 class="[ margin-bottom ]">Se encontraros <span class="[ color-primary ]">34</span> resultados relacionados con</h3>
 			<table class="[ table-head--top ][ margin-bottom ]">
 					<thead>
 						<tr>
