@@ -6547,6 +6547,9 @@ button.close {
 .leyendas {
   text-align: center;
 }
+.leyendas h4 {
+  text-align: left;
+}
 .leyendas > div {
   display: inline-block;
   width: 110px;
