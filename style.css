@@ -6561,6 +6561,9 @@ button.close {
     font-size: 14px;
   }
 }
+.leyendas > div > div {
+  font-size: 20px;
+}
 .nav-mobile::-webkit-scrollbar {
   width: 10px;
   background: #fff;
