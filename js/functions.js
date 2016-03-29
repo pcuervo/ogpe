@@ -5,7 +5,7 @@
     toggleTwitter();
 })
 
-$('#js-hide-twitter').on('click', function(event){
+$('#js-hide-nav').on('click', function(event){
     event.preventDefault();
     console.log('entro');
     toggleTwitter();
