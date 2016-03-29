@@ -7822,6 +7822,19 @@ hr {
   background-position: 50%;
   background-repeat: no-repeat;
 }
+@media (max-width: 460px) {
+  .responsive-table thead,
+  .responsive-table tbody {
+    width: 50%;
+    display: inline-table;
+  }
+}
+@media (max-width: 460px) {
+  .responsive-table tr th {
+    display: block;
+    height: 6em;
+  }
+}
 @-ms-viewport {
   width: device-width;
 }
