@@ -50,39 +50,61 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<section class="[ container ][ margin-bottom--large ]">
-			<h2>Nuevo proyecto</h2>
-			<p class="[ fz--small ][ color-primary ]"><strong>Los campos marcados con * son requeridos</strong></p>
-			<form>
-				<h3>Arrendatario</h3>
-				<p>¿Su proyecto tiene arrendatario?</p>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-6 ][ margin-bottom ]">
-						<label>*Si usted está gestionando un trámite para otra persona presione SÍ</label>
-						<label>*Si usted está arrendando / alquilando un local o el solar conteste SÍ</label>
-						<label>*Sí el dueño del proyecto es el dueño del local marque NO</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-6 ]">
-						<ul class="[ usa-unstyled-list ]">
-							<li  class="[ inline-block ][ margin-right--small ]">
-								<input id="si" type="radio" checked="" name="soup" value="2">
-								<label for="si">Sí</label>
-							</li>
-							<li class="[ inline-block ]">
-								<input id="no" type="radio" name="soup" value="2">
-								<label for="no">No</label>
-							</li>
-						</ul>
+
+		<!-- barra avisos -->
+		<div></div>
+
+		<div class="[ container ][ margin-bottom--large ]">
+			<div class="[ row ][ margin-bottom ]">
+				<div class="[ col-xs-12 col col-sm-offset-2 col-sm-8 ]">
+					<h2 class="[ text-center ]"> Buscar Trámites </h2>
+					<div class="[ input-group ][ input-search input-search--small ]">
+						<input type="text" class="[ form-control ]">
+						<span class="[ input-group-btn ]">
+							<button type="submit" class="[ btn btn-primary ]">
+								<span class="[ icon-search ]"></span>
+							</button>
+						</span>
 					</div>
 				</div>
-				<div class="[ text-center ][ margin-top-bottom--large ]">
-					<input id="certificacion" type="checkbox" name="certificacion" value="certificacion">
-					<label class="[ inline-block ][ margin-bottom ]" for="certificacion">Certifico que la información aquí entrada es veraz y correcta</label>
-					<div class="[ clear ][ margin-bottom ]"></div>
-					<a href="proyecto-anexos.html" class="[ btn btn-primary ]">continuar</a>
+				<div class="[ col-xs-12 col-sm-offset-2 col-sm-4 ]">
+					<p class="[ text-left ][ margin-top--large ]">Categorias tramites</p>
+					<select class="[ form-control ][ arrow ]">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
 				</div>
-			</form>
-		</section>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<p class="[ text-left ][ margin-top--large ]">Tramites categoria seleccionada</p>
+					<select class="[ form-control ][ arrow ]">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+			</div>
+			<div class="[ col-xs-12 col col-sm-offset-2 col-sm-8 ]">
+				<p class="[ margin-bottom ]">Resultados de la busqueda <span class="[ color-primary ]">permiso terrestre</span></p>
+				<div class="[ content-resultados ]">
+					<a href="">• PCT - Permiso de Corteza <span>Terrestre</span></a>
+					<a href="">• PEX - Permiso de Exportación de Material de la Corteza <span>Terrestre</span></a>
+					<a href="">• PAU - Permiso para almacenamiento de aceite usado <span>Terrestre</span></a>
+					<a href="">• PCA - Pre-Consulta - Arqueología  Conservación Historica <span>Terrestre</span></a>
+					<a href="">• PCD - Pre-Consulta de Evalución de cumplimiento Ambiental <span>Terrestre</span></a>
+					<a href="">• PCE - Pre-Consulta- Edificabipdad <span>Terrestre</span></a>
+					<a href="">• PCL - Pre-Consulta- Legal <span>Terrestre</span></a>
+					<a href="">• PCM - Pre - Consulta Medioambiente <span>Terrestre</span></a>
+				</div>
+			</div>
+		</div>
+
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/plugins.js"></script>
 	</body>
