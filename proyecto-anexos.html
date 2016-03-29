@@ -51,20 +51,33 @@
 	</head>
 	<body>
 		<section class="[ container ][ margin-bottom--large ]">
-			<h2 class="[ text-center ][ margin-bottom--large ]">Anexos requeridos del proyecto</h2>
+			<h2 class="[ margin-bottom--large ]">Anexos requeridos del proyecto</h2>
 			<div class="[ row ]">
-				<div class="[ col-xs-9 col-sm-4 col-sm-offset-3 ]">
-					<p>Evidencia de titularidad</p>
-				</div>
-				<div class="[ col-xs-3 col-sm-2 col-sm-offset-1 ]">
-					<p>1</p>
-					<!-- icon -->
+				<div class="[ col-xs-12 col-sm-offset-3 col-sm-6 ][ border-bottom--primary ]">
+					<div class="[ row ]">
+						<div class="[ col-xs-9 ][ fw-bold ]">
+							<p>Evidencia de titularidad</p>
+						</div>
+						<div class="[ col-xs-3 text-right ]">
+							<p class="[ inline-block ]">0</p>
+							<a data-toggle="collapse" data-target="#evidencia" class="[ link--primary underline ]"><span class="[ icon-upload-2 ]"></span></a>
+						</div>
+					</div>
+					<div id="evidencia" class="collapse [ margin-bottom ]">
+						<label for="mem_descripcion">Describa el contenido del documento</label>
+						<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
+						<p class="[ fw-bold ]">Cargue el anexo:*</p>
+						<form>
+							<label for="mem_anexo">Elija el archivo</label>
+							<input class="[ margin-bottom ]" type="file" id="mem_anexo">
+							<button class="[ btn btn-primary ]">Subir archivo</button>
+						</form>
+					</div>
 				</div>
 			</div>
-			<div class="[ border-bottom--primary ][ col-xs-12 col-sm-offset-3 col-sm-6 ]"></div>
 		</section>
 		<section class="[ container ][ margin-bottom--large ]">
-			<h3 class="[ color-primary ][ text-center ][ margin-bottom ]">Lista anexos del proyecto</h3>
+			<h3 class="[ color-primary ][ margin-bottom ]">Lista anexos del proyecto</h3>
 			<div class="[ row ]">
 				<div class="[ col-xs-12 col-sm-5 ]">
 					<div class="[ row ]">
@@ -92,15 +105,20 @@
 							<p>Eliminar</p>
 						</div>
 						<div class="[ col-xs-8 col-sm-12 ]">
-							<p><!-- icon --></p>
+							<a href="" class="[ btn btn-delete ]">
+								<span class="[ icon-close ]"></span>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<div class="[ text-center ][ margin-bottom--large ]">
-			<a href="proyecto-resumen.html" class="[ btn btn-primary ]">continuar</a>
-		</div>
+		<section class="[ container ][ margin-bottom--large ]">
+			<p class="[ fw-bold ][ color-primary ][ text-center ]">"No puedes continuar hasta cargar todos los anexos requeridos"</p> <!-- alerta -->
+			<div class="[ text-center ][ margin-bottom--large ]">
+				<a href="tramite-resumen.html" class="[ btn btn-primary ]">continuar</a>
+			</div>
+		</section>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	</body>

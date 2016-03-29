@@ -3867,6 +3867,10 @@ input[type="button"].btn-block {
   border: 2px solid #ff7f00;
   color: #ff7f00;
 }
+.btn-delete {
+  background-color: #cc2027;
+  color: #fff;
+}
 .acordion {
   background-color: #eaeaea;
   color: #5b616a;
@@ -4448,9 +4452,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li > a > img {
   max-width: none;
-}
-.nav-tabs {
-  border-bottom: 1px solid #ddd;
 }
 .nav-tabs > li {
   float: left;
@@ -7397,6 +7398,11 @@ button.close {
 }
 .width-10 {
   width: 10%;
+}
+@media (max-width: 992px) {
+  .heigt-60--sm {
+    height: 60px;
+  }
 }
 hr {
   border-top: 2px solid #212121;
