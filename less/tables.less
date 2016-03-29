@@ -260,3 +260,17 @@ table {
 .tab-anexos h3 {
   margin-top: 0px;
 }
+
+.responsive-table thead, 
+.responsive-table tbody { 
+  @media (max-width: 520px){ 
+      width: 50%; 
+      display: inline-table; 
+    } 
+  }
+.responsive-table tr th{ 
+  @media (max-width: 520px){
+   display: block;
+   height: 6em;
+  } 
+}
