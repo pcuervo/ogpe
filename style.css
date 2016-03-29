@@ -8096,6 +8096,11 @@ hr {
   width: 129px;
   height: 30px;
 }
+.img_next {
+  background-image: url('icons/navigation-next-1.png');
+  width: 25px;
+  height: 20px;
+}
 header {
   height: 60px;
   background-color: #6844a1;
