@@ -126,8 +126,47 @@
 		</section>
 		<section class="[ container ][ margin-bottom--large ]">
 			<div class="[ text-center ][ margin-bottom ]">
-				<h3 class="[ margin-bottom ]">Solicitu de trámites</h3>
+				<h3 class="[ margin-bottom ]">Solicitud de trámites</h3>
 				<a href="busqueda-tramites.html" class="[ btn btn-primary ]">+ comenzar nuevo trámite</a>
+			</div>
+			<div class="[ bg-gray--xlighter ][ padding ][ margin-bottom ][ leyendas ]">
+				<h4>Estados:</h4>
+				<div>
+					<div class="[ icon-circle-cash ]"></div>
+					<p>Pago</p>
+				</div>
+				<div>
+					<div class="[ icon-file-text-document ]"></div>
+					<p>Inspección o secretaria</p>
+				</div>
+				<div>
+					<div class="[ icon-notepad-edit ]"></div>
+					<p>Subsanación</p>
+				</div>
+				<div>
+					<div class="[ icon-calendar ]"></div>
+					<p>En espera de requerimientos o agencias</p>
+				</div>
+				<div>
+					<div class="[ icon-business-man-2 ]"></div>
+					<p>Supervición por gerente</p>
+				</div>
+				<div>
+					<div class="[ icon-business-man-3 ]"></div>
+					<p>Revisión legal</p>
+				</div>
+				<div>
+					<div class="[ icon-drawer-1 ]"></div>
+					<p>Archivo</p>
+				</div>
+				<div>
+					<div class="[ icon-cancel-circle ]"></div>
+					<p>Denegación / Cerrado</p>
+				</div>
+				<div>
+					<div class="[ icon-ok-circle ]"></div>
+					<p>Aprobación</p>
+				</div>
 			</div>
 			<ul class="nav nav-tabs [ margin-bottom--small ]">
 				<li class="active [ col-xs-3 no-padding ]"><a class="[ no-padding--left ]" data-toggle="tab" href="#pagados">Casos pagados</a></li>
@@ -177,7 +216,7 @@
 								</div>
 								<div class="[ col-xs-12 col-sm-3 ]">
 									<p class="[ visible-xs ]"><strong>Estado actual</strong></p>
-									<p></p>
+									<p class="[ icon-file-text-document ]"></p>
 									<div class="[ text-right ][ relative z-index--1 ]">
 										<button type="button" class="[ btn btn-primary ]" data-toggle="collapse" data-target="#pagado-accion1">acciones</button>
 									</div>
@@ -187,9 +226,9 @@
 						<div id="pagado-accion1" class="collapse [ bg-gray--xlighter relative top---15 ][ padding--top-bottom--large padding--sides--desktop ]">
 							<p>Puede realizar las siguientes acciones con su trámite:</p>
 							<div class="[ links--primary padding--link text-block--xs ][ margin-bottom padding--bottom ][ border-bottom--primary ]">
-								<a href="colindantes.html">Añadir colindantes</a>
-								<a>Imprimir notificación de archivo</a>
-								<a data-toggle="collapse" data-target="#pagado-historial1">Historial de pago</a>
+								<a href="colindantes.html"><span class="[ icon-book-contact-2 ]"></span> Añadir colindantes</a>
+								<a><span class="icon-print"></span> Imprimir notificación de archivo</a>
+								<a data-toggle="collapse" data-target="#pagado-historial1"><span class="[ icon-circle-cash ]"></span> Historial de pago</a>
 							</div>
 							<div id="pagado-historial1" class="collapse [ border-bottom--primary ]">
 								<div class="[ row ][ fw-bold ]">
@@ -264,7 +303,7 @@
 								</div>
 								<div class="[ col-xs-12 col-sm-3 ]">
 									<p class="[ visible-xs ]"><strong>Estado actual</strong></p>
-									<p></p>
+									<p class="[ icon-calendar ]"></p>
 									<div class="[ text-right ][ relative z-index--1 ]">
 										<button type="button" class="[ btn btn-primary ]" data-toggle="collapse" data-target="#pagado-accion2">acciones</button>
 									</div>
@@ -274,9 +313,9 @@
 						<div id="pagado-accion2" class="collapse [ bg-gray--xlighter relative top---15 ][ padding--top-bottom--large padding--sides--desktop ]">
 							<p>Puede realizar las siguientes acciones con su trámite:</p>
 							<div class="[ links--primary padding--link text-block--xs ][ margin-bottom padding--bottom ][ border-bottom--primary ]">
-								<a href="colindantes.html">Añadir colindantes</a>
-								<a>Imprimir notificación de archivo</a>
-								<a data-toggle="collapse" data-target="#pagado-historial2">Historial de pago</a>
+								<a href="colindantes.html"><span class="[ icon-book-contact-2 ]"></span> Añadir colindantes</a>
+								<a><span class="icon-print"></span> Imprimir notificación de archivo</a>
+								<a data-toggle="collapse" data-target="#pagado-historial2"><span class="[ icon-circle-cash ]"></span> Historial de pago</a>
 							</div>
 							<div id="pagado-historial2" class="collapse [ border-bottom--primary ]">
 								<div class="[ row ][ fw-bold ]">
@@ -383,9 +422,9 @@
 						<div id="pendiente-accion1" class="collapse [ bg-gray--xlighter relative top---15 ][ padding--top-bottom--large padding--sides--desktop ]">
 							<p>Puede realizar las siguientes acciones con su trámite:</p>
 							<div class="[ links--primary ][ margin-bottom padding--bottom ][ border-bottom--primary ]">
-								<a href="colindantes.html">Añadir colindantes</a>
-								<a>Imprimir notificación de archivo</a>
-								<a data-toggle="collapse" data-target="#pendiente-historial1">Historial de pago</a>
+								<a href="colindantes.html"><span class="[ icon-book-contact-2 ]"></span> Añadir colindantes</a>
+								<a><span class="icon-print"></span> Imprimir notificación de archivo</a>
+								<a data-toggle="collapse" data-target="#pendiente-historial1"><span class="[ icon-circle-cash ]"></span> Historial de pago</a>
 							</div>
 							<div id="pendiente-historial1" class="collapse [ border-bottom--primary ]">
 								<div class="[ row ][ fw-bold ]">
@@ -491,8 +530,8 @@
 						<div id="no_pagados-accion1" class="collapse [ bg-gray--xlighter relative top---15 ][ padding--top-bottom--large padding--sides--desktop ]">
 							<p>Puede realizar las siguientes acciones con su trámite:</p>
 							<div class="[ links--primary ][ margin-bottom padding--bottom ][ border-bottom--primary ]">
-								<a href="colindantes.html">Añadir colindantes</a>
-								<a>Imprimir notificación de archivo</a>
+								<a href="colindantes.html"><span class="[ icon-book-contact-2 ]"></span> Añadir colindantes</a>
+								<a><span class="icon-print"></span> Imprimir notificación de archivo</a>
 								<a>Pagar</a>
 							</div>
 						</div>
@@ -551,9 +590,9 @@
 						<div id="solicitudes-accion1" class="collapse [ bg-gray--xlighter relative top---15 ][ padding--top-bottom--large padding--sides--desktop ]">
 							<p>Puede realizar las siguientes acciones con su trámite:</p>
 							<div class="[ links--primary ][ margin-bottom padding--bottom ][ border-bottom--primary ]">
-								<a href="colindantes.html">Añadir colindantes</a>
-								<a>Imprimir notificación de archivo</a>
-								<a data-toggle="collapse" data-target="#solicitudes-historial1">Historial de pago</a>
+								<a href="colindantes.html"><span class="[ icon-book-contact-2 ]"></span> Añadir colindantes</a>
+								<a><span class="icon-print"></span> Imprimir notificación de archivo</a>
+								<a data-toggle="collapse" data-target="#solicitudes-historial1"><span class="[ icon-circle-cash ]"></span> Historial de pago</a>
 							</div>
 							<div id="solicitudes-historial1" class="collapse [ border-bottom--primary ]">
 								<div class="[ row ][ fw-bold ]">
