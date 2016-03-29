@@ -1,32 +1,4 @@
 footer{
-	& .footer-top, & .footer-bottom {
-		padding-top: (@padding-base-vertical*2); padding-bottom: (@padding-base-vertical*2);
-	}
-	& h4{
-		font-size: 14px;
-		@media (min-width: @screen-sm){ font-size: 16px; }
-	}
-	& .footer-top{
-		background-color: @tertiary;
-		& h4 a{ color: @dark}
-		& a p, & h4 + p>a { color: @primary}
-	}
-	& .footer-bottom{
-		background-color: @dark;
-		color: @light;
-		& p a{ color: @secondary}
-	}
-	.info-contacto h4, .info-contacto p{ display: inline-block;}
-	.info-contacto h4, .info-contacto>div>a>p{
-		width: 120px;
-		@media (min-width: @screen-sm){ width: 150px; }
-	}
-	.info-contacto p{
-		margin-bottom: 0px;
-	}
-}
-
-.footer{
 	h3, h4{ margin-top: 0px;}
 	.footer--top, .footer--bottom{
 		padding: (@padding-base-vertical*2) (@padding-base-horizontal*2);
@@ -52,6 +24,7 @@ footer{
 		& .collapse{
 			@media (min-width: @screen-sm){ display: block;}
 		}
+		& .icon-info{ margin-left: -4px; margin-right: 5px}
 	}
 	.footer--bottom{
 		background-color: @gray--dark;
