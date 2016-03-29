@@ -59,14 +59,52 @@
 					<h3>Datos Inicio de sesión:</h3>
 				</div>
 				<div class="[ col-xs-12 col-sm-6 col-md-4 col-md-offset-1 ]">
-					<p class="[ inline-block ]"><strong>Nombre de usuario</strong></p>
-					<a href="" class="[ pull-right ]">Editar</a>
-					<input class="[ form-control ][ no-border ][ no-padding--left ]" id="correo" type="text" placeholder="arisbeth.hg@gmail.com" disabled>
+					<div>
+						<p class="[ inline-block ]"><strong>Nombre de usuario</strong></p>
+						<a href="" class="[ pull-right ]">Editar</a>
+						<input class="[ form-control ][ no-border ][ no-padding--left ]" id="correo" type="text" placeholder="arisbeth.hg@gmail.com" disabled>
+					</div>
+					<form class="[ bg-gray--xlighter padding ]">
+						<h4>Cambiar nombre de usuario</h4>
+						<div class="[ form-group ]">
+							<label for="user">Ingrese nuevo usuario:</label>
+							<input class="[ form-control ]" id="user" name="user" type="text">
+						</div>
+						<p class="[ fz--small ][ margin-bottom ]">**Recuerde que el mismo debe ser un correo electrónico válido y funcional**</p>
+						<div class="[ form-group ]">
+							<label>Ingrese la razón del cambio:<span class="[ pull-right ]">Requerido</span></label>
+							<textarea class="[ form-control ]" rows="3"></textarea>
+						</div>
+						<div class="[ text-center ][ margin-top-bottom ]">
+							<button type="submit" class="[ btn btn-primary ][ padding--sides--large ]">Guardar nuevo usuario</button>
+						</div>
+					</form>
 				</div>
 				<div class="[ col-xs-12 col-sm-6 col-md-4 col-md-offset-1 ]">
-					<p class="[ inline-block ]"><strong>Contraseña</strong></p>
-					<a href="" class="[ pull-right ]">Editar</a>
-					<input class="[ form-control ][ no-border ][ no-padding--left ]" id="contraseña" type="password" placeholder="·······················" disabled>
+					<div>
+						<p class="[ inline-block ]"><strong>Contraseña</strong></p>
+						<a href="" class="[ pull-right ]">Editar</a>
+						<input class="[ form-control ][ no-border ][ no-padding--left ]" id="contraseña" type="password" placeholder="·······················" disabled>
+					</div>
+					<form class="[ bg-gray--xlighter padding ]">
+						<h4>Cambiar contraseña</h4>
+						<div class="[ form-group ]">
+							<label for="password">Contraseña actual:</label>
+							<input class="[ form-control ]" id="password" name="password" type="password">
+						</div>
+						<div class="[ form-group ]">
+							<label for="new_password">Ingrese nueva contraseña:</label>
+							<input class="[ form-control ]" id="new_password" name="new_password" type="password">
+						</div>
+						<div class="[ form-group ]">
+							<label for="confirm_password">Confirmar contraseña:</label>
+							<input class="[ form-control ]" id="confirm_password" name="confirm_password" type="password">
+						</div>
+						<a class="[ pull-right ][ link--primary ][ fz--small ]" href="">Mostrar contraseña</a>
+						<div class="[ text-center ][ margin-top-bottom ]">
+							<button type="submit" class="[ btn btn-primary ][ padding--sides--large ]">Guardar nuevo usuario</button>
+						</div>
+					</form>
 				</div>
 				<hr class="[ divider ]">
 			</div>
