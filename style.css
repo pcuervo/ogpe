@@ -2607,6 +2607,19 @@ table th[class*="col-"] {
 .tab-anexos h3 {
   margin-top: 0px;
 }
+@media (max-width: 520px) {
+  .responsive-table thead,
+  .responsive-table tbody {
+    width: 50%;
+    display: inline-table;
+  }
+}
+@media (max-width: 520px) {
+  .responsive-table tr th {
+    display: block;
+    height: 6em;
+  }
+}
 fieldset {
   padding: 0;
   margin: 0;
@@ -7826,19 +7839,6 @@ hr {
   background-size: 12px;
   background-position: 50%;
   background-repeat: no-repeat;
-}
-@media (max-width: 460px) {
-  .responsive-table thead,
-  .responsive-table tbody {
-    width: 50%;
-    display: inline-table;
-  }
-}
-@media (max-width: 460px) {
-  .responsive-table tr th {
-    display: block;
-    height: 6em;
-  }
 }
 @-ms-viewport {
   width: device-width;
