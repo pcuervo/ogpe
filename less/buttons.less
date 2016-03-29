@@ -13,7 +13,7 @@
   font-family: @font-family-sans-serif;
   padding: 10px 25px;
   font-size: 14px;
-   @media (min-width: @screen-sm){font-size: 18px; }
+  @media (min-width: @screen-sm){font-size: 18px; }
   display: inline-block;
   margin-bottom: 0; // For input.btn
   font-weight: 700;
@@ -23,6 +23,7 @@
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   white-space: nowrap;
+  @media (max-width: 480px){ width: 100%; }
   .transition;
   .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
   .user-select(none);
