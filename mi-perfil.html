@@ -127,11 +127,9 @@
 		</header>
 		<div class="[ container ]">
 			<h1 class="[ h2 ]"><span class="[ icon-account-circle-1 ][ margin-right--small ]"></span> Mi perfil</h1>
+			<h3>Datos Inicio de sesión:</h3>
 			<div class="[ row ]">
-				<div class="[ col-xs-12 col-md-offset-1 col-md-11 ]">
-					<h3>Datos Inicio de sesión:</h3>
-				</div>
-				<div class="[ col-xs-12 col-sm-6 col-md-4 col-md-offset-1 ]">
+				<div class="[ col-xs-12 col-sm-6 ][ margin-bottom ]">
 					<div>
 						<p class="[ inline-block ]"><strong>Nombre de usuario</strong></p>
 						<a href="" class="[ pull-right ]">Editar</a>
@@ -141,19 +139,19 @@
 						<h4>Cambiar nombre de usuario</h4>
 						<div class="[ form-group ]">
 							<label for="user">Ingrese nuevo usuario:</label>
-							<input class="[ form-control ]" id="user" name="user" type="text">
+							<input class="[ form-control ][ no-margin ]" id="user" name="user" type="text">
+							<p class="[ fz--small ][ color-danger ][ margin-bottom ]">**Recuerde que el mismo debe ser un correo electrónico válido y funcional**</p>
 						</div>
-						<p class="[ fz--small ][ color-danger ][ margin-bottom ]">**Recuerde que el mismo debe ser un correo electrónico válido y funcional**</p>
 						<div class="[ form-group ]">
 							<label>Ingrese la razón del cambio:<span class="[ pull-right ]">Requerido</span></label>
 							<textarea class="[ form-control ]" rows="3"></textarea>
 						</div>
 						<div class="[ text-center ][ margin-top-bottom ]">
-							<button type="submit" class="[ btn btn-primary ][ padding--sides--large ]">Guardar nuevo usuario</button>
+							<button type="submit" class="[ btn btn-primary width-100 ][ padding--sides--large ]">Guardar nuevo usuario</button>
 						</div>
 					</form>
 				</div>
-				<div class="[ col-xs-12 col-sm-6 col-md-4 col-md-offset-1 ]">
+				<div class="[ col-xs-12 col-sm-6 ]">
 					<div>
 						<p class="[ inline-block ]"><strong>Contraseña</strong></p>
 						<a href="" class="[ pull-right ]">Editar</a>
@@ -175,47 +173,59 @@
 						</div>
 						<a class="[ pull-right ][ link--primary ][ fz--small ]" href="">Mostrar contraseña</a>
 						<div class="[ text-center ][ margin-top-bottom ]">
-							<button type="submit" class="[ btn btn-primary ][ padding--sides--large ]">Guardar nueva contraseña</button>
+							<button type="submit" class="[ btn btn-primary width-100 ][ padding--sides--large ]">Guardar nueva contraseña</button>
 						</div>
 					</form>
 				</div>
 				<hr class="[ divider ]">
 			</div>
 			<div class="[ row ]">
-				<div class="[ col-xs-12 col-md-offset-1 col-md-10 ]">
+				<div class="[ col-xs-12 ]">
 					<hr class="[ divider ]">
 					<h3>Datos Personales:</h3>
 				</div>
-				<div class="[ col-xs-12 col-sm-6 col-md-4 col-md-offset-1 ][ no-padding--left ]">
-					<div class="[ col-xs-6 ]">
-						<p><strong>Nombre de usuario:</strong></p>
-						<p><strong>Inicial:</strong></p>
-						<p><strong>Primer Apellido:</strong></p>
-						<p><strong>Segundo Apellido:</strong></p>
-						<p><strong>Dirección:</strong></p>
+				<div class="[ col-xs-12 col-sm-6 ][ text-resume ]">
+					<div class="[ row ]">
+						<p class="[ col-xs-12 col-sm-6 ]">Nombre de usuario:</p>
+						<p class="[ col-xs-12 col-sm-6 ]">Arisbeth</p>
 					</div>
-					<div class="[ col-xs-6 ]">
-						<p>Arisbeth</p>
-						<p>A</p>
-						<p>Hernandez</p>
-						<p>Gaytán</p>
-						<p>Bayamon, Cidra, Aguas Buenas 00799, Puerto Rico</p>
+					<div class="[ row ]">
+						<p class="[ col-xs-12 col-sm-6 ]">Inicial:</p>
+						<p class="[ col-xs-12 col-sm-6 ]">A</p>
+					</div>
+					<div class="[ row ]">
+						<p class="[ col-xs-12 col-sm-6 ]">Primer Apellido:</p>
+						<p class="[ col-xs-12 col-sm-6 ]">Hernandez</p>
+					</div>
+					<div class="[ row ]">
+						<p class="[ col-xs-12 col-sm-6 ]">Segundo Apellido:</p>
+						<p class="[ col-xs-12 col-sm-6 ]">Gaytán</p>
+					</div>
+					<div class="[ row ]">
+						<p class="[ col-xs-12 col-sm-6 ]">Dirección:</p>
+						<p class="[ col-xs-12 col-sm-6 ]">Bayamon, Cidra, Aguas Buenas 00799, Puerto Rico</p>
 					</div>
 				</div>
-				<div class="[ col-xs-12 col-sm-6 col-md-4 col-md-offset-1 ][ no-padding--left ]">
-					<div class="[ col-xs-6 ]">
-						<p><strong>Télefono Primario</strong></p>
-						<p><strong>Télefono Secundario</strong></p>
-						<p><strong>Fax:</strong></p>
-						<br>
-						<p><strong>Correo electronico secundario:</strong></p>
+				<div class="[ col-xs-12 col-sm-6 ][ text-resume ]">
+					<div class="[ row ]">
+						<p class="[ col-xs-12 col-sm-6 ]">Télefono Primario</p>
+						<p class="[ col-xs-12 col-sm-6 ]">787-732-2030</p>
 					</div>
-					<div class="[ col-xs-6 ]">
-						<p>787-732-2030</p>
-						<p>787-732-2035</p>
-						<br>
-						<br>
-						<p>arisbeth_hg_2@gmail.com</p>
+					<div class="[ row ]">
+						<p class="[ col-xs-12 col-sm-6 ]">Télefono Secundario</p>
+						<p class="[ col-xs-12 col-sm-6 ]">787-732-2035</p>
+					</div>
+					<div class="[ row ]">
+						<p class="[ col-xs-12 col-sm-6 ]">Fax:</p>
+						<p class="[ col-xs-12 col-sm-6 ]"></p>
+					</div>
+					<div class="[ row ]">
+						<p class="[ col-xs-12 col-sm-6 ]">Correo electronico secundario:</p>
+						<p class="[ col-xs-12 col-sm-6 ]">arisbeth_hg_2@gmail.com</p>
+					</div>
+					<div class="[ row ]">
+						<p class="[ col-xs-12 col-sm-6 ]"></p>
+						<p class="[ col-xs-12 col-sm-6 ]"></p>
 					</div>
 				</div>
 				<div class="[ col-xs-12 col-md-offset-1 col-md-10 ][ text-center ][ margin-top ][ margin-bottom ]">
