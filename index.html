@@ -64,7 +64,7 @@
 						<div class="[ dropdown--hover ]">
 							<p><span class="[ icon-search ]"></span>Busquedas</p>
 							<div class="[ dropdown--content ]">
-								<div>
+								<div class="[ relative ][ z-index--100 ][ bg-light ]">
 									<a href="busqueda-tramites.html"><span class="[ icon-search ]"></span>Busqueda de Trámites</a>
 									<a href="busqueda-credenciales.html"><span class="[ icon-search ]"></span>Busqueda de Profesional Autorizado</a>
 									<a href="busqueda-permisos.html"><span class="[ icon-search ]"></span>Busqueda de Permisos</a>
@@ -88,16 +88,16 @@
 				</nav>
 
 				<!-- mobile menu -->
-				<div id="js-btn-nav"  class="[ visible-xs ][ pull-right ]">
-					<a href="">
-						<span class="[ icon-menu-1 ][ color-light ]"></span>
-					</a>
+				<div class="[ visible-xs ][ pull-right ][ btn-nav ]">
+					<div id="js-btn-nav">
+							<span class="[ icon-menu-1 icon--iconed ][ color-light ]"></span>
+					</div>
 				</div>
 				<!-- mobile menu content -->
-				<div class="[ js-hidden ][ nav-mobile right-310 ][ visible-xs ]">
-					<a id="js-hide-nav" href="#nada" class="[ block ][ pull-right ][ close-nav ]">
-						<span class="[ icon-close ]"></span>
-					</a>
+				<div class="[ js-hidden ][ nav-mobile right-767 ][ visible-xs ]">
+					<div id="js-hide-nav">
+						<span class="[ icon-close icon--iconed ][ color-primary ][ padding--top padding--right ][ block ][ pull-right ]"></span>
+					</div>
 					<div class="[ clearfix ]"></div>
 					<div class="[ menu-mobile ]">
 						<a href="mi-perfil.html">

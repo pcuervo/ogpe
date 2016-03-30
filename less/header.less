@@ -4,6 +4,7 @@
 
 header {
 	height: 60px;
+	margin-bottom: (@margin-base*2);
 	background-color: @primary;
 	color: @light;
 	@media (min-width: @screen-sm){
@@ -11,7 +12,7 @@ header {
 	}
 	a, .dropdown--hover{ font-size: 18px;	}
 	h1>a, .dropdown--hover>p, .topic-menu{ margin-bottom: 0px;}
-	#js-btn-nav{ padding: (@padding-base-vertical*3) (@padding-base-vertical*2) ;}
+	.btn-nav{ padding: (@padding-base-vertical*3) (@padding-base-vertical*2) ;}
 }
 
 .logo-header{
@@ -39,7 +40,7 @@ header {
 	min-width: 250px;
 	display: none;
 	position: absolute;top: 71px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 	a{
 		padding: 10px 20px;
 		margin-bottom: 0px;
@@ -48,7 +49,7 @@ header {
 		color: @primary;
 		&:hover{
 			color: @light;
-			background-color: @primary--dark;
+			background-color: @primary;
 		}
 	}
 }
@@ -58,7 +59,7 @@ header {
 //mobile menu
 
 .nav-mobile{
-	width: 285px; max-height: 100vh;
+	width: 100vw; height: 100vh; max-height: 100vh;
 	background-color: @light;
 	position: fixed; top: 0px;
 	z-index: 100;
@@ -74,8 +75,4 @@ header {
 			background-color: @primary;
 		}
 	}
-}
-.close-nav{
-	padding: (@padding-small-vertical*3) (@padding-small-vertical*6) 0px 0px;
-	font-weight: bold;
 }
