@@ -1213,9 +1213,15 @@ h1,
 h2,
 .h2,
 h3,
-.h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 h1 small,
 .h1 small,
@@ -1223,22 +1229,25 @@ h2 small,
 .h2 small,
 h3 small,
 .h3 small,
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
 h1 .small,
 .h1 .small,
 h2 .small,
 .h2 .small,
 h3 .small,
-.h3 .small {
+.h3 .small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
   font-size: 65%;
-}
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 h4 small,
 .h4 small,
@@ -6580,6 +6589,12 @@ button.close {
 .leyendas > div > div {
   font-size: 20px;
 }
+.icon-check {
+  background-image: url('icons/check-dark.png');
+  background-size: 12px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
 .nav-mobile::-webkit-scrollbar {
   width: 10px;
   background: #fff;
@@ -7383,6 +7398,9 @@ button.close {
 .color-danger {
   color: #cc2027;
 }
+.bg-light {
+  background-color: #fff;
+}
 .bg-primary {
   background-color: #6844a1;
 }
@@ -7773,96 +7791,6 @@ hr {
 .divider {
   border-top: 1px solid #5b616a;
 }
-.usa-accordion + .usa-accordion,
-.usa-accordion + .usa-accordion-bordered,
-.usa-accordion-bordered + .usa-accordion,
-.usa-accordion-bordered + .usa-accordion-bordered {
-  margin-top: 1rem;
-}
-.usa-accordion > ul,
-.usa-accordion-bordered > ul {
-  color: #212121;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.usa-accordion > ul > li,
-.usa-accordion-bordered > ul > li {
-  background-color: #f1f1f1;
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-  list-style: none;
-  margin-bottom: 6px;
-  width: 100%;
-}
-.usa-accordion button[aria-expanded=false],
-.usa-accordion-bordered button[aria-expanded=false] {
-  background-image: url("../img/plus.png");
-  background-image: url("../img/plus.svg");
-  background-repeat: no-repeat;
-  background-size: 1.3rem;
-}
-.usa-accordion button,
-.usa-accordion-bordered button {
-  background-color: #f1f1f1;
-  background-image: url("../img/minus.png");
-  background-image: url("../img/minus.svg");
-  background-position: right 3rem center;
-  background-repeat: no-repeat;
-  background-size: 13px;
-  color: #212121;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-  margin: 0;
-  padding: 1.5rem 5.5rem 1.5rem 3rem;
-  width: 100%;
-}
-.usa-accordion button:focus,
-.usa-accordion-bordered button:focus {
-  box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
-}
-.usa-accordion button:hover,
-.usa-accordion-bordered button:hover {
-  background-color: #d6d7d9;
-  color: #212121;
-}
-.usa-accordion button h1,
-.usa-accordion button h2,
-.usa-accordion button h3,
-.usa-accordion button h4,
-.usa-accordion button h5,
-.usa-accordion button h6,
-.usa-accordion-bordered button h1,
-.usa-accordion-bordered button h2,
-.usa-accordion-bordered button h3,
-.usa-accordion-bordered button h4,
-.usa-accordion-bordered button h5,
-.usa-accordion-bordered button h6 {
-  margin: 0;
-}
-.usa-accordion-bordered .usa-accordion-content {
-  border-bottom: 3px solid #f1f1f1;
-  border-left: 3px solid #f1f1f1;
-  border-right: 3px solid #f1f1f1;
-}
-.usa-accordion-content {
-  background-color: #ffffff;
-  display: block;
-  overflow: auto;
-  padding: 3rem;
-}
-.usa-accordion-content > *:first-child {
-  margin-top: 0;
-}
-.usa-accordion-content > *:last-child {
-  margin-bottom: 0;
-}
-.icon-check {
-  background-image: url('icons/check-dark.png');
-  background-size: 12px;
-  background-position: 50%;
-  background-repeat: no-repeat;
-}
 @-ms-viewport {
   width: device-width;
 }
@@ -8082,13 +8010,13 @@ hr {
   width: 35px;
   height: 35px;
 }
-.img-logo_light {
+.img-logo--light {
   background-image: url('images/logosip.png');
 }
-.img-logo_black {
+.img-logo--black {
   background-image: url('images/logo_black.png');
 }
-.logo_ogpe {
+.logo--ogpe {
   background-image: url('images/logo_ogpe.png');
   width: 129px;
   height: 30px;
@@ -8112,36 +8040,32 @@ header a,
 header .dropdown--hover {
   font-size: 18px;
 }
-header h1,
 header h1 > a,
 header .dropdown--hover > p,
 header .topic-menu {
   margin-bottom: 0px;
 }
-header h1 {
-  margin-top: 0px;
-}
 header #js-btn-nav {
   padding: 18px 12px;
 }
-header .logo-header {
+.logo-header {
   padding-top: 6px;
   padding-bottom: 6px;
   width: 200px;
   display: inline-block;
 }
 @media (max-width: 768px) {
-  header .logo-header {
+  .logo-header {
     padding: 0px;
   }
 }
 .dropdown--hover,
 .topic-menu {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
   margin-left: 40px;
   padding: 24px 12px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
 }
 .dropdown--hover:hover,
 .topic-menu:hover {
@@ -8149,25 +8073,20 @@ header .logo-header {
   color: #fff;
 }
 .dropdown--content {
+  min-width: 250px;
   display: none;
   position: absolute;
   top: 71px;
-  min-width: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-.dropdown--content div {
-  position: relative;
-  background: #fff;
-  z-index: 1000;
-}
-.dropdown--content div a {
+.dropdown--content a {
   padding: 10px 20px;
   margin-bottom: 0px;
   text-decoration: none;
   display: block;
   color: #6844a1;
 }
-.dropdown--content div a:hover {
+.dropdown--content a:hover {
   color: #fff;
   background-color: #372159;
 }
@@ -8177,17 +8096,13 @@ header .logo-header {
 .nav-mobile {
   width: 285px;
   max-height: 100vh;
+  background-color: #fff;
   position: fixed;
   top: 0px;
-  background-color: #fff;
   z-index: 100;
   box-shadow: 6px 0px 15px 1px #5b616a;
   overflow: scroll;
   overflow-x: hidden;
-}
-.nav-mobile .close-nav {
-  padding: 15px 30px 0px 0px;
-  font-weight: bold;
 }
 .nav-mobile .menu-mobile a {
   padding: 12px 24px;
@@ -8198,13 +8113,13 @@ header .logo-header {
   color: #fff;
   background-color: #6844a1;
 }
-footer h3,
-footer h4 {
-  margin-top: 0px;
+.close-nav {
+  padding: 15px 30px 0px 0px;
+  font-weight: bold;
 }
 footer .footer--top,
 footer .footer--bottom {
-  padding: 12px 24px;
+  padding: 12px 0px;
 }
 footer .footer--top {
   background-color: #eaeaea;
@@ -8224,10 +8139,11 @@ footer .footer--top .text-contacto {
   display: block;
   margin-bottom: 0px;
 }
-footer .footer--top .text-contacto p:first-child {
+footer .footer--top .text-contacto p {
   width: 170px;
 }
-footer .footer--top .text-contacto p {
+footer .footer--top .text-contacto p,
+footer .footer--top .text-contacto a {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0px;

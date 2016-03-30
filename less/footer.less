@@ -1,7 +1,6 @@
 footer{
-	h3, h4{ margin-top: 0px;}
 	.footer--top, .footer--bottom{
-		padding: (@padding-base-vertical*2) (@padding-base-horizontal*2);
+		padding: (@padding-base-vertical*2) 0px;
 	}
 	.footer--top{
 		background-color: @gray--light;
@@ -10,21 +9,21 @@ footer{
 			&:hover{color: @primary--medium;}
 			&.active, &:focus, &:visited { color: @primary--dark;}
 		}
-		& .text-contacto{
+		.text-contacto{
 			display: block;
 			margin-bottom: 0px;
-			& p:first-child{ width: 170px;}
-			& p{
+			p{ width: 170px;}
+			p, a{
 				display: inline-block;
 				vertical-align: middle;
 				margin-bottom: 0px;
 			}
 		}
 		h3, h4{ color: @dark;}
-		& .collapse{
+		.collapse{
 			@media (min-width: @screen-sm){ display: block;}
 		}
-		& .icon-info{ margin-left: -4px; margin-right: 5px}
+		.icon-info{ margin-left: -4px; margin-right: 5px}
 	}
 	.footer--bottom{
 		background-color: @gray--dark;
@@ -36,7 +35,7 @@ footer{
 		}
 		h3, h4{ color: @light;}
 	}
-	& .text-alination{
+	.text-alination{
 		@media (min-width: @screen-sm){ text-align: right;}
 	}
 }
