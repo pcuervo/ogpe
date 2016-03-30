@@ -830,21 +830,23 @@ input[type="radio"]:disabled + label::before {
 //input-search
 
 .input-search{
-  & .form-control, & .btn-primary{
+  .form-control, .btn-primary{
     height: 43px;
     font-size: 20px;
   }
+  .icon-search{ top: -7px;}
   &.input-search--medium,{
-    & .form-control, & .btn-primary{
+    .form-control, .btn-primary{
       height: 32px;
       font-size: 17px;
       padding: 3px 12px;
       }
     }
   &.input-search--small{
-    & .form-control, & .btn-primary{
+    .form-control, .btn-primary{
       height: 32px;
       padding: 1px 12px;
       }
+      .icon-search{ top: -1px;}
   }
 }

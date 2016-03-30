@@ -3402,6 +3402,9 @@ input[type="radio"]:disabled + label::before {
   height: 43px;
   font-size: 20px;
 }
+.input-search .icon-search {
+  top: -7px;
+}
 .input-search.input-search--medium .form-control,
 .input-search.input-search--medium .btn-primary {
   height: 32px;
@@ -3412,6 +3415,9 @@ input[type="radio"]:disabled + label::before {
 .input-search.input-search--small .btn-primary {
   height: 32px;
   padding: 1px 12px;
+}
+.input-search.input-search--small .icon-search {
+  top: -1px;
 }
 .btn {
   border-color: transparent;
