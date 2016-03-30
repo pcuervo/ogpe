@@ -6565,11 +6565,11 @@ button.close {
 .icon--iconed {
   font-size: 20px;
 }
+.icon--iconed--large {
+  font-size: 30px;
+}
 .leyendas {
   text-align: center;
-}
-.leyendas h4 {
-  text-align: left;
 }
 .leyendas > div {
   display: inline-block;
@@ -6578,15 +6578,7 @@ button.close {
   padding: 3px 12px;
 }
 .leyendas > div p {
-  font-size: 12px;
-}
-@media (min-width: 768px) {
-  .leyendas > div p {
-    font-size: 14px;
-  }
-}
-.leyendas > div > div {
-  font-size: 20px;
+  font-size: 15px;
 }
 .icon-check {
   background-image: url('icons/check-dark.png');
