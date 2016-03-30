@@ -216,6 +216,10 @@ hr{
 .margin-bottom{ margin-bottom: @margin-base; }
 .margin-bottom--xsmall{ margin-bottom: (@margin-base/4); }
 .margin-bottom--small{ margin-bottom: (@margin-base/2); }
+.margin-bottom--small{
+  margin-bottom: 0px;
+  @media (max-width: @screen-sm){ margin-bottom: (@margin-base); }
+}
 .margin-bottom--large{ margin-bottom: (@margin-base*2); }
 .margin-bottom--xlarge{ margin-bottom: (@margin-base*4); }
 .margin-bottom--xxlarge{ margin-bottom: (@margin-base*8); }

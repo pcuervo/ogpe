@@ -7656,6 +7656,14 @@ hr {
 .margin-bottom--small {
   margin-bottom: 10px;
 }
+.margin-bottom--small {
+  margin-bottom: 0px;
+}
+@media (max-width: 768px) {
+  .margin-bottom--small {
+    margin-bottom: 20px;
+  }
+}
 .margin-bottom--large {
   margin-bottom: 40px;
 }
@@ -8098,7 +8106,7 @@ header .btn-nav {
   display: block;
 }
 .nav-mobile {
-  width: 100vw;
+  width: 105vw;
   height: 100vh;
   max-height: 100vh;
   background-color: #fff;
