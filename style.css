@@ -6655,6 +6655,18 @@ button.close {
   border-radius: 0px;
   -webkit-border-radius: 0px;
 }
+marquee {
+  height: 60px;
+  position: relative;
+  top: -40px;
+  font-size: 16px;
+  background-color: #EEEEEE;
+  color: #212121;
+}
+marquee span {
+  padding: 24px 12px;
+  line-height: 60px;
+}
 .modal-open {
   overflow: hidden;
 }
