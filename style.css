@@ -1566,6 +1566,32 @@ address {
     font-size: 19px;
   }
 }
+.text--small,
+.text--small p {
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  .text--small,
+  .text--small p {
+    font-size: 15px!important;
+  }
+}
+.text--medium {
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .text--medium {
+    font-size: 17px!important;
+  }
+}
+.text--large {
+  font-size: 17px;
+}
+@media (min-width: 768px) {
+  .text--large {
+    font-size: 19px;
+  }
+}
 a {
   cursor: pointer;
   color: #6844a1;
