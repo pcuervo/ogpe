@@ -50,7 +50,80 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-
+		<header>
+			<div class="[ container ]">
+				<h1 class="[ logo-header ]">
+					<a href="index.html" class="[ block ]">
+						<div class="[ bg-image img-logo img-logo--light ][ inline-block align-middle ]"></div>
+						<h3 class="[ inline-block align-middle ][ color-light ][ no-margin ]">Super Sip</h3>
+					</a>
+				</h1>
+			<!-- desktop menu -->
+				<nav class="[ hidden-xs ][ pull-right ]">
+					<div class="[ menu-desktop ][ pull-right ]">
+						<div class="[ dropdown--hover ]">
+							<p><span class="[ icon-search ]"></span>Busquedas</p>
+							<div class="[ dropdown--content ]">
+								<div class="[ relative ][ z-index--100 ][ bg-light ]">
+									<a href="busqueda-tramites.html"><span class="[ icon-search ]"></span>Busqueda de Trámites</a>
+									<a href="busqueda-credenciales.html"><span class="[ icon-search ]"></span>Busqueda de Profesional Autorizado</a>
+									<a href="busqueda-permisos.html"><span class="[ icon-search ]"></span>Busqueda de Permisos</a>
+									<a href="pago-multa.html"><span class="[ icon-circle-cash ]"></span>Pagar Multas</a>
+								</div>
+							</div>
+						</div>
+						<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ]">
+							<span class="[ icon-box-2 ]"></span>Mi Bandeja
+						</a>
+						<div class="[ dropdown--hover ]">
+							<p><span class="[ icon-account-circle-1 ]"></span>Perfil</p>
+							<div class="[ dropdown--content ]">
+								<div class="[ relative ][ z-index--100 ][ bg-light ]">
+									<a href="mi-perfil.html"><span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil</a>
+									<a href=""><span class="[ icon-off ][ margin-right--small ]"></span>Logout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<!-- mobile menu -->
+				<div class="[ visible-xs ][ pull-right ][ btn-nav ]">
+					<div id="js-btn-nav">
+							<span class="[ icon-menu-1 icon--iconed ][ color-light ]"></span>
+					</div>
+				</div>
+				<!-- mobile menu content -->
+				<div class="[ js-hidden ][ nav-mobile right-767 ][ visible-xs ]">
+					<div id="js-hide-nav">
+						<span class="[ icon-close icon--iconed ][ color-primary ][ padding--top padding--right ][ block ][ pull-right ]"></span>
+					</div>
+					<div class="[ clearfix ]"></div>
+					<div class="[ menu-mobile ]">
+						<a href="mi-perfil.html">
+							<span class="[ icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+						</a>
+						<a href="mi-bandeja.html">
+							<span class="[ icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+						</a>
+						<a href="busqueda-tramites.html">
+							<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
+						</a>
+						<a href="busqueda-credenciales.html">
+							<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
+						</a>
+						<a href="busqueda-permisos.html">
+							<span class="[ icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
+						</a>
+						<a href="pago-multa.html">
+							<span class="[ icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+						</a>
+						<a href="salir">
+							<span class="[ icon-off ][ margin-right--small ]"></span>Logout
+						</a>
+					</div>
+				</div>
+			</div><!-- end container -->
+		</header>
 		<section class="[ container ]">
 			<h1 class="[ h2 ][ margin-bottom--large ]">Detalles del permiso</h1>
 			<table class="[ table-head--top ][ responsive-table ]">
@@ -266,8 +339,68 @@
 				<p>Aprobación</p>
 			</div>
 		</div>
+		<footer>
+			<div class="[ footer--top ]">
+				<div class="[ container ]">
+					<div class="[ row ][ margin-bottom ][ text-center ]">
+						<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+							<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+							<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+						</a>
+						<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+					</div>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+							<div class="[ row ]">
+								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+									<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
+									<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
+									<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+								</div>
+								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+									<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+									<div class="[ bg-image logo--ogpe ]"></div>
+								</div>
+							</div>
+						</div>
+						<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+							<h4 class="[ no-margin--top ]">Contactanos</h4>
+							<p>Oficina Central SJ</p>
+							<a href="tel:+525552555555">(787)721-8282</a>
+							<div class="[ clear ]"></div>
+							<p>Oficina Aguadilla</p>
+							<a href="tel:+525552555555">(787)891-0466</a>
+							<div class="[ clear ]"></div>
+							<p>Oficina Arecibo</p>
+							<a href="tel:+525552555555">(787)878-7979</a>
+							<div class="[ clear ]"></div>
+							<p>Oficina Humacao</p>
+							<a href="tel:+525552555555">(787)852-2013</a>
+							<div class="[ clear ]"></div>
+							<p>Oficina Ponce</p>
+							<a href="tel:+525552555555">(787)843-9097</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="[ footer--bottom ]">
+				<div class="[ container ]">
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-6 ]">
+							<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+							<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+						</div>
+						<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+							<h4>Contacto</h4>
+							<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
 	</body>
+</html>

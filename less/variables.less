@@ -34,7 +34,8 @@
 @brand-warning:         #fff1d2;
 @brand-danger:          #fadddf;
 @darger: 				#cc2027;
-
+@danger--medium: 		darken(@darger, 6.5%);
+@danger--dark: 		darken(@darger, 20%);
 
 //== Scaffolding
 //
@@ -76,7 +77,7 @@
 @font-size-h6:            13px;
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+@line-height-base:        1.55; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 

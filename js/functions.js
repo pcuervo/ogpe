@@ -1,6 +1,6 @@
 // menu mobile
 
- $('#js-btn-nav a').click(function(e){
+ $('#js-btn-nav').click(function(e){
     e.preventDefault();
     toggleTwitter();
 })
@@ -15,7 +15,7 @@ function toggleTwitter(){
     if( $('.nav-mobile').hasClass('js-hidden') ){
         $( ".nav-mobile" ).animate({
             right: "0"
-        }, 500, function() {
+        }, 700, function() {
             $( ".nav-mobile" ).removeClass('js-hidden');
             $( "body" ).addClass('overflow-hidden');
         });
@@ -24,8 +24,8 @@ function toggleTwitter(){
     }
 
     $( ".nav-mobile" ).animate({
-        right: "-310"
-    }, 500, function() {
+        right: "-767"
+    }, 700, function() {
         $( ".nav-mobile" ).addClass('js-hidden');
         $( "body" ).removeClass('overflow-hidden');
     });

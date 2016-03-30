@@ -8,10 +8,9 @@
 
 .btn {
   border-color: transparent;
-  text-transform: capitalize;
+  text-transform: lowercase;
   border-radius: 3px;
   font-family: @font-family-sans-serif;
-  padding: 10px 25px;
   font-size: 14px;
   @media (min-width: @screen-sm){font-size: 18px; }
   display: inline-block;
@@ -25,7 +24,7 @@
   white-space: nowrap;
   @media (max-width: 480px){ width: 100%; }
   .transition;
-  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
+  .button-size(@padding-base-horizontal; (@padding-base-horizontal*1.5); @font-size-base; @line-height-base; @btn-border-radius-base);
   .user-select(none);
 
   &,
@@ -145,7 +144,7 @@
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+  .button-size(@padding-base-vertical; (@padding-small-horizontal*2); @font-size-base; @line-height-base; @btn-border-radius-base);
 }
 .btn-xs {
   .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
@@ -206,5 +205,11 @@ input[type="button"] {
 
 .btn-delete{
   background-color: @darger;
-  color: @light;
+  color: @light!important;
+  &:hover{
+    background-color: @danger--medium;
+  }
+  &:focus, &.active, &:active{
+    background-color:  @danger--dark;
+  }
 }
