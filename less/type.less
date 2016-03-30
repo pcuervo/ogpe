@@ -346,14 +346,10 @@ a {
   &.active &:focus, &:visited { color: @primary--dark;}
 }
 
-.padding--link a{
-    padding: 0px (@padding-base-vertical*2);
-  }
-
 .text-block a{
   display: block;
 }
-.text-block--xs a{
+.block--xs a{
   @media (max-width: @screen-sm){ display: block; }
 }
 
@@ -363,7 +359,7 @@ p a.link--primary{ text-decoration: underline; }
   & p{
     color: @light;
   }
-  & .link{
+  .link{
    color: @secondary;
    text-decoration: underline;
   }
@@ -372,7 +368,7 @@ p a.link--primary{ text-decoration: underline; }
 //Text bold
 
 .text-resume{
-  & p:nth-child(2n+1){
+  p:nth-child(2n+1){
     font-weight: 700;
   }
 }
@@ -390,9 +386,9 @@ p a.link--primary{ text-decoration: underline; }
 
 //Contenedores
 .content-resultados{
-  & a{
+  a{
     color: @primary;
     display: block;
-    & span{ color: @secondary!important;}
+    span{ color: @secondary!important;}
   }
 }
