@@ -6611,8 +6611,14 @@ button.close {
   content: '\e82c';
 }
 /* '' */
-.icon--iconed {
+.icon--iconed--xsmall {
+  font-size: 15px;
+}
+.icon--iconed--small {
   font-size: 20px;
+}
+.icon--iconed {
+  font-size: 25px;
 }
 .icon--iconed--large {
   font-size: 30px;
@@ -8073,6 +8079,11 @@ hr {
 .logo--ogpe {
   background-image: url('images/logo_ogpe.png');
   width: 129px;
+  height: 30px;
+}
+.img--credencial {
+  background-image: url('icons/id-card-1.png');
+  width: 30px;
   height: 30px;
 }
 .img_next {
