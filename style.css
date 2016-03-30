@@ -3380,7 +3380,7 @@ input[type="radio"]:disabled + label::before {
 }
 .btn {
   border-color: transparent;
-  text-transform: capitalize;
+  text-transform: lowercase;
   border-radius: 3px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
@@ -3835,10 +3835,10 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-sm,
 .btn-group-sm > .btn {
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
+  padding: 6px 20px;
+  font-size: 14px;
+  line-height: 1.55;
+  border-radius: 4px;
 }
 .btn-xs,
 .btn-group-xs > .btn {
@@ -3892,7 +3892,15 @@ input[type="button"].btn-block {
 }
 .btn-delete {
   background-color: #cc2027;
-  color: #fff;
+  color: #fff !important;
+}
+.btn-delete:hover {
+  background-color: #af1c22;
+}
+.btn-delete:focus,
+.btn-delete.active,
+.btn-delete:active {
+  background-color: #741216;
 }
 .acordion {
   background-color: #eaeaea;
