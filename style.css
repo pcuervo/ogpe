@@ -7517,6 +7517,9 @@ marquee span {
 .width-30 {
   width: 30%;
 }
+.width-33 {
+  width: 33%;
+}
 .width-20 {
   width: 20%;
 }
@@ -8272,15 +8275,14 @@ footer .footer--bottom h4 {
 }
 .line-etapas {
   width: 80px;
+  margin: 0px -3px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .line-etapas {
     width: 135px;
   }
 }
 .circle-proceso {
-  border: 1px solid #6844a1;
-  background: #fff;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -8290,31 +8292,49 @@ footer .footer--bottom h4 {
 .circle-pasos {
   width: 30px;
   height: 30px;
-  color: #212121;
+  color: #fff;
+  background-color: #6844a1;
   line-height: 30px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .circle-pasos {
     width: 50px;
     height: 50px;
-    color: #212121;
     line-height: 50px;
   }
+}
+.circle-pasos.circle-complete {
+  background-color: #54358e;
 }
 .circle-etapas {
   width: 7px;
   height: 7px;
   margin: 0px;
+  border: 2px solid #6844a1;
+  background-color: #fff;
   position: relative;
   top: -12px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .circle-etapas {
     width: 10px;
     height: 10px;
     margin: 0px 2px;
     position: relative;
     top: -11px;
+  }
+}
+.circle-etapas.circle-complete {
+  background-color: #372159;
+  border: 0px;
+}
+.block-text {
+  width: 290px;
+  margin: 10px auto;
+}
+@media (min-width: 768px) {
+  .block-text {
+    width: 530px;
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
