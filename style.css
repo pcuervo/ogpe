@@ -7371,6 +7371,9 @@ marquee span {
 .static {
   position: static;
 }
+.top--10 {
+  top: 10px;
+}
 .top---15 {
   top: -15px;
 }
@@ -7517,6 +7520,9 @@ marquee span {
 }
 .width-10 {
   width: 10%;
+}
+.width--100 {
+  width: 100px;
 }
 @media (max-width: 992px) {
   .heigt-60--sm {
@@ -8122,7 +8128,7 @@ header .dropdown--hover > p,
 header .topic-menu {
   margin-bottom: 0px;
 }
-header .btn-nav {
+.btn-nav {
   padding: 18px 12px;
 }
 .logo-header {
@@ -8259,6 +8265,53 @@ footer .footer--bottom h4 {
 @media (min-width: 768px) {
   footer .text-alination {
     text-align: right;
+  }
+}
+.line-etapas {
+  width: 80px;
+}
+@media (min-width: 480px) {
+  .line-etapas {
+    width: 135px;
+  }
+}
+.circle-proceso {
+  border: 1px solid #6844a1;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.circle-pasos {
+  width: 30px;
+  height: 30px;
+  color: #212121;
+  line-height: 30px;
+}
+@media (min-width: 480px) {
+  .circle-pasos {
+    width: 50px;
+    height: 50px;
+    color: #212121;
+    line-height: 50px;
+  }
+}
+.circle-etapas {
+  width: 7px;
+  height: 7px;
+  margin: 0px;
+  position: relative;
+  top: -12px;
+}
+@media (min-width: 480px) {
+  .circle-etapas {
+    width: 10px;
+    height: 10px;
+    margin: 0px 2px;
+    position: relative;
+    top: -11px;
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */

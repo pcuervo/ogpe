@@ -10,23 +10,25 @@ header {
 	@media (min-width: @screen-sm){
 		height: 72px;
 	}
-	a, .dropdown--hover{ font-size: 18px;	}
-	h1>a, .dropdown--hover>p, .topic-menu{ margin-bottom: 0px;}
-	.btn-nav{ padding: (@padding-base-vertical*3) (@padding-base-vertical*2) ;}
+
+	a, .dropdown--hover{ font-size: 18px; }
+	h1>a, .dropdown--hover>p, .topic-menu{ margin-bottom: 0px; }
 }
+
+.btn-nav{ padding: (@padding-base-vertical*3) (@padding-base-vertical*2); }
 
 .logo-header{
 	padding-top: (@padding-base-vertical); padding-bottom: (@padding-base-vertical);
 	width: 200px;
 	display: inline-block;
-	@media (max-width: @screen-sm){padding: 0px;}
+	@media (max-width: @screen-sm){ padding: 0px; }
 }
 
 //dropdown
 
 .dropdown--hover, .topic-menu {
 	margin-left: (@margin-base*2);
-	padding: (@padding-base-vertical*4) (@padding-base-vertical*2) ;
+	padding: (@padding-base-vertical*4) (@padding-base-vertical*2);
 	display: inline-block;
 	position: relative;
 	vertical-align: middle;

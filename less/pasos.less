@@ -1,0 +1,33 @@
+.line-etapas{
+  width: 80px;
+  @media (min-width: 480px){ width: 135px;}
+}
+.circle-proceso{
+  border: 1px solid @primary;
+  background: @light;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.circle-pasos {
+  width: 30px;height: 30px;
+  color: @dark;
+  line-height: 30px;
+  @media (min-width: 480px){
+    width: 50px;height: 50px;
+    color: @dark;
+    line-height: 50px;
+  }
+}
+.circle-etapas {
+  width: 7px;height: 7px;
+  margin: 0px;
+  position: relative;top: -12px;
+  @media (min-width: 480px){
+    width: 10px;height: 10px;
+    margin: 0px 2px;
+    position: relative;top: -11px;
+  }
+}
