@@ -1631,6 +1631,7 @@ p a.link--primary {
 }
 .text-resume p:nth-child(2n+1) {
   font-weight: 700;
+  margin-bottom: 0px;
 }
 .subtitle {
   font-weight: 700;
@@ -5237,8 +5238,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination > li > a,
 .pagination > li > span {
-  position: relative;
-  padding: 6px 12px;
+  padding: 6px 8px;
+  display: inline-block;
   line-height: 1.55;
   text-decoration: none;
   color: #6844a1;
@@ -5249,6 +5250,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 @media (min-width: 768px) {
   .pagination > li > a,
   .pagination > li > span {
+    padding: 6px 12px;
     font-size: 16px;
   }
 }
@@ -8110,13 +8112,14 @@ hr {
 }
 header {
   height: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background-color: #6844a1;
   color: #fff;
 }
 @media (min-width: 768px) {
   header {
     height: 72px;
+    margin-bottom: 40px;
   }
 }
 header a,
