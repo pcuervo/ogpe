@@ -11,15 +11,18 @@
     display: inline; // Remove list-style and block-level defaults
     > a,
     > span {
-      position: relative;
-      padding: @padding-base-vertical @padding-base-horizontal;
+      padding: @padding-base-vertical (@padding-base-horizontal/1.5);
+      display: inline-block;
       line-height: @line-height-base;
       text-decoration: none;
       color: @primary;
       border: 1px solid @primary;
       margin-left: -1px;
       font-size: 14px;
-       @media (min-width: @screen-sm){ font-size: 16px; }
+       @media (min-width: @screen-sm){
+        padding: @padding-base-vertical @padding-base-horizontal;
+        font-size: 16px;
+      }
     }
     &:first-child {
       > a,
