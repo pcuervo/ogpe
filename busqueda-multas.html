@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header>
+		<header class="[ js-header ]">
 			<div class="[ container ]">
 				<h1 class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
@@ -124,153 +124,170 @@
 				</div>
 			</div><!-- end container -->
 		</header>
-		<section class="[ container ]">
-			<h1 class="[ h2 ]">Búsqueda de multas</h1>
-			<div class="[ row ][ margin-bottom ]">
-				<div class="[ col-xs-12 col-sm-6 ]">
-					<h3>Número de multa</h3>
-					<div class="[ input-group ][ input-search ][ margin-bottom ]">
-						<input type="text" class="[ form-control ]" placeholder="Ej. 2015-MULQ-00000">
-						<span class="[ input-group-btn ]">
-							<button type="submit" class="[ btn btn-primary ]">
-								<span class="[ relative ][ icon-search icon-iconed ]"></span>
-							</button>
-						</span>
+		<div class="[ main ]">
+			<section class="[ container ]">
+				<h1 class="[ h2 ]">Búsqueda de multas</h1>
+				<div class="[ row ][ margin-bottom ]">
+					<div class="[ col-xs-12 col-sm-6 ]">
+						<h3>Número de multa</h3>
+						<div class="[ input-group ][ input-search ][ margin-bottom ]">
+							<input type="text" class="[ form-control ]" placeholder="Ej. 2015-MULQ-00000">
+							<span class="[ input-group-btn ]">
+								<button type="submit" class="[ btn btn-primary ]">
+									<span class="[ relative ][ icon-search icon-iconed ]"></span>
+								</button>
+							</span>
+						</div>
+					</div>
+					<div class="[ col-xs-12 col-sm-6 ]">
+						<h3>Número de asociada</h3>
+						<div class="[ input-group ][ input-search ][ margin-bottom ]">
+							<input type="text" class="[ form-control ]" placeholder="Ej. 2015-MULQ-00000">
+							<span class="[ input-group-btn ]">
+								<button type="submit" class="[ btn btn-primary ]">
+									<span class="[ relative ][ icon-search icon-iconed ]"></span>
+								</button>
+							</span>
+						</div>
 					</div>
 				</div>
-				<div class="[ col-xs-12 col-sm-6 ]">
-					<h3>Número de asociada</h3>
-					<div class="[ input-group ][ input-search ][ margin-bottom ]">
-						<input type="text" class="[ form-control ]" placeholder="Ej. 2015-MULQ-00000">
-						<span class="[ input-group-btn ]">
-							<button type="submit" class="[ btn btn-primary ]">
-								<span class="[ relative ][ icon-search icon-iconed ]"></span>
-							</button>
-						</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="[ container ][ text-center ][ margin-bottom--large ]">
-			<h3 class="[ margin-bottom ]">Multas encontradas</h3>
-			<table class="[ table-head--top ][ margin-bottom ]">
-					<thead>
-						<tr>
-							<th class="[ col-sm-4 ]">Número de multa</th>
-							<th class="[ col-sm-4 ]">Monto</th>
-							<th class="[ col-sm-4 ]"></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
-							<th class="[ col-sm-4 ]">$12250.00</th>
-							<th class="[ col-sm-4 ][ text-center ]">
-								<a href="pago-multa.html" class="[ btn btn-primary ]">pagar</a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
-							<th class="[ col-sm-4 ]">$12250.00</th>
-							<th class="[ col-sm-4 ][ text-center ]">
-								<a href="pago-multa.html" class="[ btn btn-primary ]">pagar</a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
-							<th class="[ col-sm-4 ]">$12250.00</th>
-							<th class="[ col-sm-4 ][ text-center ]">
-								<a href="pago-multa.html" class="[ btn btn-primary ]">pagar</a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
-							<th class="[ col-sm-4 ]">$12250.00</th>
-							<th class="[ col-sm-4 ][ text-center ]">
-								<a href="pago-multa.html" class="[ btn btn-primary ]">pagar</a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
-							<th class="[ col-sm-4 ]">$12250.00</th>
-							<th class="[ col-sm-4 ][ text-center ]">
-								<a href="pago-multa.html" class="[ btn btn-primary ]">pagar</a>
-							</th>
-						</tr>
-					</tbody>
-				</table>
-				<ul class="[ pagination ]">
-					<li><a href="#">Anterior</a></li>
-					<li class="[ active ]"><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li><a href="#">Siguiente</a></li>
-				</ul>
-		</section>
-		<footer>
-			<div class="[ footer--top ]">
-				<div class="[ container ]">
-					<div class="[ row ][ margin-bottom ][ text-center ]">
-						<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
-							<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
-							<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
-						</a>
-						<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
-					</div>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
-							<div class="[ row ]">
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
-									<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
-									<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
-								</div>
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
-									<div class="[ bg-image logo--ogpe ]"></div>
+			</section>
+			<section class="[ container ][ text-center ][ margin-bottom--large ]">
+				<h3 class="[ margin-bottom ]">Multas encontradas</h3>
+				<table class="[ table-head--top ][ margin-bottom ]">
+						<thead>
+							<tr>
+								<th class="[ col-sm-4 ]">Número de multa</th>
+								<th class="[ col-sm-4 ]">Monto</th>
+								<th class="[ col-sm-4 ]"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
+								<th class="[ col-sm-4 ]">$12250.00</th>
+								<th class="[ col-sm-4 ][ text-center ]">
+									<a href="pago-multa.html" class="[ btn btn-primary ]">pagar</a>
+								</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
+								<th class="[ col-sm-4 ]">$12250.00</th>
+								<th class="[ col-sm-4 ][ text-center ]">
+									<a href="pago-multa.html" class="[ btn btn-primary ]">pagar</a>
+								</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
+								<th class="[ col-sm-4 ]">$12250.00</th>
+								<th class="[ col-sm-4 ][ text-center ]">
+									<a href="pago-multa.html" class="[ btn btn-primary ]">pagar</a>
+								</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
+								<th class="[ col-sm-4 ]">$12250.00</th>
+								<th class="[ col-sm-4 ][ text-center ]">
+									<a href="pago-multa.html" class="[ btn btn-primary ]">pagar</a>
+								</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
+								<th class="[ col-sm-4 ]">$12250.00</th>
+								<th class="[ col-sm-4 ][ text-center ]">
+									<a href="pago-multa.html" class="[ btn btn-primary ]">pagar</a>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<ul class="[ pagination ]">
+						<li><a href="#">Anterior</a></li>
+						<li class="[ active ]"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">Siguiente</a></li>
+					</ul>
+			</section>
+			<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
-							<h4 class="[ no-margin--top ]">Contactanos</h4>
-							<p>Oficina Central SJ</p>
-							<a href="tel:+525552555555">(787)721-8282</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Aguadilla</p>
-							<a href="tel:+525552555555">(787)891-0466</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Arecibo</p>
-							<a href="tel:+525552555555">(787)878-7979</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Humacao</p>
-							<a href="tel:+525552555555">(787)852-2013</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Ponce</p>
-							<a href="tel:+525552555555">(787)843-9097</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="[ footer--bottom ]">
-				<div class="[ container ]">
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
-							<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
-							<h4>Contacto</h4>
-							<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
 	</body>
 </html>

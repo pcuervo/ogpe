@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header>
+		<header class="[ js-header ]">
 			<div class="[ container ]">
 				<h1 class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
@@ -124,274 +124,290 @@
 				</div>
 			</div><!-- end container -->
 		</header>
-
-		<form class="[ container ]">
-			<h1 class="[ h2 ]">Búsqueda de permisos</h1>
-			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-6 ]">
-					<div class="[ input-group ][ input-search input-search--small ][ margin-bottom ]" placeholder="Número de Permiso">
-						<input type="text" class="[ form-control ]">
-						<span class="[ input-group-btn ]">
-							<button type="submit" class="[ btn btn-primary ]">
-								<span class="[ icon-search ]"></span>
-							</button>
-						</span>
+		<div class="[ main ]">
+			<form class="[ container ]">
+				<h1 class="[ h2 ]">Búsqueda de permisos</h1>
+				<div class="[ row ]">
+					<div class="[ col-xs-12 col-sm-6 ]">
+						<div class="[ input-group ][ input-search input-search--small ][ margin-bottom ]" placeholder="Número de Permiso">
+							<input type="text" class="[ form-control ]">
+							<span class="[ input-group-btn ]">
+								<button type="submit" class="[ btn btn-primary ]">
+									<span class="[ icon-search ]"></span>
+								</button>
+							</span>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="[ row ][ margin-bottom--large ]">
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Permiso</h3>
-					<label>Tipo de permiso:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>Escoja una opción</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-					<label>Estado del pérmiso:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>Escoja una opción</option>
-						<option>Incompleto</option>
-						<option>Pagado</option>
-						<option>En inspección</option>
-						<option>Subsanación</option>
-						<option>En espera de requerimiento</option>
-						<option>Supervisión por gerente</option>
-						<option>Revisión legal</option>
-						<option>Archivo</option>
-						<option>Denegación / Cerrado</option>
-						<option>Aprobación</option>
-					</select>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Proyecto</h3>
-					<label>Código del tipo de proyecto 1:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-					<label>Código del tipo de proyecto 2:</label>
-					<select class="[ form-control ][ arrow ]">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-					<label for="nombre_proyecto">Nombre del proyecto:</label>
-					<input class="[ form-control ]" id="nombre_proyecto" name="nombre_proyecto" type="text">
-					<label for="num_catastro">Número de catastro:</label>
-					<input class="[ form-control ]" id="num_catastro" name="num_catastro" type="text">
-					<label for="dueño">Nombre dueño del proyecto:</label>
-					<input class="[ form-control ]" id="dueño" name="dueño" type="text">
-					<label for="apellido_dueño">Apellido del dueño del catastro:</label>
-					<input class="[ form-control ]" id="apellido_dueño" name="apellido_dueño" type="text">
-					<label for="municipio">Municipio:</label>
-					<input class="[ form-control ]" id="municipio" name="municipio" type="text">
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Usuarios</h3>
-					<label for="cod_1">Código del tipo de proyecto 1:</label>
-					<input class="[ form-control ]" id="cod_1" name="cod_1" type="text">
-					<label for="cod_2">Código del tipo de proyecto 2:</label>
-					<input class="[ form-control ]" id="cod_2" name="cod_2" type="text">
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3>Criterios de búsqueda por Fechas</h3>
-					<label for="creado_de">Creados desde:</label>
-					<input class="[ form-control ]" id="creado_de" name="creado_de" type="date">
-					<label for="creado_a">Creados hasta:</label>
-					<input class="[ form-control ]" id="creado_a" name="creado_a" type="date">
-					<label for="actualizado_de">Actualizados desde:</label>
-					<input class="[ form-control ]" id="actualizado_de" name="actualizado_de" type="date">
-					<label for="actualizado_a">Actualizados hasta:</label>
-					<input class="[ form-control ]" id="actualizado_a" name="actualizado_a" type="date">
-					<label for="cancelado_de">Cancelados desde:</label>
-					<input class="[ form-control ]" id="cancelado_de" name="cancelado_de" type="date">
-					<label for="cancelado_a">Cancelados hasta:</label>
-					<input class="[ form-control ]" id="cancelado_a" name="cancelado_a" type="date">
-				</div>
-			</div>
-			<div class="[ text-center ][ margin-bottom--large ]">
-				<button type="button" class="[ btn btn-primary ]">buscar</button>
-			</div>
-		</form>
-
-	<!-- resultados -->
-		<section class="[ container ][ margin-bottom--large ]">
-			<h3 class="[ margin-bottom ]">Se encontraros <span class="[ color-primary ]">34</span> resultados relacionados con</h3>
-			<table class="[ table-head--top ][ margin-bottom ]">
-					<thead>
-						<tr>
-							<th class="[ col-sm-2 ]">Permiso</th>
-							<th class="[ col-sm-2 ]">Fecha radicación</th>
-							<th class="[ col-sm-2 ]">Municipio</th>
-							<th class="[ col-sm-2 ]">Tipo (CSA, CPI)</th>
-							<th class="[ col-sm-2 ]">Estado actual</th>
-							<th class="[ col-sm-2 ]">Ver resumen</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span>Supervision por gerente</th>
-							<th class="[ col-sm-2 ][ text-center ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
-							<th class="[ col-sm-2 ][ text-center ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
-							<th class="[ col-sm-2 ][ text-center ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
-							<th class="[ col-sm-2 ][ text-center ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-							</th>
-						</tr>
-					</tbody>
-				</table>
-				<div class="[ text-center ]">
-					<ul class="[ pagination ]">
-						<li><a href="#">Anterior</a></li>
-						<li class="[ active ]"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">Siguiente</a></li>
-					</ul>
-				</div>
-		</section>
-		<div class="[ container ][ border-top--primary ][ margin-bottom--large ][ padding ][ margin-bottom ][ leyendas ]">
-			<h4>Estados</h4>
-			<div>
-				<div class="[ icon-circle-cash icon--iconed--large ]"></div>
-				<p>Pago</p>
-			</div>
-			<div>
-				<div class="[ icon-file-text-document icon--iconed--large ]"></div>
-				<p>Inspección o secretaria</p>
-			</div>
-			<div>
-				<div class="[ icon-notepad-edit icon--iconed--large ]"></div>
-				<p>Subsanación</p>
-			</div>
-			<div>
-				<div class="[ icon-calendar icon--iconed--large ]"></div>
-				<p>En espera de requerimientos o agencias</p>
-			</div>
-			<div>
-				<div class="[ icon-business-man-2 icon--iconed--large ]"></div>
-				<p>Supervisión por gerente</p>
-			</div>
-			<div>
-				<div class="[ icon-business-man-3 icon--iconed--large ]"></div>
-				<p>Revisión legal</p>
-			</div>
-			<div>
-				<div class="[ icon-drawer-1 icon--iconed--large ]"></div>
-				<p>Archivo</p>
-			</div>
-			<div>
-				<div class="[ icon-cancel-circle icon--iconed--large ]"></div>
-				<p>Denegación / Cerrado</p>
-			</div>
-			<div>
-				<div class="[ icon-ok-circle icon--iconed--large ]"></div>
-				<p>Aprobación</p>
-			</div>
-		</div>
-		<footer>
-			<div class="[ footer--top ]">
-				<div class="[ container ]">
-					<div class="[ row ][ margin-bottom ][ text-center ]">
-						<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
-							<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
-							<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
-						</a>
-						<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+				<div class="[ row ][ margin-bottom--large ]">
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<h3>Criterios de búsqueda por Permiso</h3>
+						<label>Tipo de permiso:</label>
+						<select class="[ form-control ][ arrow ]">
+							<option>Escoja una opción</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+						<label>Estado del pérmiso:</label>
+						<select class="[ form-control ][ arrow ]">
+							<option>Escoja una opción</option>
+							<option>Incompleto</option>
+							<option>Pagado</option>
+							<option>En inspección</option>
+							<option>Subsanación</option>
+							<option>En espera de requerimiento</option>
+							<option>Supervisión por gerente</option>
+							<option>Revisión legal</option>
+							<option>Archivo</option>
+							<option>Denegación / Cerrado</option>
+							<option>Aprobación</option>
+						</select>
 					</div>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
-							<div class="[ row ]">
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
-									<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
-									<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
-								</div>
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
-									<div class="[ bg-image logo--ogpe ]"></div>
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<h3>Criterios de búsqueda por Proyecto</h3>
+						<label>Código del tipo de proyecto 1:</label>
+						<select class="[ form-control ][ arrow ]">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+						<label>Código del tipo de proyecto 2:</label>
+						<select class="[ form-control ][ arrow ]">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+						<label for="nombre_proyecto">Nombre del proyecto:</label>
+						<input class="[ form-control ]" id="nombre_proyecto" name="nombre_proyecto" type="text">
+						<label for="num_catastro">Número de catastro:</label>
+						<input class="[ form-control ]" id="num_catastro" name="num_catastro" type="text">
+						<label for="dueño">Nombre dueño del proyecto:</label>
+						<input class="[ form-control ]" id="dueño" name="dueño" type="text">
+						<label for="apellido_dueño">Apellido del dueño del catastro:</label>
+						<input class="[ form-control ]" id="apellido_dueño" name="apellido_dueño" type="text">
+						<label for="municipio">Municipio:</label>
+						<input class="[ form-control ]" id="municipio" name="municipio" type="text">
+					</div>
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<h3>Criterios de búsqueda por Usuarios</h3>
+						<label for="cod_1">Código del tipo de proyecto 1:</label>
+						<input class="[ form-control ]" id="cod_1" name="cod_1" type="text">
+						<label for="cod_2">Código del tipo de proyecto 2:</label>
+						<input class="[ form-control ]" id="cod_2" name="cod_2" type="text">
+					</div>
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<h3>Criterios de búsqueda por Fechas</h3>
+						<label for="creado_de">Creados desde:</label>
+						<input class="[ form-control ]" id="creado_de" name="creado_de" type="date">
+						<label for="creado_a">Creados hasta:</label>
+						<input class="[ form-control ]" id="creado_a" name="creado_a" type="date">
+						<label for="actualizado_de">Actualizados desde:</label>
+						<input class="[ form-control ]" id="actualizado_de" name="actualizado_de" type="date">
+						<label for="actualizado_a">Actualizados hasta:</label>
+						<input class="[ form-control ]" id="actualizado_a" name="actualizado_a" type="date">
+						<label for="cancelado_de">Cancelados desde:</label>
+						<input class="[ form-control ]" id="cancelado_de" name="cancelado_de" type="date">
+						<label for="cancelado_a">Cancelados hasta:</label>
+						<input class="[ form-control ]" id="cancelado_a" name="cancelado_a" type="date">
+					</div>
+				</div>
+				<div class="[ text-center ][ margin-bottom--large ]">
+					<button type="button" class="[ btn btn-primary ]">buscar</button>
+				</div>
+			</form>
+
+		<!-- resultados -->
+			<section class="[ container ][ margin-bottom--large ]">
+				<h3 class="[ margin-bottom ]">Se encontraros <span class="[ color-primary ]">34</span> resultados relacionados con</h3>
+				<table class="[ table-head--top ][ margin-bottom ]">
+						<thead>
+							<tr>
+								<th class="[ col-sm-2 ]">Permiso</th>
+								<th class="[ col-sm-2 ]">Fecha radicación</th>
+								<th class="[ col-sm-2 ]">Municipio</th>
+								<th class="[ col-sm-2 ]">Tipo (CSA, CPI)</th>
+								<th class="[ col-sm-2 ]">Estado actual</th>
+								<th class="[ col-sm-2 ]">Ver resumen</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span>Supervision por gerente</th>
+								<th class="[ col-sm-2 ][ text-center ]">
+									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+								</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
+								<th class="[ col-sm-2 ][ text-center ]">
+									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+								</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
+								<th class="[ col-sm-2 ][ text-center ]">
+									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+								</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
+								<th class="[ col-sm-2 ][ text-center ]">
+									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<div class="[ text-center ]">
+						<ul class="[ pagination ]">
+							<li><a href="#">Anterior</a></li>
+							<li class="[ active ]"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">Siguiente</a></li>
+						</ul>
+					</div>
+			</section>
+			<div class="[ container ][ border-top--primary ][ margin-bottom--large ][ padding ][ margin-bottom ][ leyendas ]">
+				<h4>Estados</h4>
+				<div>
+					<div class="[ icon-circle-cash icon--iconed--large ]"></div>
+					<p>Pago</p>
+				</div>
+				<div>
+					<div class="[ icon-file-text-document icon--iconed--large ]"></div>
+					<p>Inspección o secretaria</p>
+				</div>
+				<div>
+					<div class="[ icon-notepad-edit icon--iconed--large ]"></div>
+					<p>Subsanación</p>
+				</div>
+				<div>
+					<div class="[ icon-calendar icon--iconed--large ]"></div>
+					<p>En espera de requerimientos o agencias</p>
+				</div>
+				<div>
+					<div class="[ icon-business-man-2 icon--iconed--large ]"></div>
+					<p>Supervisión por gerente</p>
+				</div>
+				<div>
+					<div class="[ icon-business-man-3 icon--iconed--large ]"></div>
+					<p>Revisión legal</p>
+				</div>
+				<div>
+					<div class="[ icon-drawer-1 icon--iconed--large ]"></div>
+					<p>Archivo</p>
+				</div>
+				<div>
+					<div class="[ icon-cancel-circle icon--iconed--large ]"></div>
+					<p>Denegación / Cerrado</p>
+				</div>
+				<div>
+					<div class="[ icon-ok-circle icon--iconed--large ]"></div>
+					<p>Aprobación</p>
+				</div>
+			</div>
+			<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
-							<h4 class="[ no-margin--top ]">Contactanos</h4>
-							<p>Oficina Central SJ</p>
-							<a href="tel:+525552555555">(787)721-8282</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Aguadilla</p>
-							<a href="tel:+525552555555">(787)891-0466</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Arecibo</p>
-							<a href="tel:+525552555555">(787)878-7979</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Humacao</p>
-							<a href="tel:+525552555555">(787)852-2013</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Ponce</p>
-							<a href="tel:+525552555555">(787)843-9097</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="[ footer--bottom ]">
-				<div class="[ container ]">
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
-							<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
-							<h4>Contacto</h4>
-							<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
 	</body>
 </html>

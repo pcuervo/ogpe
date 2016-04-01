@@ -32,6 +32,17 @@ body {
   background-color: @body-bg;
 }
 
+html,
+body { height: 100%; }
+
+.main {
+min-height: -moz-calc(100% - 60px);
+min-height: -o-calc(100% - 60px);
+min-height: -webkit-calc(100% - 60px);
+min-height: calc(100% - 60px);
+position: relative;
+}
+
 // Reset fonts for relevant elements
 input,
 button,

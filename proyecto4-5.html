@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header>
+		<header class="[ js-header ]">
 			<div class="[ container ]">
 				<h1 class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
@@ -124,149 +124,165 @@
 				</div>
 			</div><!-- end container -->
 		</header>
-
-		<div class="[ container ][ text-center ][ margin-bottom--small ]">
-			<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
-			<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas ]">
-				<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
-				<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
-				<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
-				<span class="[ circle-proceso circle-etapas ]"></span>
-			</div>
-			<span class="[ circle-proceso circle-pasos ]">2</span>
-			<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas ]"></div>
-			<span class="[ circle-proceso circle-pasos ]">3</span>
-			<div class="[ block-text ]">
-				<p class="[ inline-block align-top ][ width-33 ][ text--small ][ text-left ]">Créación nuevo proyecto</p>
-				<p class="[ inline-block align-top ][ width-30 ][ text--small ]">Anexo</p>
-				<p class="[ inline-block align-top ][ width-33 ][ text--small ][ text-right ]">Resumen del proyecto</p>
-			</div>
-		</div>
-
-		<section class="[ container ][ margin-bottom--large ]">
-			<h2>Nuevo proyecto</h2>
-			<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
-			<form>
-				<h3>Dueño del proyecto</h3>
-				<label for="nombre">¿A nombre de quién deben salir los trámites de este proyecto?</label>
-				<div class="[ row ][ margin-bottom ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<select class="[ form-control ][ arrow ]">
-							<option>usted</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
-					</div>
+		<div class="[ main ]">
+			<div class="[ container ][ text-center ][ margin-bottom--small ]">
+				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas line-etapas--large ]">
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ]"></span>
 				</div>
-				<div class="[ row ][ margin-bottom ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<div class="[ row ]">
-							<div class="[ col-xs-8 ][ no-padding--right ]">
-								<label for="nombre">Primer nombre:*</label>
-								<input class="[ form-control ]" id="nombre" name="nombre" type="text">
-							</div>
-							<div class="[ col-xs-4 ]">
-								<label for="inicial">Inicial:</label>
-								<input class="[ form-control ]" id="inicial" name="inicial" type="text">
-							</div>
+				<span class="[ circle-proceso circle-pasos ]">2</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--large ]"></div>
+				<span class="[ circle-proceso circle-pasos ]">3</span>
+				<div class="[ block-text ]">
+					<p class="[ inline-block align-top ][ width-33 ][ text--small ][ text-left ]">Créación nuevo proyecto</p>
+					<p class="[ inline-block align-top ][ width-30 ][ text--small ]">Anexo</p>
+					<p class="[ inline-block align-top ][ width-33 ][ text--small ][ text-right ]">Resumen del proyecto</p>
+				</div>
+			</div>
+
+			<section class="[ container ][ margin-bottom--large ]">
+				<h2>Nuevo proyecto</h2>
+				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
+				<form>
+					<h3>Dueño del proyecto</h3>
+					<label for="nombre">¿A nombre de quién deben salir los trámites de este proyecto?</label>
+					<div class="[ row ][ margin-bottom ]">
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<select class="[ form-control ][ arrow ]">
+								<option>usted</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
 						</div>
-						<label for="apellido">Apellido paterno:*</label>
-						<input class="[ form-control ]" id="apellido" name="apellido" type="text">
 					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="direccion">Dirección:*</label>
-						<input class="[ form-control ]" id="direccion" name="direccion" type="text">
-						<label for="pais">País:*</label>
-						<input class="[ form-control ]" id="pais" name="pais" type="text">
-						<label for="municipio">Municipio:*</label>
-						<input class="[ form-control ]" id="municipio" name="municipio" type="text">
-						<label for="codigo_postal">Código postal</label>
-						<input class="[ form-control ]" id="codigo_postal" name="codigo_postal" type="text">
-						<label for="estado">Estado:*</label>
-						<input class="[ form-control ]" id="estado" name="estado" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="telefono">Teléfono primario:*</label>
-						<input class="[ form-control ]" id="telefono" name="telefono" type="number">
-						<label for="telefono_secundario">Teléfono secundario:</label>
-						<input class="[ form-control ]" id="telefono_secundario" name="telefono_secundario" type="number">
-						<label for="telefono_otro">Otro:</label>
-						<input class="[ form-control ]" id="telefono_otro" name="telefono_otro" type="number">
-						<label for="fax">Fax:</label>
-						<input class="[ form-control ]" id="fax" name="fax" type="number">
-						<label for="correo">Correo electrónico:*</label>
-						<input class="[ form-control ]" id="correo" name="correo" type="email">
-					</div>
-				</div>
-				<div class="[ text-center ][ margin-bottom--large ]">
-					<a href="proyecto5-5.html" class="[ btn btn-primary ]">continuar</a>
-				</div>
-			</form>
-		</section>
-				<footer>
-			<div class="[ footer--top ]">
-				<div class="[ container ]">
-					<div class="[ row ][ margin-bottom ][ text-center ]">
-						<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
-							<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
-							<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
-						</a>
-						<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
-					</div>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+					<div class="[ row ][ margin-bottom ]">
+						<div class="[ col-xs-12 col-sm-4 ]">
 							<div class="[ row ]">
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
-									<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
-									<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+								<div class="[ col-xs-8 ][ no-padding--right ]">
+									<label for="nombre">Primer nombre:*</label>
+									<input class="[ form-control ]" id="nombre" name="nombre" type="text">
 								</div>
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
-									<div class="[ bg-image logo--ogpe ]"></div>
+								<div class="[ col-xs-4 ]">
+									<label for="inicial">Inicial:</label>
+									<input class="[ form-control ]" id="inicial" name="inicial" type="text">
 								</div>
 							</div>
+							<label for="apellido">Apellido paterno:*</label>
+							<input class="[ form-control ]" id="apellido" name="apellido" type="text">
 						</div>
-						<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
-							<h4 class="[ no-margin--top ]">Contactanos</h4>
-							<p>Oficina Central SJ</p>
-							<a href="tel:+525552555555">(787)721-8282</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Aguadilla</p>
-							<a href="tel:+525552555555">(787)891-0466</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Arecibo</p>
-							<a href="tel:+525552555555">(787)878-7979</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Humacao</p>
-							<a href="tel:+525552555555">(787)852-2013</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Ponce</p>
-							<a href="tel:+525552555555">(787)843-9097</a>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="direccion">Dirección:*</label>
+							<input class="[ form-control ]" id="direccion" name="direccion" type="text">
+							<label for="pais">País:*</label>
+							<input class="[ form-control ]" id="pais" name="pais" type="text">
+							<label for="municipio">Municipio:*</label>
+							<input class="[ form-control ]" id="municipio" name="municipio" type="text">
+							<label for="codigo_postal">Código postal</label>
+							<input class="[ form-control ]" id="codigo_postal" name="codigo_postal" type="text">
+							<label for="estado">Estado:*</label>
+							<input class="[ form-control ]" id="estado" name="estado" type="text">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="telefono">Teléfono primario:*</label>
+							<input class="[ form-control ]" id="telefono" name="telefono" type="number">
+							<label for="telefono_secundario">Teléfono secundario:</label>
+							<input class="[ form-control ]" id="telefono_secundario" name="telefono_secundario" type="number">
+							<label for="telefono_otro">Otro:</label>
+							<input class="[ form-control ]" id="telefono_otro" name="telefono_otro" type="number">
+							<label for="fax">Fax:</label>
+							<input class="[ form-control ]" id="fax" name="fax" type="number">
+							<label for="correo">Correo electrónico:*</label>
+							<input class="[ form-control ]" id="correo" name="correo" type="email">
+						</div>
+					</div>
+					<div class="[ text-center ][ margin-bottom--large ]">
+						<a href="proyecto5-5.html" class="[ btn btn-primary ]">continuar</a>
+					</div>
+				</form>
+			</section>
+					<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="[ footer--bottom ]">
-				<div class="[ container ]">
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
-							<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
-							<h4>Contacto</h4>
-							<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+			</footer>
+		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
 	</body>
 </html>

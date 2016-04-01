@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header>
+		<header class="[ js-header ]">
 			<div class="[ container ]">
 				<h1 class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
@@ -124,361 +124,378 @@
 				</div>
 			</div><!-- end container -->
 		</header>
-		<section class="[ container ]">
-			<h2 class="[ margin-bottom ]">Búsqueda de credenciales</h2>
-			<form class="[ row ]">
-				<div class="[ col-xs-12 col-sm-4 ][ margin-bottom--small ]">
-					<label>Por número de credencial:</label>
-					<div class="[ input-group ][ input-search ][ margin-bottom ]">
-						<input type="text" class="[ form-control ]" placeholder="2234525-34653-45">
-						<span class="[ input-group-btn ]">
-							<button type="submit" class="[ btn btn-primary ]">
-								<span class="[ relative ][ icon-search icon-iconed ]"></span>
-							</button>
-						</span>
+		<div class="[ main ]">
+			<section class="[ container ]">
+				<h2 class="[ margin-bottom ]">Búsqueda de credenciales</h2>
+				<form class="[ row ]">
+					<div class="[ col-xs-12 col-sm-4 ][ margin-bottom--small ]">
+						<label>Por número de credencial:</label>
+						<div class="[ input-group ][ input-search ][ margin-bottom ]">
+							<input type="text" class="[ form-control ]" placeholder="2234525-34653-45">
+							<span class="[ input-group-btn ]">
+								<button type="submit" class="[ btn btn-primary ]">
+									<span class="[ relative ][ icon-search icon-iconed ]"></span>
+								</button>
+							</span>
+						</div>
 					</div>
-				</div>
-				<div class="[ col-xs-12 col-sm-4 ][ margin-bottom--small ]">
-					<label>Por usuario (correo) del profesional:</label>
-					<div class="[ input-group ][ input-search ][ margin-bottom ]">
-						<input type="text" class="[ form-control ]" placeholder="Usuario del profesional">
-						<span class="[ input-group-btn ]">
-							<button type="submit" class="[ btn btn-primary ]">
-								<span class="[ relative ][ icon-search icon-iconed ]"></span>
-							</button>
-						</span>
+					<div class="[ col-xs-12 col-sm-4 ][ margin-bottom--small ]">
+						<label>Por usuario (correo) del profesional:</label>
+						<div class="[ input-group ][ input-search ][ margin-bottom ]">
+							<input type="text" class="[ form-control ]" placeholder="Usuario del profesional">
+							<span class="[ input-group-btn ]">
+								<button type="submit" class="[ btn btn-primary ]">
+									<span class="[ relative ][ icon-search icon-iconed ]"></span>
+								</button>
+							</span>
+						</div>
 					</div>
-				</div>
-				<div class="[ col-xs-12 col-sm-4 ][ margin-bottom--small ]">
-				<label>Por nombre del profesional</label>
-					<div class="[ input-group ][ input-search ][ margin-bottom ]">
-						<input type="text" class="[ form-control ]" placeholder="Nombre del profesional">
-						<span class="[ input-group-btn ]">
-							<button type="submit" class="[ btn btn-primary ]">
-								<span class="[ relative ][ icon-search icon-iconed ]"></span>
-							</button>
-						</span>
+					<div class="[ col-xs-12 col-sm-4 ][ margin-bottom--small ]">
+					<label>Por nombre del profesional</label>
+						<div class="[ input-group ][ input-search ][ margin-bottom ]">
+							<input type="text" class="[ form-control ]" placeholder="Nombre del profesional">
+							<span class="[ input-group-btn ]">
+								<button type="submit" class="[ btn btn-primary ]">
+									<span class="[ relative ][ icon-search icon-iconed ]"></span>
+								</button>
+							</span>
+						</div>
 					</div>
-				</div>
-			</form>
-		</section>
-		<section class="[ container ][ margin-bottom--large ][ text-center ]">
-			<h3>Listado de Credenciales</h3>
-			<table class="[ table-credenciales table-head--top ]">
-				<thead>
-					<tr>
-						<th class="[ col-sm-4 ]">Nombre</th>
-						<th class="[ col-sm-4 ]">Tipo de credencial</th>
-						<th class="[ col-sm-4 ]">Estatus</th>
-						<th class="[ col-sm-4 ]">ver detalle</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th class="[ col-sm-4 ]">Roberto López</th>
-						<th class="[ col-sm-4 ]">IA Salud Ambiental</th>
-						<th class="[ col-sm-4 ]">Active</th>
-						<th class="[ col-sm-4 ]">
-							<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
-						</th>
-					</tr>
-					<tr>
-						<th class="[ col-sm-4 ]">Ana Léon</th>
-						<th class="[ col-sm-4 ]">Profesional Autorizado</th>
-						<th class="[ col-sm-4 ]">Active</th>
-						<th class="[ col-sm-4 ]">
-							<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
-						</th>
-					</tr>
-					<tr>
-						<th class="[ col-sm-4 ]">Monserrat Gonzalez</th>
-						<th class="[ col-sm-4 ]">IA Prevención de Incendios</th>
-						<th class="[ col-sm-4 ]">Disabled</th>
-						<th class="[ col-sm-4 ]">
-							<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
-						</th>
-					</tr>
-					<tr>
-						<th class="[ col-sm-4 ]">Augusto Carvajal</th>
-						<th class="[ col-sm-4 ]">Profesional Autorizado</th>
-						<th class="[ col-sm-4 ]">Disabled</th>
-						<th class="[ col-sm-4 ]">
-							<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
-						</th>
-					</tr>
-					<tr>
-						<th class="[ col-sm-4 ]">Roberto López</th>
-						<th class="[ col-sm-4 ]">IA Salud Ambiental</th>
-						<th class="[ col-sm-4 ]">Active</th>
-						<th class="[ col-sm-4 ]">
-							<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
-						</th>
-					</tr>
-					<tr>
-						<th class="[ col-sm-4 ]">Ana Léon</th>
-						<th class="[ col-sm-4 ]">Profesional Autorizado</th>
-						<th class="[ col-sm-4 ]">Active</th>
-						<th class="[ col-sm-4 ]">
-							<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
-						</th>
-					</tr>
-					<tr>
-						<th class="[ col-sm-4 ]">Monserrat Gonzalez</th>
-						<th class="[ col-sm-4 ]">IA Prevención de Incendios</th>
-						<th class="[ col-sm-4 ]">Disabled</th>
-						<th class="[ col-sm-4 ]">
-							<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
-						</th>
-					</tr>
-				</tbody>
-			</table>
-			<ul class="[ pagination ]">
-				<li><a href="#">Anterior</a></li>
-				<li class="[ active ]"><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li><a href="#">Siguiente</a></li>
-			</ul>
-		</section>
-		<section id="detalles1" class="collapse">
-			<div class="[ container ][ margin-bottom--large ][ text-center ]">
-				<div class="[ row ]">
-					<div class="[ bg-gray--xlighter padding--top padding--bottom--xlarge padding--sides--large margin-bottom--large ][ no-padding--sides--xs ][ col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 ]">
-						<h3>Detalles de la credencial</h3>
-						<table class="[ table-head--left ][ margin-bottom--large ]">
-							<tbody>
-								<tr>
-									<th class="[ col-sm-4 ]">Nombre del PAIA:</th>
-									<th class="[ col-sm-4 ]">Ana Leon</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Dirección del PAIA:</th>
-									<th class="[ col-sm-4 ]">PO Box 8284 Ponce, Puerto Rico 00732</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Teléfonos del PAIA:</th>
-									<th class="[ col-sm-4 ]">7873153693 000-000-0000</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Username:</th>
-									<th class="[ col-sm-4 ]">profaleontorres@gmail.com</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Credencial:</th>
-									<th class="[ col-sm-4 ]">PRO</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Tipo de Credencial:</th>
-									<th class="[ col-sm-4 ]">02520-PRO-02040</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Status:</th>
-									<th class="[ col-sm-4 ]">Disabled</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Fecha de Expedición:</th>
-									<th class="[ col-sm-4 ]">2013-03-27 11:27:12.0</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Fecha de Expiración:</th>
-									<th class="[ col-sm-4 ]">2014-03-27 11:27:12.0</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Otros Credenciales:</th>
-									<th class="[ col-sm-4 ]"></th>
-								</tr>
-							</tbody>
-						</table>
-						<h4>Licencias</h4>
-						<table class="[ table-head--left ]">
-							<tbody>
-								<tr>
-									<th class="[ col-sm-4 ]">Ocupación:</th>
-									<th class="[ col-sm-4 ]">Internacional de Arb</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Número de licencia:</th>
-									<th class="[ col-sm-4 ]">78731536AM</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">Fecha de emisión:</th>
-									<th class="[ col-sm-4 ]">2013-03-27 11:27:00</th>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="[ border-bottom--primary ]">
-					<h3>Permisos generados con esta credencial</h3>
-					<table class="[ table-head--top ]">
-						<thead>
-							<tr>
-								<th class="[ col-sm-2 ]">Permiso</th>
-								<th class="[ col-sm-2 ]">Fecha radicación</th>
-								<th class="[ col-sm-2 ]">Municipio</th>
-								<th class="[ col-sm-2 ]">Tipo (CSA, CPI)</th>
-								<th class="[ col-sm-2 ]">Estado actual</th>
-								<th class="[ col-sm-2 ]">Ver resumen</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th class="[ col-sm-2 ]"><a>PGE</a></th>
-								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-								<th class="[ col-sm-2 ]">Gurabo</th>
-								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
-								<th class="[ col-sm-2 ][ text-center ]">
-									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-								</th>
-							</tr>
-							<tr>
-								<th class="[ col-sm-2 ]"><a>PGE</a></th>
-								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-								<th class="[ col-sm-2 ]">Gurabo</th>
-								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
-								<th class="[ col-sm-2 ][ text-center ]">
-									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-								</th>
-							</tr>
-							<tr>
-								<th class="[ col-sm-2 ]"><a>PGE</a></th>
-								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-								<th class="[ col-sm-2 ]">Gurabo</th>
-								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
-								<th class="[ col-sm-2 ][ text-center ]">
-									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-								</th>
-							</tr>
-							<tr>
-								<th class="[ col-sm-2 ]"><a>PGE</a></th>
-								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-								<th class="[ col-sm-2 ]">Gurabo</th>
-								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
-								<th class="[ col-sm-2 ][ text-center ]">
-									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-								</th>
-							</tr>
-						</tbody>
-					</table>
-					<ul class="[ pagination ]">
-						<li><a href="#">Anterior</a></li>
-						<li class="[ active ]"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">Siguiente</a></li>
-					</ul>
-				</div>
-				<div class="[ padding ][ margin-bottom ][ leyendas ]">
-					<h4>Estados</h4>
-					<div>
-						<div class="[ icon-circle-cash  icon--iconed--large ]"></div>
-						<p>Pago</p>
-					</div>
-					<div>
-						<div class="[ icon-file-text-document  icon--iconed--large ]"></div>
-						<p>Inspección o secretaria</p>
-					</div>
-					<div>
-						<div class="[ icon-notepad-edit  icon--iconed--large ]"></div>
-						<p>Subsanación</p>
-					</div>
-					<div>
-						<div class="[ icon-calendar  icon--iconed--large ]"></div>
-						<p>En espera de requerimientos o agencias</p>
-					</div>
-					<div>
-						<div class="[ icon-business-man-2  icon--iconed--large ]"></div>
-						<p>Supervisión por gerente</p>
-					</div>
-					<div>
-						<div class="[ icon-business-man-3  icon--iconed--large ]"></div>
-						<p>Revisión legal</p>
-					</div>
-					<div>
-						<div class="[ icon-drawer-1  icon--iconed--large ]"></div>
-						<p>Archivo</p>
-					</div>
-					<div>
-						<div class="[ icon-cancel-circle  icon--iconed--large ]"></div>
-						<p>Denegación / Cerrado</p>
-					</div>
-					<div>
-						<div class="[ icon-ok-circle  icon--iconed--large ]"></div>
-						<p>Aprobación</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer>
-			<div class="[ footer--top ]">
-				<div class="[ container ]">
-					<div class="[ row ][ margin-bottom ][ text-center ]">
-						<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
-							<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
-							<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
-						</a>
-						<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
-					</div>
+				</form>
+			</section>
+			<section class="[ container ][ margin-bottom--large ][ text-center ]">
+				<h3>Listado de Credenciales</h3>
+				<table class="[ table-credenciales table-head--top ]">
+					<thead>
+						<tr>
+							<th class="[ col-sm-4 ]">Nombre</th>
+							<th class="[ col-sm-4 ]">Tipo de credencial</th>
+							<th class="[ col-sm-4 ]">Estatus</th>
+							<th class="[ col-sm-4 ]">ver detalle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="[ col-sm-4 ]">Roberto López</th>
+							<th class="[ col-sm-4 ]">IA Salud Ambiental</th>
+							<th class="[ col-sm-4 ]">Active</th>
+							<th class="[ col-sm-4 ]">
+								<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
+							</th>
+						</tr>
+						<tr>
+							<th class="[ col-sm-4 ]">Ana Léon</th>
+							<th class="[ col-sm-4 ]">Profesional Autorizado</th>
+							<th class="[ col-sm-4 ]">Active</th>
+							<th class="[ col-sm-4 ]">
+								<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
+							</th>
+						</tr>
+						<tr>
+							<th class="[ col-sm-4 ]">Monserrat Gonzalez</th>
+							<th class="[ col-sm-4 ]">IA Prevención de Incendios</th>
+							<th class="[ col-sm-4 ]">Disabled</th>
+							<th class="[ col-sm-4 ]">
+								<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
+							</th>
+						</tr>
+						<tr>
+							<th class="[ col-sm-4 ]">Augusto Carvajal</th>
+							<th class="[ col-sm-4 ]">Profesional Autorizado</th>
+							<th class="[ col-sm-4 ]">Disabled</th>
+							<th class="[ col-sm-4 ]">
+								<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
+							</th>
+						</tr>
+						<tr>
+							<th class="[ col-sm-4 ]">Roberto López</th>
+							<th class="[ col-sm-4 ]">IA Salud Ambiental</th>
+							<th class="[ col-sm-4 ]">Active</th>
+							<th class="[ col-sm-4 ]">
+								<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
+							</th>
+						</tr>
+						<tr>
+							<th class="[ col-sm-4 ]">Ana Léon</th>
+							<th class="[ col-sm-4 ]">Profesional Autorizado</th>
+							<th class="[ col-sm-4 ]">Active</th>
+							<th class="[ col-sm-4 ]">
+								<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
+							</th>
+						</tr>
+						<tr>
+							<th class="[ col-sm-4 ]">Monserrat Gonzalez</th>
+							<th class="[ col-sm-4 ]">IA Prevención de Incendios</th>
+							<th class="[ col-sm-4 ]">Disabled</th>
+							<th class="[ col-sm-4 ]">
+								<a data-toggle="collapse" data-target="#detalles1" class="[ btn btn-primary ]"><div class="[ bg-image img--credencial ]"></div></a>
+							</th>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="[ pagination ]">
+					<li><a href="#">Anterior</a></li>
+					<li class="[ active ]"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">Siguiente</a></li>
+				</ul>
+			</section>
+			<section id="detalles1" class="collapse">
+				<div class="[ container ][ margin-bottom--large ][ text-center ]">
 					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
-							<div class="[ row ]">
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
-									<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
-									<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
-								</div>
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
-									<div class="[ bg-image logo--ogpe ]"></div>
+						<div class="[ bg-gray--xlighter padding--top padding--bottom--xlarge padding--sides--large margin-bottom--large ][ no-padding--sides--xs ][ col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 ]">
+							<h3>Detalles de la credencial</h3>
+							<table class="[ table-head--left ][ margin-bottom--large ]">
+								<tbody>
+									<tr>
+										<th class="[ col-sm-4 ]">Nombre del PAIA:</th>
+										<th class="[ col-sm-4 ]">Ana Leon</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Dirección del PAIA:</th>
+										<th class="[ col-sm-4 ]">PO Box 8284 Ponce, Puerto Rico 00732</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Teléfonos del PAIA:</th>
+										<th class="[ col-sm-4 ]">7873153693 000-000-0000</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Username:</th>
+										<th class="[ col-sm-4 ]">profaleontorres@gmail.com</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Credencial:</th>
+										<th class="[ col-sm-4 ]">PRO</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Tipo de Credencial:</th>
+										<th class="[ col-sm-4 ]">02520-PRO-02040</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Status:</th>
+										<th class="[ col-sm-4 ]">Disabled</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Fecha de Expedición:</th>
+										<th class="[ col-sm-4 ]">2013-03-27 11:27:12.0</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Fecha de Expiración:</th>
+										<th class="[ col-sm-4 ]">2014-03-27 11:27:12.0</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Otros Credenciales:</th>
+										<th class="[ col-sm-4 ]"></th>
+									</tr>
+								</tbody>
+							</table>
+							<h4>Licencias</h4>
+							<table class="[ table-head--left ]">
+								<tbody>
+									<tr>
+										<th class="[ col-sm-4 ]">Ocupación:</th>
+										<th class="[ col-sm-4 ]">Internacional de Arb</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Número de licencia:</th>
+										<th class="[ col-sm-4 ]">78731536AM</th>
+									</tr>
+									<tr>
+										<th class="[ col-sm-4 ]">Fecha de emisión:</th>
+										<th class="[ col-sm-4 ]">2013-03-27 11:27:00</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="[ border-bottom--primary ]">
+						<h3>Permisos generados con esta credencial</h3>
+						<table class="[ table-head--top ]">
+							<thead>
+								<tr>
+									<th class="[ col-sm-2 ]">Permiso</th>
+									<th class="[ col-sm-2 ]">Fecha radicación</th>
+									<th class="[ col-sm-2 ]">Municipio</th>
+									<th class="[ col-sm-2 ]">Tipo (CSA, CPI)</th>
+									<th class="[ col-sm-2 ]">Estado actual</th>
+									<th class="[ col-sm-2 ]">Ver resumen</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th class="[ col-sm-2 ]"><a>PGE</a></th>
+									<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+									<th class="[ col-sm-2 ]">Gurabo</th>
+									<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+									<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
+									<th class="[ col-sm-2 ][ text-center ]">
+										<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+									</th>
+								</tr>
+								<tr>
+									<th class="[ col-sm-2 ]"><a>PGE</a></th>
+									<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+									<th class="[ col-sm-2 ]">Gurabo</th>
+									<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+									<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
+									<th class="[ col-sm-2 ][ text-center ]">
+										<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+									</th>
+								</tr>
+								<tr>
+									<th class="[ col-sm-2 ]"><a>PGE</a></th>
+									<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+									<th class="[ col-sm-2 ]">Gurabo</th>
+									<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+									<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
+									<th class="[ col-sm-2 ][ text-center ]">
+										<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+									</th>
+								</tr>
+								<tr>
+									<th class="[ col-sm-2 ]"><a>PGE</a></th>
+									<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+									<th class="[ col-sm-2 ]">Gurabo</th>
+									<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+									<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ]"></span> Supervision por gerente</th>
+									<th class="[ col-sm-2 ][ text-center ]">
+										<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+									</th>
+								</tr>
+							</tbody>
+						</table>
+						<ul class="[ pagination ]">
+							<li><a href="#">Anterior</a></li>
+							<li class="[ active ]"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">Siguiente</a></li>
+						</ul>
+					</div>
+					<div class="[ padding ][ margin-bottom ][ leyendas ]">
+						<h4>Estados</h4>
+						<div>
+							<div class="[ icon-circle-cash  icon--iconed--large ]"></div>
+							<p>Pago</p>
+						</div>
+						<div>
+							<div class="[ icon-file-text-document  icon--iconed--large ]"></div>
+							<p>Inspección o secretaria</p>
+						</div>
+						<div>
+							<div class="[ icon-notepad-edit  icon--iconed--large ]"></div>
+							<p>Subsanación</p>
+						</div>
+						<div>
+							<div class="[ icon-calendar  icon--iconed--large ]"></div>
+							<p>En espera de requerimientos o agencias</p>
+						</div>
+						<div>
+							<div class="[ icon-business-man-2  icon--iconed--large ]"></div>
+							<p>Supervisión por gerente</p>
+						</div>
+						<div>
+							<div class="[ icon-business-man-3  icon--iconed--large ]"></div>
+							<p>Revisión legal</p>
+						</div>
+						<div>
+							<div class="[ icon-drawer-1  icon--iconed--large ]"></div>
+							<p>Archivo</p>
+						</div>
+						<div>
+							<div class="[ icon-cancel-circle  icon--iconed--large ]"></div>
+							<p>Denegación / Cerrado</p>
+						</div>
+						<div>
+							<div class="[ icon-ok-circle  icon--iconed--large ]"></div>
+							<p>Aprobación</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
-							<h4 class="[ no-margin--top ]">Contactanos</h4>
-							<p>Oficina Central SJ</p>
-							<a href="tel:+525552555555">(787)721-8282</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Aguadilla</p>
-							<a href="tel:+525552555555">(787)891-0466</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Arecibo</p>
-							<a href="tel:+525552555555">(787)878-7979</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Humacao</p>
-							<a href="tel:+525552555555">(787)852-2013</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Ponce</p>
-							<a href="tel:+525552555555">(787)843-9097</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="[ footer--bottom ]">
-				<div class="[ container ]">
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
-							<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
-							<h4>Contacto</h4>
-							<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
 	</body>
 </html>

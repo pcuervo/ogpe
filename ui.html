@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header>
+		<header class="[ js-header ]">
 			<div class="[ container ]">
 				<h1 class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
@@ -124,545 +124,562 @@
 				</div>
 			</div><!-- end container -->
 		</header>
-		<section class="[ container ][ margin-top-bottom--large ]">
-			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-6 ]">
-					<h6 class="[ border-bottom--primary ]">Typography</h6>
-					<p class="[ subtitle ]">Typography</p>
-					<div class="[ margin-bottom--large ]">
-						<h1>Heading 1</h1>
-						<h2>Heading 2</h2>
-						<h3>Heading 3</h3>
-						<h4>Heading 4</h4>
-						<h5>Heading 5</h5>
-						<h6>Heading 6</h6>
-						<p class="[ lead ]">Lead paragraph</p>
-						<p>Body copy. A series of sentences together which make a paragraph.</p>
-						<p class="[ text-italic ]">Body copy. A series of sentences together which make a paragraph.</p>
-					</div>
-					<div class="[ margin-bottom--large ]">
-						<p class="[ subtitle ]">List</p>
-						<p class="[ subtitle fz-medium ]">Unordered list</p>
-						<ul>
-							<li>Unordered list item</li>
-							<li>Unordered list item</li>
-							<li>Unordered list item</li>
-						</ul>
-						<p class="[ subtitle fz-medium ]">Ordered list</p>
-						<ol>
-							<li>Ordered list item</li>
-							<li>Ordered list item</li>
-							<li>Ordered list item</li>
-						</ol>
-					</div>
-					<div class="[ margin-bottom--large ]">
-						<p class="[ subtitle ]">Links</p>
-						<a href="" class="[ link--primary ][ margin-bottom--small ]">This is a link without surrounding text</a>
-						<p><a href="" class="[ link--primary ]">This</a> is a text link on light background.</p>
-						<p><a href="" class="[ link--primary ]">This </a>is a visited link.</p>
-						<p>This is a link which opens in a <a href="" class="[ link--primary ]" target="_blank">new tab</a></p>
-						<div class="[ bg-gray-base ][ padding--small ]">
-							<p><span class="[ link ]">This </span>is a text link on dark background.</p>
+		<div class="[ main ]">
+			<section class="[ container ][ margin-top-bottom--large ]">
+				<div class="[ row ]">
+					<div class="[ col-xs-12 col-sm-6 ]">
+						<h6 class="[ border-bottom--primary ]">Typography</h6>
+						<p class="[ subtitle ]">Typography</p>
+						<div class="[ margin-bottom--large ]">
+							<h1>Heading 1</h1>
+							<h2>Heading 2</h2>
+							<h3>Heading 3</h3>
+							<h4>Heading 4</h4>
+							<h5>Heading 5</h5>
+							<h6>Heading 6</h6>
+							<p class="[ lead ]">Lead paragraph</p>
+							<p>Body copy. A series of sentences together which make a paragraph.</p>
+							<p class="[ text-italic ]">Body copy. A series of sentences together which make a paragraph.</p>
 						</div>
-					</div>
-					<div class="[ margin-bottom--large ]">
-						<h6 class="[ border-bottom--primary ]">Buttons</h6>
-						<p class="[ subtitle ]">Primary buttons</p>
-						<div class="[ row ][ margin-bottom ]">
-							<div class="[ col-xs-4 ]">
-								<p class="[ subtitle fz-medium ]">Default</p>
-								<a href="" class="[ btn btn-primary ]">Sing up</a>
-							</div>
-							<div class="[ col-xs-4 ]">
-								<p class="[ subtitle fz-medium ]">Hover</p>
-								<a href="" class="[ btn btn-primary ]">Sing up</a>
-							</div>
-							<div class="[ col-xs-4 ]">
-								<p class="[ subtitle fz-medium ]">Active</p>
-								<a href="" class="[ btn btn-primary active ]">Sing up</a>
-							</div>
-						</div>
-						<p class="[ subtitle ]">Secondary buttons</p>
-						<div class="[ row ][ margin-bottom ]">
-							<div class="[ col-xs-4 ]">
-								<p class="[ subtitle fz-medium ]">Default</p>
-								<a href="" class="[ btn btn-secondary ]">Sing up</a>
-							</div>
-							<div class="[ col-xs-4 ]">
-								<p class="[ subtitle fz-medium ]">Hover</p>
-								<a href="" class="[ btn btn-secondary ]">Sing up</a>
-							</div>
-							<div class="[ col-xs-4 ]">
-								<p class="[ subtitle fz-medium ]">Active</p>
-								<a href="" class="[ btn btn-secondary active ]">Sing up</a>
-							</div>
-						</div>
-						<div class="[ row ][ bg-dark ][ padding ][ margin-bottom ]">
-							<div class="[ col-xs-4 ]">
-								<a href="" class="[ btn btn-secondary ]">Sing up</a>
-							</div>
-							<div class="[ col-xs-4 ]">
-								<a href="" class="[ btn btn-secondary ]">Sing up</a>
-							</div>
-							<div class="[ col-xs-4 ]">
-								<a href="" class="[ btn btn-secondary active ]">Sing up</a>
-							</div>
-						</div>
-						<div class="[ row ][ margin-bottom--large ]">
-							<div class="[ col-xs-12 ]">
-								<p class="[ subtitle fz-medium ]">Disabled</p>
-								<a href="" class="[ btn disabled ]">Sing up</a>
-							</div>
-						</div>
-						<div class="[ row ][ margin-bottom--large ]">
-							<div class="[ col-xs-12 ]">
-								<p class="[ subtitle fz-medium ]">Big button</p>
-								<a href="" class="[ btn btn-lg btn-primary ]">Sing up</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="[ col-xs-12 col-sm-6 ]">
-					<h6 class="[ border-bottom--primary ]">Tables</h6>
-				<!-- tabla con borde -->
-					<p class="[ subtitle ]">Bordered table</p>
-					<table class="[ table-head--top ][ margin-bottom--large ]">
-						<thead>
-							<tr>
-								<th class="[ col-sm-2 ]">Permiso</th>
-								<th class="[ col-sm-2 ]">Fecha radicación</th>
-								<th class="[ col-sm-2 ]">Municipio</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th class="[ col-sm-2 ]">PGE</th>
-								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-								<th class="[ col-sm-2 ]">Gurabo</th>
-							</tr>
-							<tr>
-								<th class="[ col-sm-2 ]">PGE</th>
-								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-								<th class="[ col-sm-2 ]">Gurabo</th>
-							</tr>
-							<tr>
-								<th class="[ col-sm-2 ]">PGE</th>
-								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-								<th class="[ col-sm-2 ]">Gurabo</th>
-							</tr>
-							<tr>
-								<th class="[ col-sm-2 ]">PGE</th>
-								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-								<th class="[ col-sm-2 ]">Gurabo</th>
-							</tr>
-						</tbody>
-					</table>
-				<!-- tabla sin borde -->
-					<div class="[ margin-bottom--large ]">
-						<p class="[ subtitle ]">Borderless table</p>
-						<div class="[ row hidden-xs ][ border-bottom--gray ][ margin-bottom--small ][ fw-bold ]"><!-- títulos tabla proyectos para desktop -->
-							<div class="[ col-sm-3 ]">
-								<p>Nombre del proyecto</p>
-							</div>
-							<div class="[ col-sm-6 ]">
-								<p>Número de proyecto</p>
-							</div>
-							<div class="[ col-sm-3 ]">
-								<p>Fecha de creación</p>
-							</div>
-						</div>
-						<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
-							<div class="[ col-xs-12 col-sm-3 ]">
-								<a data-toggle="collapse" data-target="#ver-mas1" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
-								<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
-								<p>prev</p>
-							</div>
-							<div id="ver-mas1" class="collapse [ collapse-table ]">
-								<div class="[ col-xs-12 col-sm-6 ]">
-									<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
-									<p>2016-103031</p>
-								</div>
-								<div class="[ col-xs-12 col-sm-3 ]">
-									<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
-									<p>02/10/2016</p>
-								</div>
-							</div>
-						</div>
-						<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
-							<div class="[ col-xs-12 col-sm-3 ]">
-								<a data-toggle="collapse" data-target="#ver-mas2" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
-								<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
-								<p>pr</p>
-							</div>
-							<div id="ver-mas2" class="collapse [ collapse-table ]">
-								<div class="[ col-xs-12 col-sm-6 ]">
-									<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
-									<p>2016-187494</p>
-								</div>
-								<div class="[ col-xs-12 col-sm-3 ]">
-									<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
-									<p>08/10/2016</p>
-								</div>
-							</div>
-						</div>
-						<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
-							<div class="[ col-xs-12 col-sm-3 ]">
-								<a data-toggle="collapse" data-target="#ver-mas3" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
-								<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
-								<p>prev</p>
-							</div>
-							<div id="ver-mas3" class="collapse [ collapse-table ]">
-								<div class="[ col-xs-12 col-sm-6 ]">
-									<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
-									<p>2016-103031</p>
-								</div>
-								<div class="[ col-xs-12 col-sm-3 ]">
-									<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
-									<p>02/10/2016</p>
-								</div>
-							</div>
-						</div>
-						<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
-							<div class="[ col-xs-12 col-sm-3 ]">
-								<a data-toggle="collapse" data-target="#ver-mas4" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
-								<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
-								<p>pr</p>
-							</div>
-							<div id="ver-mas4" class="collapse [ collapse-table ]">
-								<div class="[ col-xs-12 col-sm-6 ]">
-									<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
-									<p>2016-187494</p>
-								</div>
-								<div class="[ col-xs-12 col-sm-3 ]">
-									<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
-									<p>08/10/2016</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				<!-- acordion -->
-					<h6 class="[ border-bottom--primary ]">Accordions</h6>
-					<p class="[ subtitle ]">Borderless accordion</p>
-					<div>
-						<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas1" aria-expanded="false">Consultas 1</a>
-						<div class="collapse" id="consultas1">
-							<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
-						</div>
-						<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas2" aria-expanded="false">Consultas 2</a>
-						<div class="collapse" id="consultas2">
-							<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
-						</div>
-						<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas3" aria-expanded="false">Consultas 3</a>
-						<div class="collapse" id="consultas3">
-							<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
-						</div>
-						<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas4" aria-expanded="false">Consultas 4</a>
-						<div class="collapse" id="consultas4">
-							<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
-						</div>
-					</div>
-
-					<div class="[ margin-bottom ][ margin-top ]">
-						<h6 class="[ border-bottom--primary ]">Alertes</h6>
-						<p class="[ subtitle ]">Alerts</p>
-						<div class="alert alert-success">
-							<h3 class="[ fw-bold ]"><span class="[ color-dark ][ margin-right--xsmall ][ icon-ok-circle ]"></span>Success status</h3>
-							<p>Indicates a successful or positive action.</p>
-						</div>
-						<div class="alert alert-warning">
-							<h3 class="[ fw-bold ]"><span class="[ color-dark ][ margin-right--xsmall ][ icon-warning ]"></span>Warning status</h3>
-							<p>Indicates a warning that might need attention.</p>
-						</div>
-						<div class="alert alert-danger">
-							<h3 class="[ fw-bold ]"><span class="[ color-dark ][ margin-right--xsmall ][ icon-error ]"></span>Danger status</h3>
-							<p>Indicates a dangerous or potentially negative action.</p>
-						</div>
-						<div class="alert alert-info">
-							<h3 class="[ fw-bold ]"><span class="[ color-dark ][ margin-right--xsmall ][ icon-info ]"></span>Info status</h3>
-							<p>Indicates a neutral informative change or action.</p>
-						</div>
-						<div class="alert alert-info">
-							<h3 class="[ fw-bold ]"><span class="[ color-dark ][ margin-right--xsmall ][ icon-info ]"></span>Info status</h3>
-							<p>Indicates a neutral informative change or action.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="[ row ][ margin-top--large ]">
-				<div class="[ col-xs-12 col-sm-6 ]">
-					<h6 class="[ border-bottom--primary ]">Forms controls</h6>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ subtitle ]">Dropdown</p>
-							<label>Dropdown label</label>
-							<select class="[ form-control ][ arrow ]">
-								<option>option A</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-							</select>
-							<p class="[ subtitle ]">Text Inputs</p>
-							<label for="input">Text input label</label>
-							<input class="[ form-control ]" id="input" name="input" type="text">
-							<label for="input1">Text input focused</label>
-							<input class="[ form-control ]" id="input1" name="input1" type="text">
-							<div class="[ form-group ][ has-error ]">
-								<label>Text input error</label>
-								<label class="[ control-label ]" for="inputError1">Helpful error message</label>
-								<input type="text" class="[ form-control ]" id="inputError1">
-							</div>
-							<div class="[ form-group ][ has-success ]">
-								<label class="[ control-label ]" for="inputSuccess1">Text input succes</label>
-								<input type="text" class="[ form-control ]" id="inputSuccess1" aria-describedby="helpBlock2">
-							</div>
-							<div class="[ form-group ]">
-								<label>Textarea label</label>
-								<textarea class="[ form-control ]" rows="3"></textarea>
-							</div>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ subtitle ]">Checkboxes</p>
-							<ul class="usa-unstyled-list">
-								<li>
-									<input id="apple-pie" type="checkbox" name="apple-pie" value="apple-pie" checked="">
-									<label for="apple-pie">Sojourner Truth</label>
-								</li>
-								<li>
-									<input id="key-lime-pie" type="checkbox" name="key-lime-pie" value="key-lime-pie">
-									<label for="key-lime-pie">Frederick Douglass</label>
-								</li>
-								<li>
-									<input id="disabled" type="checkbox" disabled="">
-									<label for="disabled">George Washington Carver</label>
-								</li>
+						<div class="[ margin-bottom--large ]">
+							<p class="[ subtitle ]">List</p>
+							<p class="[ subtitle fz-medium ]">Unordered list</p>
+							<ul>
+								<li>Unordered list item</li>
+								<li>Unordered list item</li>
+								<li>Unordered list item</li>
 							</ul>
-							<div class="[ margin-bottom ]">
-								<p class="[ subtitle ]">Radio Buttons</p>
+							<p class="[ subtitle fz-medium ]">Ordered list</p>
+							<ol>
+								<li>Ordered list item</li>
+								<li>Ordered list item</li>
+								<li>Ordered list item</li>
+							</ol>
+						</div>
+						<div class="[ margin-bottom--large ]">
+							<p class="[ subtitle ]">Links</p>
+							<a href="" class="[ link--primary ][ margin-bottom--small ]">This is a link without surrounding text</a>
+							<p><a href="" class="[ link--primary ]">This</a> is a text link on light background.</p>
+							<p><a href="" class="[ link--primary ]">This </a>is a visited link.</p>
+							<p>This is a link which opens in a <a href="" class="[ link--primary ]" target="_blank">new tab</a></p>
+							<div class="[ bg-gray-base ][ padding--small ]">
+								<p><span class="[ link ]">This </span>is a text link on dark background.</p>
+							</div>
+						</div>
+						<div class="[ margin-bottom--large ]">
+							<h6 class="[ border-bottom--primary ]">Buttons</h6>
+							<p class="[ subtitle ]">Primary buttons</p>
+							<div class="[ row ][ margin-bottom ]">
+								<div class="[ col-xs-4 ]">
+									<p class="[ subtitle fz-medium ]">Default</p>
+									<a href="" class="[ btn btn-primary ]">Sing up</a>
+								</div>
+								<div class="[ col-xs-4 ]">
+									<p class="[ subtitle fz-medium ]">Hover</p>
+									<a href="" class="[ btn btn-primary ]">Sing up</a>
+								</div>
+								<div class="[ col-xs-4 ]">
+									<p class="[ subtitle fz-medium ]">Active</p>
+									<a href="" class="[ btn btn-primary active ]">Sing up</a>
+								</div>
+							</div>
+							<p class="[ subtitle ]">Secondary buttons</p>
+							<div class="[ row ][ margin-bottom ]">
+								<div class="[ col-xs-4 ]">
+									<p class="[ subtitle fz-medium ]">Default</p>
+									<a href="" class="[ btn btn-secondary ]">Sing up</a>
+								</div>
+								<div class="[ col-xs-4 ]">
+									<p class="[ subtitle fz-medium ]">Hover</p>
+									<a href="" class="[ btn btn-secondary ]">Sing up</a>
+								</div>
+								<div class="[ col-xs-4 ]">
+									<p class="[ subtitle fz-medium ]">Active</p>
+									<a href="" class="[ btn btn-secondary active ]">Sing up</a>
+								</div>
+							</div>
+							<div class="[ row ][ bg-dark ][ padding ][ margin-bottom ]">
+								<div class="[ col-xs-4 ]">
+									<a href="" class="[ btn btn-secondary ]">Sing up</a>
+								</div>
+								<div class="[ col-xs-4 ]">
+									<a href="" class="[ btn btn-secondary ]">Sing up</a>
+								</div>
+								<div class="[ col-xs-4 ]">
+									<a href="" class="[ btn btn-secondary active ]">Sing up</a>
+								</div>
+							</div>
+							<div class="[ row ][ margin-bottom--large ]">
+								<div class="[ col-xs-12 ]">
+									<p class="[ subtitle fz-medium ]">Disabled</p>
+									<a href="" class="[ btn disabled ]">Sing up</a>
+								</div>
+							</div>
+							<div class="[ row ][ margin-bottom--large ]">
+								<div class="[ col-xs-12 ]">
+									<p class="[ subtitle fz-medium ]">Big button</p>
+									<a href="" class="[ btn btn-lg btn-primary ]">Sing up</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-xs-12 col-sm-6 ]">
+						<h6 class="[ border-bottom--primary ]">Tables</h6>
+					<!-- tabla con borde -->
+						<p class="[ subtitle ]">Bordered table</p>
+						<table class="[ table-head--top ][ margin-bottom--large ]">
+							<thead>
+								<tr>
+									<th class="[ col-sm-2 ]">Permiso</th>
+									<th class="[ col-sm-2 ]">Fecha radicación</th>
+									<th class="[ col-sm-2 ]">Municipio</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th class="[ col-sm-2 ]">PGE</th>
+									<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+									<th class="[ col-sm-2 ]">Gurabo</th>
+								</tr>
+								<tr>
+									<th class="[ col-sm-2 ]">PGE</th>
+									<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+									<th class="[ col-sm-2 ]">Gurabo</th>
+								</tr>
+								<tr>
+									<th class="[ col-sm-2 ]">PGE</th>
+									<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+									<th class="[ col-sm-2 ]">Gurabo</th>
+								</tr>
+								<tr>
+									<th class="[ col-sm-2 ]">PGE</th>
+									<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+									<th class="[ col-sm-2 ]">Gurabo</th>
+								</tr>
+							</tbody>
+						</table>
+					<!-- tabla sin borde -->
+						<div class="[ margin-bottom--large ]">
+							<p class="[ subtitle ]">Borderless table</p>
+							<div class="[ row hidden-xs ][ border-bottom--gray ][ margin-bottom--small ][ fw-bold ]"><!-- títulos tabla proyectos para desktop -->
+								<div class="[ col-sm-3 ]">
+									<p>Nombre del proyecto</p>
+								</div>
+								<div class="[ col-sm-6 ]">
+									<p>Número de proyecto</p>
+								</div>
+								<div class="[ col-sm-3 ]">
+									<p>Fecha de creación</p>
+								</div>
+							</div>
+							<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
+								<div class="[ col-xs-12 col-sm-3 ]">
+									<a data-toggle="collapse" data-target="#ver-mas1" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+									<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
+									<p>prev</p>
+								</div>
+								<div id="ver-mas1" class="collapse [ collapse-table ]">
+									<div class="[ col-xs-12 col-sm-6 ]">
+										<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
+										<p>2016-103031</p>
+									</div>
+									<div class="[ col-xs-12 col-sm-3 ]">
+										<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
+										<p>02/10/2016</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
+								<div class="[ col-xs-12 col-sm-3 ]">
+									<a data-toggle="collapse" data-target="#ver-mas2" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+									<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
+									<p>pr</p>
+								</div>
+								<div id="ver-mas2" class="collapse [ collapse-table ]">
+									<div class="[ col-xs-12 col-sm-6 ]">
+										<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
+										<p>2016-187494</p>
+									</div>
+									<div class="[ col-xs-12 col-sm-3 ]">
+										<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
+										<p>08/10/2016</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
+								<div class="[ col-xs-12 col-sm-3 ]">
+									<a data-toggle="collapse" data-target="#ver-mas3" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+									<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
+									<p>prev</p>
+								</div>
+								<div id="ver-mas3" class="collapse [ collapse-table ]">
+									<div class="[ col-xs-12 col-sm-6 ]">
+										<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
+										<p>2016-103031</p>
+									</div>
+									<div class="[ col-xs-12 col-sm-3 ]">
+										<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
+										<p>02/10/2016</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
+								<div class="[ col-xs-12 col-sm-3 ]">
+									<a data-toggle="collapse" data-target="#ver-mas4" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+									<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
+									<p>pr</p>
+								</div>
+								<div id="ver-mas4" class="collapse [ collapse-table ]">
+									<div class="[ col-xs-12 col-sm-6 ]">
+										<p class="[ visible-xs ]"><strong>Número de proyecto</strong></p>
+										<p>2016-187494</p>
+									</div>
+									<div class="[ col-xs-12 col-sm-3 ]">
+										<p class="[ visible-xs ]"><strong>Fecha de creación</strong></p>
+										<p>08/10/2016</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- acordion -->
+						<h6 class="[ border-bottom--primary ]">Accordions</h6>
+						<p class="[ subtitle ]">Borderless accordion</p>
+						<div>
+							<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas1" aria-expanded="false">Consultas 1</a>
+							<div class="collapse" id="consultas1">
+								<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+							</div>
+							<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas2" aria-expanded="false">Consultas 2</a>
+							<div class="collapse" id="consultas2">
+								<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+							</div>
+							<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas3" aria-expanded="false">Consultas 3</a>
+							<div class="collapse" id="consultas3">
+								<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+							</div>
+							<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas4" aria-expanded="false">Consultas 4</a>
+							<div class="collapse" id="consultas4">
+								<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+							</div>
+						</div>
+
+						<div class="[ margin-bottom ][ margin-top ]">
+							<h6 class="[ border-bottom--primary ]">Alertes</h6>
+							<p class="[ subtitle ]">Alerts</p>
+							<div class="alert alert-success">
+								<h3 class="[ fw-bold ]"><span class="[ color-dark ][ margin-right--xsmall ][ icon-ok-circle ]"></span>Success status</h3>
+								<p>Indicates a successful or positive action.</p>
+							</div>
+							<div class="alert alert-warning">
+								<h3 class="[ fw-bold ]"><span class="[ color-dark ][ margin-right--xsmall ][ icon-warning ]"></span>Warning status</h3>
+								<p>Indicates a warning that might need attention.</p>
+							</div>
+							<div class="alert alert-danger">
+								<h3 class="[ fw-bold ]"><span class="[ color-dark ][ margin-right--xsmall ][ icon-error ]"></span>Danger status</h3>
+								<p>Indicates a dangerous or potentially negative action.</p>
+							</div>
+							<div class="alert alert-info">
+								<h3 class="[ fw-bold ]"><span class="[ color-dark ][ margin-right--xsmall ][ icon-info ]"></span>Info status</h3>
+								<p>Indicates a neutral informative change or action.</p>
+							</div>
+							<div class="alert alert-info">
+								<h3 class="[ fw-bold ]"><span class="[ color-dark ][ margin-right--xsmall ][ icon-info ]"></span>Info status</h3>
+								<p>Indicates a neutral informative change or action.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ row ][ margin-top--large ]">
+					<div class="[ col-xs-12 col-sm-6 ]">
+						<h6 class="[ border-bottom--primary ]">Forms controls</h6>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ subtitle ]">Dropdown</p>
+								<label>Dropdown label</label>
+								<select class="[ form-control ][ arrow ]">
+									<option>option A</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+								<p class="[ subtitle ]">Text Inputs</p>
+								<label for="input">Text input label</label>
+								<input class="[ form-control ]" id="input" name="input" type="text">
+								<label for="input1">Text input focused</label>
+								<input class="[ form-control ]" id="input1" name="input1" type="text">
+								<div class="[ form-group ][ has-error ]">
+									<label>Text input error</label>
+									<label class="[ control-label ]" for="inputError1">Helpful error message</label>
+									<input type="text" class="[ form-control ]" id="inputError1">
+								</div>
+								<div class="[ form-group ][ has-success ]">
+									<label class="[ control-label ]" for="inputSuccess1">Text input succes</label>
+									<input type="text" class="[ form-control ]" id="inputSuccess1" aria-describedby="helpBlock2">
+								</div>
+								<div class="[ form-group ]">
+									<label>Textarea label</label>
+									<textarea class="[ form-control ]" rows="3"></textarea>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ subtitle ]">Checkboxes</p>
 								<ul class="usa-unstyled-list">
 									<li>
-										<input id="pea-soup" type="radio" checked="" name="soup" value="pea">
-										<label for="pea-soup">Elizabeth Cady Stanton</label>
+										<input id="apple-pie" type="checkbox" name="apple-pie" value="apple-pie" checked="">
+										<label for="apple-pie">Sojourner Truth</label>
 									</li>
 									<li>
-										<input id="chicken-noodle" type="radio" name="soup" value="chicken-noodle">
-										<label for="chicken-noodle">Susan B. Anthony</label>
+										<input id="key-lime-pie" type="checkbox" name="key-lime-pie" value="key-lime-pie">
+										<label for="key-lime-pie">Frederick Douglass</label>
 									</li>
 									<li>
-										<input id="tomato" type="radio" name="soup" value="tomato">
-										<label for="tomato">Harriet Tubman</label>
+										<input id="disabled" type="checkbox" disabled="">
+										<label for="disabled">George Washington Carver</label>
 									</li>
 								</ul>
-							</div>
-							<div class="[ margin-bottom ]">
-								<p class="[ subtitle ]">Date input</p>
-								<p class="[ subtitle--large ]">Date birth</p>
-								<p class="[ color-gray ]">For example: 07041176</p>
-								<div class="[ form-birth ]">
-									<div class="[ form-group-birth ]">
-										<label for="month">Month</label>
-										<input id="month" type="text" class="form-control">
-									</div>
-									<div class="[ form-group-birth ]">
-										<label for="day">Day</label>
-										<input id="day" type="text" class="form-control">
-									</div>
-									<div class="[ form-group-birth ]">
-										<label for="year">Year</label>
-										<input id="year" type="text" class="form-control">
+								<div class="[ margin-bottom ]">
+									<p class="[ subtitle ]">Radio Buttons</p>
+									<ul class="usa-unstyled-list">
+										<li>
+											<input id="pea-soup" type="radio" checked="" name="soup" value="pea">
+											<label for="pea-soup">Elizabeth Cady Stanton</label>
+										</li>
+										<li>
+											<input id="chicken-noodle" type="radio" name="soup" value="chicken-noodle">
+											<label for="chicken-noodle">Susan B. Anthony</label>
+										</li>
+										<li>
+											<input id="tomato" type="radio" name="soup" value="tomato">
+											<label for="tomato">Harriet Tubman</label>
+										</li>
+									</ul>
+								</div>
+								<div class="[ margin-bottom ]">
+									<p class="[ subtitle ]">Date input</p>
+									<p class="[ subtitle--large ]">Date birth</p>
+									<p class="[ color-gray ]">For example: 07041176</p>
+									<div class="[ form-birth ]">
+										<div class="[ form-group-birth ]">
+											<label for="month">Month</label>
+											<input id="month" type="text" class="form-control">
+										</div>
+										<div class="[ form-group-birth ]">
+											<label for="day">Day</label>
+											<input id="day" type="text" class="form-control">
+										</div>
+										<div class="[ form-group-birth ]">
+											<label for="year">Year</label>
+											<input id="year" type="text" class="form-control">
+										</div>
 									</div>
 								</div>
+								<div class="[ margin-bottom ]">
+									<p class="[ subtitle ]">Range slider</p>
+									<form action="action_page.php" method="get">
+										<label for="points">Range slider label</label>
+										<input type="range" name="points" min="0" max="10">
+									</form>
+								</div>
 							</div>
-							<div class="[ margin-bottom ]">
-								<p class="[ subtitle ]">Range slider</p>
-								<form action="action_page.php" method="get">
-									<label for="points">Range slider label</label>
-									<input type="range" name="points" min="0" max="10">
+						</div>
+					</div>
+					<div class="[ col-xs-12 col-sm-6 ]">
+						<h6 class="[ border-bottom--primary ]">Forms templates</h6>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ subtitle ]">Name form</p>
+								<p class="[ subtitle--large ]">Name</p>
+								<form class="[ margin-bottom--large ]">
+									<div class="[ form-group ]">
+										<label for="title">Title</label>
+										<input class="[ form-control form-small ]" id="title" name="title" type="text">
+									</div>
+									<div class="[ form-group ]">
+										<label for="first_name">First name<span class="[ pull-right ]">Required</span></label>
+										<input class="[ form-control ]" id="first_name" name="first_name" type="text">
+									</div>
+									<div class="[ form-group ]">
+										<label for="middle_name">Middle name</label>
+										<input class="[ form-control ]" id="middle_name" name="middle_name" type="text">
+									</div>
+									<div class="[ form-group ]">
+										<label for="last_name">Last name<span class="[ pull-right ]">Required</span></label>
+										<input class="[ form-control ]" id="last_name" name="last_name" type="text">
+									</div>
+									<div class="[ form-group ]">
+										<label for="suffix">Suffix</label>
+										<input class="[ form-control form-small ]" id="suffix" name="suffix" type="text">
+									</div>
+								</form>
+								<p class="[ subtitle ]">Malling addres form</p>
+								<p class="[ subtitle--large ]">Malling addres</p>
+								<form>
+									<div class="[ form-group ]">
+										<label for="malling_address">Mailling address 1</label>
+										<input class="[ form-control ]" id="malling_address" name="malling_address" type="text">
+									</div>
+									<div class="[ form-group ]">
+										<label for="mailling_address2">Mailling address 2<span class="[ pull-right ]">Required</span></label>
+										<input class="[ form-control ]" id="mailling_address2" name="mailling_address2" type="text">
+									</div>
+									<div class="[ form-group ][ width-55 ][ inline-block ]">
+										<label for="city">City</label>
+										<input class="[ form-control ]" id="city" name="city" type="text">
+									</div>
+									<div class="[ form-group ][ form-small ][ pull-right ]">
+										<label for="state">State</label>
+										<select class="[ form-control ][ arrow ]">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="[ form-group ]">
+										<label for="zip">ZIP</label>
+										<input class="[ form-control form-small ]" id="zip" name="zip" type="text">
+									</div>
 								</form>
 							</div>
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ subtitle ]">Sing in form</p>
+								<p class="[ subtitle--large ]">Sing in</p>
+								<p class="[ inline-block ]">or </p><a href="" class="[ link--primary ]">create an account</a>
+								<form class="[ margin-bottom ]">
+									<div class="[ form-group ]">
+										<label for="user">Username or email addres</label>
+										<input class="[ form-control ]" id="user" name="user" type="text">
+									</div>
+									<div class="[ form-group ]">
+										<label for="pasword">Password</label>
+										<input class="[ form-control ]" id="pasword" name="pasword" type="text">
+									</div>
+									<a class="[ pull-right ][ link--primary ][ text--small ]" href="">Show Password</a>
+									<div class="[ clearfix ]"></div>
+									<a href="" class="[ btn btn-primary ][ margin-bottom ]">Sing up</a>
+									<a href="" class="[ link--primary ][ block ]">Forgot username?</a>
+									<a href="" class="[ link--primary ][ block ]">Forgot password?</a>
+								</form>
+								<h6 class="[ border-bottom--primary ]">Search bar</h6>
+								<div class="[ input-group ][ input-search ][ margin-bottom ]">
+									<input type="text" class="[ form-control ]">
+									<span class="[ input-group-btn ]">
+										<button type="submit" class="[ btn btn-primary ]">
+											<span class="[ relative ][ icon-search icon-iconed ]"></span>
+										</button>
+									</span>
+								</div>
+								<div class="[ input-group ][ input-search input-search--medium ][ margin-bottom ]">
+									<input type="text" class="[ form-control ]">
+									<span class="[ input-group-btn ]">
+										<button type="submit" class="[ btn btn-primary ]">
+											<span class="[ icon-search ]"></span>
+										</button>
+									</span>
+								</div>
+								<div class="[ input-group ][ input-search input-search--small ][ margin-bottom ]">
+									<input type="text" class="[ form-control ]">
+									<span class="[ input-group-btn ]">
+										<button type="submit" class="[ btn btn-primary ]">
+											<span class="[ relative ][ icon-search ]"></span>
+										</button>
+									</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="[ col-xs-12 col-sm-6 ]">
-					<h6 class="[ border-bottom--primary ]">Forms templates</h6>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ subtitle ]">Name form</p>
-							<p class="[ subtitle--large ]">Name</p>
-							<form class="[ margin-bottom--large ]">
-								<div class="[ form-group ]">
-									<label for="title">Title</label>
-									<input class="[ form-control form-small ]" id="title" name="title" type="text">
-								</div>
-								<div class="[ form-group ]">
-									<label for="first_name">First name<span class="[ pull-right ]">Required</span></label>
-									<input class="[ form-control ]" id="first_name" name="first_name" type="text">
-								</div>
-								<div class="[ form-group ]">
-									<label for="middle_name">Middle name</label>
-									<input class="[ form-control ]" id="middle_name" name="middle_name" type="text">
-								</div>
-								<div class="[ form-group ]">
-									<label for="last_name">Last name<span class="[ pull-right ]">Required</span></label>
-									<input class="[ form-control ]" id="last_name" name="last_name" type="text">
-								</div>
-								<div class="[ form-group ]">
-									<label for="suffix">Suffix</label>
-									<input class="[ form-control form-small ]" id="suffix" name="suffix" type="text">
-								</div>
-							</form>
-							<p class="[ subtitle ]">Malling addres form</p>
-							<p class="[ subtitle--large ]">Malling addres</p>
-							<form>
-								<div class="[ form-group ]">
-									<label for="malling_address">Mailling address 1</label>
-									<input class="[ form-control ]" id="malling_address" name="malling_address" type="text">
-								</div>
-								<div class="[ form-group ]">
-									<label for="mailling_address2">Mailling address 2<span class="[ pull-right ]">Required</span></label>
-									<input class="[ form-control ]" id="mailling_address2" name="mailling_address2" type="text">
-								</div>
-								<div class="[ form-group ][ width-55 ][ inline-block ]">
-									<label for="city">City</label>
-									<input class="[ form-control ]" id="city" name="city" type="text">
-								</div>
-								<div class="[ form-group ][ form-small ][ pull-right ]">
-									<label for="state">State</label>
-									<select class="[ form-control ][ arrow ]">
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select>
-								</div>
-								<div class="[ form-group ]">
-									<label for="zip">ZIP</label>
-									<input class="[ form-control form-small ]" id="zip" name="zip" type="text">
-								</div>
-							</form>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ subtitle ]">Sing in form</p>
-							<p class="[ subtitle--large ]">Sing in</p>
-							<p class="[ inline-block ]">or </p><a href="" class="[ link--primary ]">create an account</a>
-							<form class="[ margin-bottom ]">
-								<div class="[ form-group ]">
-									<label for="user">Username or email addres</label>
-									<input class="[ form-control ]" id="user" name="user" type="text">
-								</div>
-								<div class="[ form-group ]">
-									<label for="pasword">Password</label>
-									<input class="[ form-control ]" id="pasword" name="pasword" type="text">
-								</div>
-								<a class="[ pull-right ][ link--primary ][ text--small ]" href="">Show Password</a>
-								<div class="[ clearfix ]"></div>
-								<a href="" class="[ btn btn-primary ][ margin-bottom ]">Sing up</a>
-								<a href="" class="[ link--primary ][ block ]">Forgot username?</a>
-								<a href="" class="[ link--primary ][ block ]">Forgot password?</a>
-							</form>
-							<h6 class="[ border-bottom--primary ]">Search bar</h6>
-							<div class="[ input-group ][ input-search ][ margin-bottom ]">
-								<input type="text" class="[ form-control ]">
-								<span class="[ input-group-btn ]">
-									<button type="submit" class="[ btn btn-primary ]">
-										<span class="[ relative ][ icon-search icon-iconed ]"></span>
-									</button>
-								</span>
-							</div>
-							<div class="[ input-group ][ input-search input-search--medium ][ margin-bottom ]">
-								<input type="text" class="[ form-control ]">
-								<span class="[ input-group-btn ]">
-									<button type="submit" class="[ btn btn-primary ]">
-										<span class="[ icon-search ]"></span>
-									</button>
-								</span>
-							</div>
-							<div class="[ input-group ][ input-search input-search--small ][ margin-bottom ]">
-								<input type="text" class="[ form-control ]">
-								<span class="[ input-group-btn ]">
-									<button type="submit" class="[ btn btn-primary ]">
-										<span class="[ relative ][ icon-search ]"></span>
-									</button>
-								</span>
-							</div>
-						</div>
+
+			</section>
+			<div class="[ row ][ margin-top--large ]">
+				<div class="[ col-xs-12 ]">
+					<div class="[ padding--sides ]">
+						<h6 class="[ border-bottom--primary ]">Footers</h6>
+						<p class="[ subtitle ]">Desktop footer-big</p>
+						<a href="" class="[ link-primary ][ block ]">Return to top</a>
 					</div>
 				</div>
 			</div>
-
-		</section>
-		<div class="[ row ][ margin-top--large ]">
-			<div class="[ col-xs-12 ]">
-				<div class="[ padding--sides ]">
-					<h6 class="[ border-bottom--primary ]">Footers</h6>
-					<p class="[ subtitle ]">Desktop footer-big</p>
-					<a href="" class="[ link-primary ][ block ]">Return to top</a>
-				</div>
-				<footer>
-					<div class="[ footer--top ]">
-						<div class="[ container ]">
-							<div class="[ row ][ margin-bottom ][ text-center ]">
-								<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
-									<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
-									<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
-								</a>
-								<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
-							</div>
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
-									<div class="[ row ]">
-										<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-											<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
-											<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
-											<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
-										</div>
-										<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-											<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
-											<div class="[ bg-image logo--ogpe ]"></div>
-										</div>
+			<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
 									</div>
 								</div>
-								<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
-									<h4 class="[ no-margin--top ]">Contactanos</h4>
-									<p>Oficina Central SJ</p>
-									<a href="tel:+525552555555">(787)721-8282</a>
-									<div class="[ clear ]"></div>
-									<p>Oficina Aguadilla</p>
-									<a href="tel:+525552555555">(787)891-0466</a>
-									<div class="[ clear ]"></div>
-									<p>Oficina Arecibo</p>
-									<a href="tel:+525552555555">(787)878-7979</a>
-									<div class="[ clear ]"></div>
-									<p>Oficina Humacao</p>
-									<a href="tel:+525552555555">(787)852-2013</a>
-									<div class="[ clear ]"></div>
-									<p>Oficina Ponce</p>
-									<a href="tel:+525552555555">(787)843-9097</a>
-								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
 							</div>
 						</div>
 					</div>
-					<div class="[ footer--bottom ]">
-						<div class="[ container ]">
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-6 ]">
-									<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
-									<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
-								</div>
-								<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
-									<h4>Contacto</h4>
-									<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
-								</div>
+				</div>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
 							</div>
 						</div>
 					</div>
-				</footer>
-			</div>
-		</div>
+				</div>
+			</footer>
+		</div><!-- end main -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
 	</body>
 </html>

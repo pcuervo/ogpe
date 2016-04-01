@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header>
+		<header class="[ js-header ]">
 			<div class="[ container ]">
 				<h1 class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
@@ -124,202 +124,240 @@
 				</div>
 			</div><!-- end container -->
 		</header>
-		<section class="[ container ][ margin-bottom--large ]">
-			<h1 class="[ h2 ][ margin-bottom ]">PEX - Permiso de exportación de materiales de la corteza terrestre</h1>
-			<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
-			<form>
-				<h3>Detalle de usos de la propiedad</h3>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-6 ]">
-						<label>Indique su rol en el proyecto o actividad:*</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-						<select class="[ form-control ][ arrow ]">
-							<option>Persona autorizada a...</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
-					</div>
+		<div class="[ main ]">
+			<div class="[ container ][ text-center ][ margin-bottom--small ]">
+				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas line-etapas--small ]">
+					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas ]"></span>
 				</div>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-6 ]">
-						<label>Indique el acceso a la propiedad:*</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-						<select class="[ form-control ][ arrow ]">
-							<option>Indique el acceso...</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
-					</div>
-				</div>
-				<label>Indique los tipos de servidumbre que sirven en la propiedad:*</label>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<input id="acueductos" type="checkbox" name="acueductos" value="acueductos">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="acueductos">acueductos</label>
-						<div class="[ clear ]"></div>
-						<input id="alcantarillado" type="checkbox" name="alcantarillado" value="alcantarillado">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="alcantarillado">alcantarillado</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<input id="electricidad" type="checkbox" name="electricidad" value="electricidad">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="electricidad">electricidad</label>
-						<div class="[ clear ]"></div>
-						<input id="via_municipal" type="checkbox" name="via_municipal" value="via_municipal">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="via_municipal">via municipal de acceso</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<input id="via_estatal" type="checkbox" name="via_estatal" value="via_estatal">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="via_estatal">vía estatal de acceso</label>
-						<div class="[ clear ]"></div>
-						<input id="telecomunicacion" type="checkbox" name="telecomunicacion" value="telecomunicacion">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="telecomunicacion">telecomunicación</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<input id="cable" type="checkbox" name="cable" value="cable">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="cable">cable tv</label>
-						<div class="[ clear ]"></div>
-						<input id="otros" type="checkbox" name="otros" value="otros">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="otros">otros</label>
-					</div>
-				</div>
-				<h3>Datos de trámite</h3>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-6 ]">
-						<label for="no_permiso">Número de permiso formal de extracción de material de la corteza terrestre:*</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-						<input class="[ form-control ]" id="no_permiso" name="no_permiso" type="text">
-					</div>
-				</div>
-				<h3>Datos del área de extracción</h3>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-6 ]">
-						<label for="cabida_finca">Cabida total de la finca:*</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-						<input class="[ form-control ]" id="cabida_finca" name="cabida_finca" type="text">
-					</div>
-				</div>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-6 ]">
-						<label for="cabida_extraccion">Cabida total del área de extracción:*</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-						<input class="[ form-control ]" id="cabida_extraccion" name="cabida_extraccion" type="text">
-					</div>
-				</div>
-				<h3>Datos de exportación</h3>
-				<label for="cabida_extraccion">Tipo de área a exportarse:*</label>
-				<div class="[ row ][ margin-bottom--large ]">
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<input id="arena" type="checkbox" name="arena" value="arena">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="arena">arena manufacturada</label>
-						<div class="[ clear ]"></div>
-						<input id="polvillo" type="checkbox" name="polvillo" value="polvillo">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="polvillo">polvillo manufacturado</label>
-						<div class="[ clear ]"></div>
-						<input id="piedra" type="checkbox" name="piedra" value="piedra">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="piedra">piedra manufacturada</label>
-						<div class="[ clear ]"></div>
-						<input id="piedra_base" type="checkbox" name="piedra_base" value="piedra_base">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="piedra_base">piedra base manufacturada</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<input id="talco" type="checkbox" name="talco" value="talco">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="talco">talco manufacturado</label>
-						<div class="[ clear ]"></div>
-						<input id="gravilla" type="checkbox" name="gravilla" value="gravilla">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="gravilla">gravilla manufacturada</label>
-						<div class="[ clear ]"></div>
-						<input id="otro_material" type="checkbox" name="otro_material" value="otro_material">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="otro_material">otro material</label>
-					</div>
-					<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-						<label class="[ inline-block ][ margin-bottom--small ]">Detalles de exportación:*</label>
-						<textarea class="form-control" rows="3"></textarea>
-					</div>
-				</div>
-				<div class="[ row ][ margin-bottom--large ]">
-					<div class="[ col-xs-12 col-sm-offset-3 col-sm-6 ]">
-						<input id="drna" type="checkbox" name="drna" value="drna">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="drna">Autorizo al personal de DRNA y/o de OGPe, debidamen te identificado, a entrar e inspeccionar la propiedad con el proposito de evaluar esta solicitud.</label>
-						<input id="seguridad" type="checkbox" name="seguridad" value="seguridad">
-						<label class="[ inline-block ][ margin-bottom--small ]" for="seguridad">Certifico que la actividad propuesta no me menoscabará la salud, la seguridad, el orden o el interés público.</label>
-					</div>
-				</div>
-				<div class="[ text-center ]">
-					<a href="tramite-anexos.html" class="[ btn btn-primary ]">continuar</a>
-				</div>
-			</form>
-		</section>
-				<footer>
-			<div class="[ footer--top ]">
-				<div class="[ container ]">
-					<div class="[ row ][ margin-bottom ][ text-center ]">
-						<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
-							<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
-							<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
-						</a>
-						<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
-					</div>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
-							<div class="[ row ]">
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
-									<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
-									<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
-								</div>
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
-									<div class="[ bg-image logo--ogpe ]"></div>
-								</div>
-							</div>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
-							<h4 class="[ no-margin--top ]">Contactanos</h4>
-							<p>Oficina Central SJ</p>
-							<a href="tel:+525552555555">(787)721-8282</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Aguadilla</p>
-							<a href="tel:+525552555555">(787)891-0466</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Arecibo</p>
-							<a href="tel:+525552555555">(787)878-7979</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Humacao</p>
-							<a href="tel:+525552555555">(787)852-2013</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Ponce</p>
-							<a href="tel:+525552555555">(787)843-9097</a>
-						</div>
-					</div>
+				<span class="[ circle-proceso circle-pasos ]">2</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--small ]"></div>
+				<span class="[ circle-proceso circle-pasos ]">3</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--small ]"></div>
+				<span class="[ circle-proceso circle-pasos ]">4</span>
+				<div class="[ block-text ]">
+					<p class="[ inline-block align-top ][ width-33 ][ text--small ][ text-left ]">Créación nuevo proyecto</p>
+					<p class="[ inline-block align-top ][ width-30 ][ text--small ]">Anexo</p>
+					<p class="[ inline-block align-top ][ width-33 ][ text--small ][ text-right ]">Resumen del proyecto</p>
+					<p class="[ inline-block align-top ][ width-33 ][ text--small ][ text-right ]">Resumen del proyecto</p>
 				</div>
 			</div>
-			<div class="[ footer--bottom ]">
-				<div class="[ container ]">
+
+			<section class="[ container ][ margin-bottom--large ]">
+				<h1 class="[ h2 ][ margin-bottom ]">PEX - Permiso de exportación de materiales de la corteza terrestre</h1>
+				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
+				<form>
+					<h3>Detalle de usos de la propiedad</h3>
 					<div class="[ row ]">
 						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
-							<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							<label>Indique su rol en el proyecto o actividad:*</label>
 						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
-							<h4>Contacto</h4>
-							<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+							<select class="[ form-control ][ arrow ]">
+								<option>Persona autorizada a...</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-6 ]">
+							<label>Indique el acceso a la propiedad:*</label>
+						</div>
+						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+							<select class="[ form-control ][ arrow ]">
+								<option>Indique el acceso...</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+					<label>Indique los tipos de servidumbre que sirven en la propiedad:*</label>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<input id="acueductos" type="checkbox" name="acueductos" value="acueductos">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="acueductos">acueductos</label>
+							<div class="[ clear ]"></div>
+							<input id="alcantarillado" type="checkbox" name="alcantarillado" value="alcantarillado">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="alcantarillado">alcantarillado</label>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<input id="electricidad" type="checkbox" name="electricidad" value="electricidad">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="electricidad">electricidad</label>
+							<div class="[ clear ]"></div>
+							<input id="via_municipal" type="checkbox" name="via_municipal" value="via_municipal">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="via_municipal">via municipal de acceso</label>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<input id="via_estatal" type="checkbox" name="via_estatal" value="via_estatal">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="via_estatal">vía estatal de acceso</label>
+							<div class="[ clear ]"></div>
+							<input id="telecomunicacion" type="checkbox" name="telecomunicacion" value="telecomunicacion">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="telecomunicacion">telecomunicación</label>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<input id="cable" type="checkbox" name="cable" value="cable">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="cable">cable tv</label>
+							<div class="[ clear ]"></div>
+							<input id="otros" type="checkbox" name="otros" value="otros">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="otros">otros</label>
+						</div>
+					</div>
+					<h3>Datos de trámite</h3>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-6 ]">
+							<label for="no_permiso">Número de permiso formal de extracción de material de la corteza terrestre:*</label>
+						</div>
+						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+							<input class="[ form-control ]" id="no_permiso" name="no_permiso" type="text">
+						</div>
+					</div>
+					<h3>Datos del área de extracción</h3>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-6 ]">
+							<label for="cabida_finca">Cabida total de la finca:*</label>
+						</div>
+						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+							<input class="[ form-control ]" id="cabida_finca" name="cabida_finca" type="text">
+						</div>
+					</div>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-6 ]">
+							<label for="cabida_extraccion">Cabida total del área de extracción:*</label>
+						</div>
+						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+							<input class="[ form-control ]" id="cabida_extraccion" name="cabida_extraccion" type="text">
+						</div>
+					</div>
+					<h3>Datos de exportación</h3>
+					<label for="cabida_extraccion">Tipo de área a exportarse:*</label>
+					<div class="[ row ][ margin-bottom--large ]">
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<input id="arena" type="checkbox" name="arena" value="arena">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="arena">arena manufacturada</label>
+							<div class="[ clear ]"></div>
+							<input id="polvillo" type="checkbox" name="polvillo" value="polvillo">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="polvillo">polvillo manufacturado</label>
+							<div class="[ clear ]"></div>
+							<input id="piedra" type="checkbox" name="piedra" value="piedra">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="piedra">piedra manufacturada</label>
+							<div class="[ clear ]"></div>
+							<input id="piedra_base" type="checkbox" name="piedra_base" value="piedra_base">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="piedra_base">piedra base manufacturada</label>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<input id="talco" type="checkbox" name="talco" value="talco">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="talco">talco manufacturado</label>
+							<div class="[ clear ]"></div>
+							<input id="gravilla" type="checkbox" name="gravilla" value="gravilla">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="gravilla">gravilla manufacturada</label>
+							<div class="[ clear ]"></div>
+							<input id="otro_material" type="checkbox" name="otro_material" value="otro_material">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="otro_material">otro material</label>
+						</div>
+						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+							<label class="[ inline-block ][ margin-bottom--small ]">Detalles de exportación:*</label>
+							<textarea class="form-control" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="[ row ][ margin-bottom--large ]">
+						<div class="[ col-xs-12 col-sm-offset-3 col-sm-6 ]">
+							<input id="drna" type="checkbox" name="drna" value="drna">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="drna">Autorizo al personal de DRNA y/o de OGPe, debidamen te identificado, a entrar e inspeccionar la propiedad con el proposito de evaluar esta solicitud.</label>
+							<input id="seguridad" type="checkbox" name="seguridad" value="seguridad">
+							<label class="[ inline-block ][ margin-bottom--small ]" for="seguridad">Certifico que la actividad propuesta no me menoscabará la salud, la seguridad, el orden o el interés público.</label>
+						</div>
+					</div>
+					<div class="[ text-center ]">
+						<a href="tramite-anexos.html" class="[ btn btn-primary ]">continuar</a>
+					</div>
+				</form>
+			</section>
+					<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
 	</body>
 </html>

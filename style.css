@@ -1077,6 +1077,17 @@ body {
   color: #333333;
   background-color: #fff;
 }
+html,
+body {
+  height: 100%;
+}
+.main {
+  min-height: -moz-calc(100% - 60px);
+  min-height: -o-calc(100% - 60px);
+  min-height: -webkit-calc(100% - 60px);
+  min-height: calc(100% - 60px);
+  position: relative;
+}
 input,
 button,
 select,
@@ -8203,6 +8214,14 @@ header .topic-menu {
   color: #fff;
   background-color: #6844a1;
 }
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+footer h4 {
+  margin-bottom: 0px;
+}
 footer .footer--top,
 footer .footer--bottom {
   padding: 12px 0px;
@@ -8274,11 +8293,21 @@ footer .footer--bottom h4 {
   }
 }
 .line-etapas {
-  width: 80px;
   margin: 0px -3px;
 }
+.line-etapas--large {
+  width: 80px;
+}
 @media (min-width: 768px) {
-  .line-etapas {
+  .line-etapas--large {
+    width: 135px;
+  }
+}
+.line-etapas--small {
+  width: 80px;
+}
+@media (min-width: 768px) {
+  .line-etapas--small {
     width: 135px;
   }
 }
