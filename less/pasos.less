@@ -7,9 +7,10 @@
   @media (min-width: @screen-sm){ width: 135px; }
 }
 .line-etapas--medium{
-  width: 60px;
-  @media (min-width: @screen-sm){ width: 60px; }
+  width: 40px;
+  @media (min-width: @screen-sm){ width: 80px; }
 }
+/*Medida estandar para los pasos de la ficha del trámite*/
 .line-etapas--small{
   width: 40px;
 }
@@ -33,10 +34,10 @@
     line-height: 50px;
   }
  //Cuando el paso ha sido completado
-  &.circle-complete{ background-color: @primary--medium; }
+  &.circle-complete{ background-color: @primary--dark; }
 }
 
-/*Medida estandar para móvil y desktop*/
+/*Medida estandar para los pasos de la ficha del trámite*/
 .circle-pasos--size{
   width: 30px;height: 30px;
   line-height: 30px;
@@ -61,12 +62,15 @@
 }
 
 //Text
+/*Medida para las descripciones de proyecto (3)*/
 .block-text{
   width: 290px;
-  margin: (@margin-base/2) auto;
   @media (min-width: @screen-sm){ width: 530px; }
 }
-.block-text--small{
-  margin: (@margin-base/2) auto;
+/*Medida para las descripciones de etapas (4)*/
+.block-text--medium{
   width: 290px;
+  @media (min-width: @screen-sm){ width: 530px; }
 }
+/*Medida estandar para las descripciones de la ficha del trámite*/
+.block-text--small{ width: 290px; }

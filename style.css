@@ -7740,6 +7740,9 @@ hr {
 .margin {
   margin: 20px;
 }
+.margin-top-bottom-auto {
+  margin: 10px auto;
+}
 .margin-bottom {
   margin-bottom: 20px;
 }
@@ -8315,13 +8318,14 @@ footer .footer--bottom h4 {
   }
 }
 .line-etapas--medium {
-  width: 60px;
+  width: 40px;
 }
 @media (min-width: 768px) {
   .line-etapas--medium {
-    width: 60px;
+    width: 80px;
   }
 }
+/*Medida estandar para los pasos de la ficha del trámite*/
 .line-etapas--small {
   width: 40px;
 }
@@ -8347,9 +8351,9 @@ footer .footer--bottom h4 {
   }
 }
 .circle-pasos.circle-complete {
-  background-color: #54358e;
+  background-color: #372159;
 }
-/*Medida estandar para móvil y desktop*/
+/*Medida estandar para los pasos de la ficha del trámite*/
 .circle-pasos--size {
   width: 30px;
   height: 30px;
@@ -8377,17 +8381,26 @@ footer .footer--bottom h4 {
   background-color: #372159;
   border: 0px;
 }
+/*Medida para las descripciones de proyecto (3)*/
 .block-text {
   width: 290px;
-  margin: 10px auto;
 }
 @media (min-width: 768px) {
   .block-text {
     width: 530px;
   }
 }
+/*Medida para las descripciones de etapas (4)*/
+.block-text--medium {
+  width: 290px;
+}
+@media (min-width: 768px) {
+  .block-text--medium {
+    width: 530px;
+  }
+}
+/*Medida estandar para las descripciones de la ficha del trámite*/
 .block-text--small {
-  margin: 10px auto;
   width: 290px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
