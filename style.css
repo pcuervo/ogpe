@@ -1660,15 +1660,12 @@ p a.link--primary {
 .content-resultados a span {
   color: #ffa64d !important;
 }
-.list-disc p {
+.list-disc * {
   margin-left: 24px;
   list-style: disc outside none;
-  display: list-item;
 }
-.list-decimal p {
-  margin-left: 15px;
-  list-style: decimal outside none;
-  display: list-item;
+.list-decimal * {
+  list-style: decimal inside none;
 }
 code,
 kbd,
@@ -7429,7 +7426,7 @@ marquee span {
 .table-cell {
   display: table-cell;
 }
-.list-item {
+.list-item * {
   display: list-item;
 }
 .align-top {

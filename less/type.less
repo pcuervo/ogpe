@@ -409,14 +409,9 @@ p a.link--primary{ text-decoration: underline; }
 }
 
 //list style
-.list-disc p{
+.list-disc *{
 	margin-left:(@margin-base-horizontal*2);
 	list-style:disc outside none;
-	display:list-item;
 }
 
-.list-decimal p{
-	margin-left:(@margin-small-vertical*3);
-	list-style:decimal outside none;
-	display:list-item;
-}
+.list-decimal *{ list-style:decimal inside none; }
