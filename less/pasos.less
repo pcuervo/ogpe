@@ -1,14 +1,24 @@
-.line-etapas{
-  margin: 0px -3px;
-}
+//Line
+.line-etapas{ margin: 0px -3px; }
+
+/*Medida para los pasos de proyecto*/
 .line-etapas--large{
   width: 80px;
   @media (min-width: @screen-sm){ width: 135px; }
 }
-.line-etapas--small{
-  width: 80px;
-  @media (min-width: @screen-sm){ width: 135px; }
+/*Medida para los pasos de etapas*/
+.line-etapas--medium-a{
+  width: 50px;
+  @media (min-width: @screen-sm){ width: 110px; }
 }
+.line-etapas--medium-b{
+  width: 65px;
+  @media (min-width: @screen-sm){ width: 110px; }
+}
+/*Medida estandar para los pasos de la ficha del trámite*/
+.line-etapas--small{ width: 40px; }
+
+//Circle
 .circle-proceso{
   display: inline-block;
   text-align: center;
@@ -16,6 +26,7 @@
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
 }
+
 .circle-pasos {
   width: 30px;height: 30px;
   color: @light;
@@ -26,17 +37,24 @@
     line-height: 50px;
   }
  //Cuando el paso ha sido completado
-  &.circle-complete{ background-color: @primary--medium; }
+  &.circle-complete{ background-color: @primary--dark; }
 }
+
+/*Medida estandar para los pasos de la ficha del trámite*/
+.circle-pasos--size{
+  width: 30px;height: 30px;
+  line-height: 30px;
+}
+
 .circle-etapas {
   width: 7px;height: 7px;
-  margin: 0px;
-  border: 2px solid @primary;
+  margin: -1px;
+  border: 1px solid @primary;
   background-color: @light;
   position: relative;top: -12px;
   @media (min-width: @screen-sm){
     width: 10px;height: 10px;
-    margin: 0px 2px;
+    margin: 0px;
     position: relative;top: -11px;
   }
   //Cuando la etapa ha sido completado
@@ -46,8 +64,16 @@
   }
 }
 
+//Text
+/*Medida para las descripciones de proyecto (3)*/
 .block-text{
   width: 290px;
-  margin: (@margin-base/2) auto;
   @media (min-width: @screen-sm){ width: 530px; }
 }
+/*Medida para las descripciones de etapas (4)*/
+.block-text--medium{
+  width: 300px;
+  @media (min-width: @screen-sm){ width: 665px; }
+}
+/*Medida estandar para las descripciones de la ficha del trámite*/
+.block-text--small{ width: 290px; }

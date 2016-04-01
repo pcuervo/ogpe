@@ -127,14 +127,12 @@
 		</header>
 
 		<div class="[ main ]">
-			<!-- barra avisos -->
-			<marquee behavior="scroll" scrolldelay="100" direction="left">
-				<span><a href="">Aviso del director ejecutivo</a></span>
+			<div class="[ marquee ]" data-duration="15000">
+				<span><a href="">Aviso del director ejecutivo</a></span> <!-- pdf -->
 				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 				<span>Aviso lorem ipsum dolor sit amet</span>
 				<span>Soluta laborum magni inventore cupiditate tempore ipsam aspernatur provident.</span>
-			</marquee>
-
+			</div>
 			<div class="[ container ]">
 				<div class="[ row ]">
 					<div class="[ col-xs-12 col-sm-6 ]">
@@ -308,6 +306,8 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script src="js/jquery.marquee.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.marquee/1.3.9/jquery.marquee.min.js"></script>
 		<script>
 			$( document ).ready(function() {
 
@@ -316,6 +316,7 @@
 				**/
 				footerBottom();
 
+				$('.marquee').marquee();
 				/**
 				 * Triggered events
 				**/
