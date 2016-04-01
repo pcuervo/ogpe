@@ -143,135 +143,143 @@
 				</div>
 			</div>
 
-			<section class="[ container ][ margin-bottom--large ]">
+			<section class="[ container ]">
 				<h1 class="[ h2 ][ margin-bottom ]">PEX - Permiso de exportación de materiales de la corteza terrestre</h1>
 				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
 				<form>
-					<h3>Detalle de usos de la propiedad</h3>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<label>Indique su rol en el proyecto o actividad:*</label>
+					<article>
+						<h3>Detalle de usos de la propiedad</h3>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<label>Indique su rol en el proyecto o actividad:*</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+								<select class="[ form-control ][ arrow ]">
+									<option>Persona autorizada a...</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
 						</div>
-						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-							<select class="[ form-control ][ arrow ]">
-								<option>Persona autorizada a...</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-							</select>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<label>Indique el acceso a la propiedad:*</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+								<select class="[ form-control ][ arrow ]">
+									<option>Indique el acceso...</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
 						</div>
-					</div>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<label>Indique el acceso a la propiedad:*</label>
+						<label>Indique los tipos de servidumbre que sirven en la propiedad:*</label>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<input id="acueductos" type="checkbox" name="acueductos" value="acueductos">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="acueductos">acueductos</label>
+								<div class="[ clear ]"></div>
+								<input id="alcantarillado" type="checkbox" name="alcantarillado" value="alcantarillado">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="alcantarillado">alcantarillado</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<input id="electricidad" type="checkbox" name="electricidad" value="electricidad">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="electricidad">electricidad</label>
+								<div class="[ clear ]"></div>
+								<input id="via_municipal" type="checkbox" name="via_municipal" value="via_municipal">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="via_municipal">via municipal de acceso</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<input id="via_estatal" type="checkbox" name="via_estatal" value="via_estatal">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="via_estatal">vía estatal de acceso</label>
+								<div class="[ clear ]"></div>
+								<input id="telecomunicacion" type="checkbox" name="telecomunicacion" value="telecomunicacion">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="telecomunicacion">telecomunicación</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<input id="cable" type="checkbox" name="cable" value="cable">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="cable">cable tv</label>
+								<div class="[ clear ]"></div>
+								<input id="otros" type="checkbox" name="otros" value="otros">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="otros">otros</label>
+							</div>
 						</div>
-						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-							<select class="[ form-control ][ arrow ]">
-								<option>Indique el acceso...</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-							</select>
+					</article>
+					<article>
+						<h3>Datos de trámite</h3>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<label for="no_permiso">Número de permiso formal de extracción de material de la corteza terrestre:*</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+								<input class="[ form-control ]" id="no_permiso" name="no_permiso" type="text">
+							</div>
 						</div>
-					</div>
-					<label>Indique los tipos de servidumbre que sirven en la propiedad:*</label>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<input id="acueductos" type="checkbox" name="acueductos" value="acueductos">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="acueductos">acueductos</label>
-							<div class="[ clear ]"></div>
-							<input id="alcantarillado" type="checkbox" name="alcantarillado" value="alcantarillado">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="alcantarillado">alcantarillado</label>
+					</article>
+					<article>
+						<h3>Datos del área de extracción</h3>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<label for="cabida_finca">Cabida total de la finca:*</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+								<input class="[ form-control ]" id="cabida_finca" name="cabida_finca" type="text">
+							</div>
 						</div>
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<input id="electricidad" type="checkbox" name="electricidad" value="electricidad">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="electricidad">electricidad</label>
-							<div class="[ clear ]"></div>
-							<input id="via_municipal" type="checkbox" name="via_municipal" value="via_municipal">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="via_municipal">via municipal de acceso</label>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<label for="cabida_extraccion">Cabida total del área de extracción:*</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+								<input class="[ form-control ]" id="cabida_extraccion" name="cabida_extraccion" type="text">
+							</div>
 						</div>
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<input id="via_estatal" type="checkbox" name="via_estatal" value="via_estatal">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="via_estatal">vía estatal de acceso</label>
-							<div class="[ clear ]"></div>
-							<input id="telecomunicacion" type="checkbox" name="telecomunicacion" value="telecomunicacion">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="telecomunicacion">telecomunicación</label>
+					</article>
+					<article>
+						<h3>Datos de exportación</h3>
+						<label for="cabida_extraccion">Tipo de área a exportarse:*</label>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<input id="arena" type="checkbox" name="arena" value="arena">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="arena">arena manufacturada</label>
+								<div class="[ clear ]"></div>
+								<input id="polvillo" type="checkbox" name="polvillo" value="polvillo">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="polvillo">polvillo manufacturado</label>
+								<div class="[ clear ]"></div>
+								<input id="piedra" type="checkbox" name="piedra" value="piedra">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="piedra">piedra manufacturada</label>
+								<div class="[ clear ]"></div>
+								<input id="piedra_base" type="checkbox" name="piedra_base" value="piedra_base">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="piedra_base">piedra base manufacturada</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<input id="talco" type="checkbox" name="talco" value="talco">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="talco">talco manufacturado</label>
+								<div class="[ clear ]"></div>
+								<input id="gravilla" type="checkbox" name="gravilla" value="gravilla">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="gravilla">gravilla manufacturada</label>
+								<div class="[ clear ]"></div>
+								<input id="otro_material" type="checkbox" name="otro_material" value="otro_material">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="otro_material">otro material</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
+								<label class="[ inline-block ][ margin-bottom--small ]">Detalles de exportación:*</label>
+								<textarea class="form-control" rows="3"></textarea>
+							</div>
 						</div>
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<input id="cable" type="checkbox" name="cable" value="cable">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="cable">cable tv</label>
-							<div class="[ clear ]"></div>
-							<input id="otros" type="checkbox" name="otros" value="otros">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="otros">otros</label>
-						</div>
-					</div>
-					<h3>Datos de trámite</h3>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<label for="no_permiso">Número de permiso formal de extracción de material de la corteza terrestre:*</label>
-						</div>
-						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-							<input class="[ form-control ]" id="no_permiso" name="no_permiso" type="text">
-						</div>
-					</div>
-					<h3>Datos del área de extracción</h3>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<label for="cabida_finca">Cabida total de la finca:*</label>
-						</div>
-						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-							<input class="[ form-control ]" id="cabida_finca" name="cabida_finca" type="text">
-						</div>
-					</div>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<label for="cabida_extraccion">Cabida total del área de extracción:*</label>
-						</div>
-						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-							<input class="[ form-control ]" id="cabida_extraccion" name="cabida_extraccion" type="text">
-						</div>
-					</div>
-					<h3>Datos de exportación</h3>
-					<label for="cabida_extraccion">Tipo de área a exportarse:*</label>
-					<div class="[ row ][ margin-bottom--large ]">
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<input id="arena" type="checkbox" name="arena" value="arena">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="arena">arena manufacturada</label>
-							<div class="[ clear ]"></div>
-							<input id="polvillo" type="checkbox" name="polvillo" value="polvillo">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="polvillo">polvillo manufacturado</label>
-							<div class="[ clear ]"></div>
-							<input id="piedra" type="checkbox" name="piedra" value="piedra">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="piedra">piedra manufacturada</label>
-							<div class="[ clear ]"></div>
-							<input id="piedra_base" type="checkbox" name="piedra_base" value="piedra_base">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="piedra_base">piedra base manufacturada</label>
-						</div>
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<input id="talco" type="checkbox" name="talco" value="talco">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="talco">talco manufacturado</label>
-							<div class="[ clear ]"></div>
-							<input id="gravilla" type="checkbox" name="gravilla" value="gravilla">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="gravilla">gravilla manufacturada</label>
-							<div class="[ clear ]"></div>
-							<input id="otro_material" type="checkbox" name="otro_material" value="otro_material">
-							<label class="[ inline-block ][ margin-bottom--small ]" for="otro_material">otro material</label>
-						</div>
-						<div class="[ col-xs-12 col-sm-offset-1 col-sm-4 ]">
-							<label class="[ inline-block ][ margin-bottom--small ]">Detalles de exportación:*</label>
-							<textarea class="form-control" rows="3"></textarea>
-						</div>
-					</div>
-					<div class="[ row ][ margin-bottom--large ]">
+					</article>
+					<article class="[ row ]">
 						<div class="[ col-xs-12 col-sm-offset-3 col-sm-6 ]">
 							<input id="drna" type="checkbox" name="drna" value="drna">
 							<label class="[ inline-block ][ margin-bottom--small ]" for="drna">Autorizo al personal de DRNA y/o de OGPe, debidamen te identificado, a entrar e inspeccionar la propiedad con el proposito de evaluar esta solicitud.</label>
 							<input id="seguridad" type="checkbox" name="seguridad" value="seguridad">
 							<label class="[ inline-block ][ margin-bottom--small ]" for="seguridad">Certifico que la actividad propuesta no me menoscabará la salud, la seguridad, el orden o el interés público.</label>
 						</div>
-					</div>
+					</article>
 					<div class="[ text-center ]">
 						<a href="tramite-anexos.html" class="[ btn btn-primary ]">continuar</a>
 					</div>
