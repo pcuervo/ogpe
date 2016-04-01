@@ -7466,6 +7466,9 @@ marquee span {
 .list-item * {
   display: list-item;
 }
+.flex {
+  display: inline-flex !important;
+}
 .align-top {
   vertical-align: top;
 }
@@ -8213,7 +8216,7 @@ header .topic-menu {
 .dropdown--hover,
 .topic-menu {
   margin-left: 40px;
-  padding: 24px 12px;
+  padding: 18px 12px;
   display: inline-block;
   position: relative;
   vertical-align: middle;
