@@ -1088,6 +1088,19 @@ body {
   min-height: calc(100% - 60px);
   position: relative;
 }
+section,
+article {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  section,
+  article {
+    margin-bottom: 40px;
+  }
+}
+section > article:last-child {
+  margin-bottom: 0px;
+}
 input,
 button,
 select,
