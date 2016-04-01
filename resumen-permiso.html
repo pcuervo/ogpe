@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header>
+		<header class="[ js-header ]">
 			<div class="[ container ]">
 				<h1 class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
@@ -124,285 +124,302 @@
 				</div>
 			</div><!-- end container -->
 		</header>
-		<section class="[ container ][ margin-bottom ]">
-			<h1 class="[ h2 ][ margin-bottom--large ]">Detalles del permiso</h1>
-			<table class="[ table-head--top ][ responsive-table ]">
-				<thead>
-					<tr>
-						<th class="[ col-sm-2 ]">Cod. expediente</th>
-						<th class="[ col-sm-2 ]">Fecha radicación</th>
-						<th class="[ col-sm-2 ]">Municipio</th>
-						<th class="[ col-sm-2 ]">Tipo (CSA, CPI)</th>
-						<th class="[ col-sm-2 ]">Estado actual</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th class="[ col-sm-2 ]"><a href="#">2016-SRQ-163096</a></th>
-						<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-						<th class="[ col-sm-2 ]">Gurabo</th>
-						<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-						<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed  ]"></span> Supervision por gerente</th>
-					</tr>
-				</tbody>
-			</table>
-		</section>
-		<section class="[ container ][ margin-bottom--large ][ text-resume ]">
-			<h3>Proyecto</h3>
-			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-4 ]">
-					<p>Nombre:</p>
-					<p>Lorem ipsim</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-4 ]">
-					<p>Tipo de proyecto:</p>
-					<p>Público</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-4 ]">
-					<p>Tipo de Zona:</p>
-					<p>Rural</p>
-				</div>
-			</div>
-			<h3>Localización</h3>
-			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-4 ]">
-					<p>Número de catastro:</p>
-					<p>5464786-6478</p>
-					<p>Tipo de suelo:</p>
-					<p>LgF (34%), MaF2 (22.8%), LME (19.5%)</p>
-					<p>Área total (Mensura):</p>
-					<p>McF (18.0%), AoF2 (2.7%), MaF2 (1.6%)</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-4 ]">
-					<p>Área total (Escritura):</p>
-					<p>
-						<span>LgF (34%), MaF2 (22.8%), LME (19.5%)</span>
-						<span>1872349 m2</span>
-						<span>2453644 m2</span>
-					</p>
-					<p>Municipio:</p>
-					<p>Lorem ipsum</p>
-					<p>Zona o sitio historórico:</p>
-					<p>false</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-4 ]">
-					<p>Zona inundable:</p>
-					<p>x</p>
-					<p>Calificación:</p>
-					<p>NC</p>
-					<p>Clasificación:</p>
-					<p>NC</p>
-				</div>
-			</div>
-			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-4 ]">
-					<h3>Dueño del proyecto:</h3>
-					<p>Arisbeth HG</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-4 ]">
-					<h3>Dueño del solar:</h3>
-					<p>Arisbeth HG</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-4 ]">
-					<h3>Arrendatario:</h3>
-					<p>Arisbeth HG</p>
-				</div>
-			</div>
-		</section>
-		<section class="[ container ][ text-center ][ margin-bottom--large ]">
-			<h3 class="[ margin-bottom ]">Documentos Públicos del permiso</h3>
-			<table class="[ table-head--top ][ margin-bottom--large ]">
-				<thead>
-					<tr>
-						<th class="[ col-sm-4 ]">Nombre del archivo</th>
-						<th class="[ col-sm-4 ]">Fecha anexo</th>
-						<th class="[ col-sm-4 ]">Tipo de anexo</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th class="[ col-sm-4 ]">Memorial explicativo</th>
-						<th class="[ col-sm-4 ]">2013-11-11 11:27:00</th>
-						<th class="[ col-sm-4 ]">Requerido</th>
-					</tr>
-					<tr>
-						<th class="[ col-sm-4 ]">Certificado de hábitat</th>
-						<th class="[ col-sm-4 ]">2013-11-11 11:27:50</th>
-						<th class="[ col-sm-4 ]">Requerido</th>
-					</tr>
-				</tbody>
-			</table>
-			<a href="busqueda-permisos.html" class="[ btn btn-primary ]">volver a la busqueda</a>
-		</section>
-		<section class="[ container ][ margin-bottom--large ]">
-			<h3>Otros permisos asociados al proyecto</h3>
-			<table class="[ table-head--top ][ margin-bottom ]">
+		<div class="[ main ]">
+			<section class="[ container ][ margin-bottom ]">
+				<h1 class="[ h2 ][ margin-bottom--large ]">Detalles del permiso</h1>
+				<table class="[ table-head--top ][ responsive-table ]">
 					<thead>
 						<tr>
-							<th class="[ col-sm-2 ]">Permiso</th>
+							<th class="[ col-sm-2 ]">Cod. expediente</th>
 							<th class="[ col-sm-2 ]">Fecha radicación</th>
 							<th class="[ col-sm-2 ]">Municipio</th>
 							<th class="[ col-sm-2 ]">Tipo (CSA, CPI)</th>
 							<th class="[ col-sm-2 ]">Estado actual</th>
-							<th class="[ col-sm-2 ]">Ver resumen</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
+							<th class="[ col-sm-2 ]"><a href="#">2016-SRQ-163096</a></th>
 							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
 							<th class="[ col-sm-2 ]">Gurabo</th>
 							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed  ]"></span> Supervision por gerente</th>
-							<th class="[ col-sm-2 ][ text-center ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed  ]"></span> Supervision por gerente</th>
-							<th class="[ col-sm-2 ][ text-center ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed  ]"></span> Supervision por gerente</th>
-							<th class="[ col-sm-2 ][ text-center ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-							</th>
-						</tr>
-						<tr>
-							<th class="[ col-sm-2 ]">PGE</th>
-							<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
-							<th class="[ col-sm-2 ]">Gurabo</th>
-							<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
-							<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed  ]"></span> Supervision por gerente</th>
-							<th class="[ col-sm-2 ][ text-center ]">
-								<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
-							</th>
+							<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed ][ pull-left ][ width-30 ]"></span><span class="[ pull-right ][ width-70 ]"> Supervision por gerente</span></th>
 						</tr>
 					</tbody>
 				</table>
-				<div class="[ text-center ]">
-					<ul class="[ pagination ]">
-						<li><a href="#">Anterior</a></li>
-						<li class="[ active ]"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">Siguiente</a></li>
-					</ul>
-				</div>
-		</section>
-		<div class="[ container ][ border-top--primary ][ margin-bottom--large ][ padding ][ margin-bottom ][ leyendas ]">
-			<h4>Estados</h4>
-			<div>
-				<div class="[ icon-circle-cash  icon--iconed--large ]"></div>
-				<p>Pago</p>
-			</div>
-			<div>
-				<div class="[ icon-file-text-document  icon--iconed--large ]"></div>
-				<p>Inspección o secretaria</p>
-			</div>
-			<div>
-				<div class="[ icon-notepad-edit  icon--iconed--large ]"></div>
-				<p>Subsanación</p>
-			</div>
-			<div>
-				<div class="[ icon-calendar  icon--iconed--large ]"></div>
-				<p>En espera de requerimientos o agencias</p>
-			</div>
-			<div>
-				<div class="[ icon-business-man-2  icon--iconed--large ]"></div>
-				<p>Supervisión por gerente</p>
-			</div>
-			<div>
-				<div class="[ icon-business-man-3  icon--iconed--large ]"></div>
-				<p>Revisión legal</p>
-			</div>
-			<div>
-				<div class="[ icon-drawer-1  icon--iconed--large ]"></div>
-				<p>Archivo</p>
-			</div>
-			<div>
-				<div class="[ icon-cancel-circle  icon--iconed--large ]"></div>
-				<p>Denegación / Cerrado</p>
-			</div>
-			<div>
-				<div class="[ icon-ok-circle  icon--iconed--large ]"></div>
-				<p>Aprobación</p>
-			</div>
-		</div>
-		<footer>
-			<div class="[ footer--top ]">
-				<div class="[ container ]">
-					<div class="[ row ][ margin-bottom ][ text-center ]">
-						<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
-							<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
-							<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
-						</a>
-						<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+			</section>
+			<section class="[ container ][ margin-bottom--large ][ text-resume ]">
+				<h3>Proyecto</h3>
+				<div class="[ row ]">
+					<div class="[ col-xs-12 col-sm-4 ]">
+						<p>Nombre:</p>
+						<p>Lorem ipsim</p>
 					</div>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
-							<div class="[ row ]">
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
-									<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
-									<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
-								</div>
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
-									<div class="[ bg-image logo--ogpe ]"></div>
+					<div class="[ col-xs-12 col-sm-4 ]">
+						<p>Tipo de proyecto:</p>
+						<p>Público</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-4 ]">
+						<p>Tipo de Zona:</p>
+						<p>Rural</p>
+					</div>
+				</div>
+				<h3>Localización</h3>
+				<div class="[ row ]">
+					<div class="[ col-xs-12 col-sm-4 ]">
+						<p>Número de catastro:</p>
+						<p>5464786-6478</p>
+						<p>Tipo de suelo:</p>
+						<p>LgF (34%), MaF2 (22.8%), LME (19.5%)</p>
+						<p>Área total (Mensura):</p>
+						<p>McF (18.0%), AoF2 (2.7%), MaF2 (1.6%)</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-4 ]">
+						<p>Área total (Escritura):</p>
+						<p>
+							<span>LgF (34%), MaF2 (22.8%), LME (19.5%)</span>
+							<span>1872349 m2</span>
+							<span>2453644 m2</span>
+						</p>
+						<p>Municipio:</p>
+						<p>Lorem ipsum</p>
+						<p>Zona o sitio historórico:</p>
+						<p>false</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-4 ]">
+						<p>Zona inundable:</p>
+						<p>x</p>
+						<p>Calificación:</p>
+						<p>NC</p>
+						<p>Clasificación:</p>
+						<p>NC</p>
+					</div>
+				</div>
+				<div class="[ row ]">
+					<div class="[ col-xs-12 col-sm-4 ]">
+						<h3>Dueño del proyecto:</h3>
+						<p>Arisbeth HG</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-4 ]">
+						<h3>Dueño del solar:</h3>
+						<p>Arisbeth HG</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-4 ]">
+						<h3>Arrendatario:</h3>
+						<p>Arisbeth HG</p>
+					</div>
+				</div>
+			</section>
+			<section class="[ container ][ text-center ][ margin-bottom--large ]">
+				<h3 class="[ margin-bottom ]">Documentos Públicos del permiso</h3>
+				<table class="[ table-head--top ][ margin-bottom--large ]">
+					<thead>
+						<tr>
+							<th class="[ col-sm-4 ]">Nombre del archivo</th>
+							<th class="[ col-sm-4 ]">Fecha anexo</th>
+							<th class="[ col-sm-4 ]">Tipo de anexo</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="[ col-sm-4 ]">Memorial explicativo</th>
+							<th class="[ col-sm-4 ]">2013-11-11 11:27:00</th>
+							<th class="[ col-sm-4 ]">Requerido</th>
+						</tr>
+						<tr>
+							<th class="[ col-sm-4 ]">Certificado de hábitat</th>
+							<th class="[ col-sm-4 ]">2013-11-11 11:27:50</th>
+							<th class="[ col-sm-4 ]">Requerido</th>
+						</tr>
+					</tbody>
+				</table>
+				<a href="busqueda-permisos.html" class="[ btn btn-primary ]">volver a la busqueda</a>
+			</section>
+			<section class="[ container ][ margin-bottom--large ]">
+				<h3>Otros permisos asociados al proyecto</h3>
+				<table class="[ table-head--top ][ margin-bottom ]">
+						<thead>
+							<tr>
+								<th class="[ col-sm-2 ]">Permiso</th>
+								<th class="[ col-sm-2 ]">Fecha radicación</th>
+								<th class="[ col-sm-2 ]">Municipio</th>
+								<th class="[ col-sm-2 ]">Tipo (CSA, CPI)</th>
+								<th class="[ col-sm-2 ]">Estado actual</th>
+								<th class="[ col-sm-2 ]">Ver resumen</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed  ]"></span> Supervision por gerente</th>
+								<th class="[ col-sm-2 ][ text-center ]">
+									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+								</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed  ]"></span> Supervision por gerente</th>
+								<th class="[ col-sm-2 ][ text-center ]">
+									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+								</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed  ]"></span> Supervision por gerente</th>
+								<th class="[ col-sm-2 ][ text-center ]">
+									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+								</th>
+							</tr>
+							<tr>
+								<th class="[ col-sm-2 ]">PGE</th>
+								<th class="[ col-sm-2 ]">2016-02-18 13:22:36 AST</th>
+								<th class="[ col-sm-2 ]">Gurabo</th>
+								<th class="[ col-sm-2 ]">SQR - solicitud de Radicación de Querella</th>
+								<th class="[ col-sm-2 ]"><span class="[ icon-business-man-2 icon--iconed  ]"></span> Supervision por gerente</th>
+								<th class="[ col-sm-2 ][ text-center ]">
+									<a href="resumen-permiso.html" class="[ btn btn-primary ]"><div class="[ icon--iconed--xsmall icon-plus ]"></div></a>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<div class="[ text-center ]">
+						<ul class="[ pagination ]">
+							<li><a href="#">Anterior</a></li>
+							<li class="[ active ]"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">Siguiente</a></li>
+						</ul>
+					</div>
+			</section>
+			<div class="[ container ][ border-top--primary ][ margin-bottom--large ][ padding ][ margin-bottom ][ leyendas ]">
+				<h4>Estados</h4>
+				<div>
+					<div class="[ icon-circle-cash  icon--iconed--large ]"></div>
+					<p>Pago</p>
+				</div>
+				<div>
+					<div class="[ icon-file-text-document  icon--iconed--large ]"></div>
+					<p>Inspección o secretaria</p>
+				</div>
+				<div>
+					<div class="[ icon-notepad-edit  icon--iconed--large ]"></div>
+					<p>Subsanación</p>
+				</div>
+				<div>
+					<div class="[ icon-calendar  icon--iconed--large ]"></div>
+					<p>En espera de requerimientos o agencias</p>
+				</div>
+				<div>
+					<div class="[ icon-business-man-2  icon--iconed--large ]"></div>
+					<p>Supervisión por gerente</p>
+				</div>
+				<div>
+					<div class="[ icon-business-man-3  icon--iconed--large ]"></div>
+					<p>Revisión legal</p>
+				</div>
+				<div>
+					<div class="[ icon-drawer-1  icon--iconed--large ]"></div>
+					<p>Archivo</p>
+				</div>
+				<div>
+					<div class="[ icon-cancel-circle  icon--iconed--large ]"></div>
+					<p>Denegación / Cerrado</p>
+				</div>
+				<div>
+					<div class="[ icon-ok-circle  icon--iconed--large ]"></div>
+					<p>Aprobación</p>
+				</div>
+			</div>
+			<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
-							<h4 class="[ no-margin--top ]">Contactanos</h4>
-							<p>Oficina Central SJ</p>
-							<a href="tel:+525552555555">(787)721-8282</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Aguadilla</p>
-							<a href="tel:+525552555555">(787)891-0466</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Arecibo</p>
-							<a href="tel:+525552555555">(787)878-7979</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Humacao</p>
-							<a href="tel:+525552555555">(787)852-2013</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Ponce</p>
-							<a href="tel:+525552555555">(787)843-9097</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="[ footer--bottom ]">
-				<div class="[ container ]">
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
-							<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
-							<h4>Contacto</h4>
-							<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
 	</body>
 </html>

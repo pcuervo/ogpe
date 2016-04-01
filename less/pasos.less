@@ -1,10 +1,15 @@
 .line-etapas{
+  margin: 0px -3px;
+}
+.line-etapas--large{
   width: 80px;
-  @media (min-width: 480px){ width: 135px;}
+  @media (min-width: @screen-sm){ width: 135px; }
+}
+.line-etapas--small{
+  width: 80px;
+  @media (min-width: @screen-sm){ width: 135px; }
 }
 .circle-proceso{
-  border: 1px solid @primary;
-  background: @light;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -13,21 +18,36 @@
 }
 .circle-pasos {
   width: 30px;height: 30px;
-  color: @dark;
+  color: @light;
+  background-color: @primary;
   line-height: 30px;
-  @media (min-width: 480px){
+  @media (min-width: @screen-sm){
     width: 50px;height: 50px;
-    color: @dark;
     line-height: 50px;
   }
+ //Cuando el paso ha sido completado
+  &.circle-complete{ background-color: @primary--medium; }
 }
 .circle-etapas {
   width: 7px;height: 7px;
   margin: 0px;
+  border: 2px solid @primary;
+  background-color: @light;
   position: relative;top: -12px;
-  @media (min-width: 480px){
+  @media (min-width: @screen-sm){
     width: 10px;height: 10px;
     margin: 0px 2px;
     position: relative;top: -11px;
   }
+  //Cuando la etapa ha sido completado
+  &.circle-complete{
+    background-color: @primary--dark;
+    border: 0px;
+  }
+}
+
+.block-text{
+  width: 290px;
+  margin: (@margin-base/2) auto;
+  @media (min-width: @screen-sm){ width: 530px; }
 }

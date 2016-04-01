@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header>
+		<header class="[ js-header ]">
 			<div class="[ container ]">
 				<h1 class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
@@ -124,172 +124,189 @@
 				</div>
 			</div><!-- end container -->
 		</header>
-		<div class="[ container ][ text-center ][ margin-bottom--large ]">
-			<span class="[ circle-proceso circle-pasos ]">1</span>
-			<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas ]">
-				<span class="[ circle-proceso circle-etapas ]"></span>
-				<span class="[ circle-proceso circle-etapas ]"></span>
-				<span class="[ circle-proceso circle-etapas ]"></span>
-				<span class="[ circle-proceso circle-etapas ]"></span>
-				<span class="[ circle-proceso circle-etapas ]"></span>
-				<span class="[ circle-proceso circle-etapas ]"></span>
-				<span class="[ circle-proceso circle-etapas ]"></span>
-				<span class="[ circle-proceso circle-etapas ]"></span>
+		<div class="[ main ]">
+			<div class="[ container ][ text-center ][ margin-bottom--small ]">
+				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas line-etapas--large ]">
+					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas ]"></span>
+				</div>
+				<span class="[ circle-proceso circle-pasos ]">2</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--large ]"></div>
+				<span class="[ circle-proceso circle-pasos ]">3</span>
+				<div class="[ block-text ]">
+					<p class="[ inline-block align-top ][ width-33 ][ text--small ][ text-left ]">Créación nuevo proyecto</p>
+					<p class="[ inline-block align-top ][ width-30 ][ text--small ]">Anexo</p>
+					<p class="[ inline-block align-top ][ width-33 ][ text--small ][ text-right ]">Resumen del proyecto</p>
+				</div>
 			</div>
-			<span class="[ circle-proceso circle-pasos ]">2</span>
-			<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas ]"></div>
-			<span class="[ circle-proceso circle-pasos ]">3</span>
-		</div>
 
-
-		<section class="[ container ][ margin-bottom--large ]">
-			<h2>Nuevo proyecto</h2>
-			<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
-			<form>
-				<div class="[ row ][ margin-bottom ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<h3>Localización</h3>
-						<p>Seleccione su parcela o busque su catastro:*</p>
-						<p>Si conoce el número de catastro introduscalo en el siguiente espacio, espere un momento y el mapa conseguira la información. O busquelo manualmente.</p>
-						<label>Número de catastro</label>
-						<div class="[ input-group ][ input-search ][ margin-bottom ]">
-							<input type="text" class="[ form-control ]" placeholder="Número de catastro">
-							<span class="[ input-group-btn ]">
-								<button type="submit" class="[ btn btn-primary ]">
-									<span class="[ relative ][ icon-search icon-iconed ]"></span>
-								</button>
-							</span>
-						</div>
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-				<!-- mapa -->
-					</div>
-				</div>
-				<input id="certificacion" type="checkbox" name="certificacion" value="certificacion">
-				<label class="[ inline-block ][ margin-bottom ]" for="certificacion">Necesito seleccionar catastros adicionales</label>
-				<h3>Detalles de catastro</h3>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="numero_catastro">Número de catastro:*</label>
-						<input class="[ form-control ]" id="numero_catastro" name="numero_catastro" type="text">
-						<label for="numero_catastro_ext">Número de catastro exterior:*</label>
-						<input class="[ form-control ]" id="numero_catastro_ext" name="numero_catastro_ext" type="text">
-						<label for="area_catastro">Área aproximada (m2):*</label>
-						<input class="[ form-control ]" id="area_catastro" name="area_catastro" type="text">
-						<label for="municipio_catastro">Municipio</label>
-						<input class="[ form-control ]" id="municipio_catastro" name="municipio_catastro" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="barrio_catastro">Barrio</label>
-						<input class="[ form-control ]" id="barrio_catastro" name="barrio_catastro" type="text">
-						<label for="sitio_historico">Zona o sitio histórico</label>
-						<input class="[ form-control ]" id="sitio_historico" name="sitio_historico" type="text">
-						<label for="suelo">Suelo geológico</label>
-						<input class="[ form-control ]" id="suelo" name="suelo" type="text">
-						<label for="zona_inundada">Zona inundada</label>
-						<input class="[ form-control ]" id="zona_inundada" name="zona_inundada" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="floodway">Floodway</label>
-						<input class="[ form-control ]" id="floodway" name="floodway" type="text">
-						<label for="calificacion">Calificación</label>
-						<input class="[ form-control ]" id="calificacion" name="calificacion" type="text">
-						<label for="clasificacion">Clasificación</label>
-						<input class="[ form-control ]" id="clasificacion" name="clasificacion" type="text">
-						<label for="coordenadas">Coodenadas</label>
-						<input class="[ form-control ]" id="coordenadas" name="coordenadas" type="text">
-					</div>
-				</div>
-				<h3>Detalles adicionales del catastro</h3>
-				<div class="[ row ][ margin-bottom--large ] ">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="cabida">Cabída (área total) de la propiedad según la escritura:*</label>
-						<input class="[ form-control ]" id="cabida" name="cabida" type="text" placeholder="Cabida...">
-						<input class="[ form-control ]" id="cabida_m" name="cabida_m" type="text" placeholder="m2">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="dirreccion">Dirección del catastro:*</label>
-						<input class="[ form-control ]" id="dirreccion" name="dirreccion" type="text" placeholder="Dirección">
-						<label for="estado">Estado:*</label>
-						<input class="[ form-control ]" id="estado" name="estado" type="text" placeholder="Puerto rico" disabled="">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="zip-code">Código postal:*</label>
-						<input class="[ form-control ]" id="zip-code" name="zip-code" type="text">
-						<label for="referencia">Punto de referencia de cómo llegar:</label>
-						<input class="[ form-control ]" id="referencia" name="referencia" type="text">
-					</div>
-				</div>
-				<div class="[ text-center ][ margin-bottom--large ]">
-					<input id="verificacion" type="checkbox" name="verificacion" value="verificacion">
-					<label class="[ inline-block ]" for="verificacion">Certifico que verifiqué la Dirección del catastro y confirmo que la misma es correcta</label>
-					<div class="[ clear ][ margin-bottom ]"></div>
-					<a href="proyecto2-5.html" class="[ btn btn-primary ]">continuar</a>
-				</div>
-			</form>
-		</section>
-		<footer>
-			<div class="[ footer--top ]">
-				<div class="[ container ]">
-					<div class="[ row ][ margin-bottom ][ text-center ]">
-						<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
-							<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
-							<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
-						</a>
-						<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
-					</div>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
-							<div class="[ row ]">
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
-									<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
-									<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
-								</div>
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
-									<div class="[ bg-image logo--ogpe ]"></div>
-								</div>
+			<section class="[ container ][ margin-bottom--large ]">
+				<h2>Nuevo proyecto</h2>
+				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
+				<form>
+					<div class="[ row ][ margin-bottom ]">
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<h3>Localización</h3>
+							<p>Seleccione su parcela o busque su catastro:*</p>
+							<p>Si conoce el número de catastro introduscalo en el siguiente espacio, espere un momento y el mapa conseguira la información. O busquelo manualmente.</p>
+							<label>Número de catastro</label>
+							<div class="[ input-group ][ input-search ][ margin-bottom ]">
+								<input type="text" class="[ form-control ]" placeholder="Número de catastro">
+								<span class="[ input-group-btn ]">
+									<button type="submit" class="[ btn btn-primary ]">
+										<span class="[ relative ][ icon-search icon-iconed ]"></span>
+									</button>
+								</span>
 							</div>
 						</div>
-						<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
-							<h4 class="[ no-margin--top ]">Contactanos</h4>
-							<p>Oficina Central SJ</p>
-							<a href="tel:+525552555555">(787)721-8282</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Aguadilla</p>
-							<a href="tel:+525552555555">(787)891-0466</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Arecibo</p>
-							<a href="tel:+525552555555">(787)878-7979</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Humacao</p>
-							<a href="tel:+525552555555">(787)852-2013</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Ponce</p>
-							<a href="tel:+525552555555">(787)843-9097</a>
+						<div class="[ col-xs-12 col-sm-4 ]">
+					<!-- mapa -->
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="[ footer--bottom ]">
-				<div class="[ container ]">
+					<input id="certificacion" type="checkbox" name="certificacion" value="certificacion">
+					<label class="[ inline-block ][ margin-bottom ]" for="certificacion">Necesito seleccionar catastros adicionales</label>
+					<h3>Detalles de catastro</h3>
 					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
-							<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="numero_catastro">Número de catastro:*</label>
+							<input class="[ form-control ]" id="numero_catastro" name="numero_catastro" type="text">
+							<label for="numero_catastro_ext">Número de catastro exterior:*</label>
+							<input class="[ form-control ]" id="numero_catastro_ext" name="numero_catastro_ext" type="text">
+							<label for="area_catastro">Área aproximada (m2):*</label>
+							<input class="[ form-control ]" id="area_catastro" name="area_catastro" type="text">
+							<label for="municipio_catastro">Municipio</label>
+							<input class="[ form-control ]" id="municipio_catastro" name="municipio_catastro" type="text">
 						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
-							<h4>Contacto</h4>
-							<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="barrio_catastro">Barrio</label>
+							<input class="[ form-control ]" id="barrio_catastro" name="barrio_catastro" type="text">
+							<label for="sitio_historico">Zona o sitio histórico</label>
+							<input class="[ form-control ]" id="sitio_historico" name="sitio_historico" type="text">
+							<label for="suelo">Suelo geológico</label>
+							<input class="[ form-control ]" id="suelo" name="suelo" type="text">
+							<label for="zona_inundada">Zona inundada</label>
+							<input class="[ form-control ]" id="zona_inundada" name="zona_inundada" type="text">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="floodway">Floodway</label>
+							<input class="[ form-control ]" id="floodway" name="floodway" type="text">
+							<label for="calificacion">Calificación</label>
+							<input class="[ form-control ]" id="calificacion" name="calificacion" type="text">
+							<label for="clasificacion">Clasificación</label>
+							<input class="[ form-control ]" id="clasificacion" name="clasificacion" type="text">
+							<label for="coordenadas">Coodenadas</label>
+							<input class="[ form-control ]" id="coordenadas" name="coordenadas" type="text">
+						</div>
+					</div>
+					<h3>Detalles adicionales del catastro</h3>
+					<div class="[ row ][ margin-bottom--large ] ">
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="cabida">Cabída (área total) de la propiedad según la escritura:*</label>
+							<input class="[ form-control ]" id="cabida" name="cabida" type="text" placeholder="Cabida...">
+							<input class="[ form-control ]" id="cabida_m" name="cabida_m" type="text" placeholder="m2">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="dirreccion">Dirección del catastro:*</label>
+							<input class="[ form-control ]" id="dirreccion" name="dirreccion" type="text" placeholder="Dirección">
+							<label for="estado">Estado:*</label>
+							<input class="[ form-control ]" id="estado" name="estado" type="text" placeholder="Puerto rico" disabled="">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="zip-code">Código postal:*</label>
+							<input class="[ form-control ]" id="zip-code" name="zip-code" type="text">
+							<label for="referencia">Punto de referencia de cómo llegar:</label>
+							<input class="[ form-control ]" id="referencia" name="referencia" type="text">
+						</div>
+					</div>
+					<div class="[ text-center ][ margin-bottom--large ]">
+						<input id="verificacion" type="checkbox" name="verificacion" value="verificacion">
+						<label class="[ inline-block ]" for="verificacion">Certifico que verifiqué la Dirección del catastro y confirmo que la misma es correcta</label>
+						<div class="[ clear ][ margin-bottom ]"></div>
+						<a href="proyecto2-5.html" class="[ btn btn-primary ]">continuar</a>
+					</div>
+				</form>
+			</section>
+			<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
 	</body>
 </html>

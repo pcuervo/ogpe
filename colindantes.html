@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header>
+		<header class="[ js-header ]">
 			<div class="[ container ]">
 				<h1 class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
@@ -124,272 +124,289 @@
 				</div>
 			</div><!-- end container -->
 		</header>
-		<section class="[ container ][ margin-bottom--large ]">
-			<h1 class="[ h2 ]">Añadir colindantes</h1>
-			<h3>Proyecto: casa</h3>
-			<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
-			<form>
-				<p class="[ margin-top ]"><strong>1. </strong>Seleccione el tipo de catastro y el punto cardinal al que pertenece</p>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
+		<div class="[ main ]">
+			<section class="[ container ][ margin-bottom--large ]">
+				<h1 class="[ h2 ]">Añadir colindantes</h1>
+				<h3>Proyecto: casa</h3>
+				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
+				<form>
+					<p class="[ margin-top ]"><strong>1. </strong>Seleccione el tipo de catastro y el punto cardinal al que pertenece</p>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-4 ]">
 
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
 
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
 
-					</div>
-				</div>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="tipo_catastro">Tipo de catastro a agregar:*</label>
-						<input class="[ form-control ]" id="tipo_catastro" name="tipo_catastro" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="punto_cardinal">Punto cardinal:*</label>
-						<input class="[ form-control ]" id="punto_cardinal" name="punto_cardinal" type="text">
-					</div>
-				</div>
-				<p class="[ margin-top ]"><strong>2. </strong>Seleccione la parcela en el mapa que corresponde al catastro que desea agregar o búsquelo utilizando el buscador</p>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<p>Catastro principal: <strong>4535-5335-5355</strong></p>
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label>Número de catastro a buscar</label>
-						<div class="[ input-group ][ input-search ][ margin-bottom ]">
-							<input type="text" class="[ form-control ]">
-							<span class="[ input-group-btn ]">
-								<button type="submit" class="[ btn btn-primary ]">
-									<span class="[ relative ][ icon-search icon-iconed ]"></span>
-								</button>
-							</span>
 						</div>
 					</div>
-				</div>
-			<!-- mapa -->
-				<p class="[ margin-top ]"><strong>3. </strong>Verifique que la información provista es correcta, de no serlo, por favor corríjala</p>
-				<p>Información principal del catastro:</p>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="numero_catastro">Número de catastro:*</label>
-						<input class="[ form-control ]" id="numero_catastro" name="numero_catastro" type="text">
-						<label for="area_catastro">Área aproximada (m2):*</label>
-						<input class="[ form-control ]" id="area_catastro" name="area_catastro" type="text">
-						<label for="municipio_catastro">Municipio</label>
-						<input class="[ form-control ]" id="municipio_catastro" name="municipio_catastro" type="text">
-						<label for="barrio_catastro">Barrio</label>
-						<input class="[ form-control ]" id="barrio_catastro" name="barrio_catastro" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="sitio_historico">Zona o sitio histórico</label>
-						<input class="[ form-control ]" id="sitio_historico" name="sitio_historico" type="text">
-						<label for="suelo">Suelo geológico</label>
-						<input class="[ form-control ]" id="suelo" name="suelo" type="text">
-						<label for="zona_inundada">Zona inundada</label>
-						<input class="[ form-control ]" id="zona_inundada" name="zona_inundada" type="text">
-						<label for="calificacion">Calificación</label>
-						<input class="[ form-control ]" id="calificacion" name="calificacion" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="clasificacion">Clasificación</label>
-						<input class="[ form-control ]" id="clasificacion" name="clasificacion" type="text">
-						<label for="coordenadas">Coodenadas</label>
-						<input class="[ form-control ]" id="coordenadas" name="coordenadas" type="text">
-					</div>
-				</div>
-				<p class="[ margin-top ]"><strong>4. </strong>Presione el botón de Agregar Catastro. Para algunos trámites se le requerirá que entre un(1) colindante por punto cardinal: Norte, Sur, Este y Oeste</p>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="cabida">Cabída (área total) de la propiedad según la escritura:*</label>
-						<input class="[ form-control ]" id="cabida" name="cabida" type="text" placeholder="Cabida...">
-						<input class="[ form-control ]" id="cabida_m" name="cabida_m" type="text" placeholder="m2">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="dirreccion">Dirección del catastro:*</label>
-						<input class="[ form-control ]" id="dirreccion" name="dirreccion" type="text" placeholder="Dirección">
-						<label for="estado_catastro">Estado:*</label>
-						<input class="[ form-control ]" id="estado_catastro" name="estado_catastro" type="text" placeholder="Puerto rico" disabled="">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="zip-code">Código postal:*</label>
-						<input class="[ form-control ]" id="zip-code" name="zip-code" type="text">
-					</div>
-				</div>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="nombre">Primer nombre:*</label>
-						<input class="[ form-control ]" id="nombre" name="nombre" type="text">
-						<label for="inicial">Inicial:*</label>
-						<input class="[ form-control ]" id="inicial" name="inicial" type="text">
-						<label for="apellido">Apellido paterno:*</label>
-						<input class="[ form-control ]" id="apellido" name="apellido" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="direccion">Dirección:*</label>
-						<input class="[ form-control ]" id="direccion" name="direccion" type="text">
-						<label for="pais">País:*</label>
-						<input class="[ form-control ]" id="pais" name="pais" type="text">
-						<label for="municipio">Municipio:*</label>
-						<input class="[ form-control ]" id="municipio" name="municipio" type="text">
-						<label for="codigo_postal">Código postal:*</label>
-						<input class="[ form-control ]" id="codigo_postal" name="codigo_postal" type="number">
-						<label for="estado">Estado:*</label>
-						<input class="[ form-control ]" id="estado" name="estado" type="text">
-					</div>
-					<div class="[ col-xs-12 col-sm-4 ]">
-						<label for="telefono">Télefono primario:*</label>
-						<input class="[ form-control ]" id="telefono" name="telefono" type="number">
-						<label for="email">Correo eléctronico:*</label>
-						<input class="[ form-control ]" id="email" name="email" type="email">
-					</div>
-				</div>
-				<div class="[ text-center ][ margin-top ]">
-					<p class="[ margin-bottom ][ fw-bold ][ text--small ]">Si deseas agregar múltiples catastros debera repetir el proceso</p>
-					<button type="button" class="[ btn btn-primary ]">agregar catastro</button>
-				</div>
-			</form>
-		</section>
-		<section class="[ container ][ margin-bottom ]">
-			<h3>Catastros</h3>
-			<div class="[ row hidden-xs ][ border-bottom--primary--large ][ margin-bottom ][ fw-bold ]"><!-- títulos tabla proyectos para desktop -->
-				<div class="[ col-sm-2 ]">
-					<p>No. de catastro</p>
-				</div>
-				<div class="[ col-sm-2 ]">
-					<p>Punto cardinal</p>
-				</div>
-				<div class="[ col-sm-2 ]">
-					<p>Tipo de catastro</p>
-				</div>
-				<div class="[ col-sm-3 ]">
-					<p>Dirección del catastro</p>
-				</div>
-				<div class="[ col-sm-3 ]">
-					<p>Información del dueño</p>
-				</div>
-			</div>
-			<div class="[ row ][ border-bottom--primary ][ margin-bottom ]">
-				<div class="[ col-xs-12 col-sm-2 ]">
-					<a data-toggle="collapse" data-target="#catastro-mas1" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
-					<p class="[ visible-xs ]"><strong>No. de catastro</strong></p>
-					<p>354345-345346</p>
-				</div>
-				<div id="catastro-mas1" class="collapse [ collapse-table ]">
-					<div class="[ col-xs-12 col-sm-2 ]">
-						<p class="[ visible-xs ]"><strong>Punto cardinal</strong></p>
-						<p>Norte</p>
-					</div>
-					<div class="[ col-xs-12 col-sm-2 ]">
-						<p class="[ visible-xs ]"><strong>Tipo de catastro</strong></p>
-						<p>Colindate</p>
-					</div>
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<p class="[ visible-xs ]"><strong>Dirección del catastro</strong></p>
-						<p>Calle 2 núm. 45 Villa Jauca, Santa Isabel</p>
-					</div>
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<p class="[ visible-xs ]"><strong>Información del dueño</strong></p>
-						<p>Calle 2 núm. 45 Villa Jauca, Santa Isabel</p>
-					</div>
-				</div>
-			</div>
-			<div class="[ row ][ border-bottom--primary ][ margin-bottom ]">
-				<div class="[ col-xs-12 col-sm-2 ]">
-					<a data-toggle="collapse" data-target="#catastro-mas2" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
-					<p class="[ visible-xs ]"><strong>No. de catastro</strong></p>
-					<p>54646-36775</p>
-				</div>
-				<div id="catastro-mas2" class="collapse [ collapse-table ]">
-					<div class="[ col-xs-12 col-sm-2 ]">
-						<p class="[ visible-xs ]"><strong>Punto cardinal</strong></p>
-						<p>Sur</p>
-					</div>
-					<div class="[ col-xs-12 col-sm-2 ]">
-						<p class="[ visible-xs ]"><strong>Tipo de catastro</strong></p>
-						<p>Asociado</p>
-					</div>
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<p class="[ visible-xs ]"><strong>Dirección del catastro</strong></p>
-						<p>Calle 8 núm. 78 Villa Jauca, Santa Isabel</p>
-					</div>
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<p class="[ visible-xs ]"><strong>Información del dueño</strong></p>
-						<p>Calle 8 núm. 78 Villa Jauca, Santa Isabel</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="[ text-center ][ margin-bottom--large ][ padding--sides ]">
-			<input id="certificacion" type="checkbox" name="certificacion" value="certificacion">
-			<label class="[ inline-block ]" for="certificacion">Certifico que la información aquí entrada es veraz y correcta</label>
-			<div class="[ clear ][ margin-bottom ]"></div>
-			<a href="mi-bandeja.html" class="[ btn btn-primary ][ margin-right margin-bottom ]">volver a bandeja</a>
-			<a href="" class="[ btn btn-primary ][ margin-bottom ]">continuar</a>
-		</div>
-		<footer>
-			<div class="[ footer--top ]">
-				<div class="[ container ]">
-					<div class="[ row ][ margin-bottom ][ text-center ]">
-						<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
-							<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
-							<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
-						</a>
-						<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
-					</div>
 					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
-							<div class="[ row ]">
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
-									<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
-									<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
-								</div>
-								<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
-									<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
-									<div class="[ bg-image logo--ogpe ]"></div>
-								</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="tipo_catastro">Tipo de catastro a agregar:*</label>
+							<input class="[ form-control ]" id="tipo_catastro" name="tipo_catastro" type="text">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="punto_cardinal">Punto cardinal:*</label>
+							<input class="[ form-control ]" id="punto_cardinal" name="punto_cardinal" type="text">
+						</div>
+					</div>
+					<p class="[ margin-top ]"><strong>2. </strong>Seleccione la parcela en el mapa que corresponde al catastro que desea agregar o búsquelo utilizando el buscador</p>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<p>Catastro principal: <strong>4535-5335-5355</strong></p>
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label>Número de catastro a buscar</label>
+							<div class="[ input-group ][ input-search ][ margin-bottom ]">
+								<input type="text" class="[ form-control ]">
+								<span class="[ input-group-btn ]">
+									<button type="submit" class="[ btn btn-primary ]">
+										<span class="[ relative ][ icon-search icon-iconed ]"></span>
+									</button>
+								</span>
 							</div>
 						</div>
-						<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
-							<h4 class="[ no-margin--top ]">Contactanos</h4>
-							<p>Oficina Central SJ</p>
-							<a href="tel:+525552555555">(787)721-8282</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Aguadilla</p>
-							<a href="tel:+525552555555">(787)891-0466</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Arecibo</p>
-							<a href="tel:+525552555555">(787)878-7979</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Humacao</p>
-							<a href="tel:+525552555555">(787)852-2013</a>
-							<div class="[ clear ]"></div>
-							<p>Oficina Ponce</p>
-							<a href="tel:+525552555555">(787)843-9097</a>
-						</div>
 					</div>
-				</div>
-			</div>
-			<div class="[ footer--bottom ]">
-				<div class="[ container ]">
+				<!-- mapa -->
+					<p class="[ margin-top ]"><strong>3. </strong>Verifique que la información provista es correcta, de no serlo, por favor corríjala</p>
+					<p>Información principal del catastro:</p>
 					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
-							<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="numero_catastro">Número de catastro:*</label>
+							<input class="[ form-control ]" id="numero_catastro" name="numero_catastro" type="text">
+							<label for="area_catastro">Área aproximada (m2):*</label>
+							<input class="[ form-control ]" id="area_catastro" name="area_catastro" type="text">
+							<label for="municipio_catastro">Municipio</label>
+							<input class="[ form-control ]" id="municipio_catastro" name="municipio_catastro" type="text">
+							<label for="barrio_catastro">Barrio</label>
+							<input class="[ form-control ]" id="barrio_catastro" name="barrio_catastro" type="text">
 						</div>
-						<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
-							<h4>Contacto</h4>
-							<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="sitio_historico">Zona o sitio histórico</label>
+							<input class="[ form-control ]" id="sitio_historico" name="sitio_historico" type="text">
+							<label for="suelo">Suelo geológico</label>
+							<input class="[ form-control ]" id="suelo" name="suelo" type="text">
+							<label for="zona_inundada">Zona inundada</label>
+							<input class="[ form-control ]" id="zona_inundada" name="zona_inundada" type="text">
+							<label for="calificacion">Calificación</label>
+							<input class="[ form-control ]" id="calificacion" name="calificacion" type="text">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="clasificacion">Clasificación</label>
+							<input class="[ form-control ]" id="clasificacion" name="clasificacion" type="text">
+							<label for="coordenadas">Coodenadas</label>
+							<input class="[ form-control ]" id="coordenadas" name="coordenadas" type="text">
+						</div>
+					</div>
+					<p class="[ margin-top ]"><strong>4. </strong>Presione el botón de Agregar Catastro. Para algunos trámites se le requerirá que entre un(1) colindante por punto cardinal: Norte, Sur, Este y Oeste</p>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="cabida">Cabída (área total) de la propiedad según la escritura:*</label>
+							<input class="[ form-control ]" id="cabida" name="cabida" type="text" placeholder="Cabida...">
+							<input class="[ form-control ]" id="cabida_m" name="cabida_m" type="text" placeholder="m2">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="dirreccion">Dirección del catastro:*</label>
+							<input class="[ form-control ]" id="dirreccion" name="dirreccion" type="text" placeholder="Dirección">
+							<label for="estado_catastro">Estado:*</label>
+							<input class="[ form-control ]" id="estado_catastro" name="estado_catastro" type="text" placeholder="Puerto rico" disabled="">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="zip-code">Código postal:*</label>
+							<input class="[ form-control ]" id="zip-code" name="zip-code" type="text">
+						</div>
+					</div>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="nombre">Primer nombre:*</label>
+							<input class="[ form-control ]" id="nombre" name="nombre" type="text">
+							<label for="inicial">Inicial:*</label>
+							<input class="[ form-control ]" id="inicial" name="inicial" type="text">
+							<label for="apellido">Apellido paterno:*</label>
+							<input class="[ form-control ]" id="apellido" name="apellido" type="text">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="direccion">Dirección:*</label>
+							<input class="[ form-control ]" id="direccion" name="direccion" type="text">
+							<label for="pais">País:*</label>
+							<input class="[ form-control ]" id="pais" name="pais" type="text">
+							<label for="municipio">Municipio:*</label>
+							<input class="[ form-control ]" id="municipio" name="municipio" type="text">
+							<label for="codigo_postal">Código postal:*</label>
+							<input class="[ form-control ]" id="codigo_postal" name="codigo_postal" type="number">
+							<label for="estado">Estado:*</label>
+							<input class="[ form-control ]" id="estado" name="estado" type="text">
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<label for="telefono">Télefono primario:*</label>
+							<input class="[ form-control ]" id="telefono" name="telefono" type="number">
+							<label for="email">Correo eléctronico:*</label>
+							<input class="[ form-control ]" id="email" name="email" type="email">
+						</div>
+					</div>
+					<div class="[ text-center ][ margin-top ]">
+						<p class="[ margin-bottom ][ fw-bold ][ text--small ]">Si deseas agregar múltiples catastros debera repetir el proceso</p>
+						<button type="button" class="[ btn btn-primary ]">agregar catastro</button>
+					</div>
+				</form>
+			</section>
+			<section class="[ container ][ margin-bottom ]">
+				<h3>Catastros</h3>
+				<div class="[ row hidden-xs ][ border-bottom--primary--large ][ margin-bottom ][ fw-bold ]"><!-- títulos tabla proyectos para desktop -->
+					<div class="[ col-sm-2 ]">
+						<p>No. de catastro</p>
+					</div>
+					<div class="[ col-sm-2 ]">
+						<p>Punto cardinal</p>
+					</div>
+					<div class="[ col-sm-2 ]">
+						<p>Tipo de catastro</p>
+					</div>
+					<div class="[ col-sm-3 ]">
+						<p>Dirección del catastro</p>
+					</div>
+					<div class="[ col-sm-3 ]">
+						<p>Información del dueño</p>
+					</div>
+				</div>
+				<div class="[ row ][ border-bottom--primary ][ margin-bottom ]">
+					<div class="[ col-xs-12 col-sm-2 ]">
+						<a data-toggle="collapse" data-target="#catastro-mas1" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+						<p class="[ visible-xs ]"><strong>No. de catastro</strong></p>
+						<p>354345-345346</p>
+					</div>
+					<div id="catastro-mas1" class="collapse [ collapse-table ]">
+						<div class="[ col-xs-12 col-sm-2 ]">
+							<p class="[ visible-xs ]"><strong>Punto cardinal</strong></p>
+							<p>Norte</p>
+						</div>
+						<div class="[ col-xs-12 col-sm-2 ]">
+							<p class="[ visible-xs ]"><strong>Tipo de catastro</strong></p>
+							<p>Colindate</p>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<p class="[ visible-xs ]"><strong>Dirección del catastro</strong></p>
+							<p>Calle 2 núm. 45 Villa Jauca, Santa Isabel</p>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<p class="[ visible-xs ]"><strong>Información del dueño</strong></p>
+							<p>Calle 2 núm. 45 Villa Jauca, Santa Isabel</p>
 						</div>
 					</div>
 				</div>
+				<div class="[ row ][ border-bottom--primary ][ margin-bottom ]">
+					<div class="[ col-xs-12 col-sm-2 ]">
+						<a data-toggle="collapse" data-target="#catastro-mas2" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+						<p class="[ visible-xs ]"><strong>No. de catastro</strong></p>
+						<p>54646-36775</p>
+					</div>
+					<div id="catastro-mas2" class="collapse [ collapse-table ]">
+						<div class="[ col-xs-12 col-sm-2 ]">
+							<p class="[ visible-xs ]"><strong>Punto cardinal</strong></p>
+							<p>Sur</p>
+						</div>
+						<div class="[ col-xs-12 col-sm-2 ]">
+							<p class="[ visible-xs ]"><strong>Tipo de catastro</strong></p>
+							<p>Asociado</p>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<p class="[ visible-xs ]"><strong>Dirección del catastro</strong></p>
+							<p>Calle 8 núm. 78 Villa Jauca, Santa Isabel</p>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<p class="[ visible-xs ]"><strong>Información del dueño</strong></p>
+							<p>Calle 8 núm. 78 Villa Jauca, Santa Isabel</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="[ text-center ][ margin-bottom--large ][ padding--sides ]">
+				<input id="certificacion" type="checkbox" name="certificacion" value="certificacion">
+				<label class="[ inline-block ]" for="certificacion">Certifico que la información aquí entrada es veraz y correcta</label>
+				<div class="[ clear ][ margin-bottom ]"></div>
+				<a href="mi-bandeja.html" class="[ btn btn-primary ][ margin-right margin-bottom ]">volver a bandeja</a>
+				<a href="" class="[ btn btn-primary ][ margin-bottom ]">continuar</a>
 			</div>
-		</footer>
+			<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
 	</body>
 </html>
