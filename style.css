@@ -6676,6 +6676,19 @@ button.close {
   border-radius: 0px;
   -webkit-border-radius: 0px;
 }
+.marquee {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #212121;
+  background-color: #EEEEEE;
+  overflow: hidden;
+}
+.marquee * {
+  margin-right: 20px;
+}
 marquee {
   height: 60px;
   position: relative;
