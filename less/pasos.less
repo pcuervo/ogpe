@@ -1,3 +1,4 @@
+//Line
 .line-etapas{
   margin: 0px -3px;
 }
@@ -5,10 +6,15 @@
   width: 80px;
   @media (min-width: @screen-sm){ width: 135px; }
 }
-.line-etapas--small{
-  width: 80px;
-  @media (min-width: @screen-sm){ width: 135px; }
+.line-etapas--medium{
+  width: 60px;
+  @media (min-width: @screen-sm){ width: 60px; }
 }
+.line-etapas--small{
+  width: 40px;
+}
+
+//Circle
 .circle-proceso{
   display: inline-block;
   text-align: center;
@@ -16,6 +22,7 @@
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
 }
+
 .circle-pasos {
   width: 30px;height: 30px;
   color: @light;
@@ -28,6 +35,13 @@
  //Cuando el paso ha sido completado
   &.circle-complete{ background-color: @primary--medium; }
 }
+
+/*Medida estandar para móvil y desktop*/
+.circle-pasos--size{
+  width: 30px;height: 30px;
+  line-height: 30px;
+}
+
 .circle-etapas {
   width: 7px;height: 7px;
   margin: 0px;
@@ -46,8 +60,13 @@
   }
 }
 
+//Text
 .block-text{
   width: 290px;
   margin: (@margin-base/2) auto;
   @media (min-width: @screen-sm){ width: 530px; }
+}
+.block-text--small{
+  margin: (@margin-base/2) auto;
+  width: 290px;
 }
