@@ -1,19 +1,22 @@
 //Line
-.line-etapas{
-  margin: 0px -3px;
-}
+.line-etapas{ margin: 0px -3px; }
+
+/*Medida para los pasos de proyecto*/
 .line-etapas--large{
   width: 80px;
   @media (min-width: @screen-sm){ width: 135px; }
 }
-.line-etapas--medium{
-  width: 40px;
-  @media (min-width: @screen-sm){ width: 80px; }
+/*Medida para los pasos de etapas*/
+.line-etapas--medium-a{
+  width: 50px;
+  @media (min-width: @screen-sm){ width: 110px; }
+}
+.line-etapas--medium-b{
+  width: 65px;
+  @media (min-width: @screen-sm){ width: 110px; }
 }
 /*Medida estandar para los pasos de la ficha del trámite*/
-.line-etapas--small{
-  width: 40px;
-}
+.line-etapas--small{ width: 40px; }
 
 //Circle
 .circle-proceso{
@@ -45,13 +48,13 @@
 
 .circle-etapas {
   width: 7px;height: 7px;
-  margin: 0px;
-  border: 2px solid @primary;
+  margin: -1px;
+  border: 1px solid @primary;
   background-color: @light;
   position: relative;top: -12px;
   @media (min-width: @screen-sm){
     width: 10px;height: 10px;
-    margin: 0px 2px;
+    margin: 0px;
     position: relative;top: -11px;
   }
   //Cuando la etapa ha sido completado
@@ -69,8 +72,8 @@
 }
 /*Medida para las descripciones de etapas (4)*/
 .block-text--medium{
-  width: 290px;
-  @media (min-width: @screen-sm){ width: 530px; }
+  width: 300px;
+  @media (min-width: @screen-sm){ width: 665px; }
 }
 /*Medida estandar para las descripciones de la ficha del trámite*/
 .block-text--small{ width: 290px; }

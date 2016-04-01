@@ -8309,6 +8309,7 @@ footer .footer--bottom h4 {
 .line-etapas {
   margin: 0px -3px;
 }
+/*Medida para los pasos de proyecto*/
 .line-etapas--large {
   width: 80px;
 }
@@ -8317,12 +8318,21 @@ footer .footer--bottom h4 {
     width: 135px;
   }
 }
-.line-etapas--medium {
-  width: 40px;
+/*Medida para los pasos de etapas*/
+.line-etapas--medium-a {
+  width: 50px;
 }
 @media (min-width: 768px) {
-  .line-etapas--medium {
-    width: 80px;
+  .line-etapas--medium-a {
+    width: 110px;
+  }
+}
+.line-etapas--medium-b {
+  width: 65px;
+}
+@media (min-width: 768px) {
+  .line-etapas--medium-b {
+    width: 110px;
   }
 }
 /*Medida estandar para los pasos de la ficha del trámite*/
@@ -8362,8 +8372,8 @@ footer .footer--bottom h4 {
 .circle-etapas {
   width: 7px;
   height: 7px;
-  margin: 0px;
-  border: 2px solid #6844a1;
+  margin: -1px;
+  border: 1px solid #6844a1;
   background-color: #fff;
   position: relative;
   top: -12px;
@@ -8372,7 +8382,7 @@ footer .footer--bottom h4 {
   .circle-etapas {
     width: 10px;
     height: 10px;
-    margin: 0px 2px;
+    margin: 0px;
     position: relative;
     top: -11px;
   }
@@ -8392,11 +8402,11 @@ footer .footer--bottom h4 {
 }
 /*Medida para las descripciones de etapas (4)*/
 .block-text--medium {
-  width: 290px;
+  width: 300px;
 }
 @media (min-width: 768px) {
   .block-text--medium {
-    width: 530px;
+    width: 665px;
   }
 }
 /*Medida estandar para las descripciones de la ficha del trámite*/
