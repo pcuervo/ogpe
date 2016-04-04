@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>OGPe</title>
+		<!-- Sets initial viewport load and disables zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- SEO -->
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<!-- Compatibility -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="cleartype" content="on">
+		<!-- Favicon - generated with http://www.favicomatic.com/ -->
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="Little Crow"/>
+		<meta name="msapplication-TileColor" content="#009C9F" />
+		<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Google font(s) -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+		<!-- Font awesome -->
+		<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Typekit -->
+		<script src="https://use.typekit.net/sam8xqs.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head>
+	<body>
+		<header class="[ js-header ]">
+			<div class="[ container ]">
+				<h1 class="[ logo-header ]">
+					<a href="index.html" class="[ block ]">
+						<div class="[ bg-image img-logo img-logo--light ][ inline-block align-middle ]"></div>
+						<h3 class="[ inline-block align-middle ][ color-light ][ no-margin ]">Super Sip</h3>
+					</a>
+				</h1>
+			<!-- desktop menu -->
+				<nav class="[ hidden-xs ][ pull-right ]">
+					<div class="[ menu-desktop ][ pull-right ]">
+						<div class="[ dropdown--hover ]">
+							<p><span class="[ icon-search ]"></span>Búsquedas</p>
+							<div class="[ dropdown--content ]">
+								<div class="[ relative ][ z-index--100 ][ bg-light ]">
+									<a href="busqueda-tramites.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites</a>
+									<a href="busqueda-credenciales.html" class="[ flex ]"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Profesional Autorizado</a>
+									<a href="busqueda-permisos.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos</a>
+									<a href="pago-multa.html"><span class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas</a>
+								</div>
+							</div>
+						</div>
+						<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ]">
+							<span class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
+						</a>
+						<div class="[ dropdown--hover ]">
+							<p><span class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil</p>
+							<div class="[ dropdown--content ]">
+								<div class="[ relative ][ z-index--100 ][ bg-light ]">
+									<a href="mi-perfil.html"><span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil</a>
+									<a href=""><span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<!-- mobile menu -->
+				<div class="[ visible-xs ][ pull-right ][ btn-nav ]">
+					<div id="js-btn-nav">
+							<span class="[ icon-menu-1 icon--iconed ][ color-light ]"></span>
+					</div>
+				</div>
+				<!-- mobile menu content -->
+				<div class="[ js-hidden ][ nav-mobile right-767 ][ visible-xs ]">
+					<div id="js-hide-nav">
+						<span class="[ icon-close icon--iconed ][ color-primary ][ padding--top padding--right ][ block ][ pull-right ]"></span>
+					</div>
+					<div class="[ clearfix ]"></div>
+					<div class="[ menu-mobile ]">
+						<a href="mi-perfil.html">
+							<span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+						</a>
+						<a href="mi-bandeja.html">
+							<span class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+						</a>
+						<a href="busqueda-tramites.html">
+							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
+						</a>
+						<a href="busqueda-credenciales.html" class="[ flex ]">
+							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
+						</a>
+						<a href="busqueda-permisos.html">
+							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
+						</a>
+						<a href="pago-multa.html">
+							<span class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+						</a>
+						<a href="salir">
+							<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+						</a>
+					</div>
+				</div>
+			</div><!-- end container -->
+		</header>
+		<div class="[ main ]">
+			<div class="[ text-center ][ margin-bottom--small ]">
+				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
+					<span class="[ circle-proceso ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+				</div>
+				<span class="[ circle-proceso circle-pasos ]">2</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--medium-a ]"></div>
+				<span class="[ circle-proceso circle-pasos ]">3</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--medium-a ]"></div>
+				<span class="[ circle-proceso circle-pasos ]">4</span>
+				<div class="[ block-text--medium margin-top-bottom-auto ]">
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-left ]">Datos de la solicitud</p>
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Anexo</p>
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Resumen del trámite</p>
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-right ]">Pago del trámite</p>
+				</div>
+			</div>
+
+			<section class="[ container ]">
+				<h1 class="[ h2 ][ margin-bottom ]">PGE - Permiso para generadores de electricidad</h1>
+				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
+				<form>
+					<article>
+						<h3>Agregar generadores</h3>
+						<div class="[ row ][ margin-bottom ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<label>¿Quieres agregar un nuevo generador?*:</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<input id="si" type="checkbox" name="si" value="si">
+								<label class="[ inline-block ][ margin-right ]" for="si">si</label>
+							</div>
+						</div>
+						<p>Agregar generadores</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<label for="marca">Marca del sistema generador de electricidad*:</label>
+								<input class="[ form-control ]" id="marca" name="marca" type="text">
+								<label for="modelo">Modelo del sistema generador*:</label>
+								<input class="[ form-control ]" id="modelo" name="modelo" type="text">
+								<label for="potencia">Potencia máxima del generador (kW)*:</label>
+								<input class="[ form-control ]" id="potencia" name="potencia" type="text">
+								<label for="marca_motor">Marca del motor en sistema generador*:</label>
+								<input class="[ form-control ]" id="marca_motor" name="marca_motor" type="text">
+								<label for="mod_motor">Modelo de motor*:</label>
+								<input class="[ form-control ]" id="mod_motor" name="mod_motor" type="text">
+								<label for="potencia_max">Potencia máxima del motor (HP)*:</label>
+								<input class="[ form-control ]" id="potencia_max" name="potencia_max" type="text">
+								<label for="crtl_emisiones">Equipo de control de emisiones*:</label>
+								<input class="[ form-control ]" id="crtl_emisiones" name="crtl_emisiones" type="text">
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<label for="adquirio">Fecha en que se adquirió el equipo*:</label>
+								<input class="[ form-control ]" id="adquirio" name="adquirio" type="date">
+								<label for="manufactura">Fecha de manufactura del motor*:</label>
+								<input class="[ form-control ]" id="manufactura" name="manufactura" type="date">
+								<label for="instalacion">Fecha de instalación del generador*:</label>
+								<input class="[ form-control ]" id="instalacion" name="instalacion" type="date">
+								<label for="remanufactura">Fecha de la última re-manufactura de motor*:</label>
+								<input class="[ form-control ]" id="remanufactura" name="remanufactura" type="date">
+								<label for="ordeno">Fecha en que se ordenó el generador*:</label>
+								<input class="[ form-control ]" id="ordeno" name="ordeno" type="date">
+								<label for="remplazo">Fecha de úlltimo remplazo de motor*:</label>
+								<input class="[ form-control ]" id="remplazo" name="remplazo" type="date">
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<label>Tipo de combustible*:</label>
+								<input id="gasoleo" type="checkbox" name="gasoleo" value="gasoleo">
+								<label class="[ inline-block ]" for="gasoleo">Gasóleo (diesel)</label>
+								<div class="[ clear ]"></div>
+								<input id="gasolina" type="checkbox" name="gasolina" value="gasolina">
+								<label class="[ inline-block ]" for="gasolina">Gasolina</label>
+								<div class="[ clear ]"></div>
+								<input id="gas" type="checkbox" name="gas" value="gas">
+								<label class="[ inline-block ]" for="gas">Gas propano</label>
+								<div class="[ clear ]"></div>
+								<label for="limite">Limite de horas de operación anual*:</label>
+								<input class="[ form-control ]" id="limite" name="limite" type="text">
+							</div>
+						</div>
+						<div class="[ text-center ]">
+							<button class="[ btn btn-primary ]">añadir</button>
+						</div>
+					</article>
+				</form>
+			</section>
+			<section class="[ container ]">
+				<h3>Datos de los generadores</h3>
+				<div class="[ row ]">
+					<div class="[ col-xs-12 col-sm-6 ]">
+						<p>Generador 1</p>
+					</div>
+					<div class="[ col-xs-12 col-sm-6 ]">
+						<a href="pge-generador.html" class="[ btn btn-primary btn-sm ][ margin-bottom--small ][ margin-right--small ]">ver más</a>
+						<button class="[ btn btn-delete btn-sm ][ margin-bottom--small ]">eliminar</button>
+					</div>
+				</div>
+			</section>
+			<section class="[ container ][ text-center ]">
+				<a href="pge-anexos.html" class="[ btn btn-primary ][ margin-bottom--small ]">continuar</a>
+			</section>
+			<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon--iconed--small icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon--iconed--small icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon--iconed--small icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon--iconed--small icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
+	</body>
+</html>
