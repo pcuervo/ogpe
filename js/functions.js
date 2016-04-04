@@ -1,5 +1,4 @@
 // menu mobile
-
  $('#js-btn-nav').click(function(e){
     e.preventDefault();
     toggleTwitter();
