@@ -62,7 +62,7 @@
 				<nav class="[ hidden-xs ][ pull-right ]">
 					<div class="[ menu-desktop ][ pull-right ]">
 						<div class="[ dropdown--hover ]">
-							<p><span class="[ icon--iconed icon-search ]"></span>Búsquedas</p>
+							<p><span class="[ icon-search ]"></span>Búsquedas</p>
 							<div class="[ dropdown--content ]">
 								<div class="[ relative ][ z-index--100 ][ bg-light ]">
 									<a href="busqueda-tramites.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites</a>
@@ -128,11 +128,13 @@
 			<div class="[ text-center ][ margin-bottom--small ]">
 				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
 				<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
-					<span class="[ circle-proceso ]"></span><!-- Un trámite sin etapas mueve line-etapa por "relative top--10" para prevenirlo se queda .circle proceso  -->
+					<span class="[ circle-proceso ]"></span>
+					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas ]"></span>
 				</div>
-				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">2</span>
+				<span class="[ circle-proceso circle-pasos ]">2</span>
 				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--medium-a ]"></div>
-				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">3</span>
+				<span class="[ circle-proceso circle-pasos ]">3</span>
 				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--medium-a ]"></div>
 				<span class="[ circle-proceso circle-pasos ]">4</span>
 				<div class="[ block-text--medium margin-top-bottom-auto ]">
@@ -142,162 +144,103 @@
 					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-right ]">Pago del trámite</p>
 				</div>
 			</div>
+
 			<section class="[ container ]">
-				<h1 class="[ h2 ][ margin-bottom ]">PEX - Permiso de exportación de materiales de la corteza terrestre</h1>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-8 ]">
-						<article class="[ visible-xs ][ bg-gray--xlighter padding--top-bottom--large padding--sides ]">
-							<h3>Desglose de pago</h3>
-							<p>2016-214345-PEX-1234532</p>
-							<div class="[ row ][ border-bottom--primary ][ margin-bottom--small ]">
-								<p class="[ col-xs-8 ][ fw-bold ]">Descripción</p>
-								<p class="[ col-xs-4 ][ fw-bold ]">Precio</p>
+				<h1 class="[ h2 ][ margin-bottom ]">PGE - Permiso para generadores de electricidad</h1>
+				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
+				<form>
+					<article>
+						<h3>Solicitud de servicio</h3>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<label for="solares">Cantidad de solares a segregar*:</label>
+								<input class="[ form-control ]" id="solares" name="solares" type="text">
+								<label for="remanentes">Cantidad de remanentes*:</label>
+								<input class="[ form-control ]" id="remanentes" name="remanentes" type="text">
+
 							</div>
-							<div class="[ row ]">
-								<div class="[ col-xs-8 ]">
-									<p>Lorem ipsum dolor sit</p>
-									<p class="[ fw-bold ]">Total</p>
-								</div>
-								<div class="[ col-xs-4 ]">
-									<p>$100.00</p>
-									<p>$100.00</p>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<label>Tipo de uso del remanente (ej.residencial)*:</label>
+								<select class="[ form-control ][ arrow ]">
+									<option>Residencial</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<label for="solares_public">Cantidad de solares dedicados a uso público*:</label>
+								<div class="[ row">
+									<div class="[ col-xs-8 ]">
+										<p class="[ text-small ]">Calles</p>
+										<input class="[ form-control ]" id="solares_calles" name="solares_calles" type="text">
+									</div>
+									<div class="[ col-xs-4 ]">
+										<p class="[ text-small ]">Franjas</p>
+										<input class="[ form-control ]" id="solares-franjas" name="solares-franjas" type="text">
+									</div>
 								</div>
 							</div>
-							<a href="tramite-pago.html" class="[ btn btn-primary width-100 ]">realizar pago</a>
-						</article>
-						<div class="[ text-resume ]">
-							<article>
-								<h3>Proyecto</h3>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Nombre:</p>
-									<p class="[ col-xs-12 col-sm-6 ]">Lorem ipsim</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Tipo de proyecto:</p>
-									<p class="[ col-xs-12 col-sm-6 ]">Público</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Tipo de Zona:</p>
-									<p class="[ col-xs-12 col-sm-6 ]">Rural</p>
-								</div>
-							</article>
-							<article>
-								<h3>Localización</h3>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Número de catastro:</p>
-									<p class="[ col-xs-12 col-sm-6 ]">5464786-6478</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Tipo de suelo:</p>
-									<p class="[ col-xs-12 col-sm-6 ]">LgF (34%), MaF2 (22.8%), LME (19.5%)</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Área total (Mensura):</p>
-									<p class="[ col-xs-12 col-sm-6 ]">McF (18.0%), AoF2 (2.7%), MaF2 (1.6%)</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Área total (Escritura):</p>
-									<p class="[ col-xs-12 col-sm-6 ]">
-										<span>LgF (34%), MaF2 (22.8%), LME (19.5%)</span>
-										<span>1872349 m2</span>
-										<span>2453644 m2</span>
-									</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Municipio:</p>
-									<p class="[ col-xs-12 col-sm-6 ]">Lorem ipsum</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Zona o sitio historórico:</p>
-									<p class="[ col-xs-12 col-sm-6 ]">false</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Zona inundable:</p>
-									<p class="[ col-xs-12 col-sm-6 ]">x</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Calificación:</p>
-									<p class="[ col-xs-12 col-sm-6 ]">NC</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Clasificación:</p>
-									<p class="[ col-xs-12 col-sm-6 ]">NC</p>
-								</div>
-							</article>
-							<article class="[ row ]">
-									<h3 class="[ col-xs-12 col-sm-6 ][ no-margin ]">Dueño del proyecto:</h3>
-									<p class="[ col-xs-12 col-sm-6 ]">Arisbeth HG</p>
-							</article>
-							<article class="[ row ]">
-									<h3 class="[ col-xs-12 col-sm-6 ][ no-margin ]">Dueño del solar:</h3>
-									<p class="[ col-xs-12 col-sm-6 ]">Arisbeth HG</p>
-							</article>
-							<article class="[ row ]">
-									<h3 class="[ col-xs-12 col-sm-6 ][ no-margin ]">Arrendatario:</h3>
-									<p class="[ col-xs-12 col-sm-6 ]">Arisbeth HG</p>
-							</article>
-							<article>
-								<h3>Datos de la solicitud</h3>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Tipo de trámite</p>
-									<p class="[ col-xs-12 col-sm-6 ]">PEX</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Rol de solicitante</p>
-									<p class="[ col-xs-12 col-sm-6 ]">Persona autorizada a radicar</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Infraestructura disponiblr en la propiedad</p>
-									<p class="[ col-xs-12 col-sm-6 ]">Acueducto
-									</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Ley de empleos ahora</p>
-									<p class="[ col-xs-12 col-sm-6 ]"></p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Cabida total de la finca</p>
-									<p class="[ col-xs-12 col-sm-6 ]">234</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Cabida a estraer</p>
-									<p class="[ col-xs-12 col-sm-6 ]">124</p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Tipo de material</p>
-									<p class="[ col-xs-12 col-sm-6 ]"></p>
-								</div>
-								<div class="[ row ][ margin-bottom--small ]">
-									<p class="[ col-xs-12 col-sm-6 ]">Detalles de exportación</p>
-									<p class="[ col-xs-12 col-sm-6 ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem tempora pariatur quaerat numquam excepturi sint totam minus.</p>
-								</div>
-							</article>
 						</div>
-					</div>
-					<div class="[ hidden-xs col-sm-4 ]">
-						<article class="[ box-fixed ][ bg-gray--xlighter padding--top-bottom--large padding--sides ]">
-							<h3>Desglose de pago</h3>
-							<p>2016-214345-PEX-1234532</p>
-							<div class="[ row ][ border-bottom--primary ][ margin-bottom--small ]">
-								<p class="[ col-xs-8 ][ fw-bold ]">Descripción</p>
-								<p class="[ col-xs-4 ][ fw-bold ]">Precio</p>
+					</article>
+					<article>
+						<h3>Detalles adicionales</h3>
+						<label>Indique su rol o roles en el proyecto o actividad*:</label>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="dueño" type="checkbox" name="dueño" value="dueño">
+								<label class="[ inline-block ]" for="dueño">dueño</label>
 							</div>
-							<div class="[ row ]">
-								<div class="[ col-xs-8 ]">
-									<p>Lorem ipsum dolor sit</p>
-									<p class="[ fw-bold ]">Total</p>
-								</div>
-								<div class="[ col-xs-4 ]">
-									<p>$100.00</p>
-									<p>$100.00</p>
-								</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="proyectista" type="checkbox" name="proyectista" value="proyectista">
+								<label class="[ inline-block ]" for="proyectista">proyectista</label>
 							</div>
-							<a href="tramite-pago.html" class="[ btn btn-primary width-100 ]">realizar pago</a>
-						</article>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="autorizada" type="checkbox" name="autorizada" value="autorizada">
+								<label class="[ inline-block ]" for="autorizada">persona autorizada a radicar</label>
+							</div>
+						</div>
+						<label>Indique su rol o roles en el proyecto o actividad*:</label>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="acueductos" type="checkbox" name="acueductos" value="acueductos">
+								<label class="[ inline-block ]" for="">acueductos</label>
+								<div class="[ clear ]"></div>
+								<input id="alcantarillado" type="checkbox" name="alcantarillado" value="alcantarillado">
+								<label class="[ inline-block ]" for="alcantarillado">alcantarillado</label>
+								<div class="[ clear ]"></div>
+								<input id="electricidad" type="checkbox" name="electricidad" value="electricidad">
+								<label class="[ inline-block ]" for="electricidad">electricidad (AEE)</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="municipal" type="checkbox" name="municipal" value="municipal">
+								<label class="[ inline-block ]" for="municipal">vía municipal de acceso (Municipio)</label>
+								<div class="[ clear ]"></div>
+								<input id="estatal" type="checkbox" name="estatal" value="estatal">
+								<label class="[ inline-block ]" for="estatal">vía estatal de acceso</label>
+								<div class="[ clear ]"></div>
+								<input id="telecomunicacionon" type="checkbox" name="telecomunicacionon" value="telecomunicacionon">
+								<label class="[ inline-block ]" for="telecomunicacionon">telecomunicación</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="cable" type="checkbox" name="cable" value="cable">
+								<label class="[ inline-block ]" for="cable">cable tv</label>
+								<div class="[ clear ]"></div>
+								<input id="otros" type="checkbox" name="otros" value="otros">
+								<label class="[ inline-block ]" for="otros">otros</label>
+								<div class="[ clear ]"></div>
+								<input id="ninguno" type="checkbox" name="ninguno" value="ninguno">
+								<label class="[ inline-block ]" for="ninguno">ninguno</label>
+							</div>
+						</div>
+					</article>
+					<div class="[ text-center ]">
+						<a href="lot1-3.html" class="[ btn btn-primary ]">continuar</a>
 					</div>
-				</div>
+				</form>
 			</section>
-			<footer>
+					<footer>
 				<div class="[ footer--top ]">
 					<div class="[ container ]">
 						<div class="[ row ][ margin-bottom ][ text-center ]">
