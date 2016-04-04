@@ -129,7 +129,7 @@
 				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
 				<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
 					<span class="[ circle-proceso ]"></span>
-					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
 					<span class="[ circle-proceso circle-etapas ]"></span>
 				</div>
 				<span class="[ circle-proceso circle-pasos ]">2</span>
@@ -150,92 +150,85 @@
 				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
 				<form>
 					<article>
-						<h3>Datos de la solicitud</h3>
+						<h3>Proyectista</h3>
 						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<label for="solares">Cantidad de solares a segregar*:</label>
-								<input class="[ form-control ]" id="solares" name="solares" type="text">
-								<label for="remanentes">Cantidad de remanentes*:</label>
-								<input class="[ form-control ]" id="remanentes" name="remanentes" type="text">
-							</div>
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<label>Tipo de uso del remanente (ej.residencial)*:</label>
+								<label>Especialidad*:</label>
 								<select class="[ form-control ][ arrow ]">
-									<option>Residencial</option>
+									<option>Arquitecto</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
 								</select>
+								<label for="licencia">Numero de licencia*:</label>
+								<input class="[ form-control ]" id="licencia" name="licencia" type="text">
+								<label for="emision">Fecha de emisión*:</label>
+								<input class="[ form-control ]" id="emision" name="emision" type="date">
+								<label for="disciplina">Disciplina que certifica*:</label>
+								<input class="[ form-control ]" id="disciplina" name="disciplina" type="text">
 							</div>
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<label for="solares_public">Cantidad de solares dedicados a uso público*:</label>
-								<div class="[ row">
-									<div class="[ col-xs-8 ]">
-										<p class="[ text-small ]">Calles</p>
-										<input class="[ form-control ]" id="solares_calles" name="solares_calles" type="text">
+								<div class="[ row ]">
+									<div class="[ col-xs-8 ][ no-padding--right ]">
+										<label for="nombre">Primer nombre:*</label>
+										<input class="[ form-control ]" id="nombre" name="nombre" type="text">
 									</div>
 									<div class="[ col-xs-4 ]">
-										<p class="[ text-small ]">Franjas</p>
-										<input class="[ form-control ]" id="solares-franjas" name="solares-franjas" type="text">
+										<label for="inicial">Inicial:</label>
+										<input class="[ form-control ]" id="inicial" name="inicial" type="text">
 									</div>
 								</div>
+								<label for="apellido">Apellido paterno:*</label>
+								<input class="[ form-control ]" id="apellido" name="apellido" type="text">
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<label for="direccion">Dirección:*</label>
+								<input class="[ form-control ]" id="direccion" name="direccion" type="text">
+								<label for="pais">País:*</label>
+								<input class="[ form-control ]" id="pais" name="pais" type="text">
+								<label for="municipio">Municipio:*</label>
+								<input class="[ form-control ]" id="municipio" name="municipio" type="text">
+								<label for="codigo_postal">Código postal</label>
+								<input class="[ form-control ]" id="codigo_postal" name="codigo_postal" type="text">
+								<label for="estado">Estado:*</label>
+								<input class="[ form-control ]" id="estado" name="estado" type="text">
 							</div>
 						</div>
-					</article>
-					<article>
-						<h3>Detalles adicionales</h3>
-						<label>Indique su rol o roles en el proyecto o actividad*:</label>
-						<div class="[ row ]">
+						<div class="[ row ][ margin-bottom--small ]">
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="dueño" type="checkbox" name="dueño" value="dueño">
-								<label class="[ inline-block ]" for="dueño">dueño</label>
-							</div>
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="proyectista" type="checkbox" name="proyectista" value="proyectista">
-								<label class="[ inline-block ]" for="proyectista">proyectista</label>
-							</div>
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="autorizada" type="checkbox" name="autorizada" value="autorizada">
-								<label class="[ inline-block ]" for="autorizada">persona autorizada a radicar</label>
+								<label for="telefono">Teléfono primario:*</label>
+								<input class="[ form-control ]" id="telefono" name="telefono" type="text">
+								<label for="email">Correo electronico:*</label>
+								<input class="[ form-control ]" id="email" name="email" type="email">
 							</div>
 						</div>
-						<label>Indique su rol o roles en el proyecto o actividad*:</label>
+						<div class="[ row ][ margin-bottom--small ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<label for="telefono">¿Existe una Querella para trámites relacionados a la consulta?:*</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<input id="si" type="checkbox" name="si" value="si">
+								<label class="[ inline-block ]" for="si">si</label>
+							</div>
+						</div>
 						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="acueductos" type="checkbox" name="acueductos" value="acueductos">
-								<label class="[ inline-block ]" for="">acueductos</label>
-								<div class="[ clear ]"></div>
-								<input id="alcantarillado" type="checkbox" name="alcantarillado" value="alcantarillado">
-								<label class="[ inline-block ]" for="alcantarillado">alcantarillado</label>
-								<div class="[ clear ]"></div>
-								<input id="electricidad" type="checkbox" name="electricidad" value="electricidad">
-								<label class="[ inline-block ]" for="electricidad">electricidad (AEE)</label>
+								<label for="nombre_1">Primer nombre:*</label>
+								<input class="[ form-control ]" id="nombre_1" name="nombre_1" type="text">
 							</div>
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="municipal" type="checkbox" name="municipal" value="municipal">
-								<label class="[ inline-block ]" for="municipal">vía municipal de acceso (Municipio)</label>
-								<div class="[ clear ]"></div>
-								<input id="estatal" type="checkbox" name="estatal" value="estatal">
-								<label class="[ inline-block ]" for="estatal">vía estatal de acceso</label>
-								<div class="[ clear ]"></div>
-								<input id="telecomunicacionon" type="checkbox" name="telecomunicacionon" value="telecomunicacionon">
-								<label class="[ inline-block ]" for="telecomunicacionon">telecomunicación</label>
+								<label for="apellido">Apellido paterno:*</label>
+								<input class="[ form-control ]" id="apellido" name="apellido" type="text">
 							</div>
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="cable" type="checkbox" name="cable" value="cable">
-								<label class="[ inline-block ]" for="cable">cable tv</label>
-								<div class="[ clear ]"></div>
-								<input id="otros" type="checkbox" name="otros" value="otros">
-								<label class="[ inline-block ]" for="otros">otros</label>
-								<div class="[ clear ]"></div>
-								<input id="ninguno" type="checkbox" name="ninguno" value="ninguno">
-								<label class="[ inline-block ]" for="ninguno">ninguno</label>
+								<label for="no_querella">Número de querella:*</label>
+								<input class="[ form-control ]" id="no_querella" name="no_querella" type="text">
 							</div>
 						</div>
 					</article>
 					<div class="[ text-center ]">
-						<a href="lot2-3.html" class="[ btn btn-primary ]">continuar</a>
+						<a href="lot3-3.html" class="[ btn btn-primary ]">continuar</a>
 					</div>
 				</form>
 			</section>

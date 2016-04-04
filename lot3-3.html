@@ -129,8 +129,8 @@
 				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
 				<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
 					<span class="[ circle-proceso ]"></span>
-					<span class="[ circle-proceso circle-etapas ]"></span>
-					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
 				</div>
 				<span class="[ circle-proceso circle-pasos ]">2</span>
 				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--medium-a ]"></div>
@@ -150,92 +150,71 @@
 				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
 				<form>
 					<article>
-						<h3>Datos de la solicitud</h3>
+						<h3>Agregar solares</h3>
 						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<label for="solares">Cantidad de solares a segregar*:</label>
-								<input class="[ form-control ]" id="solares" name="solares" type="text">
-								<label for="remanentes">Cantidad de remanentes*:</label>
-								<input class="[ form-control ]" id="remanentes" name="remanentes" type="text">
-							</div>
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<label>Tipo de uso del remanente (ej.residencial)*:</label>
+								<label>Nombre del solar*:</label>
 								<select class="[ form-control ][ arrow ]">
-									<option>Residencial</option>
+									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
 								</select>
 							</div>
+						</div>
+						<label>Indique su rol o roles en el proyecto o actividad*:</label>
+						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<label for="solares_public">Cantidad de solares dedicados a uso público*:</label>
-								<div class="[ row">
-									<div class="[ col-xs-8 ]">
-										<p class="[ text-small ]">Calles</p>
-										<input class="[ form-control ]" id="solares_calles" name="solares_calles" type="text">
-									</div>
-									<div class="[ col-xs-4 ]">
-										<p class="[ text-small ]">Franjas</p>
-										<input class="[ form-control ]" id="solares-franjas" name="solares-franjas" type="text">
-									</div>
-								</div>
+								<input id="publico" type="checkbox" name="publico" value="publico">
+								<label class="[ inline-block ]" for="publico">público</label>
 							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="privado" type="checkbox" name="privado" value="privado">
+								<label class="[ inline-block ]" for="privado">privado</label>
+							</div>
+						</div>
+						<label>Tipo(s) de operación o actividad que se dará(n) al predio*:</label>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="residencial" type="checkbox" name="residencial" value="residencial">
+								<label class="[ inline-block ]" for="residencial"></label>
+								<div class="[ clear ]"></div>
+								<input id="comercial" type="checkbox" name="comercial" value="comercial">
+								<label class="[ inline-block ]" for="comercial"></label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="turístico" type="checkbox" name="turístico" value="turístico">
+								<label class="[ inline-block ]" for="turístico"></label>
+								<div class="[ clear ]"></div>
+								<input id="industrial" type="checkbox" name="industrial" value="industrial">
+								<label class="[ inline-block ]" for="industrial"></label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="institucional" type="checkbox" name="institucional" value="institucional">
+								<label class="[ inline-block ]" for="institucional"></label>
+								<div class="[ clear ]"></div>
+								<input id="otro" type="checkbox" name="otro" value="otro">
+								<label class="[ inline-block ]" for="otro"></label>
+							</div>
+						</div>
+						<div class="[ text-center ]">
+							<button class="[ btn btn-primary ]">añadir</button>
 						</div>
 					</article>
 					<article>
-						<h3>Detalles adicionales</h3>
-						<label>Indique su rol o roles en el proyecto o actividad*:</label>
+						<h3>Solares</h3>
 						<div class="[ row ]">
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="dueño" type="checkbox" name="dueño" value="dueño">
-								<label class="[ inline-block ]" for="dueño">dueño</label>
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p>Solar 1</p>
 							</div>
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="proyectista" type="checkbox" name="proyectista" value="proyectista">
-								<label class="[ inline-block ]" for="proyectista">proyectista</label>
-							</div>
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="autorizada" type="checkbox" name="autorizada" value="autorizada">
-								<label class="[ inline-block ]" for="autorizada">persona autorizada a radicar</label>
-							</div>
-						</div>
-						<label>Indique su rol o roles en el proyecto o actividad*:</label>
-						<div class="[ row ]">
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="acueductos" type="checkbox" name="acueductos" value="acueductos">
-								<label class="[ inline-block ]" for="">acueductos</label>
-								<div class="[ clear ]"></div>
-								<input id="alcantarillado" type="checkbox" name="alcantarillado" value="alcantarillado">
-								<label class="[ inline-block ]" for="alcantarillado">alcantarillado</label>
-								<div class="[ clear ]"></div>
-								<input id="electricidad" type="checkbox" name="electricidad" value="electricidad">
-								<label class="[ inline-block ]" for="electricidad">electricidad (AEE)</label>
-							</div>
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="municipal" type="checkbox" name="municipal" value="municipal">
-								<label class="[ inline-block ]" for="municipal">vía municipal de acceso (Municipio)</label>
-								<div class="[ clear ]"></div>
-								<input id="estatal" type="checkbox" name="estatal" value="estatal">
-								<label class="[ inline-block ]" for="estatal">vía estatal de acceso</label>
-								<div class="[ clear ]"></div>
-								<input id="telecomunicacionon" type="checkbox" name="telecomunicacionon" value="telecomunicacionon">
-								<label class="[ inline-block ]" for="telecomunicacionon">telecomunicación</label>
-							</div>
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<input id="cable" type="checkbox" name="cable" value="cable">
-								<label class="[ inline-block ]" for="cable">cable tv</label>
-								<div class="[ clear ]"></div>
-								<input id="otros" type="checkbox" name="otros" value="otros">
-								<label class="[ inline-block ]" for="otros">otros</label>
-								<div class="[ clear ]"></div>
-								<input id="ninguno" type="checkbox" name="ninguno" value="ninguno">
-								<label class="[ inline-block ]" for="ninguno">ninguno</label>
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<a href="lot-solar.html" class="[ btn btn-primary btn-sm ]">ver más</a>
 							</div>
 						</div>
 					</article>
 					<div class="[ text-center ]">
-						<a href="lot2-3.html" class="[ btn btn-primary ]">continuar</a>
+						<a href="lot-anexos.html" class="[ btn btn-primary ]">continuar</a>
 					</div>
 				</form>
 			</section>
