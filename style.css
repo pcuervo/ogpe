@@ -8192,6 +8192,11 @@ hr {
   width: 98px;
   height: 72px;
 }
+.img--money {
+  background-image: url('icons/coins-1.png');
+  width: 25px;
+  height: 25px;
+}
 header {
   height: 60px;
   margin-bottom: 20px;
