@@ -131,7 +131,7 @@
 					<span class="[ circle-proceso ]"></span>
 					<span class="[ circle-proceso circle-etapas circle-complete ]"></span>
 					<span class="[ circle-proceso circle-etapas circle-complete ]"></span>
-					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas circle-complete ]"></span>
 					<span class="[ circle-proceso circle-etapas ]"></span>
 					<span class="[ circle-proceso circle-etapas ]"></span>
 					<span class="[ circle-proceso circle-etapas ]"></span>
@@ -155,60 +155,61 @@
 				<h1 class="[ h2 ][ margin-bottom ]">PUS - Permiso de Uso</h1>
 				<form>
 					<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
-					<h3>Usos accesorios (opcional)</h3>
+					<article>
+						<label>Indique los tipos de servidumbre que sirven en la propiedad : *</label>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="acueductos" type="checkbox" name="acueductos" value="acueductos">
+								<label class="[ inline-block ]" for="">acueductos</label>
+								<div class="[ clear ]"></div>
+								<input id="alcantarillado" type="checkbox" name="alcantarillado" value="alcantarillado">
+								<label class="[ inline-block ]" for="alcantarillado">alcantarillado</label>
+								<div class="[ clear ]"></div>
+								<input id="electricidad" type="checkbox" name="electricidad" value="electricidad">
+								<label class="[ inline-block ]" for="electricidad">electricidad (AEE)</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="municipal" type="checkbox" name="municipal" value="municipal">
+								<label class="[ inline-block ]" for="municipal">vía municipal de acceso (Municipio)</label>
+								<div class="[ clear ]"></div>
+								<input id="estatal" type="checkbox" name="estatal" value="estatal">
+								<label class="[ inline-block ]" for="estatal">vía estatal de acceso</label>
+								<div class="[ clear ]"></div>
+								<input id="telecomunicacionon" type="checkbox" name="telecomunicacionon" value="telecomunicacionon">
+								<label class="[ inline-block ]" for="telecomunicacionon">telecomunicación</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="cable" type="checkbox" name="cable" value="cable">
+								<label class="[ inline-block ]" for="cable">cable tv</label>
+								<div class="[ clear ]"></div>
+								<input id="otros" type="checkbox" name="otros" value="otros">
+								<label class="[ inline-block ]" for="otros">otros</label>
+								<div class="[ clear ]"></div>
+								<input id="ninguno" type="checkbox" name="ninguno" value="ninguno">
+								<label class="[ inline-block ]" for="ninguno">ninguno</label>
+							</div>
+						</div>
+					</article>
+					
 					<article>
 						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<label>¿Acaso su proyecto tiene usos accesorios?</label>
+								<label for="valor_final_obra">Valor final de la obra: *</label>
+								<input class="[ form-control ]" id="valor_final_obra" name="valor_final_obra" type="text">
 							</div>
-							<div class="[ col-xs-12 col-sm-2 ]">
-								<div class="[ col-xs-6 ]">
-									<input id="si" type="radio" checked="" name="soup" value="pea">
-									<label for="si">Sí</label>
-								</div>
-								<div class="[ col-xs-6 ]">
-									<input id="no" type="radio" checked="" name="soup" value="pea">
-									<label for="no" >No</label>	
-								</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<label for="valor_original_obra">Valor original de la obra: *</label>
+								<input class="[ form-control ]" id="valor_original_obra" name="valor_original_obra" type="text">
 							</div>
 						</div>
-
-						<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-offset-2 ]">
-									<label>Seleccione los usos accesorios: </label>
-								</div>
-								<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
-									<label><small>Disponibles</small></label>										
-									<button class="[ btn btn-primary width-100 ]">Agregar</button>
-									<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
-										<p>almacén</p>
-										<p>barberia</p>
-										<p>casino</p>
-										<p>cine</p>
-										<p>club nocturno</p>
-										<p>almacén</p>
-										<p>barberia</p>
-										<p>casino</p>
-										<p>cine</p>
-										<p>club nocturno</p>
-									</div>
-								</div>
-								<div class="[ col-xs-12 col-sm-4 ]">
-									<label><small>Seleccionados</small></label>
-									<button class="[ btn btn-delete width-100 ]">Eliminar</button>
-									<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
-										<p>casino</p>
-										<p>club nocturno</p>
-									</div>
-								</div>
-							</div>
 					</article>
+
 					<div class="[ text-center ]">
-						<a href="pus4-9.html" class="[ btn btn-primary ]">continuar</a>
+						<a href="pus5-9.html" class="[ btn btn-primary ]">continuar</a>
 					</div>
 				</form>
 			</section>
-					<footer>
+			<footer>
 				<div class="[ footer--top ]">
 					<div class="[ container ]">
 						<div class="[ row ][ margin-bottom ][ text-center ]">
