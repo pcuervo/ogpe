@@ -8179,6 +8179,16 @@ hr {
   width: 30px;
   height: 30px;
 }
+.img--visa {
+  background-image: url('images/visa.png');
+  width: 98px;
+  height: 72px;
+}
+.img--mastercard {
+  background-image: url('images/mastercard.png');
+  width: 98px;
+  height: 72px;
+}
 header {
   height: 60px;
   margin-bottom: 20px;

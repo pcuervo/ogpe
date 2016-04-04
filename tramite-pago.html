@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>OGPe</title>
+		<!-- Sets initial viewport load and disables zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- SEO -->
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<!-- Compatibility -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="cleartype" content="on">
+		<!-- Favicon - generated with http://www.favicomatic.com/ -->
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="Little Crow"/>
+		<meta name="msapplication-TileColor" content="#009C9F" />
+		<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Google font(s) -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+		<!-- Font awesome -->
+		<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Typekit -->
+		<script src="https://use.typekit.net/sam8xqs.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head>
+	<body>
+		<header class="[ js-header ]">
+			<div class="[ container ]">
+				<h1 class="[ logo-header ]">
+					<a href="index.html" class="[ block ]">
+						<div class="[ bg-image img-logo img-logo--light ][ inline-block align-middle ]"></div>
+						<h3 class="[ inline-block align-middle ][ color-light ][ no-margin ]">Super Sip</h3>
+					</a>
+				</h1>
+			<!-- desktop menu -->
+				<nav class="[ hidden-xs ][ pull-right ]">
+					<div class="[ menu-desktop ][ pull-right ]">
+						<div class="[ dropdown--hover ]">
+							<p><span class="[ icon--iconed icon-search ]"></span>Búsquedas</p>
+							<div class="[ dropdown--content ]">
+								<div class="[ relative ][ z-index--100 ][ bg-light ]">
+									<a href="busqueda-tramites.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites</a>
+									<a href="busqueda-credenciales.html" class="[ flex ]"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Profesional Autorizado</a>
+									<a href="busqueda-permisos.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos</a>
+									<a href="pago-multa.html"><span class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas</a>
+								</div>
+							</div>
+						</div>
+						<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ]">
+							<span class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
+						</a>
+						<div class="[ dropdown--hover ]">
+							<p><span class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil</p>
+							<div class="[ dropdown--content ]">
+								<div class="[ relative ][ z-index--100 ][ bg-light ]">
+									<a href="mi-perfil.html"><span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil</a>
+									<a href=""><span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<!-- mobile menu -->
+				<div class="[ visible-xs ][ pull-right ][ btn-nav ]">
+					<div id="js-btn-nav">
+							<span class="[ icon-menu-1 icon--iconed ][ color-light ]"></span>
+					</div>
+				</div>
+				<!-- mobile menu content -->
+				<div class="[ js-hidden ][ nav-mobile right-767 ][ visible-xs ]">
+					<div id="js-hide-nav">
+						<span class="[ icon-close icon--iconed ][ color-primary ][ padding--top padding--right ][ block ][ pull-right ]"></span>
+					</div>
+					<div class="[ clearfix ]"></div>
+					<div class="[ menu-mobile ]">
+						<a href="mi-perfil.html">
+							<span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+						</a>
+						<a href="mi-bandeja.html">
+							<span class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+						</a>
+						<a href="busqueda-tramites.html">
+							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
+						</a>
+						<a href="busqueda-credenciales.html" class="[ flex ]">
+							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
+						</a>
+						<a href="busqueda-permisos.html">
+							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
+						</a>
+						<a href="pago-multa.html">
+							<span class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+						</a>
+						<a href="salir">
+							<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+						</a>
+					</div>
+				</div>
+			</div><!-- end container -->
+		</header>
+		<div class="[ main ]">
+			<div class="[ text-center ][ margin-bottom--small ]">
+				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
+					<span class="[ circle-proceso ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+				</div>
+				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">2</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--medium-a ]"></div>
+				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">3</span>
+				<div class="[ inline-block align-middle ][ border-top--primary ][ line-etapas line-etapas--medium-a ]"></div>
+				<span class="[ circle-proceso circle-pasos ]">4</span>
+				<div class="[ block-text--medium margin-top-bottom-auto ]">
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-left ]">Datos de la solicitud</p>
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Anexo</p>
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Resumen del trámite</p>
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-right ]">Pago del trámite</p>
+				</div>
+			</div>
+			<section class="[ container ][ margin-bottom ]">
+				<h1 class="[ h2 ][ margin-bottom ]">PEX - Permiso de exportación de materiales de la corteza terrestre</h1>
+				<h3 class="[ color-primary ][ margin-bottom ]">Desglose de pagos</h3>
+				<div class="[ row ][ hidden-xs ][ margin-bottom ]">
+					<div class="[ col-xs-12 col-sm-2 ]">
+						<div class="[ row ][ fw-bold ]">
+							<div class="[ col-sm-12 ][ border-bottom--primary--sm margin-bottom--small ]">
+								<p>Trámite:</p>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-xs-12 col-sm-3 ]">
+						<div class="[ row ]">
+							<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--primary--sm margin-bottom--small ]">
+								<p>Tipo de Trámite:</p>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-xs-12 col-sm-5 ]">
+						<div class="[ row ]">
+							<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--primary--sm margin-bottom--small ]">
+								<p>Descripción:</p>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-xs-12 col-sm-2 ]">
+						<div class="[ row ]">
+							<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--primary--sm margin-bottom--small ]">
+								<p>Precio:</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ row ][ margin-bottom ][ padding--bottom ]">
+					<div class="[ col-xs-12 col-sm-2 ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 visible-xs ][ fw-bold ][ border-bottom--primary--sm ]">
+								<p class="[ no-margin ]">Trámite:</p>
+							</div>
+							<div class="[ col-xs-12 ]">
+								<p>2016-103409-PEX-16-162551</p>
+							</div>
+						</div>
+					</div>
+				<!-- btn mobile -->
+					<div class="[ col-xs-12 visible-xs ]">
+						<div class="[ row ][ color-danger ]">
+							<div class="[ col-xs-6 col-xs-offset-3 visible-xs ][ margin-bottom ]">
+								<button data-toggle="collapse" data-target="#ver-mas" class="[ btn btn-primary btn-sm ]">ver más</button>
+							</div>
+						</div>
+					</div>
+					<div id="ver-mas" class="collapse [ collapse-table ]">
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<div class="[ row ]">
+								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--primary--sm ]">
+									<p class="[ no-margin ]">Tipo de Trámite:</p>
+								</div>
+								<div class="[ col-xs-12 ]">
+									<p>PEX - Permiso de exportación de materiales de la corteza terrestre</p>
+								</div>
+							</div>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<div class="[ row ]">
+								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--primary--sm ]">
+									<p class="[ no-margin ]">Descripción:</p>
+								</div>
+								<div class="[ col-xs-12 ]">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								</div>
+							</div>
+						</div>
+						<div class="[ hidden-xs col-sm-2 col-sm-offset-2 ]">
+							<div class="[ row ][ fw-bold ]">
+								<div class="[ col-xs-12 ]">
+									<p class="[ no-margin ]">$500.00</p>
+								</div>
+							</div>
+						</div>
+					</div><!-- end collapse -->
+				</div>
+				<div class="[ row ][ margin-bottom ]">
+					<div class="[ col-xs-12 col-sm-4 col-sm-offset-8 ]">
+						<div class="[ row ][ fw-bold ]">
+							<div class="[ col-xs-6 ][ padding--top ][ text-right ]">
+								<p>Total:</p>
+							</div>
+							<div class="[ col-xs-6 ][ border-top--primary ][ padding--top ]">
+								<div class="[ col-sm-12 ]">
+									<p>$500.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="[ container ]">
+				<form>
+					<article>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
+								<label>Seleccione el metodo de pago:</label>
+								<select class="[ form-control ][ arrow ]">
+									<option>Forma de Pago *</option>
+									<option>Tarjeta de Crédito</option>
+									<option>Débito Directo (ACH)</option>
+								</select>
+							</div>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
+								<label>Tarjeta de Crédito:</label>
+								<div class="[ row ][ text-center ]">
+									<div class="[ col-xs-6 ]">
+										<input type="radio" checked="" name="soup" value="pea">
+										<label for="pea-soup"><div class="[ bg-image img--visa ][ inline-block ]" ></div></label>
+									</div>
+									<div class="[ col-xs-6 ]">
+										<input id="pea-soup" type="radio" checked="" name="soup" value="pea">
+										<label for="pea-soup" ><div class="[ bg-image img--mastercard ][ inline-block ]"></div></label>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
+								<label for="nombe_tarjeta">Nombre de la Tarjeta: *</label>
+								<input class="[ form-control ]" id="nombre_tarjeta" name="nombre_tarjeta" type="text">
+								<label for="numero_tarjerta">Numero de trajeta: *</label>
+								<input class="[ form-control ]" id="numero_tarjeta" name="numero_tarjeta" type="text">
+								<label>Fecha de Expiracion: *</label>
+								<div class="[ row ]">
+									<div class="[ col-xs-6 ]">
+										<select class="[ form-control ][ arrow ]">
+											<option>Seleccione uno</option>
+											<option value="1">Enero</option>
+											<option value="2">Febrero</option>
+											<option value="3">Marzo</option>
+											<option value="4">Abril</option>
+											<option value="5">Mayo</option>
+											<option value="6">Junio</option>
+											<option value="7">Julio</option>
+											<option value="8">Agosto</option>
+											<option value="9">Septiembre</option>
+											<option value="10">Octubre</option>
+											<option value="11">Noviembre</option>
+											<option value="12">Diciembre</option>
+										</select>
+									</div>
+									<div class="[ col-xs-6 ]">
+										<select class="[ form-control ][ arrow ]">
+											<option>2016</option>
+											<option value="1">2017</option>
+											<option value="2">2018</option>
+											<option value="3">2019</option>
+											<option value="4">2020</option>
+											<option value="5">2021</option>
+										</select>
+									</div>	
+								</div>
+								<label for="codigo_cwv">Código de Seguridad (CWV): * <a href="" class="[ link-primary ][ absolute pull-right ]">¿Qué es?</a></label>
+								<input class="[ form-control ]" id="codigo_cwv" name="codigo_cwv" type="text">
+
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<label>Dirección: *</label>
+								<input class="[ form-control ]" id="direccion_pago" name="direccion_pago" type="text">
+								<div class="[ row ]">
+									<div class="[ col-xs-6 ]">
+										<label>Ciudad: *</label>
+										<input class="[ form-control ]" type="text">
+									</div>
+									<div class="[ col-xs-6 ]">
+										<label>Estado: *</label>
+										<select class="[ form-control ][ arrow ]">
+											<option>Puerto Rico</option>
+											<option value="1">Puerto Rico</option>
+											<option value="2">Puerto Rico</option>
+											<option value="3">Puerto Rico</option>
+											<option value="4">Puerto Rico</option>
+											<option value="5">Puerto Rico</option>
+										</select>
+									</div>
+									<div class="[ col-xs-6 ]">
+										<label>País: *</label>
+										<select class="[ form-control ][ arrow ]">
+											<option>Puerto Rico</option>
+											<option value="1">Estados Unidos</option>
+											<option value="2">Estados Unidos</option>
+											<option value="3">Estados Unidos</option>
+											<option value="4">Estados Unidos</option>
+											<option value="5">Estados Unidos</option>
+										</select>
+									</div>
+									<div class="[ col-xs-6 ]">
+										<label>Código Postal: *</label>
+										<input class="[ form-control ]" type="text">
+									</div>
+								</div>
+								<label>Télefono: *</label>
+								<input class="[ form-control ]" type="text">
+							</div>
+						</div>
+					</article>
+					<article>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
+								<input id="afirmar" type="checkbox" name="acueductos" value="acueductos">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="afirmar">Afirmo y reconozco las consecuiencias de incluir y commeter informacion incompleta, inconclusa o falsa en esta radicación</label>
+							</div>
+						</div>
+					</article>
+				</form>	
+			</section>	
+
+			<section class="[ container ]">
+				<div class="[ row ][ text-center ]">
+					<div class="[ col-xs-6 col-sm-2 col-sm-offset-4 ]">
+						<a href="tramite-resumen.html" class="[ btn btn-primary ][ margin-bottom ]">cancelar</a>
+					</div>
+					<div class="[ col-xs-6 col-sm-2 ]">
+						<a href="tramite-pago.html" class="[ btn btn-primary ][ margin-bottom ]">continuar</a>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon--iconed--small icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon--iconed--small icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon--iconed--small icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Regramentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 col-md-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:+525552555555">(787)721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:+525552555555">(787)891-0466</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Arecibo</p>
+								<a href="tel:+525552555555">(787)878-7979</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:+525552555555">(787)852-2013</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:+525552555555">(787)843-9097</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon--iconed--small icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/plugins.js"></script>
+		<script>
+			$( document ).ready(function() {
+
+				/**
+				 * On ready
+				**/
+				footerBottom();
+
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+
+			});
+		</script>
+	</body>
+</html>
