@@ -70,6 +70,12 @@
 .right-767{ right: -767px;}
 .right-0{ right: 0px;}
 
+.box-fixed{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: fixed; top: 330px;
+  z-index:@zindex-navbar;
+}
+
 //overflow
 .overflow-hidden{overflow: hidden;}
 .overflow-scroll{overflow: scroll;}
@@ -228,7 +234,7 @@ hr{
 .margin-bottom{ margin-bottom: @margin-base; }
 .margin-bottom--xsmall{ margin-bottom: (@margin-base/4); }
 .margin-bottom--small{ margin-bottom: (@margin-base/2); }
-.margin-bottom--small{
+.margin-bottom--small--sm{
   margin-bottom: 0px;
   @media (max-width: @screen-sm){ margin-bottom: (@margin-base); }
 }
