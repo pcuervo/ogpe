@@ -129,7 +129,7 @@
 				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
 				<div class="[ inline-block align-middle ][ border-top--primary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
 					<span class="[ circle-proceso ]"></span>
-					<span class="[ circle-proceso circle-etapas ]"></span>
+					<span class="[ circle-proceso circle-etapas circle-complete ]"></span>
 					<span class="[ circle-proceso circle-etapas ]"></span>
 					<span class="[ circle-proceso circle-etapas ]"></span>
 					<span class="[ circle-proceso circle-etapas ]"></span>
@@ -153,180 +153,80 @@
 
 			<section class="[ container ]">
 				<h1 class="[ h2 ][ margin-bottom ]">PUS - Permiso de Uso</h1>
-				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
 				<form>
+					<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
+					<h3>Detalles Adicionales a la Solicitud</h3>
 					<article>
+						<h3>Detalles adicionales</h3>
+						<label>Indique su rol o roles en el proyecto o actividad: *</label>
 						<div class="[ row ]">
-							<div class="[ col-xs-12 col-sm-3 ]">
-								<label>La Estructura es nueva</label>
-							</div>
-							<div class="[ col-xs-12 col-sm-3 ]">
-								<div class="[ col-xs-6 ]">
-									<input id="si" type="radio" checked="" name="soup" value="pea">
-									<label for="si">Sí</label>
-								</div>
-								<div class="[ col-xs-6 ]">
-									<input id="no" type="radio" checked="" name="soup" value="pea">
-									<label for="no" >No</label>	
-								</div>
-							</div>
-						</div>
-
-						<div class="[ form-group ][ row ]">
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<label>Tipo de permiso de uso: *</label>
-								<select class="[ form-control ][ arrow ]">
-									<option>Certificado</option>
-									<option>Certificado</option>
-									<option>Certificado</option>
-									<option>Certificado</option>
-									<option>Certificado</option>
-								</select>
+								<input id="dueño" type="checkbox" name="dueño" value="dueño" checked="">
+								<label class="[ inline-block ]" for="dueño">dueño</label>
 							</div>
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<label>Cantidad de Plantas: *</label>
-								<select class="[ form-control ][ arrow ]">
-									<option>Número de Pisos:</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
+								<input id="profesional_autorizado" type="checkbox" name="profesional_autorizado" value="profesional_autorizado">
+								<label class="[ inline-block ]" for="proyectista">profesional autorizado</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="municipio_autonomo" type="checkbox" name="municipio_autonomo" value="municipio_autonomo">
+								<label class="[ inline-block ]" for="municipio_autonomo">municipio autónomo</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="proyectista" type="checkbox" name="proyectista" value="proyectista">
+								<label class="[ inline-block ]" for="proyectista">proyectista</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="autorizada" type="checkbox" name="autorizada" value="autorizada">
+								<label class="[ inline-block ]" for="autorizada">persona autorizada para radicar</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="autorizada" type="checkbox" name="autorizada" value="autorizada">
+								<label class="[ inline-block ]" for="autorizada">agencia</label>
 							</div>
 						</div>
-
-						<div class="[ form-gruop ]">
-							<label>Tipo(s) de operacion que se darán a la propiedad:*</label>
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="agricola" type="checkbox" checked="" name="agricola" value="agricola">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="agricola">agrícola</label>
-								</div>
-								<div class="[ col-xs-12 col-sm-4 ]">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
-								</div>
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
-								</div>
+						<label>Indique su rol o roles en el proyecto o actividad: *</label>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="local" type="checkbox" name="local" value="local" checked="">
+								<label class="[ inline-block ]" for="">local</label>
+								<div class="[ clear ]"></div>
+								<input id="alcantarillado" type="checkbox" name="alcantarillado" value="alcantarillado">
+								<label class="[ inline-block ]" for="alcantarillado">kiosko</label>
 							</div>
-
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-offset-2 ]">
-									<label>Seleccione los usos para operción agricola: *</label>
-								</div>
-								<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
-									<label><small>Disponibles</small></label>										
-									<button class="[ btn btn-primary width-100 ]">Agregar</button>
-									<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
-										<p>casas de apartamentos</p>
-										<p>casa en hilera</p>
-										<p>casa de patio</p>
-										<p>condohotel</p>
-										<p>vivienda</p>
-										<p>casas de apartamentos</p>
-										<p>casa en hilera</p>
-										<p>casa de patio</p>
-										<p>condohotel</p>
-										<p>vivienda</p>
-									</div>
-								</div>
-								<div class="[ col-xs-12 col-sm-4 ]">
-									<label><small>Seleccionados</small></label>
-									<button class="[ btn btn-delete width-100 ]">Eliminar</button>
-									<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
-										<p>casa de patio</p>
-										<p>vivienda</p>
-									</div>
-								</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="estructura_independiente" type="checkbox" name="estructura_independiente" value="estructura_independiente">
+								<label class="[ inline-block ]" for="estructura_independiente">esctructura independiente</label>
+								<div class="[ clear ]"></div>
+								<input id="solar" type="checkbox" name="solar" value="solar">
+								<label class="[ inline-block ]" for="solar">solar</label>
 							</div>
-
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="comercial" type="checkbox" name="comercial" value="comercial">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="comercial">comercial</label>
-								</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="lote" type="checkbox" name="lote" value="lote">
+								<label class="[ inline-block ]" for="lote">lote</label>
+								<div class="[ clear ]"></div>
+								<input id="finca" type="checkbox" name="finca" value="finca">
+								<label class="[ inline-block ]" for="finca">finca</label>
 							</div>
-
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="industrial" type="checkbox" checked="" name="industrial" value="industrial">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="agricola">industrial</label>
-								</div>
-								<div class="[ col-xs-12 col-sm-4 ]">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
-								</div>
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
-								</div>
-							</div>
-
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-offset-2 ]">
-									<label>Seleccione los usos para operción industrial: *</label>
-								</div>
-								<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
-									<label><small>Disponibles</small></label>										
-									<button class="[ btn btn-primary width-100 ]">Agregar</button>
-									<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
-										<p>casas de apartamentos</p>
-										<p>casa en hilera</p>
-										<p>casa de patio</p>
-										<p>condohotel</p>
-										<p>vivienda</p>
-										<p>casas de apartamentos</p>
-										<p>casa en hilera</p>
-										<p>casa de patio</p>
-										<p>condohotel</p>
-										<p>vivienda</p>
-									</div>
-								</div>
-								<div class="[ col-xs-12 col-sm-4 ]">
-									<label><small>Seleccionados</small></label>
-									<button class="[ btn btn-delete width-100 ]">Eliminar</button>
-									<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
-										<p>casa de patio</p>
-										<p>vivienda</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="institucional" type="checkbox" name="institucional" value="institucional">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="institucional"> institucional </label>
-								</div>
-							</div>
-
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="residencial" type="checkbox" name="residencial" value="residencial">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="residencial">residencial</label>
-								</div>
-							</div>
-
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="telecomunicaciones" type="checkbox" name="telecomunicaciones" value="telecomunicaciones">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="telecomunicaciones">telecomunicaciones</label>
-								</div>
-							</div>
-
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="turistico" type="checkbox" name="turistico" value="turistico">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="turistico">turístico</label>
-								</div>
-							</div>
-							
 						</div>
-						
+						<label> Indique el o los accesos a la propiedad: *</label>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="local" type="checkbox" name="local" value="local">
+								<label class="[ inline-block ]" for="">Público</label>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<input id="estructura_independiente" type="checkbox" name="estructura_independiente" value="estructura_independiente" checked="">
+								<label class="[ inline-block ]" for="estructura_independiente">Privado</label>
+							</div>
+						</div>
 					</article>
 					
 					<article>
 						<div class="[ row ]">
-							<div class="[ col-xs-12 col-sm-offset-4 col-sm-4 ]">
-								<label class="[ inline-block ][ margin-bottom--small ]">Detalles de los usos:</label>
-								<textarea class="form-control" rows="4"></textarea>
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<label class="[ inline-block ][ margin-bottom--small ]">Casos de Referencia:</label>
+								<textarea class="form-control" rows="3"></textarea>
 							</div>
 						</div>
 					</article>
