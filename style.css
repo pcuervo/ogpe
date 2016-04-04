@@ -8314,7 +8314,12 @@ footer .footer--top .text-contacto {
   margin-bottom: 0px;
 }
 footer .footer--top .text-contacto p {
-  width: 150px;
+  width: 130px;
+}
+@media (min-width: 768px) {
+  footer .footer--top .text-contacto p {
+    width: 150px;
+  }
 }
 footer .footer--top .text-contacto p,
 footer .footer--top .text-contacto a {

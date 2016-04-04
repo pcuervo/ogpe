@@ -16,7 +16,10 @@ footer{
 		.text-contacto{
 			display: block;
 			margin-bottom: 0px;
-			p{ width: 150px;}
+			p{
+				width: 130px;
+				@media (min-width: @screen-sm){ width: 150px}
+			}
 			p, a{
 				display: inline-block;
 				vertical-align: middle;
