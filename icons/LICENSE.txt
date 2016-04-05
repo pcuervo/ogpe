@@ -64,15 +64,6 @@ Font license info
    Homepage:  http://designmodo.com/linecons-free/
 
 
-## Web Symbols
-
-   Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
-
-   Author:    Just Be Nice studio
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.justbenicestudio.com/
-
-
 ## Modern Pictograms
 
    Copyright (c) 2012 by John Caserta. All rights reserved.

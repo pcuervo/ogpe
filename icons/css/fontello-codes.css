@@ -3,7 +3,7 @@
 .icon-inbox:before { content: '\e801'; } /* '' */
 .icon-down-open:before { content: '\e802'; } /* '' */
 .icon-error:before { content: '\e803'; } /* '' */
-.icon-search:before { content: '\e804'; } /* '' */
+.icon-cancel-cricle:before { content: '\e804'; } /* '' */
 .icon-mail:before { content: '\e805'; } /* '' */
 .icon-flag-empty:before { content: '\e806'; } /* '' */
 .icon-upload:before { content: '\e807'; } /* '' */
@@ -12,7 +12,7 @@
 .icon-minus:before { content: '\e80a'; } /* '' */
 .icon-plus:before { content: '\e80b'; } /* '' */
 .icon-account-circle-1:before { content: '\e80c'; } /* '' */
-.icon-inbox-text:before { content: '\e80d'; } /* '' */
+.icon-info-circle--1:before { content: '\e80d'; } /* '' */
 .icon-circle-cash:before { content: '\e80e'; } /* '' */
 .icon-notepad-edit:before { content: '\e80f'; } /* '' */
 .icon-book-contact-2:before { content: '\e810'; } /* '' */
@@ -38,9 +38,12 @@
 .icon-inbox-1:before { content: '\e824'; } /* '' */
 .icon-lock:before { content: '\e825'; } /* '' */
 .icon-calendar:before { content: '\e826'; } /* '' */
-.icon-login-1:before { content: '\e827'; } /* '' */
+.icon-key-2:before { content: '\e827'; } /* '' */
 .icon-ok-circle:before { content: '\e828'; } /* '' */
-.icon-cancel-circle:before { content: '\e829'; } /* '' */
+.icon-location-pin-2:before { content: '\e829'; } /* '' */
 .icon-phone:before { content: '\e82a'; } /* '' */
 .icon-ccw:before { content: '\e82b'; } /* '' */
 .icon-edit:before { content: '\e82c'; } /* '' */
+.icon-key-hole-2:before { content: '\e82d'; } /* '' */
+.icon-find:before { content: '\e82e'; } /* '' */
+.icon-find2:before { content: '\e82f'; } /* '' */
