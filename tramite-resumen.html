@@ -281,7 +281,7 @@
 						</div>
 					</div>
 					<div class="[ hidden-xs col-sm-4 ]">
-						<article class="[ box-fixed ][ bg-gray--xlighter padding--top-bottom--large padding--sides ]">
+						<article class="[ order_review ][ bg-gray--xlighter padding--top-bottom--large padding--sides ]">
 							<h3>Desglose de pago</h3>
 							<p>2016-214345-PEX-1234532</p>
 							<div class="[ row ][ border-bottom--primary ][ margin-bottom--small ]">
@@ -382,12 +382,16 @@
 				 * On ready
 				**/
 				footerBottom();
+				toggleHeaderScrolled();
 
 				/**
 				 * Triggered events
 				**/
 				$(window).resize(function () { footerBottom(); });
 
+				$( window ).scroll(function() {
+					toggleHeaderScrolled();
+				});
 			});
 		</script>
 	</body>

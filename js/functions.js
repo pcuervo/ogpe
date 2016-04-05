@@ -55,6 +55,12 @@ function getFooterHeight(){
     return $('footer').outerHeight();
 }// getFooterHeight
 
+/**
+ * Get the scrolled pixels in Y axis
+ */
+function getScrollY() {
+    return $(window).scrollTop();
+}// getScrollY
 
 /**
  * Toggle action buttons
@@ -68,7 +74,8 @@ function getFooterHeight(){
     var sy = getScrollY();
     //Compare the two numbers, when they are the same or less
     //add fixed class to the header.
-    if ( sy >= headerHeight ) {
+    //130 --> Altura pasos, etapas y h1
+    if ( sy >= headerHeight + 130 ) {
         $('.order_review').addClass('scrolled');
     } else {
         $('.order_review').removeClass('scrolled');
