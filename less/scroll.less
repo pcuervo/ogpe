@@ -29,3 +29,41 @@
     margin-right: @margin-base;
   }
 }
+
+
+/**
+ * Order review
+**/
+.order_review {
+  max-height: calc(100% - 100px);
+  overflow-y: scroll;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  z-index: @zindex-navbar;
+}
+@media (min-width: 992px) {
+  .order_review {
+    width: 335px;
+    position: fixed;
+    top: 270px;
+    right: -moz-calc((100% - 970px)/2);
+    right: -o-calc((100% - 970px)/2);
+    right: -webkit-calc((100% - 970px)/2);
+    right: calc((100% - 970px)/2);
+  }
+}
+@media (min-width: 1200px) {
+  .order_review {
+    width: 380px;
+    right: -moz-calc((100% - 1170px)/2);
+    right: -o-calc((100% - 1170px)/2);
+    right: -webkit-calc((100% - 1170px)/2);
+    right: calc((100% - 1170px)/2);
+  }
+}
+.order_review.scrolled {
+  max-height: calc(100% - 40px);
+  top: 20px;
+}
