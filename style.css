@@ -8245,6 +8245,7 @@ header .topic-menu {
   padding-bottom: 6px;
   width: 200px;
   display: inline-block;
+  line-height: 50px;
 }
 @media (max-width: 768px) {
   .logo-header {
