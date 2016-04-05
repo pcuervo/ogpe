@@ -140,17 +140,142 @@
 								<th class="[ col-sm-4 ]">2015-MULQ-0934564</th>
 								<th class="[ col-sm-4 ]">2015-MULQ-0934564</th>
 								<th class="[ col-sm-4 ][ overflow-scroll ]">
-									Costo de Multa Original: <span class="[ color-primary ]">$ 864.00</span>
+									Costo de Multa Original: <strong>$ 864.00</strong>
 									<br>
-									Se aplica penalidad de 10% debido a que la cantidad de días desde que se entregó; son <span class="[ color-primary ]">295</span> días y ha pasado del límite de 30 días.
+									Se aplica penalidad de 10% debido a que la cantidad de días desde que se entregó; son <strong>295</strong> días y ha pasado del límite de 30 días.
 								</th>
 							</tr>
 						</tbody>
 					</table>
-					<p class="[ text-right ]"><strong class="[ text--large ]">Total: </strong><span class="[ color-primary ]"> $ 12,240.00</span></p>
-					<div class="[ text-center ]">
-						<a href="" class="[ btn btn-primary ][ text-center ]">pagar</a>
-					</div>
+					<p class="[ text-right ]"><strong class="[ text--large ]">Total: </strong>$ 12,240.00</p>
+			</section>
+			<section class="[ container ]">
+				<form>
+					<article>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
+								<label>Seleccione el metodo de pago:</label>
+								<select class="[ form-control ][ arrow ]">
+									<option>Forma de Pago *</option>
+									<option>Tarjeta de Crédito</option>
+									<option>Débito Directo (ACH)</option>
+								</select>
+							</div>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
+								<label>Tarjeta de Crédito:</label>
+								<div class="[ row ][ text-center ]">
+									<div class="[ col-xs-6 ]">
+										<input class="[ align-top ]" id="visa" type="radio" checked="" name="soup" value="pea">
+										<label for="visa"><div class="[ bg-image img--visa ][ inline-block ]" ></div></label>
+									</div>
+									<div class="[ col-xs-6 ]">
+										<input id="mastercard" type="radio" name="soup" value="pea">
+										<label for="mastercard" ><div class="[ bg-image img--mastercard ][ inline-block ]"></div></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
+								<label for="nombe_tarjeta">Nombre de la Tarjeta: *</label>
+								<input class="[ form-control ]" id="nombre_tarjeta" name="nombre_tarjeta" type="text">
+								<label for="numero_tarjerta">Numero de trajeta: *</label>
+								<input class="[ form-control ]" id="numero_tarjeta" name="numero_tarjeta" type="text">
+								<label>Fecha de Expiracion: *</label>
+								<div class="[ row ]">
+									<div class="[ col-xs-6 ]">
+										<select class="[ form-control ][ arrow ]">
+											<option>Seleccione uno</option>
+											<option value="1">Enero</option>
+											<option value="2">Febrero</option>
+											<option value="3">Marzo</option>
+											<option value="4">Abril</option>
+											<option value="5">Mayo</option>
+											<option value="6">Junio</option>
+											<option value="7">Julio</option>
+											<option value="8">Agosto</option>
+											<option value="9">Septiembre</option>
+											<option value="10">Octubre</option>
+											<option value="11">Noviembre</option>
+											<option value="12">Diciembre</option>
+										</select>
+									</div>
+									<div class="[ col-xs-6 ]">
+										<select class="[ form-control ][ arrow ]">
+											<option>2016</option>
+											<option value="1">2017</option>
+											<option value="2">2018</option>
+											<option value="3">2019</option>
+											<option value="4">2020</option>
+											<option value="5">2021</option>
+										</select>
+									</div>
+								</div>
+								<label for="codigo_cwv">Código de Seguridad (CWV): * <a href="" class="[ link-primary ][ absolute pull-right ]">¿Qué es?</a></label>
+								<input class="[ form-control ]" id="codigo_cwv" name="codigo_cwv" type="text">
+
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<label>Dirección: *</label>
+								<input class="[ form-control ]" id="direccion_pago" name="direccion_pago" type="text">
+								<div class="[ row ]">
+									<div class="[ col-xs-6 ]">
+										<label>Ciudad: *</label>
+										<input class="[ form-control ]" type="text">
+									</div>
+									<div class="[ col-xs-6 ]">
+										<label>Estado: *</label>
+										<select class="[ form-control ][ arrow ]">
+											<option>Puerto Rico</option>
+											<option value="1">Puerto Rico</option>
+											<option value="2">Puerto Rico</option>
+											<option value="3">Puerto Rico</option>
+											<option value="4">Puerto Rico</option>
+											<option value="5">Puerto Rico</option>
+										</select>
+									</div>
+									<div class="[ col-xs-6 ]">
+										<label>País: *</label>
+										<select class="[ form-control ][ arrow ]">
+											<option>Puerto Rico</option>
+											<option value="1">Estados Unidos</option>
+											<option value="2">Estados Unidos</option>
+											<option value="3">Estados Unidos</option>
+											<option value="4">Estados Unidos</option>
+											<option value="5">Estados Unidos</option>
+										</select>
+									</div>
+									<div class="[ col-xs-6 ]">
+										<label>Código Postal: *</label>
+										<input class="[ form-control ]" type="text">
+									</div>
+								</div>
+								<label>Télefono: *</label>
+								<input class="[ form-control ]" type="text">
+							</div>
+						</div>
+					</article>
+					<article>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
+								<input id="afirmar" type="checkbox" name="acueductos" value="acueductos">
+								<label class="[ inline-block ][ margin-bottom--small ]" for="afirmar">Afirmo y reconozco las consecuiencias de incluir y commeter informacion incompleta, inconclusa o falsa en esta radicación</label>
+							</div>
+						</div>
+					</article>
+					<article class="[ row ][ text-center ]">
+						<div class="[ col-xs-6 col-sm-2 col-sm-offset-4 ]">
+							<a href="" class="[ btn btn-primary ][ margin-bottom ]">cancelar</a>
+						</div>
+						<div class="[ col-xs-6 col-sm-2 ]">
+							<button class="[ btn btn-primary ][ margin-bottom ]">pagar</button>
+						</div>
+					</article>
+				</form>
 			</section>
 			<footer>
 				<div class="[ footer--top ]">

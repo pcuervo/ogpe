@@ -133,50 +133,62 @@
 					<div class="[ col-xs-12 col-sm-6 ][ margin-bottom ]">
 						<div>
 							<p class="[ inline-block ][ no-margin ]"><strong>Nombre de usuario</strong></p>
-							<a href="" class="[ pull-right ]">Editar</a>
+							<span id="js-btn-user">
+								<a class="[ pull-right ]">Editar</a>
+							</span>
 							<p>arisbeth.hg@gmail.com</p>
 						</div>
-						<form class="[ bg-gray--xlighter padding ]">
-							<h4>Cambiar nombre de usuario</h4>
-							<div class="[ form-group ]">
-								<label for="user">Ingrese nuevo usuario:</label>
-								<input class="[ form-control ][ no-margin ]" id="user" name="user" type="text">
-								<p class="[ text--small ][ color-danger ][ margin-bottom ]"><strong>**Recuerde que el mismo debe ser un correo electrónico válido y funcional**</strong></p>
-							</div>
-							<div class="[ form-group ]">
-								<label>Ingrese la razón del cambio:<span>*</span></label>
-								<textarea class="[ form-control ]" rows="3"></textarea>
-							</div>
-							<div class="[ text-center ][ margin-top-bottom ]">
-								<button type="submit" class="[ btn btn-primary width-100 ][ padding--sides--large ]">Guardar nuevo usuario</button>
-							</div>
-						</form>
+						<div class="[ js-form-user ][ hidden ]">
+							<form class="[ bg-gray--xlighter padding ]">
+								<h4>Cambiar nombre de usuario</h4>
+								<div class="[ form-group ]">
+									<label for="user">Ingrese nuevo usuario:</label>
+									<input class="[ form-control ][ no-margin ]" id="user" name="user" type="text">
+									<p class="[ text--small ][ color-danger ][ margin-bottom ]"><strong>**Recuerde que el mismo debe ser un correo electrónico válido y funcional**</strong></p>
+								</div>
+								<div class="[ form-group ]">
+									<label>Ingrese la razón del cambio:*</label>
+									<textarea class="[ form-control ]" rows="3"></textarea>
+								</div>
+								<div id="js-hide-nav">
+									<div class="[ text-center ][ margin-top-bottom ]">
+										<button type="submit" class="[ btn btn-primary width-100 ][ padding--sides--large ]">Guardar nuevo usuario</button>
+									</div>
+								</div>
+
+							</form>
+						</div>
+
 					</div>
 					<div class="[ col-xs-12 col-sm-6 ]">
 						<div>
 							<p class="[ inline-block ][ no-margin ]"><strong>Contraseña</strong></p>
-							<a href="" class="[ pull-right ]">Editar</a>
+							<span id="js-btn-contraseña">
+								<a href="" class="[ pull-right ]">Editar</a>
+							</span>
 							<p>·······················</p>
 						</div>
-						<form class="[ bg-gray--xlighter padding ]">
-							<h4>Cambiar contraseña</h4>
-							<div class="[ form-group ]">
-								<label for="password">Contraseña actual:</label>
-								<input class="[ form-control ]" id="password" name="password" type="password">
-							</div>
-							<div class="[ form-group ]">
-								<label for="new_password">Ingrese nueva contraseña:</label>
-								<input class="[ form-control ]" id="new_password" name="new_password" type="password">
-							</div>
-							<div class="[ form-group ]">
-								<label for="confirm_password">Confirmar contraseña:</label>
-								<input class="[ form-control ]" id="confirm_password" name="confirm_password" type="password">
-							</div>
-							<a class="[ pull-right ][ link--primary ][ text--small ]" href="">Mostrar contraseña</a>
-							<div class="[ text-center ][ margin-top-bottom ]">
-								<button type="submit" class="[ btn btn-primary width-100 ][ padding--sides--large ]">Guardar nueva contraseña</button>
-							</div>
-						</form>
+						<div class="[ js-form-contraseña ][ hidden ]">
+							<form class="[ bg-gray--xlighter padding ]">
+								<h4>Cambiar contraseña</h4>
+								<div class="[ form-group ]">
+									<label for="password">Contraseña actual:</label>
+									<input class="[ form-control ]" id="password" name="password" type="password">
+								</div>
+								<div class="[ form-group ]">
+									<label for="new_password">Ingrese nueva contraseña:</label>
+									<input class="[ form-control ]" id="new_password" name="new_password" type="password">
+								</div>
+								<div class="[ form-group ]">
+									<label for="confirm_password">Confirmar contraseña:</label>
+									<input class="[ form-control ]" id="confirm_password" name="confirm_password" type="password">
+								</div>
+								<a class="[ pull-right ][ link--primary ][ text--small ]" href="">Mostrar contraseña</a>
+								<div class="[ text-center ][ margin-top-bottom ]">
+									<button type="submit" class="[ btn btn-primary width-100 ][ padding--sides--large ]">Guardar nueva contraseña</button>
+								</div>
+							</form>
+						</div>
 					</div>
 					<hr class="[ divider ]">
 				</div>
@@ -231,167 +243,171 @@
 					</div>
 					<div class="[ col-xs-12 col-md-offset-1 col-md-10 ][ text-center ][ margin-top ][ margin-bottom ]">
 						<p>¿Desea modificar esta información?</p>
-						<button type="submit" class="[ btn btn-primary ][ padding--sides ]">Editar</button>
+						<span id="js-btn-datos">
+							<button type="submit" class="[ btn btn-primary ][ padding--sides ]">Editar</button>
+						</span>
 					</div>
 				</div>
-				<div class="[ row ]">
-					<div class="[ col-xs-12 col-md-offset-1 col-md-10 ][ bg-gray-lighter ][ padding--top-bottom--large padding--sides ]">
-						<p class="[ text--small ][ color-danger ]">Debes completa tu perfil añadiendo la siguiente Información. Los campos marcados (*) son datos requeridos:</p>
-						<h3>Añadir Datos Personales:</h3>
-						<form>
-							<div class="[ row ]">
-								<div class="[ form-group ][ col-xs-8 col-sm-3 ]">
-									<label for="nombre"><span class="[ color-primary ]">*</span>Nombre</label>
-									<input type="text" class="form-control " id="nombre">
-								</div>
-								<div class="[ form-group ][ col-xs-4 col-sm-1 ][ no-padding--left ]">
-									<label for="inicial">Inicial</label>
-									<input type="text" class="form-control" id="inicial">
-								</div>
-								<div class="[ form-group ][ col-xs-6 col-sm-4 ]">
-									<label for="primerApellido"><span class="[ color-primary ]">*</span>Primer Apellido</label>
-									<input type="text" class="form-control " id="primerApellido">
-								</div>
-								<div class="[ form-group ][ col-xs-6 col-sm-4 ]">
-									<label for="segundoApellido"><span class="[ color-primary ]">*</span>Segundo Apellido</label>
-									<input type="text" class="form-control" id="segundoApellido">
-								</div>
-							</div>
-							<div class="[ form-group ]">
+				<div class="[ js-form-datos ][ hidden ]">
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-md-offset-1 col-md-10 ][ bg-gray-lighter ][ padding--top-bottom--large padding--sides ]">
+							<p class="[ text--small ][ color-danger ]">Debes completa tu perfil añadiendo la siguiente Información. Los campos marcados (*) son datos requeridos:</p>
+							<h3>Añadir Datos Personales:</h3>
+							<form>
 								<div class="[ row ]">
-									<div class="[ col-xs-12 ]">
-										<label for="nombre"><span class="[ color-primary ]">*</span>Dirección</label>
+									<div class="[ form-group ][ col-xs-8 col-sm-3 ]">
+										<label for="nombre"><span class="[ color-primary ]">*</span>Nombre</label>
+										<input type="text" class="form-control " id="nombre">
 									</div>
-									<div class="[ col-xs-8 col-sm-3 ]">
-										<input type="text" class="form-control" placeholder="Calle">
+									<div class="[ form-group ][ col-xs-4 col-sm-1 ][ no-padding--left ]">
+										<label for="inicial">Inicial</label>
+										<input type="text" class="form-control" id="inicial">
 									</div>
-									<div class="[ col-xs-4 col-sm-1 ][ no-padding--left ]">
-										<input type="text" class="form-control" placeholder="ZIP">
+									<div class="[ form-group ][ col-xs-6 col-sm-4 ]">
+										<label for="primerApellido"><span class="[ color-primary ]">*</span>Primer Apellido</label>
+										<input type="text" class="form-control " id="primerApellido">
 									</div>
-								</div>
-								<div class="[ row ]">
-									<div class="[ col-xs-12 col-sm-4  ]">
-										<select class="[ form-control ][ arrow ]">
-											<option>Municipio</option>
-											<option>Adjuntas</option>
-											<option>Aguada</option>
-											<option>Aguadilla</option>
-											<option>Aguas Buenas</option>
-											<option>Aibonito</option>
-											<option>Arecibo</option>
-											<option>Arroyo</option>
-											<option>Añasco</option>
-											<option>Barceloneta</option>
-											<option>Barranquitas</option>
-											<option>Bayamón</option>
-											<option>Cabo Rojo</option>
-											<option>Caguas</option>
-											<option>Camuy</option>
-											<option>Canóvanas</option>
-											<option>Carolina</option>
-											<option>Cataño</option>
-											<option>Cayey</option>
-											<option>Ceiba</option>
-											<option>Ciales</option>
-											<option>Cidra</option>
-											<option>Coamo</option>
-											<option>Comerío</option>
-											<option>Corozal</option>
-											<option>Culebra</option>
-											<option>Dorado</option>
-											<option>Fajardo</option>
-											<option>Florida</option>
-											<option>Guayama</option>
-											<option>Guayanilla</option>
-											<option>Guaynabo</option>
-											<option>Gurabo</option>
-											<option>Guánica</option>
-											<option>Hatillo</option>
-											<option>Hormigueros</option>
-											<option>Humacao</option>
-											<option>Isabela</option>
-											<option>Jayuya</option>
-											<option>Juana Díaz</option>
-											<option>Juncos</option>
-											<option>Lajas</option>
-											<option>Lares</option>
-											<option>Las Marías</option>
-											<option>Las Piedras</option>
-											<option>Las Piedras</option>
-											<option>Loiza</option>
-											<option>Luquillo</option>
-											<option>Manatí</option>
-											<option>Maricao</option>
-											<option>Maunabo</option>
-											<option>Mayagüez</option>
-											<option>Moca</option>
-											<option>Morovis</option>
-											<option>Naguabo</option>
-											<option>Naranjito</option>
-											<option>Orocovis</option>
-											<option>Patillas</option>
-											<option>Peñuelas</option>
-											<option>Ponce</option>
-											<option>Quebradillas</option>
-											<option>Rincón</option>
-											<option>Rio Grande</option>
-											<option>Sabana Grande</option>
-											<option>Salinas</option>
-											<option>San Germán</option>
-											<option>San Juan</option>
-											<option>San Lorenzo</option>
-											<option>San Sebastián</option>
-											<option>Santa Isabel</option>
-											<option>Toa Alta</option>
-											<option>Toa Baja</option>
-											<option>Trujillo Alto</option>
-											<option>Utuado</option>
-											<option>Vega Alta</option>
-											<option>Vega Baja</option>
-											<option>Vieques</option>
-											<option>Villalba</option>
-											<option>Yabucoa</option>
-											<option>Yauco</option>
-										</select>
-									</div>
-									<div class="[ col-xs-6 col-sm-4 ]">
-										<select class="[ form-control ][ arrow ]">
-										<option value="">Estado</option>
-										</select>
-									</div>
-									<div class="[ col-xs-6 col-sm-4 ]">
-										<select class="[ form-control ][ arrow ]">
-										<option value="">País</option>
-										</select>
+									<div class="[ form-group ][ col-xs-6 col-sm-4 ]">
+										<label for="segundoApellido"><span class="[ color-primary ]">*</span>Segundo Apellido</label>
+										<input type="text" class="form-control" id="segundoApellido">
 									</div>
 								</div>
-								<div class="[ form-group ][ margin-top ]">
+								<div class="[ form-group ]">
 									<div class="[ row ]">
-										<div class="[ col-xs-12 col-sm-4 ]">
-											<label>Télefono Primario</label>
-											<input type="text" class="form-control">
+										<div class="[ col-xs-12 ]">
+											<label for="nombre"><span class="[ color-primary ]">*</span>Dirección</label>
 										</div>
-										<div class="[ col-xs-12 col-sm-4 ]">
-											<label>Télefono Secundario</label>
-											<input type="text" class="form-control">
+										<div class="[ col-xs-8 col-sm-3 ]">
+											<input type="text" class="form-control" placeholder="Calle">
 										</div>
-										<div class="[ col-xs-12 col-sm-4 ]">
-											<label>Fax</label>
-											<input type="text" class="form-control">
+										<div class="[ col-xs-4 col-sm-1 ][ no-padding--left ]">
+											<input type="text" class="form-control" placeholder="ZIP">
 										</div>
 									</div>
 									<div class="[ row ]">
-										<div class="[ col-xs-12 col-sm-4 ]">
-											<label>Correo electronico secundario</label>
-											<input type="text" class="form-control">
+										<div class="[ col-xs-12 col-sm-4  ]">
+											<select class="[ form-control ][ arrow ]">
+												<option>Municipio</option>
+												<option>Adjuntas</option>
+												<option>Aguada</option>
+												<option>Aguadilla</option>
+												<option>Aguas Buenas</option>
+												<option>Aibonito</option>
+												<option>Arecibo</option>
+												<option>Arroyo</option>
+												<option>Añasco</option>
+												<option>Barceloneta</option>
+												<option>Barranquitas</option>
+												<option>Bayamón</option>
+												<option>Cabo Rojo</option>
+												<option>Caguas</option>
+												<option>Camuy</option>
+												<option>Canóvanas</option>
+												<option>Carolina</option>
+												<option>Cataño</option>
+												<option>Cayey</option>
+												<option>Ceiba</option>
+												<option>Ciales</option>
+												<option>Cidra</option>
+												<option>Coamo</option>
+												<option>Comerío</option>
+												<option>Corozal</option>
+												<option>Culebra</option>
+												<option>Dorado</option>
+												<option>Fajardo</option>
+												<option>Florida</option>
+												<option>Guayama</option>
+												<option>Guayanilla</option>
+												<option>Guaynabo</option>
+												<option>Gurabo</option>
+												<option>Guánica</option>
+												<option>Hatillo</option>
+												<option>Hormigueros</option>
+												<option>Humacao</option>
+												<option>Isabela</option>
+												<option>Jayuya</option>
+												<option>Juana Díaz</option>
+												<option>Juncos</option>
+												<option>Lajas</option>
+												<option>Lares</option>
+												<option>Las Marías</option>
+												<option>Las Piedras</option>
+												<option>Las Piedras</option>
+												<option>Loiza</option>
+												<option>Luquillo</option>
+												<option>Manatí</option>
+												<option>Maricao</option>
+												<option>Maunabo</option>
+												<option>Mayagüez</option>
+												<option>Moca</option>
+												<option>Morovis</option>
+												<option>Naguabo</option>
+												<option>Naranjito</option>
+												<option>Orocovis</option>
+												<option>Patillas</option>
+												<option>Peñuelas</option>
+												<option>Ponce</option>
+												<option>Quebradillas</option>
+												<option>Rincón</option>
+												<option>Rio Grande</option>
+												<option>Sabana Grande</option>
+												<option>Salinas</option>
+												<option>San Germán</option>
+												<option>San Juan</option>
+												<option>San Lorenzo</option>
+												<option>San Sebastián</option>
+												<option>Santa Isabel</option>
+												<option>Toa Alta</option>
+												<option>Toa Baja</option>
+												<option>Trujillo Alto</option>
+												<option>Utuado</option>
+												<option>Vega Alta</option>
+												<option>Vega Baja</option>
+												<option>Vieques</option>
+												<option>Villalba</option>
+												<option>Yabucoa</option>
+												<option>Yauco</option>
+											</select>
+										</div>
+										<div class="[ col-xs-6 col-sm-4 ]">
+											<select class="[ form-control ][ arrow ]">
+											<option value="">Estado</option>
+											</select>
+										</div>
+										<div class="[ col-xs-6 col-sm-4 ]">
+											<select class="[ form-control ][ arrow ]">
+											<option value="">País</option>
+											</select>
+										</div>
+									</div>
+									<div class="[ form-group ][ margin-top ]">
+										<div class="[ row ]">
+											<div class="[ col-xs-12 col-sm-4 ]">
+												<label>Télefono Primario</label>
+												<input type="text" class="form-control">
+											</div>
+											<div class="[ col-xs-12 col-sm-4 ]">
+												<label>Télefono Secundario</label>
+												<input type="text" class="form-control">
+											</div>
+											<div class="[ col-xs-12 col-sm-4 ]">
+												<label>Fax</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="[ row ]">
+											<div class="[ col-xs-12 col-sm-4 ]">
+												<label>Correo electronico secundario</label>
+												<input type="text" class="form-control">
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="[ text-center ][ margin-top-bottom ]">
-								<button type="submit" class="[ btn btn-primary ][ padding--sides--large ]">Guardar</button>
-							</div>
-						</form>
+								<div class="[ text-center ][ margin-top-bottom ]">
+									<button type="submit" class="[ btn btn-primary ][ padding--sides--large ]">Guardar</button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 				<hr class="[ divider ][ margin-top--large ]">
@@ -425,32 +441,36 @@
 						<div>
 							<p>¿Cuenta usted con liciencias profesionales?</p>
 							<p>(EIT,PE, etcétera)</p>
-							<button type="submit" class="[ btn btn-primary ][ padding--sides ][ margin-bottom ]">Añadir</button>
+							<span id="js-btn-licencia">
+								<button type="submit" class="[ btn btn-primary ][ padding--sides ][ margin-bottom ]">Añadir</button>
+							</span>
 						</div>
-						<form class="[ bg-gray--xlighter padding ]">
-							<h4>Añadir Licencias:</h4>
-							<div class="[ form-group ]">
-								<label>Tipo de licencia:</label>
-								<select class="[ form-control ][ arrow ]">
-									<option>Seleccione una opción</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-							<div class="[ form-group ]">
-								<label for="num_licencia">Numero de licencia:</label>
-								<input class="[ form-control ]" id="num_licencia" name="num_licencia" type="text">
-							</div>
-							<div class="[ form-group ]">
-								<label for="emision">Fecha de emision:</label>
-								<input class="[ form-control ]" id="emision" name="emision" type="date">
-							</div>
-							<div class="[ text-center ][ margin-top-bottom ]">
-								<button type="submit" class="[ btn btn-primary width-100 ][ padding--sides--large ]">Añadir</button>
-							</div>
-						</form>
+						<div class="[ js-form-licencia ][ hidden ]">
+							<form class="[ bg-gray--xlighter padding ]">
+								<h4>Añadir Licencias:</h4>
+								<div class="[ form-group ]">
+									<label>Tipo de licencia:</label>
+									<select class="[ form-control ][ arrow ]">
+										<option>Seleccione una opción</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+								<div class="[ form-group ]">
+									<label for="num_licencia">Numero de licencia:</label>
+									<input class="[ form-control ]" id="num_licencia" name="num_licencia" type="text">
+								</div>
+								<div class="[ form-group ]">
+									<label for="emision">Fecha de emision:</label>
+									<input class="[ form-control ]" id="emision" name="emision" type="date">
+								</div>
+								<div class="[ text-center ][ margin-top-bottom ]">
+									<button type="submit" class="[ btn btn-primary width-100 ][ padding--sides--large ]">Añadir</button>
+								</div>
+							</form>
+						</div>
 					</div>
 					<div class="[ col-sm-12 col-sm-6 col-md-4 ]">
 						<p>¿Busca tramitar otras licencia profesional?</p>
