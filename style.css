@@ -1598,6 +1598,14 @@ address {
     font-size: 19px;
   }
 }
+.text--xsmall {
+  font-size: 11px;
+}
+@media (min-width: 768px) {
+  .text--xsmall {
+    font-size: 13px;
+  }
+}
 .text--small,
 .text--small p {
   font-size: 13px;
@@ -1679,6 +1687,9 @@ p a.link--primary {
 }
 .list-decimal * {
   list-style: decimal inside none;
+}
+.line-height--1 {
+  line-height: 1;
 }
 code,
 kbd,
@@ -3510,6 +3521,12 @@ fieldset[disabled] .btn {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.btn.disabled:hover,
+.btn[disabled]:hover,
+fieldset[disabled] .btn:hover {
+  background-color: #777777 !important;
+  color: #eaeaea !important;
+}
 a.btn.disabled,
 fieldset[disabled] a.btn {
   pointer-events: none;
@@ -3921,10 +3938,6 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
-}
-.btn-primary {
-  color: #fff;
-  background-color: #6844a1;
 }
 .btn-secondary {
   color: #2c2c2c;
@@ -6693,11 +6706,17 @@ button.close {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-bottom: 20px;
+  position: relative;
+  bottom: 20px;
   font-size: 17px;
   color: #212121;
   background-color: #EEEEEE;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .marquee {
+    bottom: 40px;
+  }
 }
 .marquee * {
   margin-right: 20px;
@@ -8192,6 +8211,11 @@ hr {
   width: 98px;
   height: 72px;
 }
+.img--money {
+  background-image: url('icons/coins-1.png');
+  width: 25px;
+  height: 25px;
+}
 header {
   height: 60px;
   margin-bottom: 20px;
@@ -8290,11 +8314,8 @@ footer {
 footer h4 {
   margin-bottom: 0px;
 }
-footer .footer--top,
-footer .footer--bottom {
-  padding: 12px 0px;
-}
 footer .footer--top {
+  padding: 24px 0px;
   background-color: #eaeaea;
 }
 footer .footer--top a {
@@ -8313,7 +8334,12 @@ footer .footer--top .text-contacto {
   margin-bottom: 0px;
 }
 footer .footer--top .text-contacto p {
-  width: 150px;
+  width: 130px;
+}
+@media (min-width: 768px) {
+  footer .footer--top .text-contacto p {
+    width: 150px;
+  }
 }
 footer .footer--top .text-contacto p,
 footer .footer--top .text-contacto a {
@@ -8335,6 +8361,7 @@ footer .footer--top .icon-info {
   margin-right: 5px;
 }
 footer .footer--bottom {
+  padding: 12px 0px;
   background-color: #474747;
 }
 footer .footer--bottom a {

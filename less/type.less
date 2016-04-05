@@ -333,6 +333,11 @@ address {
 }
 
 //font size
+.text--xsmall{
+	font-size: 11px;
+	@media (min-width: @screen-sm){ font-size: 13px; }
+}
+
 .text--small, .text--small p{
 	font-size: 13px;
 	@media (min-width: @screen-sm){ font-size: 15px!important; }
@@ -415,3 +420,7 @@ p a.link--primary{ text-decoration: underline; }
 }
 
 .list-decimal *{ list-style:decimal inside none; }
+
+//Line height
+
+.line-height--1{ line-height: 1; }
