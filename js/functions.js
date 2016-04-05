@@ -10,6 +10,29 @@ $('#js-hide-nav').on('click', function(event){
     toggleTwitter();
 })
 
+
+$('#agricola').change(function(){
+    if(this.checked){
+        $('.more_options').fadeIn('slow');
+        $('.more_options').addClass('show');
+    }
+    else{
+        $('.more_options').fadeOut('slow');
+        $('.more_options').removeClass('show');
+    }
+});
+
+$('#industrial').change(function(){
+    if(this.checked){
+        $('.more_options2').fadeIn('slow');
+        $('.more_options2').addClass('show');
+    }
+    else{
+        $('.more_options2').fadeOut('slow');
+        $('.more_options2').removeClass('show');
+    }
+}); 
+
 function toggleTwitter(){
     if( $('.nav-mobile').hasClass('js-hidden') ){
         $( ".nav-mobile" ).animate({
