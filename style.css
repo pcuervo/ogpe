@@ -8472,6 +8472,9 @@ footer .footer--bottom h4 {
   background-color: #372159;
   border: 0px;
 }
+.circle-etapas:nth-child(2) {
+  margin-left: -3.5px;
+}
 /*Medida para las descripciones de proyecto (3)*/
 .block-text {
   width: 290px;
