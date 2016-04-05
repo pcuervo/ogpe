@@ -199,45 +199,51 @@
 							<label>Tipo(s) de operacion que se darán a la propiedad:*</label>
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="agricola" type="checkbox" checked="" name="agricola" value="agricola">
+									<input id="agricola" type="checkbox" name="agricola" value="agricola" class="[ show_options ]">
 									<label class="[ inline-block ][ margin-bottom--small ]" for="agricola">agrícola</label>
 								</div>
-								<div class="[ col-xs-12 col-sm-4 ]">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
-								</div>
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
-								</div>
-							</div>
 
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-offset-2 ]">
-									<label>Seleccione los usos para operción agricola: *</label>
-								</div>
-								<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
-									<label><small>Disponibles</small></label>
-									<button class="[ btn btn-primary width-100 ][ btn-sm ]">Agregar</button>
-									<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
-										<p>casas de apartamentos</p>
-										<p>casa en hilera</p>
-										<p>casa de patio</p>
-										<p>condohotel</p>
-										<p>vivienda</p>
-										<p>casas de apartamentos</p>
-										<p>casa en hilera</p>
-										<p>casa de patio</p>
-										<p>condohotel</p>
-										<p>vivienda</p>
+								<div class="[ more_options ][ hide ]">
+									<div class="[ col-xs-12 col-sm-8 ]">
+										<div class="[ row ]">
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
+											</div>
+											
+											<div class="[ col-xs-12 ]">
+												<label>Seleccione los usos para operción agrícola: *</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label><small>Disponibles</small></label>
+												<button class="[ btn btn-primary width-100 ][ btn-sm ]">Agregar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label><small>Seleccionados</small></label>
+												<button class="[ btn btn-delete width-100 ][ btn-sm ]">Eliminar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casa de patio</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="[ col-xs-12 col-sm-4 ]">
-									<label><small>Seleccionados</small></label>
-									<button class="[ btn btn-delete width-100 ][ btn-sm ]">Eliminar</button>
-									<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
-										<p>casa de patio</p>
-										<p>vivienda</p>
-									</div>
-								</div>
+
 							</div>
 
 							<div class="[ row ]">
@@ -248,48 +254,55 @@
 							</div>
 
 							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="industrial" type="checkbox" checked="" name="industrial" value="industrial">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="agricola">industrial</label>
-								</div>
-								<div class="[ col-xs-12 col-sm-4 ]">
-									<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
-								</div>
-								<div class="[ col-xs-12 col-sm-2 ]">
-									<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
-								</div>
-							</div>
 
-							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-offset-2 ]">
-									<label>Seleccione los usos para operción industrial: *</label>
+								<div class="[ col-xs-12 col-sm-2 ]">
+									<input id="industrial" type="checkbox" name="industrial" value="industrial" class="[ show_options2 ]">
+									<label class="[ inline-block ][ margin-bottom--small ]" for="industrial">industrial</label>
 								</div>
-								<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
-									<label><small>Disponibles</small></label>
-									<button class="[ btn btn-primary width-100 ][ btn-sm ]">Agregar</button>
-									<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
-										<p>casas de apartamentos</p>
-										<p>casa en hilera</p>
-										<p>casa de patio</p>
-										<p>condohotel</p>
-										<p>vivienda</p>
-										<p>casas de apartamentos</p>
-										<p>casa en hilera</p>
-										<p>casa de patio</p>
-										<p>condohotel</p>
-										<p>vivienda</p>
+								
+								<div class="[ more_options2 ][ hide ]">
+									<div class="[ col-xs-12 col-sm-8 ]">
+										<div class="[ row ]">
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
+											</div>
+											
+											<div class="[ col-xs-12 ]">
+												<label>Seleccione los usos para operción industrial: *</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label><small>Disponibles</small></label>
+												<button class="[ btn btn-primary width-100 ][ btn-sm ]">Agregar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label><small>Seleccionados</small></label>
+												<button class="[ btn btn-delete width-100 ][ btn-sm ]">Eliminar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casa de patio</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="[ col-xs-12 col-sm-4 ]">
-									<label><small>Seleccionados</small></label>
-									<button class="[ btn btn-delete width-100 ][ btn-sm ]">Eliminar</button>
-									<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
-										<p>casa de patio</p>
-										<p>vivienda</p>
-									</div>
-								</div>
-							</div>
 
+							</div>
+							
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-2 ]">
 									<input id="institucional" type="checkbox" name="institucional" value="institucional">
@@ -321,7 +334,6 @@
 						</div>
 
 					</article>
-
 					<article>
 						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-offset-4 col-sm-4 ]">
@@ -335,7 +347,7 @@
 					</div>
 				</form>
 			</section>
-					<footer>
+			<footer>
 				<div class="[ footer--top ]">
 					<div class="[ container ]">
 						<div class="[ row ][ margin-bottom ][ text-center ]">
@@ -420,7 +432,10 @@
 				**/
 				$(window).resize(function () { footerBottom(); });
 
+				showMoreOptions();
+
 			});
+
 		</script>
 	</body>
 </html>
