@@ -6515,10 +6515,6 @@ button.close {
   content: '\e807';
 }
 /* '' */
-.icon-info:before {
-  content: '\e808';
-}
-/* '' */
 .icon-warning:before {
   content: '\e809';
 }
@@ -6535,7 +6531,7 @@ button.close {
   content: '\e80c';
 }
 /* '' */
-.icon-info-circle--1:before {
+.icon-info:before {
   content: '\e80d';
 }
 /* '' */
