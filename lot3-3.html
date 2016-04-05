@@ -145,7 +145,7 @@
 				</div>
 			</div>
 
-			<section class="[ container ]">
+			<section class="[ container ][ margin-bottom--large ]">
 				<h1 class="[ h2 ][ margin-bottom ]">LOT - Variación a lotificación</h1>
 				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
 				<form>
@@ -178,47 +178,95 @@
 						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-4 ]">
 								<input id="residencial" type="checkbox" name="residencial" value="residencial">
-								<label class="[ inline-block ]" for="residencial"></label>
+								<label class="[ inline-block ]" for="residencial">residencial</label>
 								<div class="[ clear ]"></div>
 								<input id="comercial" type="checkbox" name="comercial" value="comercial">
-								<label class="[ inline-block ]" for="comercial"></label>
+								<label class="[ inline-block ]" for="comercial">comercial</label>
 							</div>
 							<div class="[ col-xs-12 col-sm-4 ]">
 								<input id="turístico" type="checkbox" name="turístico" value="turístico">
-								<label class="[ inline-block ]" for="turístico"></label>
+								<label class="[ inline-block ]" for="turístico">turístico</label>
 								<div class="[ clear ]"></div>
 								<input id="industrial" type="checkbox" name="industrial" value="industrial">
-								<label class="[ inline-block ]" for="industrial"></label>
+								<label class="[ inline-block ]" for="industrial">industrial</label>
 							</div>
 							<div class="[ col-xs-12 col-sm-4 ]">
 								<input id="institucional" type="checkbox" name="institucional" value="institucional">
-								<label class="[ inline-block ]" for="institucional"></label>
+								<label class="[ inline-block ]" for="institucional">institucional</label>
 								<div class="[ clear ]"></div>
 								<input id="otro" type="checkbox" name="otro" value="otro">
-								<label class="[ inline-block ]" for="otro"></label>
-							</div>
-						</div>
-						<div class="[ text-center ]">
-							<button class="[ btn btn-primary ]">añadir</button>
-						</div>
-					</article>
-					<article>
-						<h3>Solares</h3>
-						<div class="[ row ]">
-							<div class="[ col-xs-12 col-sm-6 ]">
-								<p>Solar 1</p>
-							</div>
-							<div class="[ col-xs-12 col-sm-6 ]">
-								<a href="lot-solar.html" class="[ btn btn-primary btn-sm ]">ver más</a>
+								<label class="[ inline-block ]" for="otro">otro</label>
 							</div>
 						</div>
 					</article>
-					<div class="[ text-center ]">
-						<a href="lot-anexos.html" class="[ btn btn-primary ]">continuar</a>
-					</div>
+					<article class="[ text-center ]">
+						<button class="[ btn btn-primary ]">añadir</button>
+					</article>
 				</form>
 			</section>
-					<footer>
+			<section class="[ container ][ margin-bottom--large ]">
+				<h3 class="[ padding--bottom ][ border-bottom--primary--large ]">Solares</h3>
+				<article class="[ border-bottom--primary ]">
+					<div class="[ row ]">
+						<h4 class="[ col-xs-7 col-sm-4 ][ margin-top--xsmall ]">Solar 1</h4>
+						<div class="[ col-xs-5 col-sm-4 ]">
+							<a data-toggle="collapse" data-target="#solar1" class="[ btn btn-primary btn-sm ]">ver más</a>
+						</div>
+					</div>
+					<div id="solar1" class="collapse [ row ][ text-resume ]">
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<p>Tipo de estructura:</p>
+							<p>residencial</p>
+							<p>Tipo de acceso:</p>
+							<p>privado</p>
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<p>Categoría</p>
+							<p>Interes social</p>
+							<p>Tipo de proyecto</p>
+							<p>unifamiliar</p>
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<p>Unidades familiares</p>
+							<p>1</p>
+							<p>Ancho de solar</p>
+							<p>10</p>
+						</div>
+					</div>
+				</article>
+				<article class="[ border-bottom--primary ]">
+					<div class="[ row ]">
+						<h4 class="[ col-xs-7 col-sm-4 ][ margin-top--xsmall ]">Solar 2</h4>
+						<div class="[ col-xs-5 col-sm-4 ]">
+							<a data-toggle="collapse" data-target="#solar2" class="[ btn btn-primary btn-sm ]">ver más</a>
+						</div>
+					</div>
+					<div id="solar2" class="collapse [ row ][ text-resume ]">
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<p>Tipo de estructura:</p>
+							<p>residencial</p>
+							<p>Tipo de acceso:</p>
+							<p>privado</p>
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<p>Categoría</p>
+							<p>Interes social</p>
+							<p>Tipo de proyecto</p>
+							<p>unifamiliar</p>
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<p>Unidades familiares</p>
+							<p>1</p>
+							<p>Ancho de solar</p>
+							<p>10</p>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section class="[ text-center ][ container ]">
+				<a href="lot-anexos.html" class="[ btn btn-primary ]">continuar</a>
+			</section>
+			<footer>
 				<div class="[ footer--top ]">
 					<div class="[ container ]">
 						<div class="[ row ][ margin-bottom ][ text-center ]">
