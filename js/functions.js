@@ -54,3 +54,23 @@ function getHeaderHeight(){
 function getFooterHeight(){
     return $('footer').outerHeight();
 }// getFooterHeight
+
+
+/**
+ * Toggle action buttons
+ */
+ function toggleHeaderScrolled(){
+
+    //Get the header height so we can now when
+    //to change the heade state
+    var headerHeight = getHeaderHeight();
+    //Scrolled pixels in Y axis
+    var sy = getScrollY();
+    //Compare the two numbers, when they are the same or less
+    //add fixed class to the header.
+    if ( sy >= headerHeight ) {
+        $('.order_review').addClass('scrolled');
+    } else {
+        $('.order_review').removeClass('scrolled');
+    }
+}// toggleActionButtons

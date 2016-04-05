@@ -147,8 +147,8 @@
 			<section class="[ container ]">
 				<h1 class="[ h2 ][ margin-bottom ]">PEX - Permiso de exportación de materiales de la corteza terrestre</h1>
 				<div class="[ row ]">
-					<div class="[ col-xs-12 col-sm-8 ]">
-						<article class="[ visible-xs ][ bg-gray--xlighter padding--top-bottom--large padding--sides ]">
+					<div class="[ col-xs-12 col-md-8 ]">
+						<article class="[ visible-xs visible-sm ][ bg-gray--xlighter padding--top-bottom--large padding--sides ]">
 							<h3>Desglose de pago</h3>
 							<p>2016-214345-LOT-1234532</p>
 							<div class="[ row ][ border-bottom--primary ][ margin-bottom--small ]">
@@ -452,8 +452,8 @@
 							</article>
 						</div>
 					</div>
-					<div class="[ hidden-xs col-sm-4 ]">
-						<article class="[ box-fixed ][ bg-gray--xlighter padding--top-bottom--large padding--sides ]">
+					<div class="[ hidden-xs hidden-sm col-md-4 ]">
+						<article class="[ order_review ][ bg-gray--xlighter padding--top-bottom--large padding--sides ]">
 							<h3>Desglose de pago</h3>
 							<p>2016-214345-PGE-1234532</p>
 							<div class="[ row ][ border-bottom--primary ][ margin-bottom--small ]">
@@ -576,12 +576,16 @@
 				 * On ready
 				**/
 				footerBottom();
+				toggleHeaderScrolled();
 
 				/**
 				 * Triggered events
 				**/
 				$(window).resize(function () { footerBottom(); });
 
+				$( window ).scroll(function() {
+					toggleHeaderScrolled();
+				});
 			});
 		</script>
 	</body>
