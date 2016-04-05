@@ -8252,6 +8252,11 @@ hr {
   width: 25px;
   height: 25px;
 }
+.img--location {
+  background-image: url('icons/location-pin-2.png');
+  width: 20px;
+  height: 20px;
+}
 header {
   height: 60px;
   margin-bottom: 20px;
