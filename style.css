@@ -4022,6 +4022,12 @@ input[type="button"].btn-block {
 .acordion:hover {
   text-decoration: none;
 }
+.acordion.collapsed ~ .bg-accordion {
+  background-color: #fff;
+}
+.acordion ~ .bg-accordion {
+  background-color: #EEEEEE;
+}
 .fade {
   opacity: 0;
   transition: opacity 0.15s linear;
