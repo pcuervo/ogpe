@@ -14,7 +14,22 @@ header {
 	}
 
 	a, .dropdown--hover{ font-size: 18px; }
-	h1>a, .dropdown--hover>p, .topic-menu{ margin-bottom: 0px; }
+	h1>a, .topic-menu{ margin-bottom: 0px; }
+	.dropdown-menu{
+		min-width: 280px;
+		a:hover, a:focus, a.active, a:active{
+			background-color: @primary--medium;
+			color: @light;
+		}
+	}
+	.topic-menu, .dropdown-toggle{
+		background-color: @primary;
+		color: @light;
+		border: transparent;
+		font-size: 140%;
+		&:hover{ background-color:  @primary--medium; }
+		&:focus, &.active, &:active{ background-color: @primary--dark; }
+	}
 }
 
 .btn-nav{ padding: (@padding-small-vertical*2) (@padding-base-vertical*2); }
@@ -30,39 +45,6 @@ header {
 	}
 }
 
-//dropdown
-
-.dropdown--hover, .topic-menu {
-	margin-left: (@margin-base*2);
-	padding: (@padding-base-vertical*3) (@padding-base-vertical*2);
-	display: inline-block;
-	position: relative;
-	vertical-align: middle;
-	&:hover{
-		text-decoration: underline;
-		color: @light;
-	}
-}
-
-.dropdown--content {
-	min-width: 250px;
-	display: none;
-	position: absolute;top: 60px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-	a{
-		padding: 10px 20px;
-		margin-bottom: 0px;
-		text-decoration: none;
-		display: block;
-		color: @primary;
-		&:hover{
-			color: @light;
-			background-color: @primary;
-		}
-	}
-}
-
-.dropdown--hover:hover .dropdown--content {	display: block; }
 
 //mobile menu
 
