@@ -147,194 +147,196 @@
 			</div><!-- end container -->
 		</header>
 		<div class="[ main ]">
-			<div class="[ text-center ][ margin-bottom--small ]">
-				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
-				<div class="[ inline-block align-middle ][ border-top--secondary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
-					<span class="[ circle-proceso ]"></span>
-					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
-					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
-					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
-					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+			<div class="[ size-transform ]">
+				<div class="[ text-center ][ margin-bottom--small ]">
+					<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
+					<div class="[ inline-block align-middle ][ border-top--secondary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
+						<span class="[ circle-proceso ]"></span>
+						<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+						<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+						<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+						<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					</div>
+					<span class="[ circle-proceso circle-pasos ]">2</span>
+					<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
+					<span class="[ circle-proceso circle-pasos ]">3</span>
+					<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
+					<span class="[ circle-proceso circle-pasos ]">4</span>
+					<div class="[ block-text--medium margin-top-bottom-auto ]">
+						<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-left ]">Datos de la solicitud</p>
+						<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Anexo</p>
+						<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Resumen del trámite</p>
+						<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-right ]">Pago del trámite</p>
+					</div>
 				</div>
-				<span class="[ circle-proceso circle-pasos ]">2</span>
-				<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
-				<span class="[ circle-proceso circle-pasos ]">3</span>
-				<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
-				<span class="[ circle-proceso circle-pasos ]">4</span>
-				<div class="[ block-text--medium margin-top-bottom-auto ]">
-					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-left ]">Datos de la solicitud</p>
-					<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Anexo</p>
-					<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Resumen del trámite</p>
-					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-right ]">Pago del trámite</p>
-				</div>
-			</div>
 
-			<section class="[ container ][ margin-bottom--large ]">
-				<h1 class="[ h2 ][ margin-bottom ]">PGE - Permiso para generadores de electricidad</h1>
-				<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
-				<form>
-					<article>
-						<h3>Agregar generadores</h3>
-						<div class="[ row ][ margin-bottom ]">
-							<div class="[ col-xs-12 col-sm-6 ]">
-								<label for="">¿Quieres agregar un nuevo generador?*:</label>
+				<section class="[ container ][ margin-bottom--large ]">
+					<h1 class="[ h2 ][ margin-bottom ]">PGE - Permiso para generadores de electricidad</h1>
+					<p class="[ text--small ][ color-danger ]"><strong>Los campos marcados con * son requeridos</strong></p>
+					<form>
+						<article>
+							<h3>Agregar generadores</h3>
+							<div class="[ row ][ margin-bottom ]">
+								<div class="[ col-xs-12 col-sm-6 ]">
+									<label for="">¿Quieres agregar un nuevo generador?*:</label>
+								</div>
+								<div class="[ col-xs-12 col-sm-6 ]">
+									<input id="si" type="checkbox" name="si" value="si">
+									<label class="[ inline-block ][ margin-right ]" for="si">si</label>
+								</div>
 							</div>
-							<div class="[ col-xs-12 col-sm-6 ]">
-								<input id="si" type="checkbox" name="si" value="si">
-								<label class="[ inline-block ][ margin-right ]" for="si">si</label>
+							<p>Agregar generadores</p>
+							<div class="[ row ]">
+								<div class="[ col-xs-12 col-sm-4 ]">
+									<label for="marca">Marca del sistema generador de electricidad*:</label>
+									<input class="[ form-control ]" id="marca" name="marca" type="text">
+									<label for="modelo">Modelo del sistema generador*:</label>
+									<input class="[ form-control ]" id="modelo" name="modelo" type="text">
+									<label for="potencia">Potencia máxima del generador (kW)*:</label>
+									<input class="[ form-control ]" id="potencia" name="potencia" type="text">
+									<label for="marca_motor">Marca del motor en sistema generador*:</label>
+									<input class="[ form-control ]" id="marca_motor" name="marca_motor" type="text">
+									<label for="mod_motor">Modelo de motor*:</label>
+									<input class="[ form-control ]" id="mod_motor" name="mod_motor" type="text">
+									<label for="potencia_max">Potencia máxima del motor (HP)*:</label>
+									<input class="[ form-control ]" id="potencia_max" name="potencia_max" type="text">
+									<label for="crtl_emisiones">Equipo de control de emisiones*:</label>
+									<input class="[ form-control ]" id="crtl_emisiones" name="crtl_emisiones" type="text">
+								</div>
+								<div class="[ col-xs-12 col-sm-4 ]">
+									<label for="adquirio">Fecha en que se adquirió el equipo*:</label>
+									<input class="[ form-control ]" id="adquirio" name="adquirio" type="date">
+									<label for="manufactura">Fecha de manufactura del motor*:</label>
+									<input class="[ form-control ]" id="manufactura" name="manufactura" type="date">
+									<label for="instalacion">Fecha de instalación del generador*:</label>
+									<input class="[ form-control ]" id="instalacion" name="instalacion" type="date">
+									<label for="remanufactura">Fecha de la última re-manufactura de motor*:</label>
+									<input class="[ form-control ]" id="remanufactura" name="remanufactura" type="date">
+									<label for="ordeno">Fecha en que se ordenó el generador*:</label>
+									<input class="[ form-control ]" id="ordeno" name="ordeno" type="date">
+									<label for="remplazo">Fecha de úlltimo remplazo de motor*:</label>
+									<input class="[ form-control ]" id="remplazo" name="remplazo" type="date">
+								</div>
+								<div class="[ col-xs-12 col-sm-4 ]">
+									<label for="">Tipo de combustible*:</label>
+									<input id="gasoleo" type="checkbox" name="gasoleo" value="gasoleo">
+									<label class="[ inline-block ]" for="gasoleo">Gasóleo (diesel)</label>
+									<div class="[ clear ]"></div>
+									<input id="gasolina" type="checkbox" name="gasolina" value="gasolina">
+									<label class="[ inline-block ]" for="gasolina">Gasolina</label>
+									<div class="[ clear ]"></div>
+									<input id="gas" type="checkbox" name="gas" value="gas">
+									<label class="[ inline-block ]" for="gas">Gas propano</label>
+									<div class="[ clear ]"></div>
+									<label for="limite">Limite de horas de operación anual*:</label>
+									<input class="[ form-control ]" id="limite" name="limite" type="text">
+								</div>
 							</div>
-						</div>
-						<p>Agregar generadores</p>
+							<div class="[ text-center ]">
+								<button class="[ btn btn-primary ]">añadir</button>
+							</div>
+						</article>
+					</form>
+				</section>
+				<section class="[ container ][ margin-bottom--large ]">
+					<h3 class="[ padding--bottom ][ border-bottom--secondary--large ]">Datos de los generadores</h3>
+					<article class="[ border-bottom--secondary ]">
 						<div class="[ row ]">
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<label for="marca">Marca del sistema generador de electricidad*:</label>
-								<input class="[ form-control ]" id="marca" name="marca" type="text">
-								<label for="modelo">Modelo del sistema generador*:</label>
-								<input class="[ form-control ]" id="modelo" name="modelo" type="text">
-								<label for="potencia">Potencia máxima del generador (kW)*:</label>
-								<input class="[ form-control ]" id="potencia" name="potencia" type="text">
-								<label for="marca_motor">Marca del motor en sistema generador*:</label>
-								<input class="[ form-control ]" id="marca_motor" name="marca_motor" type="text">
-								<label for="mod_motor">Modelo de motor*:</label>
-								<input class="[ form-control ]" id="mod_motor" name="mod_motor" type="text">
-								<label for="potencia_max">Potencia máxima del motor (HP)*:</label>
-								<input class="[ form-control ]" id="potencia_max" name="potencia_max" type="text">
-								<label for="crtl_emisiones">Equipo de control de emisiones*:</label>
-								<input class="[ form-control ]" id="crtl_emisiones" name="crtl_emisiones" type="text">
-							</div>
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<label for="adquirio">Fecha en que se adquirió el equipo*:</label>
-								<input class="[ form-control ]" id="adquirio" name="adquirio" type="date">
-								<label for="manufactura">Fecha de manufactura del motor*:</label>
-								<input class="[ form-control ]" id="manufactura" name="manufactura" type="date">
-								<label for="instalacion">Fecha de instalación del generador*:</label>
-								<input class="[ form-control ]" id="instalacion" name="instalacion" type="date">
-								<label for="remanufactura">Fecha de la última re-manufactura de motor*:</label>
-								<input class="[ form-control ]" id="remanufactura" name="remanufactura" type="date">
-								<label for="ordeno">Fecha en que se ordenó el generador*:</label>
-								<input class="[ form-control ]" id="ordeno" name="ordeno" type="date">
-								<label for="remplazo">Fecha de úlltimo remplazo de motor*:</label>
-								<input class="[ form-control ]" id="remplazo" name="remplazo" type="date">
-							</div>
-							<div class="[ col-xs-12 col-sm-4 ]">
-								<label for="">Tipo de combustible*:</label>
-								<input id="gasoleo" type="checkbox" name="gasoleo" value="gasoleo">
-								<label class="[ inline-block ]" for="gasoleo">Gasóleo (diesel)</label>
-								<div class="[ clear ]"></div>
-								<input id="gasolina" type="checkbox" name="gasolina" value="gasolina">
-								<label class="[ inline-block ]" for="gasolina">Gasolina</label>
-								<div class="[ clear ]"></div>
-								<input id="gas" type="checkbox" name="gas" value="gas">
-								<label class="[ inline-block ]" for="gas">Gas propano</label>
-								<div class="[ clear ]"></div>
-								<label for="limite">Limite de horas de operación anual*:</label>
-								<input class="[ form-control ]" id="limite" name="limite" type="text">
+							<h4 class="[ col-xs-7 col-sm-4 ][ margin-top--xsmall ]">Generador 1</h4>
+							<div class="[ col-xs-5 col-sm-4 ]">
+								<button data-toggle="collapse" data-target="#generador1" class="[ btn btn-primary btn-sm ]">ver más</button>
 							</div>
 						</div>
-						<div class="[ text-center ]">
-							<button class="[ btn btn-primary ]">añadir</button>
+						<div id="generador1" class="collapse [ row ][ text-resume ]">
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<p>Marca del sistema generador de electricidad:</p>
+								<p>Lorem ipsum</p>
+								<p>Modelo del sistema generador:</p>
+								<p>Lorem ipsum dolor</p>
+								<p>Potencia máxima del generador (kW):</p>
+								<p>56</p>
+								<p>Marca del motor en sistema generador:</p>
+								<p>Lorem ipsum</p>
+								<p>Modelo de motor:</p>
+								<p>54243GB</p>
+								<p>Potencia máxima del motor (HP):</p>
+								<p>2345</p>
+								<p>Equipo de control de emisiones:</p>
+								<p>Lorem ipsum</p>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<p>Fecha en que se adquirió el equipo:</p>
+								<p>21/01/01</p>
+								<p>Fecha de manufactura del motor:</p>
+								<p>21/01/01</p>
+								<p>Fecha de instalación del generador:</p>
+								<p>21/01/01</p>
+								<p>Fecha de la última re-manufactura de motor:</p>
+								<p>21/01/01</p>
+								<p>Fecha en que se ordenó el generador:</p>
+								<p>21/01/01</p>
+								<p>Fecha de úlltimo remplazo de motor:</p>
+								<p>21/01/01</p>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<p>Tipo de combustible:</p>
+								<p>Gasóleo (diesel)</p>
+								<p>Limite de horas de operación anual:</p>
+								<p>65</p>
+							</div>
 						</div>
 					</article>
-				</form>
-			</section>
-			<section class="[ container ][ margin-bottom--large ]">
-				<h3 class="[ padding--bottom ][ border-bottom--secondary--large ]">Datos de los generadores</h3>
-				<article class="[ border-bottom--secondary ]">
-					<div class="[ row ]">
-						<h4 class="[ col-xs-7 col-sm-4 ][ margin-top--xsmall ]">Generador 1</h4>
-						<div class="[ col-xs-5 col-sm-4 ]">
-							<button data-toggle="collapse" data-target="#generador1" class="[ btn btn-primary btn-sm ]">ver más</button>
+					<article class="[ border-bottom--secondary ]">
+						<div class="[ row ]">
+							<h4 class="[ col-xs-7 col-sm-4 ][ margin-top--xsmall ]">Generador 2</h4>
+							<div class="[ col-xs-5 col-sm-4 ]">
+								<a data-toggle="collapse" data-target="#generador2" class="[ btn btn-primary btn-sm ]">ver más</a>
+							</div>
 						</div>
-					</div>
-					<div id="generador1" class="collapse [ row ][ text-resume ]">
-						<div class="[ col-xs-12 col-sm-4 ]">
-							<p>Marca del sistema generador de electricidad:</p>
-							<p>Lorem ipsum</p>
-							<p>Modelo del sistema generador:</p>
-							<p>Lorem ipsum dolor</p>
-							<p>Potencia máxima del generador (kW):</p>
-							<p>56</p>
-							<p>Marca del motor en sistema generador:</p>
-							<p>Lorem ipsum</p>
-							<p>Modelo de motor:</p>
-							<p>54243GB</p>
-							<p>Potencia máxima del motor (HP):</p>
-							<p>2345</p>
-							<p>Equipo de control de emisiones:</p>
-							<p>Lorem ipsum</p>
+						<div id="generador2" class="collapse [ row ][ text-resume ]">
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<p>Marca del sistema generador de electricidad:</p>
+								<p>Lorem ipsum</p>
+								<p>Modelo del sistema generador:</p>
+								<p>Lorem ipsum dolor</p>
+								<p>Potencia máxima del generador (kW):</p>
+								<p>56</p>
+								<p>Marca del motor en sistema generador:</p>
+								<p>Lorem ipsum</p>
+								<p>Modelo de motor:</p>
+								<p>54243GB</p>
+								<p>Potencia máxima del motor (HP):</p>
+								<p>2345</p>
+								<p>Equipo de control de emisiones:</p>
+								<p>Lorem ipsum</p>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<p>Fecha en que se adquirió el equipo:</p>
+								<p>21/01/01</p>
+								<p>Fecha de manufactura del motor:</p>
+								<p>21/01/01</p>
+								<p>Fecha de instalación del generador:</p>
+								<p>21/01/01</p>
+								<p>Fecha de la última re-manufactura de motor:</p>
+								<p>21/01/01</p>
+								<p>Fecha en que se ordenó el generador:</p>
+								<p>21/01/01</p>
+								<p>Fecha de úlltimo remplazo de motor:</p>
+								<p>21/01/01</p>
+							</div>
+							<div class="[ col-xs-12 col-sm-4 ]">
+								<p>Tipo de combustible:</p>
+								<p>Gasóleo (diesel)</p>
+								<p>Limite de horas de operación anual:</p>
+								<p>65</p>
+							</div>
 						</div>
-						<div class="[ col-xs-12 col-sm-4 ]">
-							<p>Fecha en que se adquirió el equipo:</p>
-							<p>21/01/01</p>
-							<p>Fecha de manufactura del motor:</p>
-							<p>21/01/01</p>
-							<p>Fecha de instalación del generador:</p>
-							<p>21/01/01</p>
-							<p>Fecha de la última re-manufactura de motor:</p>
-							<p>21/01/01</p>
-							<p>Fecha en que se ordenó el generador:</p>
-							<p>21/01/01</p>
-							<p>Fecha de úlltimo remplazo de motor:</p>
-							<p>21/01/01</p>
-						</div>
-						<div class="[ col-xs-12 col-sm-4 ]">
-							<p>Tipo de combustible:</p>
-							<p>Gasóleo (diesel)</p>
-							<p>Limite de horas de operación anual:</p>
-							<p>65</p>
-						</div>
-					</div>
-				</article>
-				<article class="[ border-bottom--secondary ]">
-					<div class="[ row ]">
-						<h4 class="[ col-xs-7 col-sm-4 ][ margin-top--xsmall ]">Generador 2</h4>
-						<div class="[ col-xs-5 col-sm-4 ]">
-							<a data-toggle="collapse" data-target="#generador2" class="[ btn btn-primary btn-sm ]">ver más</a>
-						</div>
-					</div>
-					<div id="generador2" class="collapse [ row ][ text-resume ]">
-						<div class="[ col-xs-12 col-sm-4 ]">
-							<p>Marca del sistema generador de electricidad:</p>
-							<p>Lorem ipsum</p>
-							<p>Modelo del sistema generador:</p>
-							<p>Lorem ipsum dolor</p>
-							<p>Potencia máxima del generador (kW):</p>
-							<p>56</p>
-							<p>Marca del motor en sistema generador:</p>
-							<p>Lorem ipsum</p>
-							<p>Modelo de motor:</p>
-							<p>54243GB</p>
-							<p>Potencia máxima del motor (HP):</p>
-							<p>2345</p>
-							<p>Equipo de control de emisiones:</p>
-							<p>Lorem ipsum</p>
-						</div>
-						<div class="[ col-xs-12 col-sm-4 ]">
-							<p>Fecha en que se adquirió el equipo:</p>
-							<p>21/01/01</p>
-							<p>Fecha de manufactura del motor:</p>
-							<p>21/01/01</p>
-							<p>Fecha de instalación del generador:</p>
-							<p>21/01/01</p>
-							<p>Fecha de la última re-manufactura de motor:</p>
-							<p>21/01/01</p>
-							<p>Fecha en que se ordenó el generador:</p>
-							<p>21/01/01</p>
-							<p>Fecha de úlltimo remplazo de motor:</p>
-							<p>21/01/01</p>
-						</div>
-						<div class="[ col-xs-12 col-sm-4 ]">
-							<p>Tipo de combustible:</p>
-							<p>Gasóleo (diesel)</p>
-							<p>Limite de horas de operación anual:</p>
-							<p>65</p>
-						</div>
-					</div>
-				</article>
-			</section>
-			<section class="[ container ][ text-center ]">
-				<a href="pge-anexos.html" class="[ btn btn-primary ][ margin-bottom--small ]">continuar</a>
-			</section>
+					</article>
+				</section>
+				<section class="[ container ][ text-center ]">
+					<a href="pge-anexos.html" class="[ btn btn-primary ][ margin-bottom--small ]">continuar</a>
+				</section>
+			</div>
 			<footer>
 				<div class="[ footer--top ]">
 					<div class="[ container ]">
@@ -406,7 +408,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
-		<script src="js/plugins.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.marquee/1.3.9/jquery.marquee.min.js"></script>
 		<script>
 			$( document ).ready(function() {
 

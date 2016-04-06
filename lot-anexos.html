@@ -147,47 +147,78 @@
 			</div><!-- end container -->
 		</header>
 		<div class="[ main ]">
-			<div class="[ text-center ][ margin-bottom--small ]">
-				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
-				<div class="[ inline-block align-middle ][ border-top--secondary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
-					<span class="[ circle-proceso ]"></span>
-					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
-					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+			<div class="[ size-transform ]">
+				<div class="[ text-center ][ margin-bottom--small ]">
+					<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
+					<div class="[ inline-block align-middle ][ border-top--secondary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
+						<span class="[ circle-proceso ]"></span>
+						<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+						<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					</div>
+					<span class="[ circle-proceso circle-pasos ][ circle-complete ]">2</span>
+					<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
+					<span class="[ circle-proceso circle-pasos ]">3</span>
+					<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
+					<span class="[ circle-proceso circle-pasos ]">4</span>
+					<div class="[ block-text--medium margin-top-bottom-auto ]">
+						<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-left ]">Datos de la solicitud</p>
+						<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Anexo</p>
+						<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Resumen del trámite</p>
+						<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-right ]">Pago del trámite</p>
+					</div>
 				</div>
-				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">2</span>
-				<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
-				<span class="[ circle-proceso circle-pasos ]">3</span>
-				<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
-				<span class="[ circle-proceso circle-pasos ]">4</span>
-				<div class="[ block-text--medium margin-top-bottom-auto ]">
-					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-left ]">Datos de la solicitud</p>
-					<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Anexo</p>
-					<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Resumen del trámite</p>
-					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-right ]">Pago del trámite</p>
-				</div>
-			</div>
-			<section class="[ container ]">
-				<h1 class="[ h2 ][ margin-bottom ]">PGE - Permiso para generadores de electricidad</h1>
-				<ul class="nav nav-tabs [ margin-bottom--small ]">
-					<li class="active [ col-xs-6 no-padding ]"><a class="[ no-margin ][ no-padding--left ][ heigt-60--sm ]" data-toggle="tab" href="#requeridos">Anexos requeridos del trámite</a></li>
-					<li class="[ col-xs-6 no-padding ]"><a class="[ no-margin ][ no-padding--left ][ heigt-60--sm ]" data-toggle="tab" href="#otros">Otros anexos</a></li>
-				</ul>
-				<div class="tab-content [ tab-anexos ]">
-					<div id="requeridos" class="tab-pane fade in active">
-						<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
-							<div class="[ row ]">
-								<div class="[ col-xs-8 col-sm-10 ]">
-									<h4 class="[ margin-top--small no-margin-bottom ]">Memorial explicativo</h4>
+				<section class="[ container ]">
+					<h1 class="[ h2 ][ margin-bottom ]">PGE - Permiso para generadores de electricidad</h1>
+					<ul class="nav nav-tabs [ margin-bottom--small ]">
+						<li class="active [ col-xs-6 no-padding ]"><a class="[ no-margin ][ no-padding--left ][ heigt-60--sm ]" data-toggle="tab" href="#requeridos">Anexos requeridos del trámite</a></li>
+						<li class="[ col-xs-6 no-padding ]"><a class="[ no-margin ][ no-padding--left ][ heigt-60--sm ]" data-toggle="tab" href="#otros">Otros anexos</a></li>
+					</ul>
+					<div class="tab-content [ tab-anexos ]">
+						<div id="requeridos" class="tab-pane fade in active">
+							<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
+								<div class="[ row ]">
+									<div class="[ col-xs-8 col-sm-10 ]">
+										<h4 class="[ margin-top--small no-margin-bottom ]">Memorial explicativo</h4>
+									</div>
+									<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
+										<p class="[ inline-block ][ text--large ]">0</p>
+										<a data-toggle="collapse" data-target="#memorial" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+									</div>
 								</div>
-								<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
-									<p class="[ inline-block ][ text--large ]">0</p>
-									<a data-toggle="collapse" data-target="#memorial" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+								<div id="memorial" class="collapse">
+									<label for="mem_descripcion">Describa el contenido del documento</label>
+									<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
+									<div class="[ margin-bottom ]">
+										<p class="[ fw-bold ]">Cargue el anexo:*</p>
+										<form>
+											<label for="mem_anexo">Elija el archivo</label>
+											<input class="[ margin-bottom ]" type="file" id="mem_anexo">
+											<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
+										</form>
+									</div>
+									<p>O si lo prefiere redáctelo (opcional)</p>
+									<form>
+										<label for="mem_responsable">¿Quien es la persona mem_responsable?</label>
+										<input class="[ form-control ]" id="mem_responsable" name="mem_responsable" type="text">
+										<label for="">Redacte aquí el texto explicativo</label>
+										<textarea class="[ form-control ]" rows="3"></textarea>
+										<button class="[ btn btn-primary ][ margin-bottom ]">Enviar</button>
+									</form>
 								</div>
 							</div>
-							<div id="memorial" class="collapse">
-								<label for="mem_descripcion">Describa el contenido del documento</label>
-								<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
-								<div class="[ margin-bottom ]">
+							<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
+								<div class="[ row ]">
+									<div class="[ col-xs-8 col-sm-10 ]">
+										<h4 class="[ margin-top--small no-margin-bottom ]">Certificación sobre condiciones del suelo</h4>
+									</div>
+									<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
+										<p class="[ inline-block ][ text--large ]">0</p>
+										<a data-toggle="collapse" data-target="#certificacion" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+									</div>
+								</div>
+								<div id="certificacion" class="collapse">
+									<label for="mem_descripcion">Describa el contenido del documento</label>
+									<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
 									<p class="[ fw-bold ]">Cargue el anexo:*</p>
 									<form>
 										<label for="mem_anexo">Elija el archivo</label>
@@ -195,422 +226,393 @@
 										<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
 									</form>
 								</div>
-								<p>O si lo prefiere redáctelo (opcional)</p>
-								<form>
-									<label for="mem_responsable">¿Quien es la persona mem_responsable?</label>
-									<input class="[ form-control ]" id="mem_responsable" name="mem_responsable" type="text">
-									<label for="">Redacte aquí el texto explicativo</label>
-									<textarea class="[ form-control ]" rows="3"></textarea>
-									<button class="[ btn btn-primary ][ margin-bottom ]">Enviar</button>
-								</form>
 							</div>
-						</div>
-						<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
-							<div class="[ row ]">
-								<div class="[ col-xs-8 col-sm-10 ]">
-									<h4 class="[ margin-top--small no-margin-bottom ]">Certificación sobre condiciones del suelo</h4>
+							<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
+								<div class="[ row ]">
+									<div class="[ col-xs-8 col-sm-10 ]">
+										<h4 class="[ margin-top--small no-margin-bottom ]">Certificación de inundabilidad</h4>
+									</div>
+									<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
+										<p class="[ inline-block ][ text--large ]">0</p>
+										<a data-toggle="collapse" data-target="#inundabilidad" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+									</div>
 								</div>
-								<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
-									<p class="[ inline-block ][ text--large ]">0</p>
-									<a data-toggle="collapse" data-target="#certificacion" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
-								</div>
-							</div>
-							<div id="certificacion" class="collapse">
-								<label for="mem_descripcion">Describa el contenido del documento</label>
-								<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
-								<p class="[ fw-bold ]">Cargue el anexo:*</p>
-								<form>
-									<label for="mem_anexo">Elija el archivo</label>
-									<input class="[ margin-bottom ]" type="file" id="mem_anexo">
-									<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
-								</form>
-							</div>
-						</div>
-						<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
-							<div class="[ row ]">
-								<div class="[ col-xs-8 col-sm-10 ]">
-									<h4 class="[ margin-top--small no-margin-bottom ]">Certificación de inundabilidad</h4>
-								</div>
-								<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
-									<p class="[ inline-block ][ text--large ]">0</p>
-									<a data-toggle="collapse" data-target="#inundabilidad" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+								<div id="inundabilidad" class="collapse">
+									<label for="mem_descripcion">Describa el contenido del documento</label>
+									<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
+									<p class="[ fw-bold ]">Cargue el anexo:*</p>
+									<form>
+										<label for="mem_anexo">Elija el archivo</label>
+										<input class="[ margin-bottom ]" type="file" id="mem_anexo">
+										<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
+									</form>
 								</div>
 							</div>
-							<div id="inundabilidad" class="collapse">
-								<label for="mem_descripcion">Describa el contenido del documento</label>
-								<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
-								<p class="[ fw-bold ]">Cargue el anexo:*</p>
-								<form>
-									<label for="mem_anexo">Elija el archivo</label>
-									<input class="[ margin-bottom ]" type="file" id="mem_anexo">
-									<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
-								</form>
-							</div>
-						</div>
-						<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
-							<div class="[ row ]">
-								<div class="[ col-xs-8 col-sm-10 ]">
-									<h4 class="[ margin-top--small no-margin-bottom ]">Planos (PDF)</h4>
+							<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
+								<div class="[ row ]">
+									<div class="[ col-xs-8 col-sm-10 ]">
+										<h4 class="[ margin-top--small no-margin-bottom ]">Planos (PDF)</h4>
+									</div>
+									<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
+										<p class="[ inline-block ][ text--large ]">0</p>
+										<a data-toggle="collapse" data-target="#planos" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+									</div>
 								</div>
-								<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
-									<p class="[ inline-block ][ text--large ]">0</p>
-									<a data-toggle="collapse" data-target="#planos" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
-								</div>
-							</div>
-							<div id="planos" class="collapse">
-								<label for="mem_descripcion">Describa el contenido del documento</label>
-								<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
-								<p class="[ fw-bold ]">Cargue el anexo:*</p>
-								<form>
-									<label for="mem_anexo">Elija el archivo</label>
-									<input class="[ margin-bottom ]" type="file" id="mem_anexo">
-									<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
-								</form>
-							</div>
-						</div>
-						<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
-							<div class="[ row ]">
-								<div class="[ col-xs-8 col-sm-10 ]">
-									<h4 class="[ margin-top--small no-margin-bottom ]">Evidencia de cumplimiento ambiental</h4>
-								</div>
-								<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
-									<p class="[ inline-block ][ text--large ]">0</p>
-									<a data-toggle="collapse" data-target="#ambiental" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+								<div id="planos" class="collapse">
+									<label for="mem_descripcion">Describa el contenido del documento</label>
+									<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
+									<p class="[ fw-bold ]">Cargue el anexo:*</p>
+									<form>
+										<label for="mem_anexo">Elija el archivo</label>
+										<input class="[ margin-bottom ]" type="file" id="mem_anexo">
+										<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
+									</form>
 								</div>
 							</div>
-							<div id="ambiental" class="collapse">
-								<label for="mem_descripcion">Describa el contenido del documento</label>
-								<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
-								<p class="[ fw-bold ]">Cargue el anexo:*</p>
-								<form>
-									<label for="mem_anexo">Elija el archivo</label>
-									<input class="[ margin-bottom ]" type="file" id="mem_anexo">
-									<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
-								</form>
-							</div>
-						</div>
-						<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
-							<div class="[ row ]">
-								<div class="[ col-xs-8 col-sm-10 ]">
-									<h4 class="[ margin-top--small no-margin-bottom ]">Listado de notificaciones de los colindantes</h4>
+							<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
+								<div class="[ row ]">
+									<div class="[ col-xs-8 col-sm-10 ]">
+										<h4 class="[ margin-top--small no-margin-bottom ]">Evidencia de cumplimiento ambiental</h4>
+									</div>
+									<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
+										<p class="[ inline-block ][ text--large ]">0</p>
+										<a data-toggle="collapse" data-target="#ambiental" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+									</div>
 								</div>
-								<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
-									<p class="[ inline-block ][ text--large ]">0</p>
-									<a data-toggle="collapse" data-target="#notificaciones" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
-								</div>
-							</div>
-							<div id="notificaciones" class="collapse">
-								<label for="mem_descripcion">Describa el contenido del documento</label>
-								<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
-								<p class="[ fw-bold ]">Cargue el anexo:*</p>
-								<form>
-									<label for="mem_anexo">Elija el archivo</label>
-									<input class="[ margin-bottom ]" type="file" id="mem_anexo">
-									<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
-								</form>
-							</div>
-						</div>
-						<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
-							<div class="[ row ]">
-								<div class="[ col-xs-8 col-sm-10 ]">
-									<h4 class="[ margin-top--small no-margin-bottom ]">Evidencia de cuotas de colegio</h4>
-								</div>
-								<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
-									<p class="[ inline-block ][ text--large ]">0</p>
-									<a data-toggle="collapse" data-target="#cuotas" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+								<div id="ambiental" class="collapse">
+									<label for="mem_descripcion">Describa el contenido del documento</label>
+									<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
+									<p class="[ fw-bold ]">Cargue el anexo:*</p>
+									<form>
+										<label for="mem_anexo">Elija el archivo</label>
+										<input class="[ margin-bottom ]" type="file" id="mem_anexo">
+										<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
+									</form>
 								</div>
 							</div>
-							<div id="cuotas" class="collapse">
-								<label for="mem_descripcion">Describa el contenido del documento</label>
-								<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
-								<p class="[ fw-bold ]">Cargue el anexo:*</p>
-								<form>
-									<label for="mem_anexo">Elija el archivo</label>
-									<input class="[ margin-bottom ]" type="file" id="mem_anexo">
-									<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
-								</form>
-							</div>
-						</div>
-						<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
-							<div class="[ row ]">
-								<div class="[ col-xs-8 col-sm-10 ]">
-									<h4 class="[ margin-top--small no-margin-bottom ]">Certificación percolación de terrenos</h4>
+							<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
+								<div class="[ row ]">
+									<div class="[ col-xs-8 col-sm-10 ]">
+										<h4 class="[ margin-top--small no-margin-bottom ]">Listado de notificaciones de los colindantes</h4>
+									</div>
+									<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
+										<p class="[ inline-block ][ text--large ]">0</p>
+										<a data-toggle="collapse" data-target="#notificaciones" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+									</div>
 								</div>
-								<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
-									<p class="[ inline-block ][ text--large ]">0</p>
-									<a data-toggle="collapse" data-target="#percolacion" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+								<div id="notificaciones" class="collapse">
+									<label for="mem_descripcion">Describa el contenido del documento</label>
+									<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
+									<p class="[ fw-bold ]">Cargue el anexo:*</p>
+									<form>
+										<label for="mem_anexo">Elija el archivo</label>
+										<input class="[ margin-bottom ]" type="file" id="mem_anexo">
+										<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
+									</form>
 								</div>
 							</div>
-							<div id="percolacion" class="collapse">
-								<label for="mem_descripcion">Describa el contenido del documento</label>
-								<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
-								<p class="[ fw-bold ]">Cargue el anexo:*</p>
-								<form>
-									<label for="mem_anexo">Elija el archivo</label>
-									<input class="[ margin-bottom ]" type="file" id="mem_anexo">
-									<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
-								</form>
+							<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
+								<div class="[ row ]">
+									<div class="[ col-xs-8 col-sm-10 ]">
+										<h4 class="[ margin-top--small no-margin-bottom ]">Evidencia de cuotas de colegio</h4>
+									</div>
+									<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
+										<p class="[ inline-block ][ text--large ]">0</p>
+										<a data-toggle="collapse" data-target="#cuotas" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+									</div>
+								</div>
+								<div id="cuotas" class="collapse">
+									<label for="mem_descripcion">Describa el contenido del documento</label>
+									<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
+									<p class="[ fw-bold ]">Cargue el anexo:*</p>
+									<form>
+										<label for="mem_anexo">Elija el archivo</label>
+										<input class="[ margin-bottom ]" type="file" id="mem_anexo">
+										<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
+									</form>
+								</div>
 							</div>
-						</div>
-					</div><!-- end requeridos -->
+							<div class="[ border-bottom--secondary ][ margin-bottom--xsmall ]">
+								<div class="[ row ]">
+									<div class="[ col-xs-8 col-sm-10 ]">
+										<h4 class="[ margin-top--small no-margin-bottom ]">Certificación percolación de terrenos</h4>
+									</div>
+									<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
+										<p class="[ inline-block ][ text--large ]">0</p>
+										<a data-toggle="collapse" data-target="#percolacion" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+									</div>
+								</div>
+								<div id="percolacion" class="collapse">
+									<label for="mem_descripcion">Describa el contenido del documento</label>
+									<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
+									<p class="[ fw-bold ]">Cargue el anexo:*</p>
+									<form>
+										<label for="mem_anexo">Elija el archivo</label>
+										<input class="[ margin-bottom ]" type="file" id="mem_anexo">
+										<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
+									</form>
+								</div>
+							</div>
+						</div><!-- end requeridos -->
 
-					<div id="otros" class="tab-pane fade">
-						<div class="[ border-bottom--secondary ][ padding--bottom ]">
-							<div class="[ row ]">
-								<div class="[ col-xs-8 col-sm-10 ]">
-									<h4 class="[ margin-top--small no-margin-bottom ]">Otro</h4>
+						<div id="otros" class="tab-pane fade">
+							<div class="[ border-bottom--secondary ][ padding--bottom ]">
+								<div class="[ row ]">
+									<div class="[ col-xs-8 col-sm-10 ]">
+										<h4 class="[ margin-top--small no-margin-bottom ]">Otro</h4>
+									</div>
+									<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
+										<p class="[ inline-block ][ text-large ]">0</p>
+										<a data-toggle="collapse" data-target="#otro" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+									</div>
 								</div>
-								<div class="[ col-xs-4 col-sm-2 ][ text-right ]">
-									<p class="[ inline-block ][ text-large ]">0</p>
-									<a data-toggle="collapse" data-target="#otro" class="[ link--primary underline ]"><span class="[ icon-upload-2 icon--iconed ][ margin-left--small ]"></span></a>
+								<div id="otro" class="collapse">
+									<label for="mem_descripcion">Describa el contenido del documento</label>
+									<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
+									<p class="[ fw-bold ]">Cargue el anexo:*</p>
+									<form>
+										<label for="mem_anexo">Elija el archivo</label>
+										<input class="[ margin-bottom ]" type="file" id="mem_anexo">
+										<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
+									</form>
 								</div>
 							</div>
-							<div id="otro" class="collapse">
-								<label for="mem_descripcion">Describa el contenido del documento</label>
-								<input class="[ form-control ]" id="mem_descripcion" name="mem_descripcion" type="text" placeholder="Ej. Fotos de baño, croquis, cuarto">
-								<p class="[ fw-bold ]">Cargue el anexo:*</p>
-								<form>
-									<label for="mem_anexo">Elija el archivo</label>
-									<input class="[ margin-bottom ]" type="file" id="mem_anexo">
-									<button class="[ btn btn-primary ][ margin-bottom ]">Subir archivo</button>
-								</form>
-							</div>
-						</div>
-					</div><!-- end otros -->
-				</div>
-			</section>
-			<section class="[ container ][ margin-bottom ]">
-				<h3 class="[ margin-bottom ]">Lista de anexos</h3>
-				<div class="[ row ][ hidden-xs ][ margin-bottom ]">
-					<div class="[ col-xs-12 col-sm-2 ]">
-						<div class="[ row ][ fw-bold ]">
-							<div class="[ col-sm-12 ][ border-bottom--secondary--sm margin-bottom--small ]">
-								<p>Anexo:</p>
-							</div>
-						</div>
+						</div><!-- end otros -->
 					</div>
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<div class="[ row ]">
-							<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--secondary--sm margin-bottom--small ]">
-								<p>Nombre del archivo:</p>
-							</div>
-						</div>
-					</div>
-					<div class="[ col-xs-12 col-sm-3 ]">
-						<div class="[ row ]">
-							<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--secondary--sm margin-bottom--small ]">
-								<p>Descripción:</p>
-							</div>
-						</div>
-					</div>
-					<div class="[ col-xs-12 col-sm-2 ]">
-						<div class="[ row ]">
-							<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--secondary--sm margin-bottom--small ]">
-								<p>Tipo:</p>
-							</div>
-						</div>
-					</div>
-					<div class="[ col-xs-12 col-sm-2 ]">
-						<div class="[ row ][ color-danger ]">
-							<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--secondary--sm margin-bottom--small ]">
-								<p>Eliminar</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="[ row ][ margin-bottom ][ border-bottom--secondary padding--bottom ]">
-					<div class="[ col-xs-12 col-sm-2 ]">
-						<div class="[ row ][ fw-bold ]">
-							<div class="[ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-								<p class="[ no-margin ]">Anexo:</p>
-							</div>
-							<div class="[ col-xs-12 ]">
-								<p>Memorial explicativo</p>
-							</div>
-						</div>
-					</div>
-				<!-- btn mobile -->
-					<div class="[ col-xs-12 visible-xs ]">
-						<div class="[ row ][ color-danger ]">
-							<div class="[ col-xs-6 col-sm-12 ]">
-								<button class="[ btn btn-delete btn-sm ]">eliminar</button>
-							</div>
-							<div class="[ col-xs-6 visible-xs ][ margin-bottom ]">
-								<button data-toggle="collapse" data-target="#ver-mas" class="[ btn btn-primary btn-sm ]">ver más</button>
-							</div>
-						</div>
-					</div>
-					<div id="ver-mas" class="collapse [ collapse-table ]">
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<div class="[ row ]">
-								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-									<p class="[ no-margin ]">Nombre del archivo:</p>
-								</div>
-								<div class="[ col-xs-12 ]">
-									<p>memorial.docx</p>
+				</section>
+				<section class="[ container ][ margin-bottom ]">
+					<h3 class="[ margin-bottom ]">Lista de anexos</h3>
+					<div class="[ row ][ hidden-xs ][ margin-bottom ]">
+						<div class="[ col-xs-12 col-sm-2 ]">
+							<div class="[ row ][ fw-bold ]">
+								<div class="[ col-sm-12 ][ border-bottom--secondary--sm margin-bottom--small ]">
+									<p>Anexo:</p>
 								</div>
 							</div>
 						</div>
 						<div class="[ col-xs-12 col-sm-3 ]">
 							<div class="[ row ]">
-								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-									<p class="[ no-margin ]">Descripción:</p>
+								<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--secondary--sm margin-bottom--small ]">
+									<p>Nombre del archivo:</p>
 								</div>
-								<div class="[ col-xs-12 ]">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis debitis quibusdam doloremque quisquam ipsum error sequi. Fugiat, veniam esse impedit quisquam.</p>
+							</div>
+						</div>
+						<div class="[ col-xs-12 col-sm-3 ]">
+							<div class="[ row ]">
+								<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--secondary--sm margin-bottom--small ]">
+									<p>Descripción:</p>
 								</div>
 							</div>
 						</div>
 						<div class="[ col-xs-12 col-sm-2 ]">
 							<div class="[ row ]">
-								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-									<p class="[ no-margin ]">Tipo:</p>
-								</div>
-								<div class="[ col-xs-12 ]">
-									<p>Requerido</p>
-								</div>
-							</div>
-						</div>
-						<div class="[ hidden-xs col-sm-2 ]">
-							<div class="[ row ][ color-danger ]">
-								<div class="[ col-xs-12 ]">
-									<button class="[ btn btn-delete btn-sm ]">eliminar</button>
-								</div>
-							</div>
-						</div>
-					</div><!-- end collapse -->
-				</div>
-				<div class="[ row ][ margin-bottom ][ border-bottom--secondary padding--bottom ]">
-					<div class="[ col-xs-12 col-sm-2 ]">
-						<div class="[ row ][ fw-bold ]">
-							<div class="[ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-								<p class="[ no-margin ]">Anexo:</p>
-							</div>
-							<div class="[ col-xs-12 ]">
-								<p>Certificación sobre condiciones del suelo</p>
-							</div>
-						</div>
-					</div>
-				<!-- btn mobile -->
-					<div class="[ col-xs-12 visible-xs ]">
-						<div class="[ row ][ color-danger ]">
-							<div class="[ col-xs-6 col-sm-12 ]">
-								<button class="[ btn btn-delete btn-sm ]">eliminar</button>
-							</div>
-							<div class="[ col-xs-6 visible-xs ][ margin-bottom ]">
-								<button data-toggle="collapse" data-target="#ver-mas1" class="[ btn btn-primary btn-sm ]">ver más</button>
-							</div>
-						</div>
-					</div>
-					<div id="ver-mas1" class="collapse [ collapse-table ]">
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<div class="[ row ]">
-								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-									<p class="[ no-margin ]">Nombre del archivo:</p>
-								</div>
-								<div class="[ col-xs-12 ]">
-									<p>suelo.docx</p>
-								</div>
-							</div>
-						</div>
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<div class="[ row ]">
-								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-									<p class="[ no-margin ]">Descripción:</p>
-								</div>
-								<div class="[ col-xs-12 ]">
-									<p>Quae neque magni, tempore voluptas, adipisci aut, eum, atque impedit id doloribus officia nisi.</p>
+								<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--secondary--sm margin-bottom--small ]">
+									<p>Tipo:</p>
 								</div>
 							</div>
 						</div>
 						<div class="[ col-xs-12 col-sm-2 ]">
-							<div class="[ row ]">
-								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-									<p class="[ no-margin ]">Tipo:</p>
-								</div>
-								<div class="[ col-xs-12 ]">
-									<p>Requerido</p>
-								</div>
-							</div>
-						</div>
-						<div class="[ hidden-xs col-sm-2 ]">
 							<div class="[ row ][ color-danger ]">
-								<div class="[ col-xs-12 ]">
-									<button class="[ btn btn-delete btn-sm ]">eliminar</button>
+								<div class="[ fw-bold ][ col-sm-12 ][ border-bottom--secondary--sm margin-bottom--small ]">
+									<p>Eliminar</p>
 								</div>
-							</div>
-						</div>
-					</div><!-- end collapse -->
-				</div>
-				<div class="[ row ][ margin-bottom ][ border-bottom--secondary padding--bottom ]">
-					<div class="[ col-xs-12 col-sm-2 ]">
-						<div class="[ row ][ fw-bold ]">
-							<div class="[ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-								<p class="[ no-margin ]">Anexo:</p>
-							</div>
-							<div class="[ col-xs-12 ]">
-								<p>Certificación de inundabilidad</p>
 							</div>
 						</div>
 					</div>
-				<!-- btn mobile -->
-					<div class="[ col-xs-12 visible-xs ]">
-						<div class="[ row ][ color-danger ]">
-							<div class="[ col-xs-6 col-sm-12 ]">
-								<button class="[ btn btn-delete btn-sm ]">eliminar</button>
-							</div>
-							<div class="[ col-xs-6 visible-xs ][ margin-bottom ]">
-								<button data-toggle="collapse" data-target="#ver-mas1" class="[ btn btn-primary btn-sm ]">ver más</button>
-							</div>
-						</div>
-					</div>
-					<div id="ver-mas1" class="collapse [ collapse-table ]">
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<div class="[ row ]">
-								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-									<p class="[ no-margin ]">Nombre del archivo:</p>
-								</div>
-								<div class="[ col-xs-12 ]">
-									<p>inundabilidad.docx</p>
-								</div>
-							</div>
-						</div>
-						<div class="[ col-xs-12 col-sm-3 ]">
-							<div class="[ row ]">
-								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-									<p class="[ no-margin ]">Descripción:</p>
-								</div>
-								<div class="[ col-xs-12 ]">
-									<p>Voluptas illo aspernatur consequatur repellat, delectus asperiores rem!</p>
-								</div>
-							</div>
-						</div>
+					<div class="[ row ][ margin-bottom ][ border-bottom--secondary padding--bottom ]">
 						<div class="[ col-xs-12 col-sm-2 ]">
-							<div class="[ row ]">
-								<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
-									<p class="[ no-margin ]">Tipo:</p>
+							<div class="[ row ][ fw-bold ]">
+								<div class="[ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+									<p class="[ no-margin ]">Anexo:</p>
 								</div>
 								<div class="[ col-xs-12 ]">
-									<p>Requerido</p>
+									<p>Memorial explicativo</p>
 								</div>
 							</div>
 						</div>
-						<div class="[ hidden-xs col-sm-2 ]">
+					<!-- btn mobile -->
+						<div class="[ col-xs-12 visible-xs ]">
 							<div class="[ row ][ color-danger ]">
-								<div class="[ col-xs-12 ]">
+								<div class="[ col-xs-6 col-sm-12 ]">
 									<button class="[ btn btn-delete btn-sm ]">eliminar</button>
 								</div>
+								<div class="[ col-xs-6 visible-xs ][ margin-bottom ]">
+									<button data-toggle="collapse" data-target="#ver-mas" class="[ btn btn-primary btn-sm ]">ver más</button>
+								</div>
 							</div>
 						</div>
-					</div><!-- end collapse -->
-				</div>
-			</section>
-			<section class="[ container ]">
-				<p class="[ fw-bold ][ color-danger ][ text-center ]">"No puedes continuar hasta cargar todos los anexos requeridos"</p> <!-- alerta -->
-				<div class="[ text-center ]">
-					<a href="lot-resumen.html" class="[ btn btn-primary ]"  disabled>continuar</a>
-				</div>
-			</section>
+						<div id="ver-mas" class="collapse [ collapse-table ]">
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<div class="[ row ]">
+									<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+										<p class="[ no-margin ]">Nombre del archivo:</p>
+									</div>
+									<div class="[ col-xs-12 ]">
+										<p>memorial.docx</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<div class="[ row ]">
+									<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+										<p class="[ no-margin ]">Descripción:</p>
+									</div>
+									<div class="[ col-xs-12 ]">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis debitis quibusdam doloremque quisquam ipsum error sequi. Fugiat, veniam esse impedit quisquam.</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-2 ]">
+								<div class="[ row ]">
+									<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+										<p class="[ no-margin ]">Tipo:</p>
+									</div>
+									<div class="[ col-xs-12 ]">
+										<p>Requerido</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ hidden-xs col-sm-2 ]">
+								<div class="[ row ][ color-danger ]">
+									<div class="[ col-xs-12 ]">
+										<button class="[ btn btn-delete btn-sm ]">eliminar</button>
+									</div>
+								</div>
+							</div>
+						</div><!-- end collapse -->
+					</div>
+					<div class="[ row ][ margin-bottom ][ border-bottom--secondary padding--bottom ]">
+						<div class="[ col-xs-12 col-sm-2 ]">
+							<div class="[ row ][ fw-bold ]">
+								<div class="[ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+									<p class="[ no-margin ]">Anexo:</p>
+								</div>
+								<div class="[ col-xs-12 ]">
+									<p>Certificación sobre condiciones del suelo</p>
+								</div>
+							</div>
+						</div>
+					<!-- btn mobile -->
+						<div class="[ col-xs-12 visible-xs ]">
+							<div class="[ row ][ color-danger ]">
+								<div class="[ col-xs-6 col-sm-12 ]">
+									<button class="[ btn btn-delete btn-sm ]">eliminar</button>
+								</div>
+								<div class="[ col-xs-6 visible-xs ][ margin-bottom ]">
+									<button data-toggle="collapse" data-target="#ver-mas1" class="[ btn btn-primary btn-sm ]">ver más</button>
+								</div>
+							</div>
+						</div>
+						<div id="ver-mas1" class="collapse [ collapse-table ]">
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<div class="[ row ]">
+									<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+										<p class="[ no-margin ]">Nombre del archivo:</p>
+									</div>
+									<div class="[ col-xs-12 ]">
+										<p>suelo.docx</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<div class="[ row ]">
+									<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+										<p class="[ no-margin ]">Descripción:</p>
+									</div>
+									<div class="[ col-xs-12 ]">
+										<p>Quae neque magni, tempore voluptas, adipisci aut, eum, atque impedit id doloribus officia nisi.</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-2 ]">
+								<div class="[ row ]">
+									<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+										<p class="[ no-margin ]">Tipo:</p>
+									</div>
+									<div class="[ col-xs-12 ]">
+										<p>Requerido</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ hidden-xs col-sm-2 ]">
+								<div class="[ row ][ color-danger ]">
+									<div class="[ col-xs-12 ]">
+										<button class="[ btn btn-delete btn-sm ]">eliminar</button>
+									</div>
+								</div>
+							</div>
+						</div><!-- end collapse -->
+					</div>
+					<div class="[ row ][ margin-bottom ][ border-bottom--secondary padding--bottom ]">
+						<div class="[ col-xs-12 col-sm-2 ]">
+							<div class="[ row ][ fw-bold ]">
+								<div class="[ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+									<p class="[ no-margin ]">Anexo:</p>
+								</div>
+								<div class="[ col-xs-12 ]">
+									<p>Certificación de inundabilidad</p>
+								</div>
+							</div>
+						</div>
+					<!-- btn mobile -->
+						<div class="[ col-xs-12 visible-xs ]">
+							<div class="[ row ][ color-danger ]">
+								<div class="[ col-xs-6 col-sm-12 ]">
+									<button class="[ btn btn-delete btn-sm ]">eliminar</button>
+								</div>
+								<div class="[ col-xs-6 visible-xs ][ margin-bottom ]">
+									<button data-toggle="collapse" data-target="#ver-mas1" class="[ btn btn-primary btn-sm ]">ver más</button>
+								</div>
+							</div>
+						</div>
+						<div id="ver-mas1" class="collapse [ collapse-table ]">
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<div class="[ row ]">
+									<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+										<p class="[ no-margin ]">Nombre del archivo:</p>
+									</div>
+									<div class="[ col-xs-12 ]">
+										<p>inundabilidad.docx</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-3 ]">
+								<div class="[ row ]">
+									<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+										<p class="[ no-margin ]">Descripción:</p>
+									</div>
+									<div class="[ col-xs-12 ]">
+										<p>Voluptas illo aspernatur consequatur repellat, delectus asperiores rem!</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-sm-2 ]">
+								<div class="[ row ]">
+									<div class="[ fw-bold ][ col-xs-12 visible-xs ][ border-bottom--secondary--sm ]">
+										<p class="[ no-margin ]">Tipo:</p>
+									</div>
+									<div class="[ col-xs-12 ]">
+										<p>Requerido</p>
+									</div>
+								</div>
+							</div>
+							<div class="[ hidden-xs col-sm-2 ]">
+								<div class="[ row ][ color-danger ]">
+									<div class="[ col-xs-12 ]">
+										<button class="[ btn btn-delete btn-sm ]">eliminar</button>
+									</div>
+								</div>
+							</div>
+						</div><!-- end collapse -->
+					</div>
+				</section>
+				<section class="[ container ]">
+					<p class="[ fw-bold ][ color-danger ][ text-center ]">"No puedes continuar hasta cargar todos los anexos requeridos"</p> <!-- alerta -->
+					<div class="[ text-center ]">
+						<a href="lot-resumen.html" class="[ btn btn-primary ]"  disabled>continuar</a>
+					</div>
+				</section>
+			</div>
 			<footer>
 				<div class="[ footer--top ]">
 					<div class="[ container ]">
@@ -682,7 +684,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
-		<script src="js/plugins.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.marquee/1.3.9/jquery.marquee.min.js"></script>
 		<script>
 			$( document ).ready(function() {
 
