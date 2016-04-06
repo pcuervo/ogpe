@@ -60,28 +60,44 @@
 				</h1>
 			<!-- desktop menu -->
 				<nav class="[ hidden-xs ][ pull-right ]">
-					<div class="[ menu-desktop ][ pull-right ]">
-						<div class="[ dropdown--hover ]">
-							<p><span class="[ icon--iconed icon-search ]"></span>Búsquedas</p>
-							<div class="[ dropdown--content ]">
-								<div class="[ relative ][ z-index--100 ][ bg-light ]">
-									<a href="busqueda-tramites.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites</a>
-									<a href="busqueda-credenciales.html" class="[ flex ]"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Profesional Autorizado</a>
-									<a href="busqueda-permisos.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos</a>
-									<a href="pago-multa.html"><span class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas</a>
-								</div>
+					<div class="[ menu-desktop ][ pull-right ][ margin-top--xsmall ]">
+						<div class="[ dropdown ][ inline-block ]">
+							<button class="[ dropdown-toggle ][ padding--sides padding--top-bottom--small ]" type="button" data-toggle="dropdown">
+								<span title="icono busqueda" class="[ icon--iconed icon-search ]"></span>Búsquedas
+								<span class="caret"></span>
+							</button>
+							<div class="[ dropdown-menu ]">
+								<a href="busqueda-tramites.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono trámite" class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites
+								</a>
+								<a href="busqueda-credenciales.html" class="[ flex ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono profesional" class="[ icon--iconed icon-search ]"></span>Búsqueda de Profesional Autorizado
+								</a>
+								<a href="busqueda-permisos.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono permiso" class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos
+								</a>
+								<a href="pago-multa.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono pagar" class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas
+								</a>
 							</div>
 						</div>
-						<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ]">
-							<span class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
-						</a>
-						<div class="[ dropdown--hover ]">
-							<p><span class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil</p>
-							<div class="[ dropdown--content ]">
-								<div class="[ relative ][ z-index--100 ][ bg-light ]">
-									<a href="mi-perfil.html"><span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil</a>
-									<a href=""><span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout</a>
-								</div>
+						<div class="[ inline-block ]">
+							<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ][ padding--sides padding--top-bottom--small ][ block ]">
+								<span title="icono bandeja" class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
+							</a>
+						</div>
+						<div class="[ dropdown ][ inline-block ]">
+							<button class="[ dropdown-toggle ][ padding--sides padding--top-bottom--small ]" type="button" data-toggle="dropdown">
+								<span title="icono perfil" class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil
+								<span class="caret"></span>
+							</button>
+							<div class="[ dropdown-menu ]">
+								<a href="mi-perfil.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono perfil" class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil
+								</a>
+								<a href="" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono logout" class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+								</a>
 							</div>
 						</div>
 					</div>
@@ -101,25 +117,25 @@
 					<div class="[ clearfix ]"></div>
 					<div class="[ menu-mobile ]">
 						<a href="mi-perfil.html">
-							<span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+							<span title="icono perfil" class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
 						</a>
 						<a href="mi-bandeja.html">
-							<span class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+							<span title="icono bandeja" class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
 						</a>
 						<a href="busqueda-tramites.html">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
+							<span title="icono trámite" class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
 						</a>
 						<a href="busqueda-credenciales.html" class="[ flex ]">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
+							<span title="icono profesional" class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
 						</a>
 						<a href="busqueda-permisos.html">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
+							<span title="icono permiso" class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
 						</a>
 						<a href="pago-multa.html">
-							<span class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+							<span title="icono pagar" class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
 						</a>
 						<a href="salir">
-							<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+							<span title="icono logout" class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
 						</a>
 					</div>
 				</div>
@@ -182,13 +198,13 @@
 					<div class="[ row ]">
 						<h2 class="[ text-center ][ margin-bottom--large ]">Lista de Categorías Trámites super SIP</h2>
 						<div class="[ bg-acordion ][ col-xs-12 col-sm-4 ]">
-							<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#consultas" aria-expanded="false"><h3 class="[ margin-top ]">Consultas</h3></a>
+							<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#consultas" aria-expanded="false"><h3 class="[ margin-top ]">Consultas</h3></button>
 							<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
 								<p>Esta sección contiene las solicitudes de radicación para proyectos que requieran la presentación de una consulta de ubicación, construcción o consultas especiales.</p>
 							</div>
 							<div class="collapse" id="consultas">
 								<div class="[ bg-gray--xlighter ][ padding margin-bottom ]">
-									<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pmo" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pmo" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pmo">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
@@ -197,7 +213,7 @@
 											<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
 										</div>
 									</div>
-									<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pmo1" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pmo1" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pmo1">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
@@ -210,13 +226,13 @@
 							</div>
 						</div>
 						<div class="[ col-xs-12 col-sm-4 ][ margin-bottom ]">
-							<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#permisos" aria-expanded="false"><h3 class="[ margin-top ]">Permisos</h3></a>
+							<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#permisos" aria-expanded="false"><h3 class="[ margin-top ]">Permisos</h3></button>
 							<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
 								<p>En esta sección encontrará el formulario de radicación para el permiso que solicita, entre ellos Permisos PYMES, Permisos de Obra, Permisos Generales, Permiso de Extracción y Permisos Verdes. Solo pulse en el tipo de Permiso que desea radicar.</p>
 							</div>
 							<div class="collapse" id="permisos">
 								<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
-									<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pex" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pex" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pex">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
@@ -229,13 +245,13 @@
 							</div>
 						</div>
 						<div class="[ col-xs-12 col-sm-4 ][ margin-bottom ]">
-							<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#querellas" aria-expanded="false"><h3 class="[ margin-top ]">Querellas</h3></a>
+							<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#querellas" aria-expanded="false"><h3 class="[ margin-top ]">Querellas</h3></button>
 							<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
 								<p>Denuncia presentada ante la Oficina del Inspector General de Permisos por agencias, dependencias o instrumentalidades del Gobierno de Puerto Rico, o personas privadas cuyo interés personal se vea afectado.</p>
 							</div>
 							<div class="collapse" id="querellas">
 								<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
-									<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pct" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pct" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pct">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
@@ -251,13 +267,13 @@
 					</div>
 					<div class="[ row ]">
 						<div class="[ col-xs-12 col-sm-4 ]">
-							<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#recomendaciones" aria-expanded="false"><h3 class="[ margin-top ]">Recomendaciones y certificaciones</h3></a>
+							<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#recomendaciones" aria-expanded="false"><h3 class="[ margin-top ]">Recomendaciones y certificaciones</h3></button>
 							<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
 								<p>Aquí encontrará las solicitudes a utilizar para radicar aquellas certificaciones que son parte del proceso para la evaluación en el otorgamiento de un permiso de uso o para obtener recomendaciones necesarias previa a solicitar un permiso de obra.</p>
 							</div>
 							<div class="collapse" id="recomendaciones">
 								<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
-									<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pmo2" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pmo2" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pmo2">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
@@ -271,13 +287,13 @@
 
 						</div>
 						<div class="[ col-xs-12 col-sm-4 ][ margin-bottom ]">
-							<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#transaccion" aria-expanded="false"><h3 class="[ margin-top ]">Transacciones administrativas</h3></a>
+							<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#transaccion" aria-expanded="false"><h3 class="[ margin-top ]">Transacciones administrativas</h3></button>
 							<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
 								<p>Acceda aquí para solicitar algunos o varios de los siguientes trámites: Prórroga, Reapertura, Copias de Documentos.</p>
 							</div>
 							<div class="collapse" id="transaccion">
 								<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
-									<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pex1" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pex1" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pex1">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
@@ -290,13 +306,13 @@
 							</div>
 						</div>
 						<div class="[ col-xs-12 col-sm-4 ][ margin-bottom ]">
-							<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#pymes" aria-expanded="false"><h3 class="[ margin-top ]">Permisos para pequeñas y medianas empresas (PYMES)</h3></a>
+							<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#pymes" aria-expanded="false"><h3 class="[ margin-top ]">Permisos para pequeñas y medianas empresas (PYMES)</h3></button>
 							<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
 								<p>En esta sección encontrará el formulario de radicación para el permiso que solicita, entre ellos Permisos PYMES, Permisos de Obra, Permisos Generales, Permiso de Extracción y Permisos Verdes. Solo pulse en el tipo de Permiso que desea radicar.</p>
 							</div>
 							<div class="collapse" id="pymes">
 								<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
-									<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pct1" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pct1" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pct1">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
@@ -312,13 +328,13 @@
 					</div>
 					<div class="[ row ]">
 						<div class="[ col-xs-12 col-sm-4 ]">
-							<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#documentos" aria-expanded="false"><h3 class="[ margin-top ]">Documentos ambientales</h3></a>
+							<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#documentos" aria-expanded="false"><h3 class="[ margin-top ]">Documentos ambientales</h3></button>
 							<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
 								<p>Solicitudes de Documentos Ambientales es el área en donde el ciudadano puede realizar los trámites vinculados a permisos medioambientales.</p>
 							</div>
 							<div class="collapse" id="documentos">
 								<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
-									<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pmo7" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pmo7" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pmo7">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
@@ -331,13 +347,13 @@
 							</div>
 						</div>
 						<div class="[ col-xs-12 col-sm-4 ]">
-							<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#revisiones" aria-expanded="false"><h3 class="[ margin-top ]">Revisiones administrativas</h3></a>
+							<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#revisiones" aria-expanded="false"><h3 class="[ margin-top ]">Revisiones administrativas</h3></button>
 							<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
 								<p>Solicita revisiones o mociones sobre los permisos asignados.</p>
 							</div>
 							<div class="collapse" id="revisiones">
 								<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
-									<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pex9" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#pex9" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pex9">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
@@ -350,13 +366,13 @@
 							</div>
 						</div>
 						<div class="[ col-xs-12 col-sm-4 ][ margin-bottom ]">
-							<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#pa" aria-expanded="false"><h3 class="[ margin-top ]">Profesionales autorizados</h3></a>
+							<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#pa" aria-expanded="false"><h3 class="[ margin-top ]">Profesionales autorizados</h3></button>
 							<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
 								<p>Aquí encontrará una compilación de solicitudes adicionales para radicar que no necesariamente estarán atadas a permisos de obras o permisos generales.</p>
 							</div>
 							<div class="collapse" id="pa">
 								<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
-									<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#pct9" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#pct9" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pct9">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
@@ -371,13 +387,13 @@
 					</div>
 					<div class="[ row ]">
 						<div class="[ col-xs-12 col-sm-4 ]">
-							<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#servicios" aria-expanded="false"><h3 class="[ margin-top ]">Otros servicios</h3></a>
+							<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#servicios" aria-expanded="false"><h3 class="[ margin-top ]">Otros servicios</h3></button>
 							<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
 								<p></p>
 							</div>
 							<div class="collapse" id="servicios">
 								<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
-									<a class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#pmo9" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </a>
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#pmo9" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
 									<div class="[ collapse ]" id="pmo9">
 										<div class="[ padding margin-bottom ]">
 											<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>

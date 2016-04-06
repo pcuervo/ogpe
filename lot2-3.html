@@ -60,28 +60,44 @@
 				</h1>
 			<!-- desktop menu -->
 				<nav class="[ hidden-xs ][ pull-right ]">
-					<div class="[ menu-desktop ][ pull-right ]">
-						<div class="[ dropdown--hover ]">
-							<p><span class="[ icon--iconed icon-search ]"></span>Búsquedas</p>
-							<div class="[ dropdown--content ]">
-								<div class="[ relative ][ z-index--100 ][ bg-light ]">
-									<a href="busqueda-tramites.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites</a>
-									<a href="busqueda-credenciales.html" class="[ flex ]"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Profesional Autorizado</a>
-									<a href="busqueda-permisos.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos</a>
-									<a href="pago-multa.html"><span class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas</a>
-								</div>
+					<div class="[ menu-desktop ][ pull-right ][ margin-top--xsmall ]">
+						<div class="[ dropdown ][ inline-block ]">
+							<button class="[ dropdown-toggle ][ padding--sides padding--top-bottom--small ]" type="button" data-toggle="dropdown">
+								<span title="icono busqueda" class="[ icon--iconed icon-search ]"></span>Búsquedas
+								<span class="caret"></span>
+							</button>
+							<div class="[ dropdown-menu ]">
+								<a href="busqueda-tramites.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono trámite" class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites
+								</a>
+								<a href="busqueda-credenciales.html" class="[ flex ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono profesional" class="[ icon--iconed icon-search ]"></span>Búsqueda de Profesional Autorizado
+								</a>
+								<a href="busqueda-permisos.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono permiso" class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos
+								</a>
+								<a href="pago-multa.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono pagar" class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas
+								</a>
 							</div>
 						</div>
-						<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ]">
-							<span class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
-						</a>
-						<div class="[ dropdown--hover ]">
-							<p><span class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil</p>
-							<div class="[ dropdown--content ]">
-								<div class="[ relative ][ z-index--100 ][ bg-light ]">
-									<a href="mi-perfil.html"><span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil</a>
-									<a href=""><span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout</a>
-								</div>
+						<div class="[ inline-block ]">
+							<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ][ padding--sides padding--top-bottom--small ][ block ]">
+								<span title="icono bandeja" class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
+							</a>
+						</div>
+						<div class="[ dropdown ][ inline-block ]">
+							<button class="[ dropdown-toggle ][ padding--sides padding--top-bottom--small ]" type="button" data-toggle="dropdown">
+								<span title="icono perfil" class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil
+								<span class="caret"></span>
+							</button>
+							<div class="[ dropdown-menu ]">
+								<a href="mi-perfil.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono perfil" class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil
+								</a>
+								<a href="" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono logout" class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+								</a>
 							</div>
 						</div>
 					</div>
@@ -101,25 +117,25 @@
 					<div class="[ clearfix ]"></div>
 					<div class="[ menu-mobile ]">
 						<a href="mi-perfil.html">
-							<span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+							<span title="icono perfil" class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
 						</a>
 						<a href="mi-bandeja.html">
-							<span class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+							<span title="icono bandeja" class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
 						</a>
 						<a href="busqueda-tramites.html">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
+							<span title="icono trámite" class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
 						</a>
 						<a href="busqueda-credenciales.html" class="[ flex ]">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
+							<span title="icono profesional" class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
 						</a>
 						<a href="busqueda-permisos.html">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
+							<span title="icono permiso" class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
 						</a>
 						<a href="pago-multa.html">
-							<span class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+							<span title="icono pagar" class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
 						</a>
 						<a href="salir">
-							<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+							<span title="icono logout" class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
 						</a>
 					</div>
 				</div>
@@ -159,13 +175,13 @@
 						<h3>Proyectista</h3>
 						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<label>Especialidad*:</label>
-								<select class="[ form-control ][ arrow ]">
-									<option>Arquitecto</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
+								<label for="">Especialidad*:</label>
+								<select id="" name="" class="[ form-control ][ arrow ]">
+									<option value="">Arquitecto</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+									<option value="">5</option>
 								</select>
 								<label for="licencia">Numero de licencia*:</label>
 								<input class="[ form-control ]" id="licencia" name="licencia" type="text">

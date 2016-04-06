@@ -60,28 +60,44 @@
 				</h1>
 			<!-- desktop menu -->
 				<nav class="[ hidden-xs ][ pull-right ]">
-					<div class="[ menu-desktop ][ pull-right ]">
-						<div class="[ dropdown--hover ]">
-							<p><span class="[ icon--iconed icon-search ]"></span>Búsquedas</p>
-							<div class="[ dropdown--content ]">
-								<div class="[ relative ][ z-index--100 ][ bg-light ]">
-									<a href="busqueda-tramites.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites</a>
-									<a href="busqueda-credenciales.html" class="[ flex ]"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Profesional Autorizado</a>
-									<a href="busqueda-permisos.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos</a>
-									<a href="pago-multa.html"><span class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas</a>
-								</div>
+					<div class="[ menu-desktop ][ pull-right ][ margin-top--xsmall ]">
+						<div class="[ dropdown ][ inline-block ]">
+							<button class="[ dropdown-toggle ][ padding--sides padding--top-bottom--small ]" type="button" data-toggle="dropdown">
+								<span title="icono busqueda" class="[ icon--iconed icon-search ]"></span>Búsquedas
+								<span class="caret"></span>
+							</button>
+							<div class="[ dropdown-menu ]">
+								<a href="busqueda-tramites.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono trámite" class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites
+								</a>
+								<a href="busqueda-credenciales.html" class="[ flex ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono profesional" class="[ icon--iconed icon-search ]"></span>Búsqueda de Profesional Autorizado
+								</a>
+								<a href="busqueda-permisos.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono permiso" class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos
+								</a>
+								<a href="pago-multa.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono pagar" class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas
+								</a>
 							</div>
 						</div>
-						<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ]">
-							<span class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
-						</a>
-						<div class="[ dropdown--hover ]">
-							<p><span class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil</p>
-							<div class="[ dropdown--content ]">
-								<div class="[ relative ][ z-index--100 ][ bg-light ]">
-									<a href="mi-perfil.html"><span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil</a>
-									<a href=""><span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout</a>
-								</div>
+						<div class="[ inline-block ]">
+							<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ][ padding--sides padding--top-bottom--small ][ block ]">
+								<span title="icono bandeja" class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
+							</a>
+						</div>
+						<div class="[ dropdown ][ inline-block ]">
+							<button class="[ dropdown-toggle ][ padding--sides padding--top-bottom--small ]" type="button" data-toggle="dropdown">
+								<span title="icono perfil" class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil
+								<span class="caret"></span>
+							</button>
+							<div class="[ dropdown-menu ]">
+								<a href="mi-perfil.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono perfil" class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil
+								</a>
+								<a href="" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span title="icono logout" class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+								</a>
 							</div>
 						</div>
 					</div>
@@ -101,25 +117,25 @@
 					<div class="[ clearfix ]"></div>
 					<div class="[ menu-mobile ]">
 						<a href="mi-perfil.html">
-							<span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+							<span title="icono perfil" class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
 						</a>
 						<a href="mi-bandeja.html">
-							<span class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+							<span title="icono bandeja" class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
 						</a>
 						<a href="busqueda-tramites.html">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
+							<span title="icono trámite" class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
 						</a>
 						<a href="busqueda-credenciales.html" class="[ flex ]">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
+							<span title="icono profesional" class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
 						</a>
 						<a href="busqueda-permisos.html">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
+							<span title="icono permiso" class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
 						</a>
 						<a href="pago-multa.html">
-							<span class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+							<span title="icono pagar" class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
 						</a>
 						<a href="salir">
-							<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+							<span title="icono logout" class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
 						</a>
 					</div>
 				</div>
@@ -255,17 +271,17 @@
 					<article>
 						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
-								<label>Seleccione el metodo de pago:</label>
-								<select class="[ form-control ][ arrow ]">
-									<option>Forma de Pago *</option>
-									<option>Tarjeta de Crédito</option>
-									<option>Débito Directo (ACH)</option>
+								<label for="metodo_pago">Seleccione el metodo de pago:</label>
+								<select id="metodo_pago" name="metodo_pago" class="[ form-control ][ arrow ]">
+									<option value="">Forma de Pago *</option>
+									<option value="">Tarjeta de Crédito</option>
+									<option value="">Débito Directo (ACH)</option>
 								</select>
 							</div>
 						</div>
 						<div class="[ row ]">
 							<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
-								<label>Tarjeta de Crédito:</label>
+								<label for="">Tarjeta de Crédito:</label>
 								<div class="[ row ][ text-center ]">
 									<div class="[ col-xs-6 ]">
 										<input class="[ align-top ]" id="visa" type="radio" checked="" name="soup" value="pea">
@@ -286,11 +302,11 @@
 								<input class="[ form-control ]" id="nombre_tarjeta" name="nombre_tarjeta" type="text">
 								<label for="numero_tarjerta">Numero de trajeta: *</label>
 								<input class="[ form-control ]" id="numero_tarjeta" name="numero_tarjeta" type="text">
-								<label>Fecha de Expiracion: *</label>
+								<label for="expiracion">Fecha de Expiracion: *</label>
 								<div class="[ row ]">
 									<div class="[ col-xs-6 ]">
-										<select class="[ form-control ][ arrow ]">
-											<option>Seleccione uno</option>
+										<select id="expiracion" name="expiracion" class="[ form-control ][ arrow ]">
+											<option value="">Seleccione uno</option>
 											<option value="1">Enero</option>
 											<option value="2">Febrero</option>
 											<option value="3">Marzo</option>
@@ -306,8 +322,8 @@
 										</select>
 									</div>
 									<div class="[ col-xs-6 ]">
-										<select class="[ form-control ][ arrow ]">
-											<option>2016</option>
+										<select id="" name="" class="[ form-control ][ arrow ]">
+											<option value="">2016</option>
 											<option value="1">2017</option>
 											<option value="2">2018</option>
 											<option value="3">2019</option>
@@ -321,17 +337,17 @@
 
 							</div>
 							<div class="[ col-xs-12 col-sm-4 ]">
-								<label>Dirección: *</label>
+								<label for="">Dirección: *</label>
 								<input class="[ form-control ]" id="direccion_pago" name="direccion_pago" type="text">
 								<div class="[ row ]">
 									<div class="[ col-xs-6 ]">
-										<label>Ciudad: *</label>
+										<label for="">Ciudad: *</label>
 										<input class="[ form-control ]" type="text">
 									</div>
 									<div class="[ col-xs-6 ]">
-										<label>Estado: *</label>
-										<select class="[ form-control ][ arrow ]">
-											<option>Puerto Rico</option>
+										<label for="estado">Estado: *</label>
+										<select id="estado" name="estado" class="[ form-control ][ arrow ]">
+											<option value="">Puerto Rico</option>
 											<option value="1">Puerto Rico</option>
 											<option value="2">Puerto Rico</option>
 											<option value="3">Puerto Rico</option>
@@ -340,9 +356,9 @@
 										</select>
 									</div>
 									<div class="[ col-xs-6 ]">
-										<label>País: *</label>
-										<select class="[ form-control ][ arrow ]">
-											<option>Puerto Rico</option>
+										<label for="pais">País: *</label>
+										<select id="pais" name="pais" class="[ form-control ][ arrow ]">
+											<option value="">Puerto Rico</option>
 											<option value="1">Estados Unidos</option>
 											<option value="2">Estados Unidos</option>
 											<option value="3">Estados Unidos</option>
@@ -351,12 +367,12 @@
 										</select>
 									</div>
 									<div class="[ col-xs-6 ]">
-										<label>Código Postal: *</label>
-										<input class="[ form-control ]" type="text">
+										<label for="codigo_postal">Código Postal: *</label>
+										<input id="codigo_postal" name="codigo_postal" class="[ form-control ]" type="text">
 									</div>
 								</div>
-								<label>Télefono: *</label>
-								<input class="[ form-control ]" type="text">
+								<label for="telefono">Teléfono: *</label>
+								<input id="telefono" name="telefono" class="[ form-control ]" type="text">
 							</div>
 						</div>
 					</article>

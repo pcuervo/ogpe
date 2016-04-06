@@ -3460,6 +3460,9 @@ input[type="radio"]:disabled + label::before {
 .input-search.input-search--small .icon-search {
   top: -1px;
 }
+button {
+  border: transparent;
+}
 .btn {
   border-color: transparent;
   text-transform: lowercase;
@@ -6790,6 +6793,7 @@ button.close {
   max-height: calc(100% - 40px);
   top: 20px;
 }
+<<<<<<< HEAD
 /**
  * BxSlider v4.1.2 - Fully loaded, responsive content slider
  * http://bxslider.com
@@ -6962,6 +6966,8 @@ button.close {
   font-size: .85em;
   padding: 10px;
 }
+=======
+>>>>>>> 2edc9c8d99a818fd0259628015f7d2d20767b95a
 .modal-open {
   overflow: hidden;
 }
@@ -8490,9 +8496,37 @@ header .dropdown--hover {
   font-size: 18px;
 }
 header h1 > a,
-header .dropdown--hover > p,
 header .topic-menu {
   margin-bottom: 0px;
+}
+header .dropdown-menu {
+  min-width: 280px;
+}
+header .dropdown-menu a:hover,
+header .dropdown-menu a:focus,
+header .dropdown-menu a.active,
+header .dropdown-menu a:active {
+  background-color: #54358e;
+  color: #fff;
+}
+header .topic-menu,
+header .dropdown-toggle {
+  background-color: #6844a1;
+  color: #fff;
+  border: transparent;
+  font-size: 140%;
+}
+header .topic-menu:hover,
+header .dropdown-toggle:hover {
+  background-color: #54358e;
+}
+header .topic-menu:focus,
+header .dropdown-toggle:focus,
+header .topic-menu.active,
+header .dropdown-toggle.active,
+header .topic-menu:active,
+header .dropdown-toggle:active {
+  background-color: #372159;
 }
 .btn-nav {
   padding: 10px 12px;
@@ -8509,40 +8543,6 @@ header .topic-menu {
     width: 145px;
     padding: 0px;
   }
-}
-.dropdown--hover,
-.topic-menu {
-  margin-left: 40px;
-  padding: 18px 12px;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-}
-.dropdown--hover:hover,
-.topic-menu:hover {
-  text-decoration: underline;
-  color: #fff;
-}
-.dropdown--content {
-  min-width: 250px;
-  display: none;
-  position: absolute;
-  top: 60px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
-}
-.dropdown--content a {
-  padding: 10px 20px;
-  margin-bottom: 0px;
-  text-decoration: none;
-  display: block;
-  color: #6844a1;
-}
-.dropdown--content a:hover {
-  color: #fff;
-  background-color: #6844a1;
-}
-.dropdown--hover:hover .dropdown--content {
-  display: block;
 }
 .nav-mobile {
   width: 100vw;
