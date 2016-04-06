@@ -4585,7 +4585,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: 2px;
   line-height: 1.55;
   border-radius: 4px 4px 0 0;
-  background-color: #ffa64d;
+  background-color: #6844a1;
   color: #fff;
   text-align: center;
 }
@@ -4597,14 +4597,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .nav-tabs > li > a:hover {
-  background: #f28920;
+  background: #54358e;
   color: #fff;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #fff;
-  background-color: #ff7f00;
+  background-color: #372159;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -7998,6 +7998,17 @@ hr {
 .border-bottom--secondary--large {
   border-bottom: 3px solid #ffa64d;
 }
+.border-bottom--secondary {
+  border-bottom: 1px solid #ffa64d;
+}
+@media (min-width: 768px) {
+  .border-bottom--secondary--sm {
+    border-bottom: 1px solid #ffa64d;
+  }
+}
+.border-top--secondary {
+  border-top: 1px solid #ffa64d;
+}
 .border-top-bottom--gray {
   border-top: 1px solid #5b616a;
   border-bottom: 1px solid #5b616a;
@@ -8485,7 +8496,7 @@ footer .footer--bottom h4 {
   width: 30px;
   height: 30px;
   color: #fff;
-  background-color: #6844a1;
+  background-color: #ffa64d;
   line-height: 30px;
 }
 @media (min-width: 768px) {
@@ -8496,7 +8507,7 @@ footer .footer--bottom h4 {
   }
 }
 .circle-pasos.circle-complete {
-  background-color: #372159;
+  background-color: #ff7f00;
 }
 /*Medida estandar para los pasos de la ficha del trámite*/
 .circle-pasos--size {
@@ -8508,7 +8519,7 @@ footer .footer--bottom h4 {
   width: 7px;
   height: 7px;
   margin: -1px;
-  border: 1px solid #6844a1;
+  border: 1px solid #ffa64d;
   background-color: #fff;
   position: relative;
   top: -12px;
@@ -8523,7 +8534,7 @@ footer .footer--bottom h4 {
   }
 }
 .circle-etapas.circle-complete {
-  background-color: #372159;
+  background-color: #ff7f00;
   border: 0px;
 }
 .circle-etapas:nth-child(2) {

@@ -30,14 +30,14 @@
 .circle-pasos {
   width: 30px;height: 30px;
   color: @light;
-  background-color: @primary;
+  background-color: @secondary;
   line-height: 30px;
   @media (min-width: @screen-sm){
     width: 50px;height: 50px;
     line-height: 50px;
   }
  //Cuando el paso ha sido completado
-  &.circle-complete{ background-color: @primary--dark; }
+  &.circle-complete{ background-color: @secondary--dark; }
 }
 
 /*Medida estandar para los pasos de la ficha del trámite*/
@@ -49,7 +49,7 @@
 .circle-etapas {
   width: 7px;height: 7px;
   margin: -1px;
-  border: 1px solid @primary;
+  border: 1px solid @secondary;
   background-color: @light;
   position: relative;top: -12px;
   @media (min-width: @screen-sm){
@@ -59,7 +59,7 @@
   }
   //Cuando la etapa ha sido completado
   &.circle-complete{
-    background-color: @primary--dark;
+    background-color: @secondary--dark;
     border: 0px;
   }
 }
