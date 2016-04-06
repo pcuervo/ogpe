@@ -174,7 +174,7 @@ function getScrollY() {
     var sy = getScrollY();
     //Compare the two numbers, when they are the same or less
     //add fixed class to the header.
-    if ( sy >= headerHeight ) {
+    if ( sy >= headerHeight - 30 ) {
         $('.btn-accesibilidad').addClass('scrolled');
     } else {
         $('.btn-accesibilidad').removeClass('scrolled');
