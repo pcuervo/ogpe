@@ -1632,6 +1632,14 @@ address {
     font-size: 19px;
   }
 }
+.text--xlarge {
+  font-size: 19px;
+}
+@media (min-width: 768px) {
+  .text--xlarge {
+    font-size: 21px;
+  }
+}
 a {
   cursor: pointer;
   color: #6844a1;
@@ -8333,7 +8341,7 @@ header .topic-menu {
   min-width: 250px;
   display: none;
   position: absolute;
-  top: 71px;
+  top: 60px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 .dropdown--content a {
