@@ -32,36 +32,80 @@ function toggleTwitter(){
 
 //checkbox pus
 
-$('#agricola').change(function(){
+$('.js-operacion-agricola').change(function(){
     if(this.checked){
-        $('.more_options').fadeIn('slow');
-        $('.more_options').addClass('show');
+        $('.js-usos-operacion-agricola').fadeIn('slow');
+        $('.js-usos-operacion-agricola').addClass('show');
     }
     else{
-        $('.more_options').fadeOut('slow');
-        $('.more_options').removeClass('show');
+        $('.js-usos-operacion-agricola').fadeOut('slow');
+        $('.js-usos-operacion-agricola').removeClass('show');
     }
 });
 
-$('#industrial').change(function(){
+$('.js-operacion-comercial').change(function(){
     if(this.checked){
-        $('.more_options2').fadeIn('slow');
-        $('.more_options2').addClass('show');
+        $('.js-usos-operacion-comercial').fadeIn('slow');
+        $('.js-usos-operacion-comercial').addClass('show');
     }
     else{
-        $('.more_options2').fadeOut('slow');
-        $('.more_options2').removeClass('show');
+        $('.js-usos-operacion-comercial').fadeOut('slow');
+        $('.js-usos-operacion-comercial').removeClass('show');
     }
 });
 
-$('#operacion').change(function(){
+$('.js-operacion-industrial').change(function(){
     if(this.checked){
-        $('.more_options').fadeIn('slow');
-        $('.more_options').addClass('show');
+        $('.js-usos-operacion-industrial').fadeIn('slow');
+        $('.js-usos-operacion-industrial').addClass('show');
     }
     else{
-        $('.more_options').fadeOut('slow');
-        $('.more_options').removeClass('show');
+        $('.js-usos-operacion-industrial').fadeOut('slow');
+        $('.js-usos-operacion-industrial').removeClass('show');
+    }
+});
+
+$('.js-operacion-institucional').change(function(){
+    if(this.checked){
+        $('.js-usos-operacion-institucional').fadeIn('slow');
+        $('.js-usos-operacion-institucional').addClass('show');
+    }
+    else{
+        $('.js-usos-operacion-institucional').fadeOut('slow');
+        $('.js-usos-operacion-institucional').removeClass('show');
+    }
+});
+
+$('.js-operacion-residencial').change(function(){
+    if(this.checked){
+        $('.js-usos-operacion-residencial').fadeIn('slow');
+        $('.js-usos-operacion-residencial').addClass('show');
+    }
+    else{
+        $('.js-usos-operacion-residencial').fadeOut('slow');
+        $('.js-usos-operacion-residencial').removeClass('show');
+    }
+});
+
+$('.js-operacion-telecomunicaciones').change(function(){
+    if(this.checked){
+        $('.js-usos-operacion-telecomunicaciones').fadeIn('slow');
+        $('.js-usos-operacion-telecomunicaciones').addClass('show');
+    }
+    else{
+        $('.js-usos-operacion-telecomunicaciones').fadeOut('slow');
+        $('.js-usos-operacion-telecomunicaciones').removeClass('show');
+    }
+});
+
+$('.js-operacion-turistico').change(function(){
+    if(this.checked){
+        $('.js-usos-operacion-turistico').fadeIn('slow');
+        $('.js-usos-operacion-turistico').addClass('show');
+    }
+    else{
+        $('.js-usos-operacion-turistico').fadeOut('slow');
+        $('.js-usos-operacion-turistico').removeClass('show');
     }
 });
 
