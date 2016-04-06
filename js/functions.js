@@ -10,6 +10,7 @@ $('#js-hide-nav').on('click', function(event){
     toggleTwitter();
 })
 
+
 function toggleTwitter(){
     if( $('.nav-mobile').hasClass('js-hidden') ){
         $( ".nav-mobile" ).animate({
@@ -180,3 +181,16 @@ function getScrollY() {
         $('.btn-accesibilidad').removeClass('scrolled');
     }
 }// toggleActionButtons
+
+function actionButtons(){
+    $('#incfont').click(function(){
+    curSize= parseInt($('.size-transform p, .size-transform a').css('font-size')) + 2;
+    if(curSize<=22)
+    $('.size-transform p, .size-transform a').css('font-size', curSize);
+    });
+    $('#decfont').click(function(){
+    curSize= parseInt($('.size-transform p, .size-transform a').css('font-size')) - 2;
+    if(curSize>=17)
+    $('.size-transform p, .size-transform a').css('font-size', curSize);
+    });
+}// actionButtons

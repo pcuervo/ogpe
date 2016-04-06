@@ -141,8 +141,8 @@
 				</div>
 				<!-- Botones accesibilidad A+ a- -->
 				<div class="[ btn--fixed btn-accesibilidad ]">
-					<button class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
-					<button class="[ btn btn-secondary ]">A-</button>
+					<button id="incfont" class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
+					<button id="decfont" class="[ btn btn-secondary ]">A-</button>
 				</div>
 			</div><!-- end container -->
 		</header>
@@ -224,7 +224,7 @@
 					</div>
 				</form>
 			</section>
-					<footer>
+			<footer>
 				<div class="[ footer--top ]">
 					<div class="[ container ]">
 						<div class="[ row ][ margin-bottom ][ text-center ]">
@@ -304,6 +304,7 @@
 				**/
 				footerBottom();
 				toggleButtonsScrolled();
+				actionButtons();
 				/**
 				 * Triggered events
 				**/

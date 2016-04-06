@@ -141,8 +141,8 @@
 				</div>
 				<!-- Botones accesibilidad A+ a- -->
 				<div class="[ btn--fixed btn-accesibilidad ]">
-					<button class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
-					<button class="[ btn btn-secondary ]">A-</button>
+					<button id="incfont" class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
+					<button id="decfont" class="[ btn btn-secondary ]">A-</button>
 				</div>
 			</div><!-- end container -->
 		</header>
@@ -368,6 +368,7 @@
 				**/
 				footerBottom();
 				toggleButtonsScrolled();
+				actionButtons();
 				/**
 				 * Triggered events
 				**/
