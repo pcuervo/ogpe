@@ -681,12 +681,14 @@
 				 * On ready
 				**/
 				footerBottom();
-
+				toggleButtonsScrolled();
 				/**
 				 * Triggered events
 				**/
 				$(window).resize(function () { footerBottom(); });
-
+				$( window ).scroll(function() {
+					toggleButtonsScrolled();
+				});
 			});
 		</script>
 	</body>

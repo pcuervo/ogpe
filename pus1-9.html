@@ -199,11 +199,10 @@
 							<label>Tipo(s) de operación que se darán a la propiedad:*</label>
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="agricola" type="checkbox" name="agricola" value="agricola" class="[ show_options ]">
+									<input id="agricola" type="checkbox" name="agricola" value="agricola" class="[ js-operacion-agricola ]">
 									<label class="[ inline-block ][ margin-bottom--small ]" for="agricola">agrícola</label>
 								</div>
-
-								<div class="[ more_options ][ hide ]">
+								<div class="[ js-usos-operacion-agricola ][ hide ]">
 									<div class="[ col-xs-12 col-sm-8 ]">
 										<div class="[ row ][ margin-bottom--large ]">
 											<div class="[ col-xs-12 col-sm-6 ]">
@@ -243,24 +242,59 @@
 										</div>
 									</div>
 								</div>
-
-							</div>
-
+							</div> <!--> /row </!-->
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="comercial" type="checkbox" name="comercial" value="comercial">
+									<input id="comercial" type="checkbox" name="comercial" value="comercial" class="[ js-operacion-comercial ]">
 									<label class="[ inline-block ][ margin-bottom--small ]" for="comercial">comercial</label>
 								</div>
-							</div>
+								<div class="[ js-usos-operacion-comercial ][ hide ]">
+									<div class="[ col-xs-12 col-sm-8 ]">
+										<div class="[ row ][ margin-bottom--large ]">
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
+											</div>
 
+											<div class="[ col-xs-12 ]">
+												<label>Seleccione los usos para operció comercial: *</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ][ margin-bottom ]">
+												<label><small>Disponibles</small></label>
+												<button class="[ btn btn-primary width-100 ][ btn-sm ]">Agregar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label><small>Seleccionados</small></label>
+												<button class="[ btn btn-delete width-100 ][ btn-sm ]">Eliminar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casa de patio</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!--> /row </!-->
 							<div class="[ row ]">
-
 								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="industrial" type="checkbox" name="industrial" value="industrial" class="[ show_options2 ]">
+									<input id="industrial" type="checkbox" name="industrial" value="industrial" class="[ js-operacion-industrial ]">
 									<label class="[ inline-block ][ margin-bottom--small ]" for="industrial">industrial</label>
 								</div>
-
-								<div class="[ more_options2 ][ hide ]">
+								<div class="[ js-usos-operacion-industrial ][ hide ]">
 									<div class="[ col-xs-12 col-sm-8 ]">
 										<div class="[ row ][ margin-bottom--large ]">
 											<div class="[ col-xs-12 col-sm-6 ]">
@@ -300,39 +334,192 @@
 										</div>
 									</div>
 								</div>
-
-							</div>
-
+							</div><!--> /row </!-->
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="institucional" type="checkbox" name="institucional" value="institucional">
+									<input id="institucional" type="checkbox" name="institucional" value="institucional" class="[ js-operacion-institucional ]">
 									<label class="[ inline-block ][ margin-bottom--small ]" for="institucional"> institucional </label>
 								</div>
-							</div>
+								<div class="[ js-usos-operacion-institucional ][ hide ]">
+									<div class="[ col-xs-12 col-sm-8 ]">
+										<div class="[ row ][ margin-bottom--large ]">
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
+											</div>
 
+											<div class="[ col-xs-12 ]">
+												<label>Seleccione los usos para operción institucional: *</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ][ margin-bottom ]">
+												<label><small>Disponibles</small></label>
+												<button class="[ btn btn-primary width-100 ][ btn-sm ]">Agregar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label><small>Seleccionados</small></label>
+												<button class="[ btn btn-delete width-100 ][ btn-sm ]">Eliminar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casa de patio</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!--> /row </!-->
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="residencial" type="checkbox" name="residencial" value="residencial">
+									<input id="residencial" type="checkbox" name="residencial" value="residencial" class="[ js-operacion-residencial ]">
 									<label class="[ inline-block ][ margin-bottom--small ]" for="residencial">residencial</label>
 								</div>
-							</div>
+								<div class="[ js-usos-operacion-residencial ][ hide ]">
+									<div class="[ col-xs-12 col-sm-8 ]">
+										<div class="[ row ][ margin-bottom--large ]">
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
+											</div>
 
+											<div class="[ col-xs-12 ]">
+												<label>Seleccione los usos para operción residencial: *</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ][ margin-bottom ]">
+												<label><small>Disponibles</small></label>
+												<button class="[ btn btn-primary width-100 ][ btn-sm ]">Agregar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label><small>Seleccionados</small></label>
+												<button class="[ btn btn-delete width-100 ][ btn-sm ]">Eliminar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casa de patio</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!--> /row </!-->
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="telecomunicaciones" type="checkbox" name="telecomunicaciones" value="telecomunicaciones">
+									<input id="telecomunicaciones" type="checkbox" name="telecomunicaciones" value="telecomunicaciones" class="[ js-operacion-telecomunicaciones ]">
 									<label class="[ inline-block ][ margin-bottom--small ]" for="telecomunicaciones">telecomunicaciones</label>
 								</div>
-							</div>
+								<div class="[ js-usos-operacion-telecomunicaciones ][ hide ]">
+									<div class="[ col-xs-12 col-sm-8 ]">
+										<div class="[ row ][ margin-bottom--large ]">
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
+											</div>
 
+											<div class="[ col-xs-12 ]">
+												<label>Seleccione los usos para operción industrial: *</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ][ margin-bottom ]">
+												<label><small>Disponibles</small></label>
+												<button class="[ btn btn-primary width-100 ][ btn-sm ]">Agregar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label><small>Seleccionados</small></label>
+												<button class="[ btn btn-delete width-100 ][ btn-sm ]">Eliminar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casa de patio</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!--> /row </!-->
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-2 ]">
-									<input id="turistico" type="checkbox" name="turistico" value="turistico">
+									<input id="turistico" type="checkbox" name="turistico" value="turistico" class="[ js-operacion-turistico ]">
 									<label class="[ inline-block ][ margin-bottom--small ]" for="turistico">turístico</label>
 								</div>
-							</div>
+								<div class="[ js-usos-operacion-turistico ][ hide ]">
+									<div class="[ col-xs-12 col-sm-8 ]">
+										<div class="[ row ][ margin-bottom--large ]">
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label class="[ inline-block ][ margin-bottom--small ]" for="pisos">Pisos de la estructura que utilizara el tipo seleccionado</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<input class="[ form-control ]" id="pisos" name="pisos" type="text" placeholder="ej. piso 1, 2">
+											</div>
 
-						</div>
-
+											<div class="[ col-xs-12 ]">
+												<label>Seleccione los usos para operción turístico: *</label>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ][ margin-bottom ]">
+												<label><small>Disponibles</small></label>
+												<button class="[ btn btn-primary width-100 ][ btn-sm ]">Agregar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+													<p>casas de apartamentos</p>
+													<p>casa en hilera</p>
+													<p>casa de patio</p>
+													<p>condohotel</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+											<div class="[ col-xs-12 col-sm-6 ]">
+												<label><small>Seleccionados</small></label>
+												<button class="[ btn btn-delete width-100 ][ btn-sm ]">Eliminar</button>
+												<div class="[ height-120 ][ overflow-scroll ][ border-bottom--primary ]">
+													<p>casa de patio</p>
+													<p>vivienda</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!--> /row </!-->
+						</div><!--> /formgroup </!-->
 					</article>
 					<article>
 						<div class="[ row ]">
