@@ -3462,6 +3462,7 @@ input[type="radio"]:disabled + label::before {
 }
 button {
   border: transparent;
+  background-color: #fff;
 }
 .btn {
   border-color: transparent;
