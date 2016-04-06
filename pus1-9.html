@@ -619,14 +619,16 @@
 				 * On ready
 				**/
 				footerBottom();
+				toggleButtonsScrolled();
 
 				/**
 				 * Triggered events
 				**/
 				$(window).resize(function () { footerBottom(); });
-
 				showMoreOptions();
-
+				$( window ).scroll(function() {
+					toggleButtonsScrolled();
+				});
 			});
 
 		</script>
