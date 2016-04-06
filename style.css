@@ -3460,6 +3460,9 @@ input[type="radio"]:disabled + label::before {
 .input-search.input-search--small .icon-search {
   top: -1px;
 }
+button {
+  border: transparent;
+}
 .btn {
   border-color: transparent;
   text-transform: lowercase;
