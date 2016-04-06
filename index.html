@@ -123,6 +123,11 @@
 						</a>
 					</div>
 				</div>
+				<!-- Botones accesibilidad A+ a- -->
+				<div class="[ btn--fixed btn-accesibilidad ]">
+					<button class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
+					<button class="[ btn btn-secondary ]">A-</button>
+				</div>
 			</div><!-- end container -->
 		</header>
 
@@ -478,13 +483,18 @@
 				 * On ready
 				**/
 				footerBottom();
-
+				toggleHeaderScrolled();
+				toggleButtonsScrolled();
 				$('.marquee').marquee();
 				/**
 				 * Triggered events
 				**/
 				$(window).resize(function () { footerBottom(); });
 
+				$( window ).scroll(function() {
+					toggleHeaderScrolled();
+					toggleButtonsScrolled();
+				});
 			});
 		</script>
 	</body>
