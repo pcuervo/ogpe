@@ -4585,7 +4585,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: 2px;
   line-height: 1.55;
   border-radius: 4px 4px 0 0;
-  background-color: #6844a1;
+  background-color: #ffa64d;
   color: #fff;
   text-align: center;
 }
@@ -4597,14 +4597,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .nav-tabs > li > a:hover {
-  background: #54358e;
+  background: #f28920;
   color: #fff;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #fff;
-  background-color: #372159;
+  background-color: #ff7f00;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -7995,6 +7995,9 @@ hr {
 .border-bottom--primary--large {
   border-bottom: 3px solid #6844a1;
 }
+.border-bottom--secondary--large {
+  border-bottom: 3px solid #ffa64d;
+}
 .border-top-bottom--gray {
   border-top: 1px solid #5b616a;
   border-bottom: 1px solid #5b616a;
@@ -8266,14 +8269,15 @@ hr {
   height: 20px;
 }
 header {
-  height: 60px;
+  height: 55px;
   margin-bottom: 20px;
   background-color: #6844a1;
+  border-bottom: 5px solid #ffa64d;
   color: #fff;
 }
 @media (min-width: 768px) {
   header {
-    height: 72px;
+    height: 67px;
     margin-bottom: 40px;
   }
 }
