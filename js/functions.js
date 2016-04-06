@@ -10,6 +10,7 @@ $('#js-hide-nav').on('click', function(event){
     toggleTwitter();
 })
 
+
 function toggleTwitter(){
     if( $('.nav-mobile').hasClass('js-hidden') ){
         $( ".nav-mobile" ).animate({
