@@ -4001,7 +4001,6 @@ input[type="button"].btn-block {
   z-index: 1000;
 }
 .btn-accesibilidad {
-  bottom: 20px;
   right: 15px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;

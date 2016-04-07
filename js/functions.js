@@ -163,6 +163,7 @@ function getScrollY() {
 }// toggleActionButtons
 
 
+
 /**
  * Toggle action buttons
  */
@@ -175,11 +176,20 @@ function getScrollY() {
     var sy = getScrollY();
     //Compare the two numbers, when they are the same or less
     //add fixed class to the header.
-    if ( sy >= headerHeight - 30 ) {
-        $('.btn-accesibilidad').addClass('scrolled');
-    } else {
-        $('.btn-accesibilidad').removeClass('scrolled');
+
+    if(  sy >= headerHeight ){
+        $( ".btn-accesibilidad" ).animate({
+        top: "20"
+    }, 50);
+        return;
+    }else {
+        $( ".btn-accesibilidad" ).animate({
+            top: "64"
+        }, 50);
     }
+
+
+
 }// toggleActionButtons
 
 function actionButtons(){
