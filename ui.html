@@ -60,32 +60,49 @@
 				</h1>
 			<!-- desktop menu -->
 				<nav class="[ hidden-xs ][ pull-right ]">
-					<div class="[ menu-desktop ][ pull-right ]">
-						<div class="[ dropdown--hover ]">
-							<p><span class="[ icon--iconed icon-search ]"></span>Búsquedas</p>
-							<div class="[ dropdown--content ]">
-								<div class="[ relative ][ z-index--100 ][ bg-light ]">
-									<a href="busqueda-tramites.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites</a>
-									<a href="busqueda-credenciales.html" class="[ flex ]"><span class="[ icon--iconed icon-search ]"></span><span>Búsqueda de Profesional Autorizado</span></a>
-									<a href="busqueda-permisos.html"><span class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos</a>
-									<a href="pago-multa.html"><span class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas</a>
-								</div>
+					<div class="[ menu-desktop ][ pull-right ][ margin-top--xsmall ]">
+						<div class="[ dropdown ][ inline-block ]">
+							<button class="[ dropdown-toggle ][ padding--sides padding--top-bottom--small ]" type="button" data-toggle="dropdown">
+								<span class="[ icon--iconed icon-search ]"></span>Búsquedas
+								<span class="caret"></span>
+							</button>
+							<div class="[ dropdown-menu ]">
+								<a href="busqueda-tramites.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites
+								</a>
+								<a href="busqueda-credenciales.html" class="[ flex ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-search ]"></span>Búsqueda de Profesional Autorizado
+								</a>
+								<a href="busqueda-permisos.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos
+								</a>
+								<a href="pago-multa.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas
+								</a>
 							</div>
 						</div>
-						<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ]">
-							<span class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
-						</a>
-						<div class="[ dropdown--hover ]">
-							<p><span class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil</p>
-							<div class="[ dropdown--content ]">
-								<div class="[ relative ][ z-index--100 ][ bg-light ]">
-									<a href="mi-perfil.html"><span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil</a>
-									<a href=""><span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout</a>
-								</div>
+						<div class="[ inline-block ]">
+							<a href="mi-bandeja.html" class="[ color-light ][ topic-menu ][ padding--sides padding--top-bottom--small ][ block ]">
+								<span class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
+							</a>
+						</div>
+						<div class="[ dropdown ][ inline-block ]">
+							<button class="[ dropdown-toggle ][ padding--sides padding--top-bottom--small ]" type="button" data-toggle="dropdown">
+								<span class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil
+								<span class="caret"></span>
+							</button>
+							<div class="[ dropdown-menu ]">
+								<a href="mi-perfil.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil
+								</a>
+								<a href="" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+								</a>
 							</div>
 						</div>
 					</div>
 				</nav>
+
 				<!-- mobile menu -->
 				<div class="[ visible-xs ][ pull-right ][ btn-nav ]">
 					<div id="js-btn-nav">
@@ -121,6 +138,11 @@
 							<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
 						</a>
 					</div>
+				</div>
+				<!-- Botones accesibilidad A+ a- -->
+				<div class="[ hidden-xs ][ btn--fixed btn-accesibilidad right-30 ]">
+					<button id="incfont" class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
+					<button id="decfont" class="[ btn btn-secondary ]">A-</button>
 				</div>
 			</div><!-- end container -->
 		</header>
@@ -275,7 +297,7 @@
 								</div>
 								<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
 									<div class="[ col-xs-12 col-sm-3 ]">
-										<a data-toggle="collapse" data-target="#ver-mas1" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+										<button data-toggle="collapse" data-target="#ver-mas1" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</button>
 										<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
 										<p>prev</p>
 									</div>
@@ -292,7 +314,7 @@
 								</div>
 								<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
 									<div class="[ col-xs-12 col-sm-3 ]">
-										<a data-toggle="collapse" data-target="#ver-mas2" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+										<button data-toggle="collapse" data-target="#ver-mas2" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</button>
 										<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
 										<p>pr</p>
 									</div>
@@ -309,7 +331,7 @@
 								</div>
 								<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
 									<div class="[ col-xs-12 col-sm-3 ]">
-										<a data-toggle="collapse" data-target="#ver-mas3" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+										<button data-toggle="collapse" data-target="#ver-mas3" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</button>
 										<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
 										<p>prev</p>
 									</div>
@@ -326,7 +348,7 @@
 								</div>
 								<div class="[ row ][ border-bottom--gray ][ margin-bottom--small ]">
 									<div class="[ col-xs-12 col-sm-3 ]">
-										<a data-toggle="collapse" data-target="#ver-mas4" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</a>
+										<button data-toggle="collapse" data-target="#ver-mas4" class="[ link--primary underline ][ text-right ][ pull-right ][ visible-xs ]">ver más</button>
 										<p class="[ visible-xs ]"><strong>Nombre del proyecto</strong></p>
 										<p>pr</p>
 									</div>
@@ -346,19 +368,19 @@
 							<h6 class="[ border-bottom--secondary ]">Accordions</h6>
 							<p class="[ subtitle ]">Borderless accordion</p>
 							<div>
-								<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas1" aria-expanded="false">Consultas 1</a>
+								<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas1" aria-expanded="false">Consultas 1</button>
 								<div class="collapse" id="consultas1">
 									<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
 								</div>
-								<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas2" aria-expanded="false">Consultas 2</a>
+								<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas2" aria-expanded="false">Consultas 2</button>
 								<div class="collapse" id="consultas2">
 									<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
 								</div>
-								<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas3" aria-expanded="false">Consultas 3</a>
+								<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas3" aria-expanded="false">Consultas 3</button>
 								<div class="collapse" id="consultas3">
 									<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
 								</div>
-								<a class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas4" aria-expanded="false">Consultas 4</a>
+								<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#consultas4" aria-expanded="false">Consultas 4</button>
 								<div class="collapse" id="consultas4">
 									<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
 								</div>
