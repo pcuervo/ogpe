@@ -1082,10 +1082,10 @@ body {
   height: 100%;
 }
 .main {
-  min-height: -moz-calc(100% - 60px);
-  min-height: -o-calc(100% - 60px);
-  min-height: -webkit-calc(100% - 60px);
-  min-height: calc(100% - 60px);
+  min-height: -moz-calc(100% - 107px);
+  min-height: -o-calc(100% - 107px);
+  min-height: -webkit-calc(100% - 107px);
+  min-height: calc(100% - 107px);
   position: relative;
 }
 section,
