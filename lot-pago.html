@@ -282,14 +282,14 @@
 							</div>
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
-									<label for="">Tarjeta de Crédito:</label>
+									<p>Tarjeta de Crédito:</p>
 									<div class="[ row ][ text-center ]">
-										<div class="[ col-xs-6 ]">
-											<input class="[ align-top ]" id="visa" type="radio" checked="" name="soup" value="pea">
+										<div class="[ col-xs-6 ][ form-group ]">
+											<input class="[ align-top ]" id="visa" type="radio" checked="" name="target">
 											<label for="visa"><div class="[ bg-image img--visa ][ inline-block ]" ></div></label>
 										</div>
-										<div class="[ col-xs-6 ]">
-											<input id="mastercard" type="radio" name="soup" value="pea">
+										<div class="[ col-xs-6 ][ form-group ]">
+											<input id="mastercard" type="radio" name="target">
 											<label for="mastercard" ><div class="[ bg-image img--mastercard ][ inline-block ]"></div></label>
 										</div>
 									</div>
@@ -299,9 +299,9 @@
 						<article>
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
-									<label for="nombe_tarjeta">Nombre de la Tarjeta: *</label>
+									<label for="nombre_tarjeta">Nombre de la Tarjeta: *</label>
 									<input class="[ form-control ]" id="nombre_tarjeta" name="nombre_tarjeta" type="text">
-									<label for="numero_tarjerta">Numero de trajeta: *</label>
+									<label for="numero_tarjeta">Numero de trajeta: *</label>
 									<input class="[ form-control ]" id="numero_tarjeta" name="numero_tarjeta" type="text">
 									<label for="expiracion">Fecha de Expiracion: *</label>
 									<div class="[ row ]">
@@ -323,7 +323,7 @@
 											</select>
 										</div>
 										<div class="[ col-xs-6 ]">
-											<select id="" name="" class="[ form-control ][ arrow ]">
+											<select aria-label="año" class="[ form-control ][ arrow ]">
 												<option value="">2016</option>
 												<option value="1">2017</option>
 												<option value="2">2018</option>
@@ -338,12 +338,12 @@
 
 								</div>
 								<div class="[ col-xs-12 col-sm-4 ]">
-									<label for="">Dirección: *</label>
+									<label for="direccion_pago">Dirección: *</label>
 									<input class="[ form-control ]" id="direccion_pago" name="direccion_pago" type="text">
 									<div class="[ row ]">
 										<div class="[ col-xs-6 ]">
-											<label for="">Ciudad: *</label>
-											<input class="[ form-control ]" type="text">
+											<label for="ciudad">Ciudad: *</label>
+											<input id="ciudad" name="ciudad" class="[ form-control ]" type="text">
 										</div>
 										<div class="[ col-xs-6 ]">
 											<label for="estado">Estado: *</label>

@@ -168,8 +168,8 @@
 										<p class="[ text--small ][ color-danger ][ margin-bottom ]"><strong>**Recuerde que el mismo debe ser un correo electrónico válido y funcional**</strong></p>
 									</div>
 									<div class="[ form-group ]">
-										<label for="">Ingrese la razón del cambio:*</label>
-										<textarea class="[ form-control ]" rows="3"></textarea>
+										<label for="razon_cambio">Ingrese la razón del cambio:*</label>
+										<textarea id="razon_cambio" name="razon_cambio" class="[ form-control ]" rows="3"></textarea>
 									</div>
 									<div class="[ text-center ][ margin-top-bottom ]">
 										<button type="submit" class="[ btn btn-primary width-100 ][ padding--sides--large ]">Guardar nuevo usuario</button>
@@ -270,8 +270,8 @@
 								<form role="form">
 									<div class="[ row ]">
 										<div class="[ form-group ][ col-xs-8 col-sm-3 ]">
-											<label for="nombre"><span class="[ color-primary ]">*</span>Nombre</label>
-											<input type="text" class="form-control " id="nombre">
+											<label for="nombre_1"><span class="[ color-primary ]">*</span>Nombre</label>
+											<input type="text" class="form-control " id="nombre_1">
 										</div>
 										<div class="[ form-group ][ col-xs-4 col-sm-1 ][ no-padding--left ]">
 											<label for="inicial">Inicial</label>
@@ -289,18 +289,18 @@
 									<div class="[ form-group ]">
 										<div class="[ row ]">
 											<div class="[ col-xs-12 ]">
-												<label for="nombre"><span class="[ color-primary ]">*</span>Dirección</label>
+												<label for="direccion"><span class="[ color-primary ]">*</span>Dirección</label>
 											</div>
 											<div class="[ col-xs-8 col-sm-3 ]">
-												<input type="text" class="form-control" placeholder="Calle">
+												<input id="direccion" name="direccion" type="text" class="form-control" placeholder="Calle">
 											</div>
 											<div class="[ col-xs-4 col-sm-1 ][ no-padding--left ]">
-												<input type="text" class="form-control" placeholder="ZIP">
+												<input aria-label="zip" type="text" class="form-control" placeholder="ZIP">
 											</div>
 										</div>
 										<div class="[ row ]">
 											<div class="[ col-xs-12 col-sm-4  ]">
-												<select id="" name="" class="[ form-control ][ arrow ]">
+												<select aria-label="municipio" class="[ form-control ][ arrow ]">
 													<option value="">Municipio</option>
 													<option value="">Adjuntas</option>
 													<option value="">Aguada</option>
@@ -384,35 +384,35 @@
 												</select>
 											</div>
 											<div class="[ col-xs-6 col-sm-4 ]">
-												<select  id="" name="" class="[ form-control ][ arrow ]">
-													<option value="">Estado</option>
+												<select  aria-label="estado" class="[ form-control ][ arrow ]">
+													<option value="estado">Estado</option>
 												</select>
 											</div>
 											<div class="[ col-xs-6 col-sm-4 ]">
-												<select id="" name="" class="[ form-control ][ arrow ]">
-													<option value="">País</option>
+												<select aria-label="pais" class="[ form-control ][ arrow ]">
+													<option value="pais">País</option>
 												</select>
 											</div>
 										</div>
 										<div class="[ form-group ][ margin-top ]">
 											<div class="[ row ]">
 												<div class="[ col-xs-12 col-sm-4 ]">
-													<label for="">Télefono Primario</label>
-													<input type="text" class="form-control">
+													<label for="telefono_primario">Télefono Primario</label>
+													<input id="telefono_primario" name="telefono_primario" type="text" class="form-control">
 												</div>
 												<div class="[ col-xs-12 col-sm-4 ]">
-													<label for="">Télefono Secundario</label>
-													<input type="text" class="form-control">
+													<label for="telefono_secundario">Télefono Secundario</label>
+													<input id="telefono_secundario" name="telefono_secundario" type="text" class="form-control">
 												</div>
 												<div class="[ col-xs-12 col-sm-4 ]">
-													<label for="">Fax</label>
-													<input type="text" class="form-control">
+													<label for="fax">Fax</label>
+													<input id="fax" name="fax" type="text" class="form-control">
 												</div>
 											</div>
 											<div class="[ row ]">
 												<div class="[ col-xs-12 col-sm-4 ]">
-													<label for="">Correo electronico secundario</label>
-													<input type="text" class="form-control">
+													<label for="correo_electronico">Correo electronico secundario</label>
+													<input id="correo_electronico" name="correo_electronico" type="text" class="form-control">
 												</div>
 											</div>
 										</div>

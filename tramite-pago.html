@@ -265,24 +265,24 @@
 						<article>
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
-									<label for="">Seleccione el metodo de pago:</label>
-									<select id="" name="" class="[ form-control ][ arrow ]">
-										<option value="1">Forma de Pago *</option>
-										<option value="2">Tarjeta de Crédito</option>
-										<option value="3">Débito Directo (ACH)</option>
+									<label for="metodo_pago">Seleccione el metodo de pago:</label>
+									<select id="metodo_pago" name="metodo_pago" class="[ form-control ][ arrow ]">
+										<option value="">Forma de Pago *</option>
+										<option value="">Tarjeta de Crédito</option>
+										<option value="">Débito Directo (ACH)</option>
 									</select>
 								</div>
 							</div>
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
-									<label for="">Tarjeta de Crédito:</label>
+									<p>Tarjeta de Crédito:</p>
 									<div class="[ row ][ text-center ]">
-										<div class="[ col-xs-6 ]">
-											<input class="[ align-top ]" id="visa" type="radio" checked="" name="soup" value="pea">
+										<div class="[ col-xs-6 ][ form-group ]">
+											<input class="[ align-top ]" id="visa" type="radio" checked="" name="target">
 											<label for="visa"><div class="[ bg-image img--visa ][ inline-block ]" ></div></label>
 										</div>
-										<div class="[ col-xs-6 ]">
-											<input id="mastercard" type="radio" name="soup" value="pea">
+										<div class="[ col-xs-6 ][ form-group ]">
+											<input id="mastercard" type="radio" name="target">
 											<label for="mastercard" ><div class="[ bg-image img--mastercard ][ inline-block ]"></div></label>
 										</div>
 									</div>
@@ -292,15 +292,15 @@
 						<article>
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
-									<label for="nombe_tarjeta">Nombre de la Tarjeta: *</label>
+									<label for="nombre_tarjeta">Nombre de la Tarjeta: *</label>
 									<input class="[ form-control ]" id="nombre_tarjeta" name="nombre_tarjeta" type="text">
-									<label for="numero_tarjerta">Numero de trajeta: *</label>
+									<label for="numero_tarjeta">Numero de trajeta: *</label>
 									<input class="[ form-control ]" id="numero_tarjeta" name="numero_tarjeta" type="text">
-									<label for="">Fecha de Expiracion: *</label>
+									<label for="expiracion">Fecha de Expiracion: *</label>
 									<div class="[ row ]">
 										<div class="[ col-xs-6 ]">
-											<select id="" name="" class="[ form-control ][ arrow ]">
-												<option value="0">Seleccione uno</option>
+											<select id="expiracion" name="expiracion" class="[ form-control ][ arrow ]">
+												<option value="">Seleccione uno</option>
 												<option value="1">Enero</option>
 												<option value="2">Febrero</option>
 												<option value="3">Marzo</option>
@@ -316,8 +316,8 @@
 											</select>
 										</div>
 										<div class="[ col-xs-6 ]">
-											<select id="" name="" class="[ form-control ][ arrow ]">
-												<option value="0">2016</option>
+											<select aria-label="año" class="[ form-control ][ arrow ]">
+												<option value="">2016</option>
 												<option value="1">2017</option>
 												<option value="2">2018</option>
 												<option value="3">2019</option>
@@ -331,16 +331,17 @@
 
 								</div>
 								<div class="[ col-xs-12 col-sm-4 ]">
-									<label for="">Dirección: *</label>
+									<label for="direccion_pago">Dirección: *</label>
 									<input class="[ form-control ]" id="direccion_pago" name="direccion_pago" type="text">
 									<div class="[ row ]">
 										<div class="[ col-xs-6 ]">
-											<label for="">Ciudad: *</label>
-											<input class="[ form-control ]" type="text">
+											<label for="ciudad">Ciudad: *</label>
+											<input id="ciudad" name="ciudad" class="[ form-control ]" type="text">
 										</div>
 										<div class="[ col-xs-6 ]">
-											<label for="">Estado: *</label>
-											<select id="" name="" class="[ form-control ][ arrow ]">
+											<label for="estado">Estado: *</label>
+											<select id="estado" name="estado" class="[ form-control ][ arrow ]">
+												<option value="">Puerto Rico</option>
 												<option value="1">Puerto Rico</option>
 												<option value="2">Puerto Rico</option>
 												<option value="3">Puerto Rico</option>
@@ -349,8 +350,9 @@
 											</select>
 										</div>
 										<div class="[ col-xs-6 ]">
-											<label for="">País: *</label>
-											<select id="" name="" class="[ form-control ][ arrow ]">
+											<label for="pais">País: *</label>
+											<select id="pais" name="pais" class="[ form-control ][ arrow ]">
+												<option value="">Puerto Rico</option>
 												<option value="1">Estados Unidos</option>
 												<option value="2">Estados Unidos</option>
 												<option value="3">Estados Unidos</option>
@@ -359,12 +361,12 @@
 											</select>
 										</div>
 										<div class="[ col-xs-6 ]">
-											<label for="">Código Postal: *</label>
-											<input class="[ form-control ]" type="text">
+											<label for="codigo_postal">Código Postal: *</label>
+											<input id="codigo_postal" name="codigo_postal" class="[ form-control ]" type="text">
 										</div>
 									</div>
-									<label for="">Télefono: *</label>
-									<input class="[ form-control ]" type="text">
+									<label for="telefono">Teléfono: *</label>
+									<input id="telefono" name="telefono" class="[ form-control ]" type="text">
 								</div>
 							</div>
 						</article>
@@ -376,17 +378,15 @@
 								</div>
 							</div>
 						</article>
+						<article class="[ row ][ text-center ]">
+							<div class="[ col-xs-6 col-sm-2 col-sm-offset-4 ]">
+								<a href="" class="[ btn btn-primary ][ margin-bottom ]">cancelar</a>
+							</div>
+							<div class="[ col-xs-6 col-sm-2 ]">
+								<button class="[ btn btn-primary ][ margin-bottom ]">pagar</button>
+							</div>
+						</article>
 					</form>
-				</section>
-				<section class="[ container ]">
-					<div class="[ row ][ text-center ]">
-						<div class="[ col-xs-6 col-sm-2 col-sm-offset-4 ]">
-							<a href="mi-bandeja.html" class="[ btn btn-primary ][ margin-bottom ]">cancelar</a>
-						</div>
-						<div class="[ col-xs-6 col-sm-2 ]">
-							<a href="" class="[ btn btn-primary ][ margin-bottom ]">continuar</a>
-						</div>
-					</div>
 				</section>
 			</div>
 			<footer>
