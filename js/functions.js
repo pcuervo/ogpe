@@ -184,13 +184,13 @@ function getScrollY() {
 
 function actionButtons(){
     $('#incfont').click(function(){
-    curSize= parseInt($('.size-transform *').css('font-size')) + 2;
-    if(curSize<=22)
-    $('.size-transform *').css('font-size', curSize);
+    curSize= parseInt($('.size-transform *').not('h1, h2, h3, .size-static *, .icon').css('font-size')) + 2;
+    if(curSize<=23)
+    $('.size-transform *').not('h1, h2, h3, .size-static *, .icon').css('font-size', curSize);
     });
     $('#decfont').click(function(){
-    curSize= parseInt($('.size-transform *').css('font-size')) - 2;
+    curSize= parseInt($('.size-transform *').not('h1, h2, h3, .size-static *, .icon').css('font-size')) - 2;
     if(curSize>=17)
-    $('.size-transform *').css('font-size', curSize);
+    $('.size-transform *').not('h1, h2, h3, .size-static *, .icon').css('font-size', curSize);
     });
 }// actionButtons

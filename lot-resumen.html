@@ -140,33 +140,33 @@
 					</div>
 				</div>
 				<!-- Botones accesibilidad A+ a- -->
-				<div class="[ btn--fixed btn-accesibilidad ]">
+				<div class="[ hidden-xs ][ btn--fixed btn-accesibilidad ]">
 					<button id="incfont" class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
 					<button id="decfont" class="[ btn btn-secondary ]">A-</button>
 				</div>
 			</div><!-- end container -->
 		</header>
 		<div class="[ main ]">
-			<div class="[ size-transform ]">
-				<div class="[ text-center ][ margin-bottom--small ]">
-					<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
-					<div class="[ inline-block align-middle ][ border-top--secondary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
-						<span class="[ circle-proceso ]"></span>
-						<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
-						<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
-					</div>
-					<span class="[ circle-proceso circle-pasos ][ circle-complete ]">2</span>
-					<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
-					<span class="[ circle-proceso circle-pasos ][ circle-complete ]">3</span>
-					<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
-					<span class="[ circle-proceso circle-pasos ]">4</span>
-					<div class="[ block-text--medium margin-top-bottom-auto ]">
-						<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-left ]">Datos de la solicitud</p>
-						<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Anexo</p>
-						<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Resumen del trámite</p>
-						<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-right ]">Pago del trámite</p>
-					</div>
+			<div class="[ text-center ][ margin-bottom--small ]">
+				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">1</span>
+				<div class="[ inline-block align-middle ][ border-top--secondary ][ relative top--10 ][ line-etapas line-etapas--medium-b ]">
+					<span class="[ circle-proceso ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
+					<span class="[ circle-proceso circle-etapas ][ circle-complete ]"></span>
 				</div>
+				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">2</span>
+				<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
+				<span class="[ circle-proceso circle-pasos ][ circle-complete ]">3</span>
+				<div class="[ inline-block align-middle ][ border-top--secondary ][ line-etapas line-etapas--medium-a ]"></div>
+				<span class="[ circle-proceso circle-pasos ]">4</span>
+				<div class="[ block-text--medium margin-top-bottom-auto ]">
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-left ]">Datos de la solicitud</p>
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Anexo</p>
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ]">Resumen del trámite</p>
+					<p class="[ inline-block align-top ][ width-24 ][ text--small ][ text-right ]">Pago del trámite</p>
+				</div>
+			</div>
+			<div class="[ size-transform ]">
 				<section class="[ container ]">
 					<h1 class="[ h2 ][ margin-bottom ]">PEX - Permiso de exportación de materiales de la corteza terrestre</h1>
 					<div class="[ row ]">
@@ -602,6 +602,7 @@
 				footerBottom();
 				toggleHeaderScrolled();
 				toggleButtonsScrolled();
+				actionButtons();
 				/**
 				 * Triggered events
 				**/
