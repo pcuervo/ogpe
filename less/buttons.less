@@ -237,3 +237,37 @@ input[type="button"] {
   height: 50px;
   top: 20px;
 }
+
+.btn--check{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.6em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 0.8;
+    text-indent: 0.15em;
+    vertical-align: 0.2em;
+    background: white;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0 1px #757575;
+    content: '\a0';
+    &:hover, &:focus, &.active, &:active {
+        background-image: url('icons/check-1.png');
+        background-size: 12px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-color: #6844a1;
+        box-shadow: 0 0 0 1px #6844a1;
+    }
+}
+
+.btn--check--succes{
+    background-image: url('icons/check-1.png');
+    background-size: 12px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #6844a1;
+    box-shadow: 0 0 0 1px #6844a1;
+}
