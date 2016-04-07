@@ -162,8 +162,6 @@ function getScrollY() {
     }
 }// toggleActionButtons
 
-
-
 /**
  * Toggle action buttons
  */
@@ -180,12 +178,12 @@ function getScrollY() {
     if(  sy >= headerHeight ){
         $( ".btn-accesibilidad" ).animate({
         top: "20"
-        }, 250);
+        }, 300);
         return;
     }else {
         $( ".btn-accesibilidad" ).animate({
-            top: "64"
-        }, 250);
+            top: "125"
+        }, 300);
         return;
     }
 }// toggleActionButtons
