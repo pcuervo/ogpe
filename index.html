@@ -58,7 +58,7 @@
 						<h3 class="[ inline-block align-middle ][ color-light ][ no-margin ]">Super Sip</h3>
 					</a>
 				</h1>
-			<!-- desktop menu -->
+				<!-- desktop menu -->
 				<nav id="desktopnav" role="navigation" class="[ hidden-xs ][ pull-right ]">
 					<div class="[ menu-desktop ][ pull-right ][ margin-top--xsmall ]">
 						<div class="[ dropdown ][ inline-block ]">
@@ -99,6 +99,11 @@
 									<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
 								</a>
 							</div>
+						</div>
+						<!-- Botones accesibilidad A+ a- -->
+						<div class="[ hidden-xs ][ inline-block ][ relative bottom-6 ]">
+							<button id="incfont" class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
+							<button id="decfont" class="[ btn btn-secondary ]">A-</button>
 						</div>
 					</div>
 				</nav>
@@ -144,14 +149,8 @@
 			</div><!-- end container -->
 		</header>
 
-		<!-- Botones accesibilidad A+ a- -->
-		<div class="[ hidden-xs ][ btn--fixed btn-accesibilidad right-30 ]">
-			<button id="incfont" class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
-			<button id="decfont" class="[ btn btn-secondary ]">A-</button>
-		</div>
-
 		<div class="[ main ]">
-			<div class="[ size-transform ]">
+			<div class="[ size-transform clear-size ]">
 				<div class="[ marquee ][ relative ]" data-duration="10000">
 					<p class="[ inline-block ]"><a href="">Aviso del director ejecutivo</a></p> <!-- pdf -->
 					<p class="[ inline-block ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -502,7 +501,6 @@
 				**/
 				footerBottom();
 				toggleHeaderScrolled();
-				toggleButtonsScrolled();
 				actionButtons();
 				$('.marquee').marquee();
 				/**
@@ -512,7 +510,6 @@
 
 				$( window ).scroll(function() {
 					toggleHeaderScrolled();
-					toggleButtonsScrolled();
 				});
 			});
 		</script>

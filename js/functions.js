@@ -196,7 +196,7 @@ function actionButtons(){
     });
     $('#decfont').click(function(){
     curSize= parseInt($('.size-transform *').not('h1, h2, h3, .size-static *, .icon').css('font-size')) - 2;
-    if(curSize>=17)
+    if(curSize>=15)
     $('.size-transform *').not('h1, h2, h3, .size-static *, .icon').css('font-size', curSize);
     });
 }// actionButtons

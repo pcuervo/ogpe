@@ -1313,14 +1313,16 @@ h6,
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 a,
-p {
+p,
+.clear-size {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 0 10.5px;
   font-size: 15px;
 }
 @media (min-width: 768px) {
   a,
-  p {
+  p,
+  .clear-size {
     font-size: 17px;
   }
 }
@@ -7529,6 +7531,9 @@ button.close {
 }
 .bottom--15 {
   bottom: 15px;
+}
+.bottom-6 {
+  bottom: 6px;
 }
 .right-767 {
   right: -767px;
