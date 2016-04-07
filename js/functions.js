@@ -180,16 +180,14 @@ function getScrollY() {
     if(  sy >= headerHeight ){
         $( ".btn-accesibilidad" ).animate({
         top: "20"
-    }, 50);
+        }, 250);
         return;
     }else {
         $( ".btn-accesibilidad" ).animate({
             top: "64"
-        }, 50);
+        }, 250);
+        return;
     }
-
-
-
 }// toggleActionButtons
 
 function actionButtons(){
