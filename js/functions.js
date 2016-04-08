@@ -160,33 +160,7 @@ function getScrollY() {
     } else {
         $('.order_review').removeClass('scrolled');
     }
-}// toggleActionButtons
-
-/**
- * Toggle action buttons
- */
- function toggleButtonsScrolled(){
-
-    //Get the header height so we can now when
-    //to change the heade state
-    var headerHeight = getHeaderHeight();
-    //Scrolled pixels in Y axis
-    var sy = getScrollY();
-    //Compare the two numbers, when they are the same or less
-    //add fixed class to the header.
-
-    if(  sy >= headerHeight ){
-        $( ".btn-accesibilidad" ).animate({
-        top: "20"
-        }, 300);
-        return;
-    }else {
-        $( ".btn-accesibilidad" ).animate({
-            top: "125"
-        }, 300);
-        return;
-    }
-}// toggleActionButtons
+}// toggleHeaderScrolled
 
 function actionButtons(){
     $('#incfont').click(function(){

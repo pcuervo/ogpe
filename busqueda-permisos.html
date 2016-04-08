@@ -50,7 +50,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<header class="[ js-header ]">
+		<header class="[ js-header ][ affix ]">
 			<div class="[ container ]">
 				<h1 class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
@@ -58,8 +58,8 @@
 						<h3 class="[ inline-block align-middle ][ color-light ][ no-margin ]">Super Sip</h3>
 					</a>
 				</h1>
-			<!-- desktop menu -->
-				<nav class="[ hidden-xs ][ pull-right ]">
+				<!-- desktop menu -->
+				<nav id="desktopnav" role="navigation" class="[ hidden-xs ][ pull-right ]">
 					<div class="[ menu-desktop ][ pull-right ][ margin-top--xsmall ]">
 						<div class="[ dropdown ][ inline-block ]">
 							<button class="[ dropdown-toggle ][ padding--sides padding--top-bottom--small ]" type="button" data-toggle="dropdown">
@@ -100,49 +100,51 @@
 								</a>
 							</div>
 						</div>
+						<!-- Botones accesibilidad A+ a- -->
+						<div class="[ hidden-xs ][ inline-block ][ relative bottom-6 ]">
+							<button id="incfont" class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
+							<button id="decfont" class="[ btn btn-secondary ]">A-</button>
+						</div>
 					</div>
 				</nav>
 
 				<!-- mobile menu -->
-				<div class="[ visible-xs ][ pull-right ][ btn-nav ]">
-					<div id="js-btn-nav">
-							<span class="[ icon-menu-1 icon--iconed ][ color-light ]"></span>
+				<div id="mobilenav" role="navigation">
+					<div class="[ visible-xs ][ pull-right ][ btn-nav ]">
+						<div id="js-btn-nav">
+								<span class="[ icon-menu-1 icon--iconed ][ color-light ]"></span>
+						</div>
 					</div>
-				</div>
-				<!-- mobile menu content -->
-				<div class="[ js-hidden ][ nav-mobile right-767 ][ visible-xs ]">
-					<div id="js-hide-nav">
-						<span class="[ icon-close icon--iconed ][ color-primary ][ padding--top padding--right ][ block ][ pull-right ]"></span>
+					<!-- mobile menu content -->
+					<div class="[ js-hidden ][ nav-mobile right-767 ][ visible-xs ]">
+						<div id="js-hide-nav">
+							<span class="[ icon-close icon--iconed ][ color-primary ][ padding--top padding--right ][ block ][ pull-right ]"></span>
+						</div>
+						<div class="[ clearfix ]"></div>
+						<div class="[ menu-mobile ]">
+							<a href="mi-perfil.html">
+								<span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+							</a>
+							<a href="mi-bandeja.html">
+								<span class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+							</a>
+							<a href="busqueda-tramites.html">
+								<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
+							</a>
+							<a href="busqueda-credenciales.html" class="[ flex ]">
+								<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
+							</a>
+							<a href="busqueda-permisos.html">
+								<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
+							</a>
+							<a href="pago-multa.html">
+								<span class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+							</a>
+							<a href="salir">
+								<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+							</a>
+						</div>
 					</div>
-					<div class="[ clearfix ]"></div>
-					<div class="[ menu-mobile ]">
-						<a href="mi-perfil.html">
-							<span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
-						</a>
-						<a href="mi-bandeja.html">
-							<span class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
-						</a>
-						<a href="busqueda-tramites.html">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
-						</a>
-						<a href="busqueda-credenciales.html" class="[ flex ]">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
-						</a>
-						<a href="busqueda-permisos.html">
-							<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
-						</a>
-						<a href="pago-multa.html">
-							<span class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
-						</a>
-						<a href="salir">
-							<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
-						</a>
-					</div>
-				</div>
-				<!-- Botones accesibilidad A+ a- -->
-				<div class="[ hidden-xs ][ btn--fixed btn-accesibilidad right-30 ]">
-					<button id="incfont" class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
-					<button id="decfont" class="[ btn btn-secondary ]">A-</button>
 				</div>
 			</div><!-- end container -->
 		</header>
@@ -440,15 +442,11 @@
 				 * On ready
 				**/
 				footerBottom();
-				toggleButtonsScrolled();
 				actionButtons();
 				/**
 				 * Triggered events
 				**/
 				$(window).resize(function () { footerBottom(); });
-				$( window ).scroll(function() {
-					toggleButtonsScrolled();
-				});
 			});
 		</script>
 	</body>

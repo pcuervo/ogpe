@@ -3955,8 +3955,8 @@ input[type="button"].btn-block {
 }
 .btn-secondary {
   width: auto;
-  padding: 6px 12px;
-  font-size: 26px;
+  padding: 9px 16px;
+  font-size: 18px;
   line-height: 1.55;
   border-radius: 4px;
   color: #2c2c2c;
@@ -6766,7 +6766,7 @@ button.close {
 }
 .marquee {
   width: 100%;
-  padding-top: 12px;
+  padding-top: 125px;
   padding-bottom: 12px;
   position: relative;
   bottom: 20px;
@@ -8337,6 +8337,8 @@ hr {
 }
 header {
   height: 55px;
+  width: 100%;
+  z-index: 1000;
   margin-bottom: 20px;
   background-color: #6844a1;
   border-bottom: 5px solid #ffa64d;
