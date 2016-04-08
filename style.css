@@ -1082,11 +1082,11 @@ body {
   height: 100%;
 }
 .main {
-  /*El header es fijo por lo que ocupa 0px*/
-  min-height: -moz-calc(100% - 0px);
-  min-height: -o-calc(100% - 0px);
-  min-height: -webkit-calc(100% - 0px);
-  min-height: calc(100% - 0px);
+  /*El header es fijo por lo que main requiere top (height-header + margin)*/
+  min-height: -moz-calc(100% - 107px);
+  min-height: -o-calc(100% - 107px);
+  min-height: -webkit-calc(100% - 107px);
+  min-height: calc(100% - 107px);
   position: relative;
   top: 75px;
 }
@@ -6823,7 +6823,7 @@ button.close {
 }
 .order_review.scrolled {
   max-height: calc(100% - 40px);
-  top: 20px;
+  top: 90px;
 }
 .modal-open {
   overflow: hidden;
