@@ -6,13 +6,11 @@ header {
 	height: 55px;
 	width: 100%;
 	z-index: @zindex-navbar;
-	margin-bottom: (@margin-base);
 	background-color: @primary;
 	border-bottom: 5px solid @secondary;
 	color: @light;
 	@media (min-width: @screen-sm){
 		height: 67px;
-		margin-bottom: (@margin-base*2);
 	}
 
 	a, .dropdown--hover{ font-size: 18px; }
@@ -34,7 +32,12 @@ header {
 	}
 }
 
-.btn-nav{ padding: (@padding-small-vertical*2) (@padding-base-vertical*2); }
+.btn-nav{
+	padding: (@padding-small-vertical*2) (@padding-base-vertical*2);
+	position: absolute;
+	top: 0px;
+	right: 15px;
+}
 
 .logo-header{
 	padding-top: (@padding-base-vertical); padding-bottom: (@padding-base-vertical);
