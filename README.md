@@ -1,26 +1,3 @@
-
-```
-bootstrap/
-├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.css.map
-│   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
-│   ├── bootstrap-theme.css
-│   ├── bootstrap-theme.css.map
-│   ├── bootstrap-theme.min.css
-│   └── bootstrap-theme.min.css.map
-├── js/
-│   ├── bootstrap.js
-│   └── bootstrap.min.js
-└── fonts/
-    ├── glyphicons-halflings-regular.eot
-    ├── glyphicons-halflings-regular.svg
-    ├── glyphicons-halflings-regular.ttf
-    ├── glyphicons-halflings-regular.woff
-    └── glyphicons-halflings-regular.woff2
-```
-
 **Especificaciones del código**
 
 ## Creación De Trámites: Diagrama De Pasos Y Etapas
@@ -32,31 +9,13 @@ Los trámites tienen 4 pasos (círculos grandes):
 3. Resumen de trámite
 4. Pago del trámite
 
-El paso 1 (formulario) de los trámites más largos (ej. [ pus1-9.html ](http://pcuervo.com/ogpe/pus1-9.html)) se puede dividir en etapas (círculos pequeños). Puede haber de 0 a 9 etapas y para cada etapa es necesario imprimir:
-```html
-<span class="[ circle-proceso circle-etapas ]"></span>
-```
+El paso 1 (formulario) de los trámites más largos (ej. [ pus1-9.html ](http://pcuervo.com/ogpe/pus1-9.html)) se puede dividir en etapas (círculos pequeños). Puede haber de 0 a 9 etapas y para cada etapa es necesario imprimir: `<span class="[ circle-proceso circle-etapas ]"></span>`. El código: `<span class="[ circle-proceso ]"></span>` evita que la línea que contiene las etapas pierda su posición cuando no se ha dividido esté paso (0 etapas), por lo que siempre debe estar presente. Ejemplo:[ tramite-form.html ](http://pcuervo.com/ogpe/tramite-form.html).
 
-El código:
-```html
-<span class="[ circle-proceso ]"></span>
-```
-evita que la línea que contiene las etapas pierda su posición cuando no se ha dividido esté paso (0 etapas), por lo que siempre debe estar presente. Ejemplo:[ tramite-form.html ](http://pcuervo.com/ogpe/tramite-form.html).
-
-Por cada etapa que se avance del primer paso tiene que agregarse la clase **circle-complete** a
-```html
-<span class="[ circle-proceso circle-etapas ]"></span>
-```
-dando como resultado
-```html
-<span class="[ circle-proceso circle-etapas ] circle-complete "></span>
-```
-lo que rellenará el círculo correspondiente a la etapa que se ha completado (ej. [ pus2-9.html ](http://pcuervo.com/ogpe/pus2-9.html)).
+Por cada etapa que se avance del primer paso tiene que agregarse la clase **circle-complete** a `<span class="[ circle-proceso circle-etapas ]"></span>` dando como resultado `<span class="[ circle-proceso circle-etapas ] circle-complete "></span>` lo que rellenará el círculo correspondiente a la etapa que se ha completado (ej. [ pus2-9.html ](http://pcuervo.com/ogpe/pus2-9.html)).
 
 ## Creación De Proyecto: Diagrama De Pasos Y Etapas
 
-**Nota:** *Sólo hay un tipo de proyecto por lo que no es necesario realizar ninguna modificación al diagrama* del proyecto como en el caso del diagrama de trámites, cada etapa del paso 1 (proyecto1-5.html, proyecto2-5.html, …) ya tiene la clase .circle-complete en cada etapa que ha sido completada.
-
+**Nota:** Sólo hay un tipo de proyecto por lo que *no es necesario realizar ninguna modificación al diagrama* del proyecto como en el caso del diagrama de trámites, cada etapa del paso 1 (proyecto1-5.html, proyecto2-5.html, …) ya tiene la clase .circle-complete en cada etapa que ha sido completada.
 
 ## PUS - Tipos de operación
 
@@ -64,9 +23,9 @@ En la etapa 1 del trámite PUS [ pus1-9.html ](http://pcuervo.com/ogpe/pus1-9.ht
 
 Al darle click al algún checkbox se despliegan los usos para esa operación especifíca. La función está en functions.js
 
-Para que esto suceda el checkbox tiene una clase **js-operacion-agricola**. Donde el nombre *agricola* cambiará de acuerdo al input que haya sido seleccionado (cheked). Por ejemplo: el input con label *comercial* corresponde a la clase **js-operacion-comercial**
+Para que esto suceda el checkbox tiene una clase `js-operacion-agricola`. Donde el nombre *agricola* cambiará de acuerdo al input que haya sido seleccionado (cheked). Por ejemplo: el input con label *comercial* corresponde a la clase `js-operacion-comercial`
 
-Al ser seleccionado se despliegan los *usos de operación* donde sucede lo mismo, están en una clase llamada **.js-usos-operacion-agricola** donde *agricola* corresponde al input del que se ha desplegado. Si se despliega del input *comercial* debera mostrarse como **.js-usos-operacion-comercial**
+Al ser seleccionado se despliegan los *usos de operación* donde sucede lo mismo, están en una clase llamada `.js-usos-operacion-agricola` donde *agricola* corresponde al input del que se ha desplegado. Si se despliega del input *comercial* debera mostrarse como `.js-usos-operacion-comercial`
 
 ```javascript
 $('.js-operacion-agricola').change(function(){
@@ -83,15 +42,15 @@ $('.js-operacion-agricola').change(function(){
 
 ## Botones A+ A-
 
-El contenido de body (excepto header y footer) se pone dentro de una etiqueta con las clases **size-transform clear-size** para el funcionamiento de los botones.
+El contenido de body (excepto header y footer) se pone dentro de una etiqueta con las clases `size-transform clear-size` para el funcionamiento de los botones.
 
-En el caso de no querer modificar una parte en especifico se utiliza la clase **size-static**
+En el caso de no querer modificar una parte en especifico se utiliza la clase `size-static`
 
-Para evitar deformaciones en los diagramas de proyecto y trámites se dejan fuera de la etiqueta con las clases **size-transform clear-size**. Es decir, el div que contiene el diagrama es hermano de la etiqueta con size-transform
+Para evitar deformaciones en los diagramas de proyecto y trámites se dejan fuera de la etiqueta con las clases `size-transform clear-size`. Es decir, el div que contiene el diagrama es hermano de la etiqueta con size-transform
 
 ## Acciones de mi-bandeja.html
 
-Dentro de solicitud de trámites se encuentra el botón acciones. Al darle clic debera mostrar sólo las acciones que sí se pueden realizar con respecto al trámite al que pertenece (ej. añadir colindantes, historial de pago, ...)
+Dentro de solicitud de trámites se encuentra el botón acciones. Al darle clic deberá mostrar sólo las acciones que sí se pueden realizar con respecto al trámite al que pertenece (ej. añadir colindantes, historial de pago, ...)
 
 ## Casillas de estado actual
 
@@ -126,9 +85,15 @@ Los mensajes informativos aparecen una vez que se envia el formulario
 
 ## Header
 
-El icono de header en index tiene etiqueta h1, el resto de las páginas tienen el h1 en el título de cada una
+El icono de header en index tiene etiqueta `h1`, el resto de las páginas tienen el h1 en el título de cada una
 
 ## Footer fijo
 
 El footer se ha fijado con la función `footerBottom()` en funcions.js. En el caso de agregar una nueva página es necesario que el contenido del body, excepto el header, estén dentro de un div con clase **main**.
 
+## Mapas
+
+Falta modificar los mapas de google maps por los que permiten seleccionar el catastro a partir de la busqueda con el número de catastro, las páginas son:
+
+1. [ colindantes.html ](http://pcuervo.com/ogpe/colindantes.html)
+2. [ proyecto1-5.html ](http://pcuervo.com/ogpe/proyecto1-5.html)
