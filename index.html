@@ -500,17 +500,12 @@
 				 * On ready
 				**/
 				footerBottom();
-				toggleHeaderScrolled();
 				actionButtons();
 				$('.marquee').marquee();
 				/**
 				 * Triggered events
 				**/
 				$(window).resize(function () { footerBottom(); });
-
-				$( window ).scroll(function() {
-					toggleHeaderScrolled();
-				});
 			});
 		</script>
 	</body>

@@ -7532,6 +7532,9 @@ button.close {
 .top--10 {
   top: 10px;
 }
+.top---10 {
+  top: -10px;
+}
 .top---15 {
   top: -15px;
 }

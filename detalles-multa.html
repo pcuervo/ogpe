@@ -76,7 +76,7 @@
 								<a href="busqueda-permisos.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
 									<span class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos
 								</a>
-								<a href="detalles-multa.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+								<a href="pago-multa.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
 									<span class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas
 								</a>
 							</div>
@@ -137,7 +137,7 @@
 							<a href="busqueda-permisos.html">
 								<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
 							</a>
-							<a href="detalles-multa.html">
+							<a href="pago-multa.html">
 								<span class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
 							</a>
 							<a href="salir">
@@ -149,93 +149,33 @@
 			</div><!-- end container -->
 		</header>
 		<div class="[ main ]">
-			<div class="[ size-transform clear-size ]">
-				<section class="[ container ]">
-					<h1 class="[ h2 ]">Búsqueda de multas</h1>
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<label for="">Número de multa</label>
-							<div class="[ input-group ][ input-search ][ margin-bottom ]">
-								<input type="text" class="[ form-control ]" title="número de multa" placeholder="Ej. 2015-MULQ-00000">
-								<span class="[ input-group-btn ]">
-									<button type="submit" class="[ btn btn-primary ]">
-										<span class="[ relative ][ icon-search icon-iconed ]"></span>
-									</button>
-								</span>
-							</div>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<label for="">Número de asociada</label>
-							<div class="[ input-group ][ input-search ][ margin-bottom ]">
-								<input type="text" class="[ form-control ]" title="número de asociada" placeholder="Ej. 2015-MULQ-00000">
-								<span class="[ input-group-btn ]">
-									<button type="submit" class="[ btn btn-primary ]">
-										<span class="[ relative ][ icon-search icon-iconed ]"></span>
-									</button>
-								</span>
-							</div>
-						</div>
+			<section class="[ size-transform clear-size ][ container ]">
+				<h1 class="[ h2 ][ margin-bottom ]">Desglose de pago</h1>
+				<table class="[ table-head--top ][ margin-bottom ][ responsive-table ]">
+						<thead>
+							<tr>
+								<th class="[ col-sm-4 ]">Número de multa</th>
+								<th class="[ col-sm-4 ]">Número de multa asociada</th>
+								<th class="[ col-sm-4 ]">Detalles</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="[ col-sm-4 ]">2015-MULQ-0934564</th>
+								<th class="[ col-sm-4 ]">2015-MULQ-0934564</th>
+								<th class="[ col-sm-4 ][ overflow-scroll ]">
+									Costo de Multa Original: <strong>$ 864.00</strong>
+									<br>
+									Se aplica penalidad de 10% debido a que la cantidad de días desde que se entregó; son <strong>295</strong> días y ha pasado del límite de 30 días.
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<p class="[ text-right ]"><strong class="[ text--large ]">Total: </strong>$ 12,240.00</p>
+					<div class="[ text-center ]">
+						<a href="multa-pago.html" class="[ btn btn-primary ]">pagar</a>
 					</div>
-				</section>
-				<section class="[ container ][ text-center ]">
-					<h3 class="[ margin-bottom ]">Multas encontradas</h3>
-					<table class="[ table-head--top ][ margin-bottom ]">
-							<thead>
-								<tr>
-									<th class="[ col-sm-4 ]">Número de multa</th>
-									<th class="[ col-sm-4 ]">Monto</th>
-									<th class="[ col-sm-4 ]"></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
-									<th class="[ col-sm-4 ]">$12250.00</th>
-									<th class="[ col-sm-4 ][ text-center ]">
-										<a href="detalles-multa.html" class="[ btn btn-primary ]">pagar</a>
-									</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
-									<th class="[ col-sm-4 ]">$12250.00</th>
-									<th class="[ col-sm-4 ][ text-center ]">
-										<a href="detalles-multa.html" class="[ btn btn-primary ]">pagar</a>
-									</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
-									<th class="[ col-sm-4 ]">$12250.00</th>
-									<th class="[ col-sm-4 ][ text-center ]">
-										<a href="detalles-multa.html" class="[ btn btn-primary ]">pagar</a>
-									</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
-									<th class="[ col-sm-4 ]">$12250.00</th>
-									<th class="[ col-sm-4 ][ text-center ]">
-										<a href="detalles-multa.html" class="[ btn btn-primary ]">pagar</a>
-									</th>
-								</tr>
-								<tr>
-									<th class="[ col-sm-4 ]">2015-MULQ-050977-2</th>
-									<th class="[ col-sm-4 ]">$12250.00</th>
-									<th class="[ col-sm-4 ][ text-center ]">
-										<a href="detalles-multa.html" class="[ btn btn-primary ]">pagar</a>
-									</th>
-								</tr>
-							</tbody>
-						</table>
-						<ul class="[ pagination ]">
-							<li><a href="#">Anterior</a></li>
-							<li class="[ active ]"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">Siguiente</a></li>
-						</ul>
-				</section>
-			</div>
+			</section>
 			<footer>
 				<div class="[ footer--top ]">
 					<div class="[ container ]">
