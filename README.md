@@ -11,11 +11,11 @@ Los trámites tienen 4 pasos (círculos grandes):
 
 El paso 1 (formulario) de los trámites más largos (ej. [ pus1-9.html ](http://pcuervo.com/ogpe/pus1-9.html)) se puede dividir en etapas (círculos pequeños). Puede haber de 0 a 9 etapas y para cada etapa es necesario imprimir: `<span class="[ circle-proceso circle-etapas ]"></span>`. El código: `<span class="[ circle-proceso ]"></span>` evita que la línea que contiene las etapas pierda su posición cuando no se ha dividido esté paso (0 etapas), por lo que siempre debe estar presente. Ejemplo:[ tramite-form.html ](http://pcuervo.com/ogpe/tramite-form.html).
 
-Por cada etapa que se avance del primer paso tiene que agregarse la clase **circle-complete** a `<span class="[ circle-proceso circle-etapas ]"></span>` dando como resultado `<span class="[ circle-proceso circle-etapas ] circle-complete "></span>` lo que rellenará el círculo correspondiente a la etapa que se ha completado (ej. [ pus2-9.html ](http://pcuervo.com/ogpe/pus2-9.html)).
+Por cada etapa que se avance del primer paso tiene que agregarse la clase `circle-complete` a `<span class="[ circle-proceso circle-etapas ]"></span>` dando como resultado `<span class="[ circle-proceso circle-etapas ] circle-complete "></span>` lo que rellenará el círculo correspondiente a la etapa que se ha completado (ej. [ pus2-9.html ](http://pcuervo.com/ogpe/pus2-9.html)).
 
 ## Creación De Proyecto: Diagrama De Pasos Y Etapas
 
-**Nota:** Sólo hay un tipo de proyecto por lo que *no es necesario realizar ninguna modificación al diagrama* del proyecto como en el caso del diagrama de trámites, cada etapa del paso 1 (proyecto1-5.html, proyecto2-5.html, …) ya tiene la clase .circle-complete en cada etapa que ha sido completada.
+**Nota:** Sólo hay un tipo de proyecto por lo que *no es necesario realizar ninguna modificación al diagrama* del proyecto como en el caso del diagrama de trámites, cada etapa del paso 1 (proyecto1-5.html, proyecto2-5.html, …) ya tiene la clase `circle-complete` en cada etapa que ha sido completada.
 
 ## PUS - Tipos de operación
 
@@ -46,7 +46,7 @@ El contenido de body (excepto header y footer) se pone dentro de una etiqueta co
 
 En el caso de no querer modificar una parte en especifico se utiliza la clase `size-static`
 
-Para evitar deformaciones en los diagramas de proyecto y trámites se dejan fuera de la etiqueta con las clases `size-transform clear-size`. Es decir, el div que contiene el diagrama es hermano de la etiqueta con size-transform
+Para evitar deformaciones en los diagramas de proyecto y trámites se dejan fuera de la etiqueta con las clases `size-transform clear-size`. Es decir, el div que contiene el diagrama es hermano de la etiqueta con `size-transform`
 
 ## Acciones de mi-bandeja.html
 
@@ -63,7 +63,7 @@ El icono de la casilla **estado actual** depende del estado en el que se encuent
 
 ## Resultados de busqueda
 
-Los resultados de busqueda deben resaltar en color amarillo (@secondary) la o las palabras de busqueda.
+Los resultados de busqueda deben resaltar en color amarillo `@secondary` la o las palabras de busqueda.
 
 ## Anexos de trámite
 
@@ -85,7 +85,7 @@ Los mensajes informativos aparecen una vez que se envia el formulario
 
 ## Header
 
-El icono de header en index tiene etiqueta `h1`, el resto de las páginas tienen el h1 en el título de cada una
+El icono de header en index tiene etiqueta `h1`, el resto de las páginas tienen el `h1` en el título de cada una
 
 ## Footer fijo
 
@@ -97,3 +97,4 @@ Falta modificar los mapas de google maps por los que permiten seleccionar el cat
 
 1. [ colindantes.html ](http://pcuervo.com/ogpe/colindantes.html)
 2. [ proyecto1-5.html ](http://pcuervo.com/ogpe/proyecto1-5.html)
+
