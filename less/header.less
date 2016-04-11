@@ -26,11 +26,14 @@ header {
 		background-color: @primary;
 		color: @light;
 		border: transparent;
-		font-size: 140%;
+		font-size: 120%;
+		@media (min-width: @screen-md){ font-size: 140%;}
 		&:hover{ background-color:  @primary--medium; }
 		&:focus, &.active, &:active{ background-color: @primary--dark; }
 	}
 }
+
+nav{ @media (min-width: @screen-sm) and (max-width: @screen-md){ padding-top: (@padding-base-vertical/2);} }
 
 .btn-nav{
 	padding: (@padding-small-vertical*2) (@padding-base-vertical*2);
@@ -39,13 +42,10 @@ header {
 
 .logo-header{
 	padding-top: (@padding-base-vertical); padding-bottom: (@padding-base-vertical);
-	width: 200px;
+	width: 140px;
 	display: inline-block;
 	line-height: 50px;
-	@media (max-width: @screen-sm){
-		width: 145px;
-		padding: 0px;
-	}
+	@media (max-width: @screen-sm){ padding: 0px;}
 }
 
 

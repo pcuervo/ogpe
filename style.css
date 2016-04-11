@@ -8383,7 +8383,13 @@ header .dropdown-toggle {
   background-color: #6844a1;
   color: #fff;
   border: transparent;
-  font-size: 140%;
+  font-size: 120%;
+}
+@media (min-width: 992px) {
+  header .topic-menu,
+  header .dropdown-toggle {
+    font-size: 140%;
+  }
 }
 header .topic-menu:hover,
 header .dropdown-toggle:hover {
@@ -8397,6 +8403,11 @@ header .topic-menu:active,
 header .dropdown-toggle:active {
   background-color: #372159;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  nav {
+    padding-top: 3px;
+  }
+}
 .btn-nav {
   padding: 10px 12px;
   position: absolute;
@@ -8406,13 +8417,12 @@ header .dropdown-toggle:active {
 .logo-header {
   padding-top: 6px;
   padding-bottom: 6px;
-  width: 200px;
+  width: 140px;
   display: inline-block;
   line-height: 50px;
 }
 @media (max-width: 768px) {
   .logo-header {
-    width: 145px;
     padding: 0px;
   }
 }
