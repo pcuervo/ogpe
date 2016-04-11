@@ -1,5 +1,60 @@
 **Especificaciones del código**
 
+## Lista de archivos
+
+**Proyecto**
+
+1. [ proyecto1-5.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto1-5.html)
+2. [ proyecto2-5.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto1-5.html)
+3. [ proyecto3-5.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto1-5.html)
+4. [ proyecto4-5.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto1-5.html)
+5. [ proyecto5-5.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto1-5.html)
+
+**Trámite corto**
+
+1. [ tramite-form.html ](https://github.com/pcuervo/ogpe/blob/master/tramite-form.html)
+2. [ tramite-anexos.html ](https://github.com/pcuervo/ogpe/blob/master/tramite-anexos.html)
+3. [ tramite-resumen.html ](https://github.com/pcuervo/ogpe/blob/master/tramite-resumen.html)
+4. [ tramite-pago.html ](https://github.com/pcuervo/ogpe/blob/master/tramite-pago.html)
+
+**Trámite largo **
+
+1. [ lot1-3.html ](https://github.com/pcuervo/ogpe/blob/master/lot1-3.html)
+2. [ lot2-3.html ](https://github.com/pcuervo/ogpe/blob/master/lot2-3.html)
+3. [ lot3-3.html ](https://github.com/pcuervo/ogpe/blob/master/lot3-3.html)
+4. [ lot-anexos.html ](https://github.com/pcuervo/ogpe/blob/master/lot-anexos.html)
+5. [ lot-resumen.html ](https://github.com/pcuervo/ogpe/blob/master/lot-resumen.html)
+6. [ lot-pago.html ](https://github.com/pcuervo/ogpe/blob/master/lot-pago.html)
+
+1. [ pge1-5.html ](https://github.com/pcuervo/ogpe/blob/master/pge1-5.html)
+2. [ pge2-5.html ](https://github.com/pcuervo/ogpe/blob/master/pge2-5.html)
+3. [ pge3-5.html ](https://github.com/pcuervo/ogpe/blob/master/pge3-5.html)
+4. [ pge4-5.html ](https://github.com/pcuervo/ogpe/blob/master/pge4-5.html)
+5. [ pge5-5.html ](https://github.com/pcuervo/ogpe/blob/master/pge5-5.html)
+6. [ pge-anexos.html ](https://github.com/pcuervo/ogpe/blob/master/pge-anexos.html)
+7. [ pge-resumen.html ](https://github.com/pcuervo/ogpe/blob/master/pge-resumen.html)
+8. [ pge-pago.html ](https://github.com/pcuervo/ogpe/blob/master/pge-pago.html)
+
+1. [ pus1-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus1-9.html)
+2. [ pus2-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus2-9.html)
+3. [ pus3-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus3-9.html)
+4. [ pus4-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus4-9.html)
+5. [ pus5-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus5-9.html)
+6. [ pus6-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus6-9.html)
+7. [ pus7-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus7-9.html)
+8. [ pus8-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus8-9.html)
+9. [ pus9-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus9-9.html)
+10. [ pus-anexos.html ](https://github.com/pcuervo/ogpe/blob/master/pus-anexos.html)
+11. [ pus-resumen.html ](https://github.com/pcuervo/ogpe/blob/master/pus-resumen.html)
+12. [ pus-pago.html ](https://github.com/pcuervo/ogpe/blob/master/pus-pago.html)
+
+**Busquedas**
+
+1. [ busqueda-credenciales.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-credenciales.html)
+2. [ busqueda-multas.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-multas.html)
+3. [ busqueda-permisos.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-permisos.html)
+4. [ busqueda-tramites.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-tramites.html)
+
 ## Creación De Trámites: Diagrama De Pasos Y Etapas
 
 Los trámites tienen 4 pasos (círculos grandes):
@@ -97,4 +152,3 @@ Falta modificar los mapas de google maps por los que permiten seleccionar el cat
 
 1. [ colindantes.html ](https://github.com/pcuervo/ogpe/blob/master/colindantes.html)
 2. [ proyecto1-5.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto1-5.html)
-
