@@ -9,9 +9,9 @@ Los trámites tienen 4 pasos (círculos grandes):
 3. Resumen de trámite
 4. Pago del trámite
 
-El paso 1 (formulario) de los trámites más largos (ej. [ pus1-9.html ](http://pcuervo.com/ogpe/pus1-9.html)) se puede dividir en etapas (círculos pequeños). Puede haber de 0 a 9 etapas y para cada etapa es necesario imprimir: `<span class="[ circle-proceso circle-etapas ]"></span>`. El código: `<span class="[ circle-proceso ]"></span>` evita que la línea que contiene las etapas pierda su posición cuando no se ha dividido esté paso (0 etapas), por lo que siempre debe estar presente. Ejemplo:[ tramite-form.html ](http://pcuervo.com/ogpe/tramite-form.html).
+El paso 1 (formulario) de los trámites más largos (ej. [ pus1-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus1-9.html)) se puede dividir en etapas (círculos pequeños). Puede haber de 0 a 9 etapas y para cada etapa es necesario imprimir: `<span class="[ circle-proceso circle-etapas ]"></span>`. El código: `<span class="[ circle-proceso ]"></span>` evita que la línea que contiene las etapas pierda su posición cuando no se ha dividido esté paso (0 etapas), por lo que siempre debe estar presente. Ejemplo:[ tramite-form.html ](https://github.com/pcuervo/ogpe/blob/master/tramite-form.html).
 
-Por cada etapa que se avance del primer paso tiene que agregarse la clase `circle-complete` a `<span class="[ circle-proceso circle-etapas ]"></span>` dando como resultado `<span class="[ circle-proceso circle-etapas ] circle-complete "></span>` lo que rellenará el círculo correspondiente a la etapa que se ha completado (ej. [ pus2-9.html ](http://pcuervo.com/ogpe/pus2-9.html)).
+Por cada etapa que se avance del primer paso tiene que agregarse la clase `circle-complete` a `<span class="[ circle-proceso circle-etapas ]"></span>` dando como resultado `<span class="[ circle-proceso circle-etapas ] circle-complete "></span>` lo que rellenará el círculo correspondiente a la etapa que se ha completado (ej. [ pus2-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus2-9.html)).
 
 ## Creación De Proyecto: Diagrama De Pasos Y Etapas
 
@@ -19,7 +19,7 @@ Por cada etapa que se avance del primer paso tiene que agregarse la clase `circl
 
 ## PUS - Tipos de operación
 
-En la etapa 1 del trámite PUS [ pus1-9.html ](http://pcuervo.com/ogpe/pus1-9.html) hay una parte que muestra los *tipos de operación que se darán a la propiedad*:
+En la etapa 1 del trámite PUS [ pus1-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus1-9.html) hay una parte que muestra los *tipos de operación que se darán a la propiedad*:
 
 Al darle click al algún checkbox se despliegan los usos para esa operación especifíca. La función está en functions.js
 
@@ -77,7 +77,7 @@ Sólo si se ha subido al menos un archivo de cada anexo solicitado aparecerá el
 
 ## Ficha de trámite
 
-Hay trámites que requieren un proyecto, crearlo o elegirlo si ya hay alguno. Para estos la ficha de trámite debe tener un aviso como en [ ficha-tramite-aviso.html ](http://pcuervo.com/ogpe/ficha-tramite-aviso.html), el resto de los trámites son iguales pero sin aviso como en [ ficha-tramite.html ](http://pcuervo.com/ogpe/ficha-tramite.html)
+Hay trámites que requieren un proyecto, crearlo o elegirlo si ya hay alguno. Para estos la ficha de trámite debe tener un aviso como en [ ficha-tramite-aviso.html ](https://github.com/pcuervo/ogpe/blob/master/ficha-tramite-aviso.html), el resto de los trámites son iguales pero sin aviso como en [ ficha-tramite.html ](https://github.com/pcuervo/ogpe/blob/master/ficha-tramite.html)
 
 ## Alertas recuperar usuario o contraseña
 
@@ -95,6 +95,6 @@ El footer se ha fijado con la función `footerBottom()` en funcions.js. En el ca
 
 Falta modificar los mapas de google maps por los que permiten seleccionar el catastro a partir de la busqueda con el número de catastro, las páginas son:
 
-1. [ colindantes.html ](http://pcuervo.com/ogpe/colindantes.html)
-2. [ proyecto1-5.html ](http://pcuervo.com/ogpe/proyecto1-5.html)
+1. [ colindantes.html ](https://github.com/pcuervo/ogpe/blob/master/colindantes.html)
+2. [ proyecto1-5.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto1-5.html)
 
