@@ -174,3 +174,18 @@ function actionButtons(){
     $('.size-transform *').not('h1, h2, h3, .size-static *, .icon').css('font-size', curSize);
     });
 }// actionButtons
+
+/*------------------------------------*\
+    #TOGGLE FUNCTIONS
+\*------------------------------------*/
+
+function init_masonry(){
+    var $container = $('#content');
+
+    $container.imagesLoaded( function(){
+        $container.masonry({
+          itemSelector: '.box-content',
+          isAnimated: true
+        });
+    });
+}

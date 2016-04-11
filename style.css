@@ -8694,4 +8694,35 @@ footer .footer--bottom h4 {
 .block-text--small {
   width: 290px;
 }
+.box-content img {
+  max-width: 100%;
+}
+#content .box-content {
+  width: 100%;
+  padding: 6px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 12px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+@media (min-width: 480px) {
+  #content .box-content {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #content .box-content {
+    width: 33.33%;
+  }
+}
+@media (min-width: 1200px) {
+  #content .box-content {
+    width: 25%;
+  }
+}
 /*# sourceMappingURL=bootstrap.css.map */
