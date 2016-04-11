@@ -152,7 +152,7 @@ Los trámites tienen 4 pasos (círculos grandes):
 
 El paso 1 (formulario) de los trámites más largos (ej. [ pus1-9.html ](http://pcuervo.com/ogpe/pus1-9.html)) se puede dividir en etapas (círculos pequeños). Puede haber de 0 a 9 etapas y para cada etapa es necesario imprimir:
 
-<span class="[ circle-proceso circle-etapas ]"></span>
+< span class="[ circle-proceso circle-etapas ]"></ span>
 
 El código: <span class="[ circle-proceso ]"></span> evita que la línea que contiene las etapas pierda su posición cuando no se ha dividido esté paso (0 etapas), por lo que siempre debe estar presente. Ejemplo:[ tramite-form.html ](http://pcuervo.com/ogpe/tramite-form.html).
 
@@ -160,7 +160,7 @@ Por cada etapa que se avance del primer paso tiene que agregarse la clase **circ
 
 ## Creación De Proyecto: Diagrama De Pasos Y Etapas
 
-**Nota:** *Sólo hay un tipo de proyecto por lo que no es necesario realizar ninguna modificación al diagrama del proyecto como en el caso del diagrama de trámites, cada etapa del paso 1 (proyecto1-5.html, proyecto2-5.html, …) ya tiene la clase .circle-complete en cada etapa que ha sido completada.*
+**Nota:** *Sólo hay un tipo de proyecto por lo que no es necesario realizar ninguna modificación al diagrama* del proyecto como en el caso del diagrama de trámites, cada etapa del paso 1 (proyecto1-5.html, proyecto2-5.html, …) ya tiene la clase .circle-complete en cada etapa que ha sido completada.
 
 
 ## PUS - Tipos de operación
@@ -220,6 +220,18 @@ Sólo el archivo **memorial explicativo** permite la opción de redactar (*O si 
 Una vez que se carga el archivo los datos aparecen en la lista de anexos.
 
 Sólo si se ha subido al menos un archivo de cada anexo solicitado aparecerá el botón continuar y se ocultará la alerta *No puedes continuar hasta cargar todos los anexos requeridos*
+
+## Ficha de trámite
+
+Hay trámites que requieren un proyecto, crearlo o elegirlo si ya hay alguno. Para estos la ficha de trámite debe tener un aviso como en [ ficha-tramite-aviso.html ](http://pcuervo.com/ogpe/ficha-tramite-aviso.html), el resto de los trámites son iguales pero sin aviso como en [ ficha-tramite.html ](http://pcuervo.com/ogpe/ficha-tramite.html)
+
+## Alertas recuperar usuario o contraseña
+
+Los mensajes informativos aparecen una vez que se envia el formulario
+
+## Header
+
+El icono de header en index tiene etiqueta h1, el resto de las páginas tienen el h1 en el título de cada una
 
 ## Footer fijo
 
