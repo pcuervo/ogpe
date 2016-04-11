@@ -54,6 +54,11 @@
 3. [ busqueda-permisos.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-permisos.html)
 4. [ busqueda-tramites.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-tramites.html)
 
+**Usuario**
+
+1. [ mi-bandeja.html ](https://github.com/pcuervo/ogpe/blob/master/mi-bandeja.html)
+1. [ mi-perfil.html ](https://github.com/pcuervo/ogpe/blob/master/mi-perfil.html)
+
 ## Creación De Trámites: Diagrama De Pasos Y Etapas
 
 Los trámites tienen 4 pasos (círculos grandes):
