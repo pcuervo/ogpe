@@ -8487,10 +8487,6 @@ footer .footer--top h4 {
     display: block;
   }
 }
-footer .footer--top .icon-info {
-  margin-left: -4px;
-  margin-right: 5px;
-}
 footer .footer--bottom {
   padding: 12px 0px;
   background-color: #474747;
