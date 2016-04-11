@@ -221,10 +221,6 @@ Una vez que se carga el archivo los datos aparecen en la lista de anexos.
 
 Sólo si se ha subido al menos un archivo de cada anexo solicitado aparecerá el botón continuar y se ocultará la alerta *No puedes continuar hasta cargar todos los anexos requeridos*
 
-## Formulario de pago
-
-
-
 ## Footer fijo
 
 El footer se ha fijado con la función `footerBottom()` en funcions.js. En el caso de agregar una nueva página es necesario que el contenido del body, excepto el header, estén dentro de un div con clase **main**.
