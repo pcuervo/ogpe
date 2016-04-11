@@ -17,7 +17,8 @@
 3. [ tramite-resumen.html ](https://github.com/pcuervo/ogpe/blob/master/tramite-resumen.html)
 4. [ tramite-pago.html ](https://github.com/pcuervo/ogpe/blob/master/tramite-pago.html)
 
-**Trámite largo **
+**Trámite largo**
+
 
 1. [ lot1-3.html ](https://github.com/pcuervo/ogpe/blob/master/lot1-3.html)
 2. [ lot2-3.html ](https://github.com/pcuervo/ogpe/blob/master/lot2-3.html)
@@ -25,7 +26,6 @@
 4. [ lot-anexos.html ](https://github.com/pcuervo/ogpe/blob/master/lot-anexos.html)
 5. [ lot-resumen.html ](https://github.com/pcuervo/ogpe/blob/master/lot-resumen.html)
 6. [ lot-pago.html ](https://github.com/pcuervo/ogpe/blob/master/lot-pago.html)
-
 1. [ pge1-5.html ](https://github.com/pcuervo/ogpe/blob/master/pge1-5.html)
 2. [ pge2-5.html ](https://github.com/pcuervo/ogpe/blob/master/pge2-5.html)
 3. [ pge3-5.html ](https://github.com/pcuervo/ogpe/blob/master/pge3-5.html)
@@ -34,7 +34,6 @@
 6. [ pge-anexos.html ](https://github.com/pcuervo/ogpe/blob/master/pge-anexos.html)
 7. [ pge-resumen.html ](https://github.com/pcuervo/ogpe/blob/master/pge-resumen.html)
 8. [ pge-pago.html ](https://github.com/pcuervo/ogpe/blob/master/pge-pago.html)
-
 1. [ pus1-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus1-9.html)
 2. [ pus2-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus2-9.html)
 3. [ pus3-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus3-9.html)
