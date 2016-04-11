@@ -7646,6 +7646,9 @@ button.close {
 .bg-tertiary {
   background-color: #2c2c2c;
 }
+.bg-gray-xlight {
+  background-color: #D3D0D0;
+}
 .bg-gray-lighter {
   background-color: #eeeeee;
 }
@@ -8395,7 +8398,7 @@ header .dropdown-toggle:active {
   padding: 10px 12px;
   position: absolute;
   top: 0px;
-  right: 15px;
+  right: 5px;
 }
 .logo-header {
   padding-top: 6px;

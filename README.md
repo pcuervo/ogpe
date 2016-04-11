@@ -137,3 +137,12 @@ See [the Releases section of our GitHub project](https://github.com/twbs/bootstr
 ## Copyright and license
 
 Code and documentation copyright 2011-2015 Twitter, Inc. Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
+
+
+**Especificaciones del código**
+
+## Creación De Trámites: Diagrama De Pasos Y Etapas
+
+Los trámites tienen 4 pasos (círculos grandes):
+
+

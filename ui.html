@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
 		<title>OGPe</title>
@@ -52,12 +52,12 @@
 	<body>
 		<header class="[ js-header ][ affix ]">
 			<div class="[ container ]">
-				<h1 class="[ logo-header ]">
+				<div class="[ logo-header ]">
 					<a href="index.html" class="[ block ]">
 						<div class="[ bg-image img-logo img-logo--light ][ inline-block align-middle ]"></div>
 						<h3 class="[ inline-block align-middle ][ color-light ][ no-margin ]">Super Sip</h3>
 					</a>
-				</h1>
+				</div>
 				<!-- desktop menu -->
 				<nav id="desktopnav" role="navigation" class="[ hidden-xs ][ pull-right ]">
 					<div class="[ menu-desktop ][ pull-right ][ margin-top--xsmall ]">
@@ -150,7 +150,7 @@
 		</header>
 		<div class="[ main ]">
 			<div class="[ size-transform clear-size ]">
-				<section class="[ container ][ margin-top-bottom--large ]">
+				<section class="[ container ][ margin-bottom--large ]">
 					<div class="[ row ]">
 						<div class="[ col-xs-12 col-sm-6 ]">
 							<h6 class="[ border-bottom--secondary ]">Typography</h6>
@@ -420,8 +420,8 @@
 							<div class="[ row ]">
 								<div class="[ col-xs-12 col-sm-6 ]">
 									<p class="[ subtitle ]">Dropdown</p>
-									<label for="">Dropdown label</label>
-									<select id="" name="" class="[ form-control ][ arrow ]">
+									<label for="drop">Dropdown label</label>
+									<select id="drop" name="drop" class="[ form-control ][ arrow ]">
 										<option value="1">option A</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
@@ -440,11 +440,11 @@
 									</div>
 									<div class="[ form-group ][ has-success ]">
 										<label class="[ control-label ]" for="inputSuccess1">Text input succes</label>
-										<input type="text" class="[ form-control ]" id="inputSuccess1" aria-describedby="helpBlock2">
+										<input type="text" class="[ form-control ]" id="inputSuccess1" name="inputSuccess1">
 									</div>
 									<div class="[ form-group ]">
-										<label for="">Textarea label</label>
-										<textarea class="[ form-control ]" rows="3"></textarea>
+										<label for="textarea">Textarea label</label>
+										<textarea  id="textarea" name="textarea" class="[ form-control ]" rows="3"></textarea>
 									</div>
 								</div>
 								<div class="[ col-xs-12 col-sm-6 ]">
@@ -503,7 +503,7 @@
 										<p class="[ subtitle ]">Range slider</p>
 										<form role="form" action="action_page.php" method="get">
 											<label for="points">Range slider label</label>
-											<input type="range" name="points" min="0" max="10">
+											<input type="range" id="points" name="points" min="0" max="10">
 										</form>
 									</div>
 								</div>
@@ -554,7 +554,7 @@
 										</div>
 										<div class="[ form-group ][ form-small ][ pull-right ]">
 											<label for="state">State</label>
-											<select id="" name="" class="[ form-control ][ arrow ]">
+											<select id="state" name="state" class="[ form-control ][ arrow ]">
 												<option value="1">1</option>
 												<option value="2">2</option>
 												<option value="3">3</option>
@@ -589,25 +589,25 @@
 									</form>
 									<h6 class="[ border-bottom--secondary ]">Search bar</h6>
 									<div class="[ input-group ][ input-search ][ margin-bottom ]">
-										<input type="text" class="[ form-control ]">
+										<input aria-label="search-1" id="search-1" type="text" class="[ form-control ]">
 										<span class="[ input-group-btn ]">
-											<button type="submit" class="[ btn btn-primary ]">
+											<button aria-label="search-1" type="submit" class="[ btn btn-primary ]">
 												<span class="[ relative ][ icon-search icon-iconed ]"></span>
 											</button>
 										</span>
 									</div>
 									<div class="[ input-group ][ input-search input-search--medium ][ margin-bottom ]">
-										<input type="text" class="[ form-control ]">
+										<input aria-label="search-2" id="search-2" type="text" class="[ form-control ]">
 										<span class="[ input-group-btn ]">
-											<button type="submit" class="[ btn btn-primary ]">
+											<button aria-label="search-2" type="submit" class="[ btn btn-primary ]">
 												<span class="[ icon-search ]"></span>
 											</button>
 										</span>
 									</div>
 									<div class="[ input-group ][ input-search input-search--small ][ margin-bottom ]">
-										<input type="text" class="[ form-control ]">
+										<input aria-label="search-3" id="search-3" type="text" class="[ form-control ]">
 										<span class="[ input-group-btn ]">
-											<button type="submit" class="[ btn btn-primary ]">
+											<button aria-label="search-3" type="submit" class="[ btn btn-primary ]">
 												<span class="[ relative ][ icon-search ]"></span>
 											</button>
 										</span>
