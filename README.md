@@ -56,8 +56,14 @@
 
 **Usuario**
 
-1. [ mi-bandeja.html ](https://github.com/pcuervo/ogpe/blob/master/mi-bandeja.html)
-1. [ mi-perfil.html ](https://github.com/pcuervo/ogpe/blob/master/mi-perfil.html)
+1. [ mi-bandeja.html ](https://github.com/pcuervo/ogpe/blob/master/mi-bandeja.html) 1
+2. [ mi-perfil.html ](https://github.com/pcuervo/ogpe/blob/master/mi-perfil.html)
+	1. [ colindantes.html ](https://github.com/pcuervo/ogpe/blob/master/colindantes.html) 1.1
+
+**Genenral**
+
+1. [ index.html ](https://github.com/pcuervo/ogpe/blob/master/index.html)
+2. [ acerca-ogpe.html ](https://github.com/pcuervo/ogpe/blob/master/acerca-ogpe.html)
 
 ## Creación De Trámites: Diagrama De Pasos Y Etapas
 

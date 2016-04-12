@@ -33,7 +33,7 @@ function toggleTwitter(){
 
 //checkbox pus
 
-$('.js-operacion-agricola').change(function(){
+$('.js-operacion').change(function(){
     if(this.checked){
         $('.js-usos-operacion-agricola').fadeIn('slow');
         $('.js-usos-operacion-agricola').addClass('show');
@@ -44,7 +44,7 @@ $('.js-operacion-agricola').change(function(){
     }
 });
 
-$('.js-operacion-comercial').change(function(){
+$('.js-operacion').change(function(){
     if(this.checked){
         $('.js-usos-operacion-comercial').fadeIn('slow');
         $('.js-usos-operacion-comercial').addClass('show');
@@ -55,7 +55,7 @@ $('.js-operacion-comercial').change(function(){
     }
 });
 
-$('.js-operacion-industrial').change(function(){
+$('.js-operacion').change(function(){
     if(this.checked){
         $('.js-usos-operacion-industrial').fadeIn('slow');
         $('.js-usos-operacion-industrial').addClass('show');
@@ -66,7 +66,7 @@ $('.js-operacion-industrial').change(function(){
     }
 });
 
-$('.js-operacion-institucional').change(function(){
+$('.js-operacion').change(function(){
     if(this.checked){
         $('.js-usos-operacion-institucional').fadeIn('slow');
         $('.js-usos-operacion-institucional').addClass('show');
@@ -77,7 +77,7 @@ $('.js-operacion-institucional').change(function(){
     }
 });
 
-$('.js-operacion-residencial').change(function(){
+$('.js-operacion').change(function(){
     if(this.checked){
         $('.js-usos-operacion-residencial').fadeIn('slow');
         $('.js-usos-operacion-residencial').addClass('show');
@@ -88,7 +88,7 @@ $('.js-operacion-residencial').change(function(){
     }
 });
 
-$('.js-operacion-telecomunicaciones').change(function(){
+$('.js-operacion').change(function(){
     if(this.checked){
         $('.js-usos-operacion-telecomunicaciones').fadeIn('slow');
         $('.js-usos-operacion-telecomunicaciones').addClass('show');
@@ -99,7 +99,7 @@ $('.js-operacion-telecomunicaciones').change(function(){
     }
 });
 
-$('.js-operacion-turistico').change(function(){
+$('.js-operacion').change(function(){
     if(this.checked){
         $('.js-usos-operacion-turistico').fadeIn('slow');
         $('.js-usos-operacion-turistico').addClass('show');
