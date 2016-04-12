@@ -65,9 +65,8 @@
 3. [ busqueda-permisos.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-permisos.html)
 	1. [ resumen-permiso.html ](https://github.com/pcuervo/ogpe/blob/master/resumen-permiso.html)
 4. [ busqueda-tramites.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-tramites.html)
-5. [ resultados-busqueda-tramite.html ](https://github.com/pcuervo/ogpe/blob/master/resultados-busqueda-tramite.html)
-6. [ resultados-busqueda-tramite1.html ](https://github.com/pcuervo/ogpe/blob/master/resultados-busqueda-tramite1.html)
-3. [ mi-perfil.html ](https://github.com/pcuervo/ogpe/blob/master/mi-perfil.html)
+	1. [ resultados-busqueda-tramite1.html ](https://github.com/pcuervo/ogpe/blob/master/resultados-busqueda-tramite1.html)
+5. [ mi-perfil.html ](https://github.com/pcuervo/ogpe/blob/master/mi-perfil.html)
 
 **Usuario**
 
@@ -85,6 +84,7 @@
 **Genenral**
 
 1. [ index.html ](https://github.com/pcuervo/ogpe/blob/master/index.html)
+	1. [ resultados-busqueda-tramite.html ](https://github.com/pcuervo/ogpe/blob/master/resultados-busqueda-tramite.html)
 2. [ acerca-ogpe.html ](https://github.com/pcuervo/ogpe/blob/master/acerca-ogpe.html)
 3. [ preguntas-frecuentes.html ](https://github.com/pcuervo/ogpe/blob/master/preguntas-frecuentes.html)
 4. [ contacto.html ](https://github.com/pcuervo/ogpe/blob/master/contacto.html)
