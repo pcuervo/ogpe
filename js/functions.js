@@ -188,4 +188,10 @@ function init_masonry(){
           isAnimated: true
         });
     });
+    // change size of item by toggling gigante class
+    $container.on( 'click', '.box-content', function() {
+    $(this).toggleClass('gigante');
+    // trigger layout after item size changes
+    $container.masonry('layout');
+    });
 }
