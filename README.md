@@ -9,6 +9,8 @@
 3. [ proyecto3-5.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto1-5.html)
 4. [ proyecto4-5.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto1-5.html)
 5. [ proyecto5-5.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto1-5.html)
+6. [ proyecto-anexos.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto-anexos.html)
+7. [ proyecto-resumen.html ](https://github.com/pcuervo/ogpe/blob/master/proyecto-resumen.html)
 
 **Trámite corto**
 
@@ -18,7 +20,6 @@
 4. [ tramite-pago.html ](https://github.com/pcuervo/ogpe/blob/master/tramite-pago.html)
 
 **Trámite largo**
-
 
 1. [ lot1-3.html ](https://github.com/pcuervo/ogpe/blob/master/lot1-3.html)
 2. [ lot2-3.html ](https://github.com/pcuervo/ogpe/blob/master/lot2-3.html)
@@ -47,24 +48,50 @@
 11. [ pus-resumen.html ](https://github.com/pcuervo/ogpe/blob/master/pus-resumen.html)
 12. [ pus-pago.html ](https://github.com/pcuervo/ogpe/blob/master/pus-pago.html)
 
+**Crear tramite**
+
+1. [ ficha-tramite.html ](https://github.com/pcuervo/ogpe/blob/master/ficha-tramite.html)
+	1. [ iniciar-tramite.html ](https://github.com/pcuervo/ogpe/blob/master/iniciar-tramite.html)
+2. [ ficha-tramite-aviso.html ](https://github.com/pcuervo/ogpe/blob/master/ficha-tramite-aviso.html)
+	1. [ iniciar-tramite-proyecto.html ](https://github.com/pcuervo/ogpe/blob/master/iniciar-tramite-proyecto.html)
+
 **Busquedas**
 
 1. [ busqueda-credenciales.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-credenciales.html)
+	1. [ detalles-permiso.html ](https://github.com/pcuervo/ogpe/blob/master/detalles-permiso.html)
 2. [ busqueda-multas.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-multas.html)
+	1. [ detalles-multa.html ](https://github.com/pcuervo/ogpe/blob/master/detalles-multa.html)
+		1. [ multa-pago.html ](https://github.com/pcuervo/ogpe/blob/master/multa-pago.html)
 3. [ busqueda-permisos.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-permisos.html)
+	1. [ resumen-permiso.html ](https://github.com/pcuervo/ogpe/blob/master/resumen-permiso.html)
 4. [ busqueda-tramites.html ](https://github.com/pcuervo/ogpe/blob/master/busqueda-tramites.html)
+5. [ resultados-busqueda-tramite.html ](https://github.com/pcuervo/ogpe/blob/master/resultados-busqueda-tramite.html)
+6. [ resultados-busqueda-tramite1.html ](https://github.com/pcuervo/ogpe/blob/master/resultados-busqueda-tramite1.html)
+3. [ mi-perfil.html ](https://github.com/pcuervo/ogpe/blob/master/mi-perfil.html)
 
 **Usuario**
 
-1. [ mi-bandeja.html ](https://github.com/pcuervo/ogpe/blob/master/mi-bandeja.html)
+1. [ login.html ](https://github.com/pcuervo/ogpe/blob/master/login.html)
+2. [ mi-bandeja.html ](https://github.com/pcuervo/ogpe/blob/master/mi-bandeja.html)
 	1. [ colindantes.html ](https://github.com/pcuervo/ogpe/blob/master/colindantes.html)
-2. [ mi-perfil.html ](https://github.com/pcuervo/ogpe/blob/master/mi-perfil.html)
-
+3. [ mi-perfil.html ](https://github.com/pcuervo/ogpe/blob/master/mi-perfil.html)
+4. [ recuperar-contrasena.html ](https://github.com/pcuervo/ogpe/blob/master/recuperar-contrasena.html)
+5. [ recuperar-usuario.html ](https://github.com/pcuervo/ogpe/blob/master/recuperar-usuario.html)
+6. [ reenviar-confirmacion.html ](https://github.com/pcuervo/ogpe/blob/master/reenviar-confirmacion.html)
+7. [ registro.html ](https://github.com/pcuervo/ogpe/blob/master/registro.html)
+8. [ registro-confirm.html ](https://github.com/pcuervo/ogpe/blob/master/registro-confirm.html)
+9. [ restablecer-contrasena.html ](https://github.com/pcuervo/ogpe/blob/master/restablecer-contrasena.html)
 
 **Genenral**
 
 1. [ index.html ](https://github.com/pcuervo/ogpe/blob/master/index.html)
 2. [ acerca-ogpe.html ](https://github.com/pcuervo/ogpe/blob/master/acerca-ogpe.html)
+3. [ preguntas-frecuentes.html ](https://github.com/pcuervo/ogpe/blob/master/preguntas-frecuentes.html)
+4. [ contacto.html ](https://github.com/pcuervo/ogpe/blob/master/contacto.html)
+
+**ui**
+
+1. [ ui.html ](https://github.com/pcuervo/ogpe/blob/master/ui.html)
 
 ## Creación De Trámites: Diagrama De Pasos Y Etapas
 
