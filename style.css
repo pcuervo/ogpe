@@ -8147,6 +8147,9 @@ hr {
 .divider {
   border-top: 1px solid #5b616a;
 }
+.usos * {
+  cursor: pointer;
+}
 @-ms-viewport {
   width: device-width;
 }
