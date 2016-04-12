@@ -1,4 +1,4 @@
-**Especificaciones del código**
+#Especificaciones del código
 
 ## Lista de archivos
 

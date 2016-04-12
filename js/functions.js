@@ -34,9 +34,8 @@ function toggleTwitter(){
 //Checkbox PUS
 
 function show_usos(tipoOperacion){
-    console.log(  );
     $('.js-usos-'+tipoOperacion).fadeIn('slow');
-    $('.js-usos-'+tipoOperacion).addClass('show');
+    $('.js-usos-'+tipoOperacion).removeClass('hide');
 }
 
 //Footer

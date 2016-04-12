@@ -521,7 +521,9 @@
 				// change size of item
 				$('.box-content').on( 'shown.bs.collapse', function(e){
 					$('#content').masonry();
-					console.log('show');
+				});
+				$('.box-content').on( 'hidden.bs.collapse', function(e){
+					$('#content').masonry();
 				});
 			});
 		</script>
