@@ -114,24 +114,20 @@ Por cada etapa que se avance del primer paso tiene que agregarse la clase `circl
 
 En la etapa 1 del trámite PUS [ pus1-9.html ](https://github.com/pcuervo/ogpe/blob/master/pus1-9.html) hay una parte que muestra los *tipos de operación que se darán a la propiedad*:
 
-Al darle click al algún checkbox se despliegan los usos para esa operación especifíca. La función está en functions.js
-
-Para que esto suceda el checkbox tiene una clase `js-operacion-agricola`. Donde el nombre *agricola* cambiará de acuerdo al input que haya sido seleccionado (cheked). Por ejemplo: el input con label *comercial* corresponde a la clase `js-operacion-comercial`
-
-Al ser seleccionado se despliegan los *usos de operación* donde sucede lo mismo, están en una clase llamada `.js-usos-operacion-agricola` donde *agricola* corresponde al input del que se ha desplegado. Si se despliega del input *comercial* debera mostrarse como `.js-usos-operacion-comercial`
+La función está en functions.js linea 34.
 
 ```javascript
-$('.js-operacion-agricola').change(function(){
-    if(this.checked){
-        $('.js-usos-operacion-agricola').fadeIn('slow');
-        $('.js-usos-operacion-agricola').addClass('show');
-    }
-    else{
-        $('.js-usos-operacion-agricola').fadeOut('slow');
-        $('.js-usos-operacion-agricola').removeClass('show');
-    }
-});
+function show_usos(tipoOperacion){
+    $('.js-usos-'+tipoOperacion).fadeIn('slow');
+    $('.js-usos-'+tipoOperacion).addClass('show');
+}
 ```
+
+Con la función se deberán mostrar los usos para el id seleccionado (`.js-usos-tipoOperacion`), es decir, al seleccionar `agricola` deberán aparecer los usos para operación agrícola, `js-usos-agricola`.
+
+Para que esto suceda cada checkbox tiene una clase `js-operacion` y un id con su nombre respectivo (ej. `agricola`, `comercial`, `industrial`...). A su vez los tipos de uso tienen una clase js-usos + el nombre de la operación a la que pertenece. Por ejemplo: los usos de `id="agricola"` tienen una clase js-usos-agricola.
+
+Una vez que aparescan los usos el usuario puede seleccionar los que desea y estos deben enlistarse en el recuadro del lado derecho.
 
 ## Botones A+ A-
 
@@ -170,7 +166,7 @@ Sólo si se ha subido al menos un archivo de cada anexo solicitado aparecerá el
 
 ## Ficha de trámite
 
-Hay trámites que requieren un proyecto, crearlo o elegirlo si ya hay alguno. Para estos la ficha de trámite debe tener un aviso como en [ ficha-tramite-aviso.html ](https://github.com/pcuervo/ogpe/blob/master/ficha-tramite-aviso.html), el resto de los trámites son iguales pero sin aviso como en [ ficha-tramite.html ](https://github.com/pcuervo/ogpe/blob/master/ficha-tramite.html)
+Hay trámites que requieren un proyecto, se debe crear o elegir uno si ya existe. Para estos la ficha de trámite debe tener un aviso como en [ ficha-tramite-aviso.html ](https://github.com/pcuervo/ogpe/blob/master/ficha-tramite-aviso.html), el resto de los trámites son iguales pero sin aviso como en [ ficha-tramite.html ](https://github.com/pcuervo/ogpe/blob/master/ficha-tramite.html)
 
 ## Alertas recuperar usuario o contraseña
 
