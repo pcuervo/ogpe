@@ -362,12 +362,15 @@ address {
 
 a {
 	cursor: pointer;
-	color: @primary;
+	font-weight: 600;
+	color: @secondary;
+	&:hover { color: @secondary--medium; }
+	&:focus, &:active { color: @secondary--medium; }
 }
 
 .link--primary{
-	&:hover{color: @primary--medium;}
-	&.active &:focus, &:visited { color: @primary--dark;}
+	&:hover{color: @secondary--medium;}
+	&.active &:focus, &:visited { color: @secondary--dark;}
 }
 
 .text-block a{
@@ -412,9 +415,9 @@ p a.link--primary{ text-decoration: underline; }
 //Contenedores
 .content-resultados{
 	a{
-		color: @primary;
+		color: @secondary;
 		display: block;
-		span{ color: @secondary!important;}
+		span{ color: @gray--dark!important;}
 	}
 }
 

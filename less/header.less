@@ -6,8 +6,8 @@ header {
 	height: 55px;
 	width: 100%;
 	z-index: @zindex-navbar;
-	background-color: @primary;
-	border-bottom: 5px solid @secondary;
+	background-color: @gray--dark;
+	border-bottom: 5px solid @secondary--light;
 	color: @light;
 	@media (min-width: @screen-sm){
 		height: 67px;
@@ -18,18 +18,19 @@ header {
 	.dropdown-menu{
 		min-width: 280px;
 		a:hover, a:focus, a.active, a:active{
-			background-color: @primary--medium;
+			background-color: @secondary--medium;
 			color: @light;
 		}
 	}
+	.topic-menu { font-weight: normal; }
 	.topic-menu, .dropdown-toggle{
-		background-color: @primary;
+		background-color: @gray--dark;
 		color: @light;
 		border: transparent;
 		font-size: 120%;
 		@media (min-width: @screen-md){ font-size: 140%;}
-		&:hover{ background-color:  @primary--medium; }
-		&:focus, &.active, &:active{ background-color: @primary--dark; }
+		&:hover{ background-color:  @secondary--light; }
+		&:focus, &.active, &:active{ background-color: @secondary; }
 	}
 }
 
@@ -65,7 +66,7 @@ nav{ @media (min-width: @screen-sm) and (max-width: @screen-md){ padding-top: (@
 		display: block;
 		&:hover{
 			color: @light;
-			background-color: @primary;
+			background-color: @secondary;
 		}
 	}
 }
