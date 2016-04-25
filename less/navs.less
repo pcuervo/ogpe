@@ -74,25 +74,27 @@
 
 // Give the tabs something to sit on
 .nav-tabs {
+  border-bottom: 1px solid @gray--dark;
   > li {
     float: left;
     // Make the list-items overlay the bottom border
     margin-bottom: -1px;
+    border-bottom: 1px solid @gray--dark;
 
     // Actual tabs (as links)
     > a {
-      margin-right: 2px;
+      margin-right: 2px; margin-bottom: 0px;
       line-height: @line-height-base;
       border-radius: @border-radius-base @border-radius-base 0 0;
-      background-color: @secondary--light;
-      color: @light;
+      background-color: @gray--light;
+      color: @gray--dark;
       text-align: center;
       @media (max-width: @screen-sm){
         padding-left: 5px; padding-right: 5px;
         font-size: 12px;
          }
       &:hover {
-        background: @secondary;
+        background: @gray-light;
         color: @light;
       }
     }
@@ -103,7 +105,7 @@
       &:hover,
       &:focus {
         color: @light;
-        background-color: @secondary--medium;
+        background-color: @gray--dark;
         border-bottom-color: transparent;
         cursor: default;
       }

@@ -4640,16 +4640,21 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a > img {
   max-width: none;
 }
+.nav-tabs {
+  border-bottom: 1px solid #474747;
+}
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
+  border-bottom: 1px solid #474747;
 }
 .nav-tabs > li > a {
   margin-right: 2px;
+  margin-bottom: 0px;
   line-height: 1.55;
   border-radius: 4px 4px 0 0;
-  background-color: #ffa64d;
-  color: #fff;
+  background-color: #eaeaea;
+  color: #474747;
   text-align: center;
 }
 @media (max-width: 768px) {
@@ -4660,14 +4665,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .nav-tabs > li > a:hover {
-  background: #FA8D1F;
+  background: #777777;
   color: #fff;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #fff;
-  background-color: #F27B03;
+  background-color: #474747;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -6786,7 +6791,7 @@ button.close {
   bottom: 20px;
   font-size: 17px;
   color: #212121;
-  background-color: #EEEEEE;
+  background-color: #eaeaea;
   overflow: hidden;
 }
 @media (min-width: 768px) {
@@ -8409,7 +8414,7 @@ header {
 }
 @media (min-width: 768px) {
   header {
-    height: 67px;
+    height: 69px;
   }
 }
 header a,
