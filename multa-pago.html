@@ -151,7 +151,7 @@
 		<div class="[ main ]">
 			<div class="[ size-transform clear-size ]">
 				<section class="[ container ][ margin-bottom ]">
-					<h1 class="[ h2 ][ margin-bottom ]">Pago de multa</h1>
+					<h1 class="[ h2 ][ margin-bottom ]">Pago de Multa</h1>
 					<h3 class="[ margin-bottom ]">Desglose de pagos</h3>
 					<div class="[ row ][ hidden-xs ]">
 						<div class="[ col-xs-12 col-sm-2 ]">
@@ -279,10 +279,10 @@
 						</article>
 						<article>
 							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
+								<div class="[ col-xs-12 col-sm-6 col-md-4 col-md-offset-2 ]">
 									<label for="nombre_tarjeta">Nombre de la Tarjeta: *</label>
 									<input class="[ form-control ]" id="nombre_tarjeta" name="nombre_tarjeta" type="text">
-									<label for="numero_tarjeta">Numero de trajeta: *</label>
+									<label for="numero_tarjeta">Número de Tarjeta: *</label>
 									<input class="[ form-control ]" id="numero_tarjeta" name="numero_tarjeta" type="text">
 									<label for="expiracion">Fecha de Expiracion: *</label>
 									<div class="[ row ]">
@@ -314,11 +314,21 @@
 											</select>
 										</div>
 									</div>
-									<label for="codigo_cwv">Código de Seguridad (CWV): * <a href="" class="[ link-primary ][ absolute pull-right ]">¿Qué es?</a></label>
+									<label for="codigo_cwv">Código de Seguridad (CWV): * <a data-toggle="collapse" data-target="#cvv" class="[ link-primary ][ absolute pull-right ]">¿Qué es?</a></label>
+									<div id="cvv" class="collapse">
+										<div class="[ row ][ padding--top-bottom ]">
+											<div class="[ col-xs-12 col-sm-8 ]">
+												<p>Estos son los 3 dígitos en la parte de atras de la tarjeta.</p>
+											</div>
+											<div class="[ col-xs-12 col-sm-4 ]">
+												<img class="[ img-responsive ]" src="images/card-back.png" alt="">
+											</div>
+										</div>
+									</div>
 									<input class="[ form-control ]" id="codigo_cwv" name="codigo_cwv" type="text">
 
 								</div>
-								<div class="[ col-xs-12 col-sm-4 ]">
+								<div class="[ col-xs-12 col-sm-6 col-md-4 ]">
 									<label for="direccion_pago">Dirección: *</label>
 									<input class="[ form-control ]" id="direccion_pago" name="direccion_pago" type="text">
 									<div class="[ row ]">
@@ -360,7 +370,7 @@
 						</article>
 						<article>
 							<div class="[ row ]">
-								<div class="[ col-xs-12 col-sm-4 col-sm-offset-4 ]">
+								<div class="[ col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 ]">
 									<input id="afirmar" type="checkbox" name="acueductos" value="acueductos">
 									<label class="[ inline-block ][ margin-bottom--small ]" for="afirmar">Afirmo y reconozco las consecuiencias de incluir y commeter informacion incompleta, inconclusa o falsa en esta radicación</label>
 								</div>
