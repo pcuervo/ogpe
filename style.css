@@ -5385,12 +5385,16 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-top-right-radius: 4px;
 }
 .pagination > li > a:hover,
-.pagination > li > span:hover,
-.pagination > li > a:focus,
-.pagination > li > span:focus {
+.pagination > li > span:hover {
   z-index: 2;
   color: #fff;
   background-color: #FA8D1F;
+}
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  z-index: 2;
+  color: #FA8D1F;
+  background-color: #fff;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -8446,6 +8450,13 @@ header .dropdown-toggle {
   border: transparent;
   font-size: 120%;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  header .topic-menu,
+  header .dropdown-toggle {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
 @media (min-width: 992px) {
   header .topic-menu,
   header .dropdown-toggle {
@@ -8463,11 +8474,6 @@ header .dropdown-toggle.active,
 header .topic-menu:active,
 header .dropdown-toggle:active {
   background-color: #FA8D1F;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  nav {
-    padding-top: 3px;
-  }
 }
 .btn-nav {
   padding: 10px 12px;

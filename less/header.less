@@ -12,7 +12,6 @@ header {
 	@media (min-width: @screen-sm){
 		height: 71px;
 	}
-
 	a, .dropdown--hover{ font-size: 18px; }
 	h1>a, .topic-menu{ margin-bottom: 0px; }
 	.dropdown-menu{
@@ -29,13 +28,12 @@ header {
 		color: @light;
 		border: transparent;
 		font-size: 120%;
+		@media (min-width: @screen-sm) and (max-width: @screen-md){ padding-top: 15px; padding-bottom: 15px; }
 		@media (min-width: @screen-md){ font-size: 140%;}
 		&:hover{ background-color:  @secondary--light; }
 		&:focus, &.active, &:active{ background-color: @secondary; }
 	}
 }
-
-nav{ @media (min-width: @screen-sm) and (max-width: @screen-md){ padding-top: (@padding-base-vertical/2);} }
 
 .btn-nav{
 	padding: (@padding-small-vertical*2) (@padding-base-vertical*2);

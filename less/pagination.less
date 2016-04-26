@@ -41,11 +41,19 @@
 
   > li > a,
   > li > span {
-    &:hover,
-    &:focus {
+    &:hover{
       z-index: 2;
       color: @light;
       background-color: @secondary;
+    }
+  }
+
+    > li > a,
+  > li > span {
+    &:focus{
+      z-index: 2;
+      color: @secondary;
+      background-color: @light;
     }
   }
 
